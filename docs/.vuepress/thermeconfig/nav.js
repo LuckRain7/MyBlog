@@ -4,7 +4,7 @@
 
 module.exports = [
     //  内部链接 以docs为根目录
-    { text: '首页', link: '/home/' },
+    { text: '个人介绍', link: '/home/' },
     { text: '个人分享', link: '/share/' },
     { text: '笔记', link: '/notes/' },
     // 下拉列表

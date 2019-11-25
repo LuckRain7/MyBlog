@@ -22,6 +22,9 @@
   </div>
 </template>
 <style>
+.page{
+  padding: 0;
+}
 .zzyhome {
   height: 700px;
   width: 100%;
