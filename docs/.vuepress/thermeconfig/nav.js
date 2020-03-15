@@ -1,9 +1,7 @@
 /*
  * 导航栏设置
  */
-
 module.exports = [
-  //  内部链接 以docs为根目录
   { text: "个人介绍", link: "/home/" },
   { text: "个人分享", link: "/share/" },
   {
@@ -11,8 +9,8 @@ module.exports = [
     items: [
       { text: "Cesium", link: "/WebGIS/Cesium/" },
       { text: "ArcGIS", link: "/WebGIS/ArcGIS/" },
-      { text: "OpenLayer", link: "/WebGIS/OpenLayer/" },
+      { text: "OpenLayer", link: "/WebGIS/OpenLayer/" }
     ]
   },
-  { text: "笔记", link: "/notes/" },
+  { text: "笔记", link: "/notes/" }
 ];
