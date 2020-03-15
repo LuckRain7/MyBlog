@@ -1,3 +1,6 @@
 ---
-layout: MyHome
+sidebar: false
 ---
+
+
+<MyHome/>
