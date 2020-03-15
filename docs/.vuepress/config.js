@@ -3,7 +3,7 @@ module.exports = {
   description: "震雨rain的博客",
   // 注入到当前页面的 HTML <head> 中的标签
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
-  base: '/MyBlog/', // 这是部署到github
+  // base: '/MyBlog/', // 这是部署到github
   markdown: {
     lineNumbers: true // 代码块显示行号
   },
