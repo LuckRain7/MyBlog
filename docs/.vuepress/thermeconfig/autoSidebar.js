@@ -1,1 +1,1 @@
-module.exports = {"/notes/":["个人笔记"],"/share/":["css","webpacka","哈哈哈"],"/tool/":["Git"],"/WebGIS/":["ArcGIS","Cesium","OpenLayer",""]}
+module.exports = {"/share/":["css","JavaScript","webpacka","有趣的项目推荐","笔记"],"/technology/":["Node","前端工程化","前端框架","跨端"],"/tool/":["Git","包管理器","软件","配置文件"],"/WebGIS/":["ArcGIS","Cesium","OpenLayer",""]}

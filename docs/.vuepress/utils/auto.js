@@ -14,7 +14,8 @@ const DICTIONARY = {
   share: "个人分享",
   WebGIS: "WebGIS",
   tool: "前端工具",
-  notes: "笔记"
+  notes: "笔记",
+  technology:'技术栈'
 };
 
 // 判断是否为文件夹
