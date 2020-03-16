@@ -2,9 +2,10 @@
  * 侧边栏
  */
 module.exports = {
-  "/share/": ["", "webpacka", "css"],
+  "/share/": ["哈哈哈", "webpacka", "css"],
   "/WebGIS/": ["Cesium", "ArcGIS", "OpenLayer"],
-  "/notes/": [""]
+  "/notes/": ["个人笔记"],
+  "/tool/": ["Git"]
 };
 
 // // docs文件夹下面的accumulate文件夹 文档中md文件 书写的位置(命名随意)

@@ -12,5 +12,6 @@ module.exports = [
       { text: "OpenLayer", link: "/WebGIS/OpenLayer/" }
     ]
   },
-  { text: "笔记", link: "/notes/" }
+  { text: "前端工具", link: "/tool/Git/" },
+  { text: "笔记", link: "/notes/个人笔记" }
 ];
