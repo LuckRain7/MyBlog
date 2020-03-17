@@ -7,7 +7,7 @@
     "docs:dev": "vuepress dev docs",
     "dev": "node ./docs/.vuepress/utils/auto.js && vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "build": "vuepress build docs"
+    "build": "node ./docs/.vuepress/utils/auto.js && vuepress build docs"
   },
   "repository": {
     "type": "git",

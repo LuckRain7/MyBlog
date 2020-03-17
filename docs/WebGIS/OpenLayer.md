@@ -1,5 +1,2 @@
-# OpenLayer1
+# OpenLayer
 
-## OpenLayer2
-
-### OpenLayer3
