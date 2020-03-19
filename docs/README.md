@@ -6,15 +6,16 @@ tagline: 前端做的再好有什么用
 actionText: Get Started →
 actionLink: /home/
 features:
-  - title: 简洁至上
-    details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-  - title: Vue驱动
-    details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-  - title: 高性能
-    details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+  - title: 没有写不完的代码
+    details: 只有改不完的BUG
+  - title: 比一个人写代码更寂寞的是
+    details: 一个人写不出代码
+  - title: 系统出现问题？
+    details: 清缓存！重启！
 ---
 
 <a id="out-link">备案号：鲁 ICP 备 19058623 号</a>
+
 <style>
   #out-link{
     cursor: pointer;

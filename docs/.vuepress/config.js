@@ -11,7 +11,7 @@ module.exports = {
     }
   },
   themeConfig: {
-    logo: "/logo.png", //导航栏 logo
+    logo: "http://img.rain7.top/rain7.top.logo.png", //导航栏 logo
     sidebarDepth: 1, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
     // lastUpdated: "上次更新", // 文档更新时间：每个文件git最后提交的时间
     nav: require("./thermeConfig/autoNav.js"), // 导航栏设置

@@ -24,9 +24,12 @@ git merge [分支名] # 合并指定分支到当前分支
 git branch # 列出所有本地分支
 git checkout [分支名] # 切换到指定分支
 
-# 设置提交代码时的用户信息
-git config [--global] user.name "[name]"
-git config [--global] user.email "[email address]"
+# 配置全局信息
+git config --global user.name "[name]"
+git config --global user.email "[email address]"
+# 项目中配置
+git config user.name "[name]"
+git config user.email "[email address]"
 ```
 
 ## 本地项目上传至多个远程库
@@ -35,6 +38,7 @@ git config [--global] user.email "[email address]"
 # 关联远程库
 git remote add gitee [url]
 git remote add github [url]
+git remote rm [origin] # 删除
 
 # 推送
 git push gitee master
