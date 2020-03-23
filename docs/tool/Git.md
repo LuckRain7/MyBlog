@@ -45,3 +45,14 @@ git push gitee master
 git push github master
 ```
 
+## Git忽略规则(.gitignore配置）不生效解决方案
+
+清除缓存 重新提交
+
+```bash
+git rm -r --cached .
+git add .
+git commit -m 'update .gitignore'
+git push
+```
+
