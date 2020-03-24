@@ -1,21 +1,25 @@
+---
+sidebar: auto
+---
+
 # Node
 
 ::: tip 目录：
 [[toc]]
 
-快速构建： [https://github.com/LuckRain7/node-app-template ](https://github.com/LuckRain7/node-app-template )
+快速构建： [https://github.com/LuckRain7/node-app-template ](https://github.com/LuckRain7/node-app-template)
 
 :::
 
 ## Express
 
-> 官网 [ https://www.expressjs.com.cn/ ]( https://www.expressjs.com.cn/ )
+> 官网 [ https://www.expressjs.com.cn/ ](https://www.expressjs.com.cn/)
 
 - cors -> 跨域模块
 
   ```js
   # yarn add cors
-  
+
   const cors = require('cors')
   app.use(cors())
   ```
@@ -26,40 +30,40 @@
   # yarn global add express-generator
   # express [文件名]
   ```
-  
--  [ejs]( https://ejs.bootcss.com/ ) -> 模板引擎
+
+- [ejs](https://ejs.bootcss.com/) -> 模板引擎
 
 > 快速构建
 
-  ```json
-# package.json  
+```json
+# package.json
 {
-  "name": "DEMO",
-  "version": "0.0.0",
-  "author": "LuckRain7<https://github.com/LuckRain7>",
-  "description": "express项目模板",
-  "keywords": [
-    "node.js",
-    "express"
-  ],
-  "private": false,
-  "scripts": {
-    "start": "node ./bin/www",
-    "dev": "set NODE_ENV=development && nodemon ./bin/www",
-    "prod": "set NODE_ENV=production && nodemon ./bin/www"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "ejs": "^3.0.1",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
-  }
+"name": "DEMO",
+"version": "0.0.0",
+"author": "LuckRain7<https://github.com/LuckRain7>",
+"description": "express项目模板",
+"keywords": [
+  "node.js",
+  "express"
+],
+"private": false,
+"scripts": {
+  "start": "node ./bin/www",
+  "dev": "set NODE_ENV=development && nodemon ./bin/www",
+  "prod": "set NODE_ENV=production && nodemon ./bin/www"
+},
+"license": "MIT",
+"dependencies": {
+  "body-parser": "^1.19.0",
+  "cookie-parser": "~1.4.4",
+  "debug": "~2.6.9",
+  "ejs": "^3.0.1",
+  "express": "~4.16.1",
+  "http-errors": "~1.6.3",
+  "morgan": "~1.9.1"
 }
-  ```
+}
+```
 
 ```js
 # app.js
@@ -97,7 +101,7 @@ app.use(express.static(path.join(__dirname, 'public'))) //静态文件
 // 自定义路由模块的引用
 app.use('/', indexRouter)
 app.use('/users', usersRouter)
-app.use('/admin/api', adminRouter) 
+app.use('/admin/api', adminRouter)
 
 // 捕捉404错误并进行错误处理
 app.use(function(req, res, next) {
@@ -110,7 +114,7 @@ app.use(function(err, req, res, next) {
   // 开发环境错误处理
   res.locals.message = err.message
 
-  
+
   res.locals.error = req.app.get('env') === 'development' ? err : {}
 
   // render the error page
@@ -123,18 +127,18 @@ module.exports = app
 
 ## Koa
 
-> 官网：[ https://koa.bootcss.com/ ]( https://koa.bootcss.com/ )
+> 官网：[ https://koa.bootcss.com/ ](https://koa.bootcss.com/)
 
--  koa-cors -> 跨域
--  koa-router -> 路由
--  koa-static -> 静态资源
--  koa-body -> 解析 body
--  koa-logger -> 日志管理
+- koa-cors -> 跨域
+- koa-router -> 路由
+- koa-static -> 静态资源
+- koa-body -> 解析 body
+- koa-logger -> 日志管理
 
 > 快速构建
 
 ```json
-# package.json  
+# package.json
 {
   "name": "DEMO",
   "version": "1.0.0",
@@ -218,9 +222,9 @@ app.listen(4000, function() {
 
 ## Egg
 
->  Egg 奉行『**约定优于配置**』 
+> Egg 奉行『**约定优于配置**』
 >
-> 官网：[ https://eggjs.org/zh-cn/ ]( https://eggjs.org/zh-cn/ )
+> 官网：[ https://eggjs.org/zh-cn/ ](https://eggjs.org/zh-cn/)
 
 - 目录结构
 
@@ -264,54 +268,57 @@ Egg
         └── home.test.js
 ```
 
-
-
 ## webSocket
 
-> 官网：[ https://eggjs.org/zh-cn/ ]( https://eggjs.org/zh-cn/ )
+> 官网：[ https://eggjs.org/zh-cn/ ](https://eggjs.org/zh-cn/)
 
 example:
+
 ```js
 const socket = require("socket.io");
-const http = require('http');
+const http = require("http");
 
 // 创建服务
-const server = http.createServer((req, res) => {
+const server = http
+  .createServer((req, res) => {
     // 允许所有跨域请求
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    req.writeHead(200, { 'Content-Type': 'text/html' })
-    res.end('')
-}).listen(3000)
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    req.writeHead(200, { "Content-Type": "text/html" });
+    res.end("");
+  })
+  .listen(3000);
 
-let pad = null, pc = null, padReady = false, pcReady = false;
+let pad = null,
+  pc = null,
+  padReady = false,
+  pcReady = false;
 
 // 连接socket.io
-socket.listen(server).on('connection', (conn) => {
-    conn.on('message', (str) => {
-        if (str === "Pad") {
-            pad = conn;
-            padReady = true;
-            conn.send('连接成功');
-            console.log('Pad');
-        }
-        if (str === "PC") {
-            pc = conn;
-            pcReady = true;
-            console.log('Pc');
-        }
-        if (padReady && pcReady) {
-            if (str === 'PC') str = '我是PC界面'
-            pc.send(str);
-        }
-    })
+socket.listen(server).on("connection", conn => {
+  conn.on("message", str => {
+    if (str === "Pad") {
+      pad = conn;
+      padReady = true;
+      conn.send("连接成功");
+      console.log("Pad");
+    }
+    if (str === "PC") {
+      pc = conn;
+      pcReady = true;
+      console.log("Pc");
+    }
+    if (padReady && pcReady) {
+      if (str === "PC") str = "我是PC界面";
+      pc.send(str);
+    }
+  });
 
-    conn.on("disconnection", (code, reason) => {
-        console.log("关闭连接")
-    });
-})
-
+  conn.on("disconnection", (code, reason) => {
+    console.log("关闭连接");
+  });
+});
 ```
 
-------
+---
 
 END

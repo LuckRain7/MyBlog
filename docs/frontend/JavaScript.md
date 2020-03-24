@@ -1,3 +1,6 @@
+---
+sidebar: auto
+---
 # JavaScript
 
 ## 可拖动模态框

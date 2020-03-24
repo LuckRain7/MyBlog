@@ -1,3 +1,6 @@
+---
+sidebar: auto
+---
 # 前端知识图谱
 
 ## 一、JavaScript

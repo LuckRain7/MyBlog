@@ -1,3 +1,6 @@
+---
+sidebar: auto
+---
 # 玩转GitHub
 
 ::: tip 目录：

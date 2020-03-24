@@ -1,5 +1,26 @@
+---
+sidebar: auto
+---
 # CSS
+##  box-shadow
+
+语法：` box-shadow: h-shadow v-shadow blur spread color inset`
+
+| 属性      | 值                                                  |
+| --------- | --------------------------------------------------- |
+| *h-shadow | 水平阴影的位置。10px：阴影在右侧；-10px：阴影在左侧 |
+| *v-shadow | 垂直阴影的位置。10px：阴影在下侧；-10px：阴影在上侧 |
+| blur      | 模糊距离。值越大，阴影越模糊                        |
+| spread    | 阴影的大小。值越大，阴影越大                        |
+| color     | 阴影的颜色。                                        |
+| inset     | 定义阴影为内部阴影（一般都是外侧阴影，不加此属性）  |
+
+常用：
+
+` box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);`
+
 ## 平滑滚动
+
 ```css
 html {
   scroll-behavior: smooth;
@@ -42,6 +63,7 @@ header {
   position: sticky;
   top: 0;
 }
-
 ```
+
+
 

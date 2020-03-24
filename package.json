@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "dev": "node ./docs/.vuepress/utils/auto.js && vuepress dev docs",
+    "dev": "vuepress dev docs",
+    "auto": "node ./docs/.vuepress/utils/auto.js && vuepress dev docs",
     "docs:build": "vuepress build docs",
     "build": "node ./docs/.vuepress/utils/auto.js && vuepress build docs",
-	"git":"git add . && git commit -m 'update' && git push'"
+    "git": "git add . && git commit -m 'update' && git push'"
   },
   "repository": {
     "type": "git",

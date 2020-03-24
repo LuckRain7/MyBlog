@@ -1,3 +1,6 @@
+---
+sidebar: auto
+---
 # GIT
 
 ## git 常用命令

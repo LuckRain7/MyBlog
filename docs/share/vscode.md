@@ -1,3 +1,6 @@
+---
+sidebar: auto
+---
 # VS Code配置插件
 
 ## 成为开发者

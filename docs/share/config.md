@@ -1,3 +1,6 @@
+---
+sidebar: auto
+---
 # 配置文件
 
 ##  .prettierrc

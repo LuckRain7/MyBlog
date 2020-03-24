@@ -1,1 +1,1 @@
-module.exports = {"/share/":["css","JavaScript","Node","webpacka","前端工程化","玩转GitHub","笔记","跨端"],"/tool/":["Git","vscode必备","包管理器","网站推荐","软件推荐","软件推荐","配置文件"],"/WebGIS/":["ArcGIS","Cesium","OpenLayer",""]}
+module.exports = {"/engineering/":["engineering"],"/frontend/":["CSS","HTML","JavaScript","TypeScript","webpack"],"/React/":["React"],"/server/":["Golang","Node","Python"],"/share/":["config","software","vscode","website","笔记"],"/tools/":["Git","GitHub","package"],"/Vue/":["Vue"],"/WebGIS/":["ArcGIS","Cesium","OpenLayer",""]}

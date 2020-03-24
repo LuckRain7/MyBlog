@@ -2,10 +2,16 @@
  * 侧边栏
  */
 module.exports = {
-  "/share/": ["哈哈哈", "webpacka", "css"],
-  "/WebGIS/": ["Cesium", "ArcGIS", "OpenLayer"],
-  "/notes/": ["个人笔记"],
-  "/tool/": ["Git"]
+  // "/engineering/": ["engineering"],
+  // "/frontend/": ["CSS","HTML", "JavaScript", "TypeScript", "webpack"],
+  // "/React/": ["React"],
+  // "/server/": ["Golang", "Node", "Python"],
+  // "/server/": ["Golang", "Node", "Python",],
+  // "/share/": ["config", "software", "vscode", "website", "笔记"],
+  // "/tools/": ["Git", "GitHub", "package"],
+  // "/Vue/": ["Vue"],
+  // "/WebGIS/": ["ArcGIS", "Cesium", "OpenLayer", ""],
+  "/Vue/": ["Vue", "Vue-router", "Vuex", "Vue-CLI"]
 };
 
 // // docs文件夹下面的accumulate文件夹 文档中md文件 书写的位置(命名随意)

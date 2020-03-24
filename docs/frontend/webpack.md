@@ -1,3 +1,6 @@
+---
+sidebar: auto
+---
 # Webpack
 
 ## 一、webpack配置

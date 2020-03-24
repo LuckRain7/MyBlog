@@ -3,7 +3,30 @@
  */
 module.exports = [
   { text: "个人介绍", link: "/home/" },
-  { text: "个人分享", link: "/share/" },
+  {
+    text: "前端",
+    items: [
+      { text: "HTML", link: "/frontend/HTML/" },
+      { text: "CSS", link: "/frontend/CSS/" },
+      { text: "JavaScript", link: "/frontend/JavaScript/" },
+      { text: "TypeScript", link: "/frontend/TypeScript/" },
+      { text: "Vue", link: "/Vue/Vue/" },
+      { text: "React", link: "/React/React/" },
+      { text: "Webpack", link: "/frontend/Webpack/" }
+    ]
+  },
+  {
+    text: "前端工程化",
+    link: "/engineering/engineering/"
+  },
+  {
+    text: "服务端",
+    items: [
+      { text: "Node.js", link: "/server/Node/" },
+      { text: "Golang", link: "/server/Golang/" },
+      { text: "Python", link: "/server/Python/" }
+    ]
+  },
   {
     text: "WebGIS",
     items: [
@@ -12,6 +35,22 @@ module.exports = [
       { text: "OpenLayer", link: "/WebGIS/OpenLayer/" }
     ]
   },
-  { text: "前端工具", link: "/tool/Git/" },
-  { text: "笔记", link: "/notes/个人笔记" }
+  {
+    text: "必备工具",
+    items: [
+      { text: "包管理器", link: "/tools/package/" },
+      { text: "Git", link: "/tools/Git/" },
+      { text: "GitHub", link: "/tools/GitHub/" }
+    ]
+  },
+  {
+    text: "个人分享",
+    items: [
+      { text: "VS Code必备", link: "/share/vscode/" },
+      { text: "软件推荐", link: "/share/software/" },
+      { text: "网站推荐", link: "/share/website/" },
+      { text: "配置文件", link: "/share/config/" },
+      { text: "笔记", link: "/share/notes/" }
+    ]
+  }
 ];
