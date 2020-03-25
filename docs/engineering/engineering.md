@@ -23,7 +23,7 @@ sidebar: auto
 
 - 防抖和节流
 
-- 深拷贝和浅拷贝
+- [深拷贝和浅拷贝](/frontend/JavaScript.html#一、深拷贝和浅拷贝)
 
 ### 2、异步编程
 
