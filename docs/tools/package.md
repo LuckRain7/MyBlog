@@ -26,6 +26,8 @@ npm run [script]
 npm config list
 #npm配置淘宝镜像
 npm config set registry https://registry.npmjs.org/
+#查看全局安装的包
+npm list -g --depth 0
 ```
 
 >NPM发布自己的组件包
@@ -55,5 +57,7 @@ yarn [script]
 yarn config list
 #yarn配置淘宝镜像
 yarn config set registry https://registry.npmjs.org/
+#查看全局安装的包
+yarn global list
 ```
 

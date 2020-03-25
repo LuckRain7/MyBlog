@@ -6,14 +6,14 @@ sidebar: auto
 
 语法：` box-shadow: h-shadow v-shadow blur spread color inset`
 
-| 属性      | 值                                                  |
-| --------- | --------------------------------------------------- |
-| *h-shadow | 水平阴影的位置。10px：阴影在右侧；-10px：阴影在左侧 |
-| *v-shadow | 垂直阴影的位置。10px：阴影在下侧；-10px：阴影在上侧 |
-| blur      | 模糊距离。值越大，阴影越模糊                        |
-| spread    | 阴影的大小。值越大，阴影越大                        |
-| color     | 阴影的颜色。                                        |
-| inset     | 定义阴影为内部阴影（一般都是外侧阴影，不加此属性）  |
+| 属性       | 值                                                  |
+| ---------- | --------------------------------------------------- |
+| * h-shadow | 水平阴影的位置。10px：阴影在右侧；-10px：阴影在左侧 |
+| * v-shadow | 垂直阴影的位置。10px：阴影在下侧；-10px：阴影在上侧 |
+| blur       | 模糊距离。值越大，阴影越模糊                        |
+| spread     | 阴影的大小。值越大，阴影越大                        |
+| color      | 阴影的颜色。                                        |
+| inset      | 定义阴影为内部阴影（一般都是外侧阴影，不加此属性）  |
 
 常用：
 
@@ -65,5 +65,63 @@ header {
 }
 ```
 
+## CSS预处理器
 
+### sass
+
+> 世界上最成熟、最稳定、最强大的专业级CSS扩展语言！
+
+定义变量 Variables
+
+```scss
+$highlight-color: #F90;
+```
+
+支持嵌套 Nested Rules
+
+```scss
+#header {
+  color: black;
+  .navigation {
+    font-size: 12px;
+  }
+  .logo {
+    width: 300px;
+  }
+}
+```
+
+### less
+
+> Less 是一门 CSS 预处理语言，它扩展了 CSS 语言，增加了变量、Mixin、函数等特性，使 CSS 更易维护和扩展。
+>
+> Less 可以运行在 Node 或浏览器端。
+
+定义变量 Variables
+
+```less
+@nice-blue: #5B83AD;
+```
+
+支持嵌套 Nested Rules
+
+```less
+#header {
+  color: black;
+  .navigation {
+    font-size: 12px;
+  }
+  .logo {
+    width: 300px;
+  }
+}
+```
+
+支持加减乘除操作 Operations
+
+```less
+// numbers are converted into the same units
+@conversion-1: 5cm + 10mm; // result is 6cm
+@conversion-2: 2 - 3cm - 5mm; // result is 1.5cm
+```
 

@@ -403,14 +403,7 @@ Vue.prototype.$http = Http
 
 ## API
 
-### message
 
-```js
-  this.$message({
-    message: "头像修改成功",
-    type: "success" // error  success warning
-  });
-```
 
 
 

@@ -56,7 +56,7 @@ sidebar: auto
 
  ### 4、模块加载
 
-  - 模块加载方案
+  - [模块加载方案](/engineering/模块加载方案)
 
   - 闭包
 
@@ -105,7 +105,7 @@ sidebar: auto
 
 ### 1、初识Vue
 
-- 模板
+- 模板 `{{ message }}`
 
 - 数据
 
@@ -116,48 +116,27 @@ sidebar: auto
 ### 2、Vue组件
 
 - 自定义指令
-
 - 插槽
-
 - 双向绑定与单向数据流
-
 - 组件化设计
-
 - 插件
-
 - 组件逻辑复用
 
-### 3、深入Vue源码设计
-
-- 响应式源码分析
-
-- Vue3 conposition api
-
-- 渲染函数
-
-- diff path
-
-### 4、Vue生态
+### 3、Vue生态
 
 - 状态管理 vuex
-
 - 路由 vue-router
-
 - 服务端渲染 Nuxt.js
-
 - Vue DevTools
-
 - Composition API RFC
 
-### 5、Vue实践
+### 4、Vue实践
 
 - 对话框
-
 - 表单
-
 - 动画切换效果
 
-### 6、企业级组件系统架构
+### 5、企业级组件系统架构
 
 - 可复用组件设计
 
@@ -168,6 +147,16 @@ sidebar: auto
 - 国际化设置
 
 - 自动化页面埋点
+
+### 6、深入Vue源码设计
+
+- 响应式源码分析
+
+- Vue3 conposition api
+
+- 渲染函数
+
+- diff path
 
 ### 7、Vue 3.0
 
@@ -258,7 +247,7 @@ sidebar: auto
 
 - React 组件/性能优化
 
-## 五、NODE.JS
+## 五、Node.JS
 
 ### 1、node.js 基础
 
@@ -268,7 +257,9 @@ sidebar: auto
 - Node Web Server 单测的写法
 - Node 进阶及原理解析
 - Node 原生的局限性与框架的必要性
-- [nvm  Node版本管理工具](/engineering/nvm) 
+- [NVM  Node版本管理工具](/engineering/nvm) 
+- Express 框架应用
+
 ### 2、Web服务及Koa
 
 - Koa 给出的答卷，解决原生困境
@@ -281,15 +272,13 @@ sidebar: auto
 
 - Koa 在企业开发中的应用
 
-### 3、企业级 Node.J 框架
+### 3、企业级 Node.JS 框架
 
-- 企业级应用对Koa提出的挑战及BFF开发按摩时
-
-- 手写企业级Node框架爱
-
+- 企业级应用对Koa提出的挑战及BFF开发时
+- 手写企业级Node框架
 - Node框架爱基建
-
 - 云上的Node及微服务
+- Egg 企业级开发框架
 
 ## 六、工程化
 
@@ -373,14 +362,14 @@ sidebar: auto
   - docker
   - kubernetes
 
-### 7、GIT
+### 7、[GIT](/tools/Git.html)
 
-- Git原理介绍
+- [Git原理介绍](/tools/Git.html#git-原理)
 
-- git基础操作-常用命令
+- [git基础操作-常用命令](/tools/Git.html#git-常用命令)
 
 - git进阶
-  - rebase的作用
+  - [rebase的作用](/tools/Git.html#git-rebase)
   - reset与revert的区别
   - reflog
   - cherry-pick
