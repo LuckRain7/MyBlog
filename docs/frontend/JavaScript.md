@@ -50,7 +50,75 @@ console.log(d.other)
 
 
 
+## 二、防抖和节流
 
+>防抖：防止重复点击触发事件
+>
+>节流：指定时间间隔内只会执行一次任务
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>节流防抖</title>
+</head>
+
+<body>
+    <button id="f">防抖</button>
+    <button id="j">节流</button>
+
+    <script>
+
+        window.onload = function () {
+            let myDebounce = document.getElementById("f");
+            myDebounce.addEventListener("click", debounce(test, 1000))
+            let myThrottle = document.getElementById("j");
+            myThrottle.addEventListener("click", throttle(test, 1000, 'zz'))
+        }
+
+        // 防抖
+        function debounce(fn, time) {
+            let _arguments = arguments
+            let timeout = null
+            return function () {
+                if (timeout) {
+                    clearTimeout(timeout)
+                }
+                timeout = setTimeout(() => {
+                    fn.call(this, arguments)
+                }, time);
+            }
+        }
+
+        function test() {
+            console.log(' 防抖：防止重复点击触发事件');
+            console.log(' 节流：指定时间间隔内只会执行一次任务');
+            console.log(arguments);
+        }
+
+        // 节流
+        function throttle(fn, time) {
+            let _arguments = arguments
+            let canRun = true
+            return function () {
+                if (!canRun) return
+                canRun = false
+                setTimeout(() => {
+                    fn.call(this, _arguments)
+                    canRun = true
+                }, time);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
+```
 
 
 
@@ -58,7 +126,7 @@ console.log(d.other)
 
 ## 二、可拖动模态框
 
-index.html
+`index.html`
 
 ```html
 <!DOCTYPE html>
@@ -92,7 +160,7 @@ index.html
 </html>
 ```
 
-main.js
+`main.js`
 
 ```js
 let model = document.getElementById('model')
@@ -144,7 +212,7 @@ document.onmouseup = function() {
 // offsetX、offsetY  相对于带有定位的父盒子的x，y坐标
 ```
 
-index.css
+`index.css`
 
 ```css
 html,
@@ -215,6 +283,5 @@ div {
   color: #fff;
   margin-top: 18px;
 }
-
 ```
 

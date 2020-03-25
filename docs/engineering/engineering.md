@@ -21,7 +21,7 @@ sidebar: auto
 
 - 常用函数
 
-- 防抖和节流
+- [防抖和节流](/frontend/JavaScript.html#一、深拷贝和浅拷贝)
 
 - [深拷贝和浅拷贝](/frontend/JavaScript.html#一、深拷贝和浅拷贝)
 
