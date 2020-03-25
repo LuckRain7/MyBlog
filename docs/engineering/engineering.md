@@ -27,19 +27,17 @@ sidebar: auto
 
 ### 2、异步编程
 
-- 理解异步
+- [理解异步](/engineering/异步.html)
 - Event Loop 机制
   - 浏览器
   - Node.js
-
 - 异步编程方法
+  - [回调函数](/engineering/异步.html#_1-回调函数)
   - 发布/订阅
   - 深入理解 promise
   - generator函数及异步应用
-  - 深入理解 async 和 await
-
+- 深入理解 async 和 await
 - 处理异步的框架爱RxJS
-
 - webWorker 的多线程机制
 
 ### 3、设计模式
@@ -291,7 +289,7 @@ sidebar: auto
 
 - [npm & yarn  包管理工具](/tools/package) 
 
-- [package.json  项目说明文件](/engineering/package.json) 
+- [package.json  项目说明文件](/engineering/package.json.html) 
 
 - bash简介和快速入门
 
