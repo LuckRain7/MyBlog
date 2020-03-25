@@ -9,7 +9,7 @@
     "auto": "node ./docs/.vuepress/utils/auto.js && vuepress dev docs",
     "docs:build": "vuepress build docs",
     "build": "node ./docs/.vuepress/utils/auto.js && vuepress build docs",
-    "git": "git add . && git commit -m 'update' && git push'"
+    "git": "git push gitee master&& git push github master"
   },
   "repository": {
     "type": "git",
