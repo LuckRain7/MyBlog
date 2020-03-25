@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>模块加载方案 | 震雨Rain</title>
+    <meta name="description" content="震雨rain的博客,Webgis,arcgis,openlayer,css,javascript">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.5966ddac.css" as="style"><link rel="preload" href="/assets/js/app.6ef0c684.js" as="script"><link rel="preload" href="/assets/js/2.00409b72.js" as="script"><link rel="preload" href="/assets/js/22.c6bdf624.js" as="script"><link rel="prefetch" href="/assets/js/10.28535dd4.js"><link rel="prefetch" href="/assets/js/11.3a742b42.js"><link rel="prefetch" href="/assets/js/12.d7397657.js"><link rel="prefetch" href="/assets/js/13.c37b965c.js"><link rel="prefetch" href="/assets/js/14.4a70b898.js"><link rel="prefetch" href="/assets/js/15.58a2b46e.js"><link rel="prefetch" href="/assets/js/16.cb4f7094.js"><link rel="prefetch" href="/assets/js/17.a07bad87.js"><link rel="prefetch" href="/assets/js/18.29aad150.js"><link rel="prefetch" href="/assets/js/19.12933dba.js"><link rel="prefetch" href="/assets/js/20.265f19d1.js"><link rel="prefetch" href="/assets/js/21.e5621c7d.js"><link rel="prefetch" href="/assets/js/23.431df0ef.js"><link rel="prefetch" href="/assets/js/24.b65a5763.js"><link rel="prefetch" href="/assets/js/25.c431587b.js"><link rel="prefetch" href="/assets/js/26.0dc128fd.js"><link rel="prefetch" href="/assets/js/27.6879dbfd.js"><link rel="prefetch" href="/assets/js/28.d268fb5b.js"><link rel="prefetch" href="/assets/js/29.47b8d484.js"><link rel="prefetch" href="/assets/js/3.a673bb5e.js"><link rel="prefetch" href="/assets/js/30.bd72d5d1.js"><link rel="prefetch" href="/assets/js/31.58c8e1b4.js"><link rel="prefetch" href="/assets/js/32.06652c4a.js"><link rel="prefetch" href="/assets/js/33.234130ba.js"><link rel="prefetch" href="/assets/js/34.1cb1216a.js"><link rel="prefetch" href="/assets/js/35.771419f3.js"><link rel="prefetch" href="/assets/js/36.19bace6b.js"><link rel="prefetch" href="/assets/js/37.f780e873.js"><link rel="prefetch" href="/assets/js/38.757b2c1f.js"><link rel="prefetch" href="/assets/js/39.76493a82.js"><link rel="prefetch" href="/assets/js/4.f73f6a66.js"><link rel="prefetch" href="/assets/js/40.d48e44b4.js"><link rel="prefetch" href="/assets/js/5.891c96a1.js"><link rel="prefetch" href="/assets/js/6.8f7852d2.js"><link rel="prefetch" href="/assets/js/7.43788a3e.js"><link rel="prefetch" href="/assets/js/8.7acb3878.js"><link rel="prefetch" href="/assets/js/9.f465e24f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5966ddac.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="http://img.rain7.top/rain7.top.logo.png" alt="震雨Rain" class="logo"> <span class="site-name can-hide">震雨Rain</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/Node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/server/Golang/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/server/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="WebGIS" class="dropdown-title"><span class="title">WebGIS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/WebGIS/Cesium/" class="nav-link">
+  Cesium
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/ArcGIS/" class="nav-link">
+  ArcGIS
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/OpenLayer/" class="nav-link">
+  OpenLayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/package/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub/" class="nav-link">
+  GitHub
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/vscode/" class="nav-link">
+  VS Code必备
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website/" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/notes/" class="nav-link">
+  笔记
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/Node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/server/Golang/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/server/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="WebGIS" class="dropdown-title"><span class="title">WebGIS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/WebGIS/Cesium/" class="nav-link">
+  Cesium
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/ArcGIS/" class="nav-link">
+  ArcGIS
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/OpenLayer/" class="nav-link">
+  OpenLayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/package/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub/" class="nav-link">
+  GitHub
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/vscode/" class="nav-link">
+  VS Code必备
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website/" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/notes/" class="nav-link">
+  笔记
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>模块加载方案</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/engineering/%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%96%B9%E6%A1%88.html#es6-模块" class="sidebar-link">ES6 模块</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/engineering/%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%96%B9%E6%A1%88.html#commonjs" class="sidebar-link">CommonJS</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/engineering/%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%96%B9%E6%A1%88.html#amd" class="sidebar-link">AMD</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="模块加载方案"><a href="#模块加载方案" class="header-anchor">#</a> 模块加载方案</h1> <h2 id="es6-模块"><a href="#es6-模块" class="header-anchor">#</a> ES6 模块</h2> <blockquote><p>ES6中的模块加载方案是一种浏览器和服务器通用的解决方案</p></blockquote> <p>导入</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//直接引入</span>
+improt Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+
+<span class="token comment">//解构引入</span>
+improt <span class="token punctuation">{</span>name<span class="token punctuation">,</span> age<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./user'</span>
+
+<span class="token comment">// 使用as关键字将输入的变量重命名</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> name <span class="token keyword">as</span> newName <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./user'</span><span class="token punctuation">;</span>
+</code></pre></div><p>导出（多种写法）</p> <p>export 可导出多个</p> <p>export default 为模块默认输出。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//写法一</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'RAIN'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> age <span class="token operator">=</span> <span class="token string">'18'</span><span class="token punctuation">;</span>
+
+<span class="token comment">//写法二</span>
+<span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'RAIN'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> age <span class="token operator">=</span> <span class="token string">'18'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>name<span class="token punctuation">,</span> age<span class="token punctuation">}</span>
+</code></pre></div><h2 id="commonjs"><a href="#commonjs" class="header-anchor">#</a> CommonJS</h2> <blockquote><p>Node使用的规范</p></blockquote> <p>引用：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token function">requier</span><span class="token punctuation">(</span><span class="token string">'./user'</span><span class="token punctuation">)</span>
+</code></pre></div><p>导出：</p> <p><code>module.exports</code>属性表示当前模块对外输出的接口，其他文件加载该模块，实际上就是读取<code>module.exports</code>变量。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'RAIN'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> age <span class="token operator">=</span> <span class="token string">'18'</span><span class="token punctuation">;</span><span class="token comment">//写法一</span>
+<span class="token keyword">const</span> user <span class="token operator">=</span><span class="token punctuation">{</span>
+    name <span class="token operator">=</span> <span class="token string">'RAIN'</span><span class="token punctuation">,</span>
+    age <span class="token operator">=</span> <span class="token string">'18'</span>
+<span class="token punctuation">}</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> user
+
+<span class="token comment">//写法二</span>
+<span class="token keyword">export</span><span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'RAIN'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span><span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token string">'18'</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="amd"><a href="#amd" class="header-anchor">#</a> AMD</h2> <p>AMD：Asynchronous Module Definition（异步模块规范），最老的方式之一，专为浏览器而设计。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.6ef0c684.js" defer></script><script src="/assets/js/2.00409b72.js" defer></script><script src="/assets/js/22.c6bdf624.js" defer></script>
+  </body>
+</html>

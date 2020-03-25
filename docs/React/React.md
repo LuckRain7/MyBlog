@@ -1391,8 +1391,6 @@ yarn add react-router-dom
 
 `<Route exact path="/about/me" component={() => <div>me</div>}></Route>`
 
-重定向：`<Redirect to="/about/me"></Redirect>`
-
 ```jsx
 import React from "react";
 import { BrowserRouter, Link, Route, Switch, Redirect } from "react-router-dom";
@@ -1517,6 +1515,12 @@ function RouterExample(props) {
 }
 
 export default RouterExample;
+```
+
+### 重定向
+
+```html
+<Redirect to="/about/me"></Redirect>
 ```
 
 ### 结合 redux 使用
