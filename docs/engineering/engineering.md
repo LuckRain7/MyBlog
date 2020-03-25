@@ -39,24 +39,45 @@ sidebar: auto
   - 深入理解 async 和 await
 
 - 处理异步的框架爱RxJS
+
 - webWorker 的多线程机制
 
 ### 3、设计模式
 
 - 设计模式概论
+
 - 封装与对象
+
 - 提高复用
+
 - 提高可拓展性
+
 - 提高代码质量
+
+ ### 4、模块加载
+
+  - 模块加载方案
+
+  - 闭包
+
+  - 资源定位 异步加载
+
+  - 解析依赖
+
+  - WebComponent
 
 ## 二、计算机网络
 
 ### 1、网络协议
 
 - TCP/IP
+
 - HTTP
+
 - TLS
+
 - HTTP2 & HTTP3
+
 
 ### 2、网络请求
 
@@ -67,69 +88,85 @@ sidebar: auto
   - Axios源码分析
 
 - WebSocket
+
 - 缓存
 
 ### 3、网络安全
 
 - 同源策略
+
 - XSS攻击
+
 - CSRF攻击
 
-### 4、模块加载
-
-- 模块加载方案
-- 闭包
-- 资源定位 异步加载
-- 解析依赖
-- WebComponent
-
-### 5、路由
+### 4、路由
 
 ## 三、Vue.js
 
 ### 1、初识Vue
 
 - 模板
+
 - 数据
+
 - 事件 & 样式
+
 - 组件
 
 ### 2、Vue组件
 
 - 自定义指令
+
 - 插槽
+
 - 双向绑定与单向数据流
+
 - 组件化设计
+
 - 插件
+
 - 组件逻辑复用
 
 ### 3、深入Vue源码设计
 
 - 响应式源码分析
+
 - Vue3 conposition api
+
 - 渲染函数
+
 - diff path
 
 ### 4、Vue生态
 
 - 状态管理 vuex
+
 - 路由 vue-router
+
 - 服务端渲染 Nuxt.js
+
 - Vue DevTools
+
 - Composition API RFC
 
 ### 5、Vue实践
 
 - 对话框
+
 - 表单
+
 - 动画切换效果
 
 ### 6、企业级组件系统架构
 
 - 可复用组件设计
+
 - 权限控制
+
 - 自定义皮肤设置
+
 - 国际化设置
+
 - 自动化页面埋点
 
 ### 7、Vue 3.0
@@ -141,27 +178,37 @@ sidebar: auto
 ### 1、初识react
 
 - React 环境搭建
+
 - 组件和 JSX
 
 - Props、列表渲染、条件渲染
+
 - CSS In React
 
 ### 2、React探索
 
 - 事件绑定和处理
+
 - 使用和理解 state
 
 - state 进阶
+
 - 静态检查
+
 - 生命周期的理解
+
 - React 哲学
+
 - 高阶组件
 
 ### 3、React生态应用
 
 - react 路由
+
 - 表单和表单验证
+
 - Ant Design 使用
+
 - AntV 使用
 
 ### 4、实战应用
@@ -181,14 +228,19 @@ sidebar: auto
 ### 5、React原理
 
 - React Virtual-DOM 原理
+
 - React Fiber
+
 - React 新生命周期
+
 - React Hooks
+
 - React new feature
 
 ### 6、React 状态管理
 
 - Redux 入门
+
 - Redux 进阶
   - reselect
   - @rematch/core
@@ -197,30 +249,36 @@ sidebar: auto
   - immutable 数据方案
 
 - MobX 入门
+
 - Context API
 
 ### 7、React 高级实践和性能优化
 
-- TypeScript
+- TypeScrip
+
 - React 组件/性能优化
 
 ## 五、NODE.JS
 
 ### 1、node.js 基础
 
-- nodejs发展
-- nodejs提供的能力原生API
-- node原生的Web Server实践
+- nodejs 发展
+- nodejs 提供的能力原生API
+- node 原生的Web Server实践
 - Node Web Server 单测的写法
 - Node 进阶及原理解析
 - Node 原生的局限性与框架的必要性
-
+- [nvm  Node版本管理工具](/engineering/nvm) 
 ### 2、Web服务及Koa
 
 - Koa 给出的答卷，解决原生困境
+
 - Koa 重写 Web Server
+
 - Koa 进阶及原理解析
+
 - Koa 源码分析 & 手写Koa 核心代码
+
 - Koa 在企业开发中的应用
 
 ### 3、企业级 Node.J 框架
@@ -237,14 +295,24 @@ sidebar: auto
 
 ### 1、脚本世界
 
-- 玩转npm
+- [npm & yarn  包管理工具](/tools/package) 
+
+- [package.json  项目说明文件](/engineering/package.json) 
+
 - bash简介和快速入门
+
 - node开发简单CLI工具
 
 ### 2、规范先行
 
 - 代码风格
+
+  - Eslint
+
+  - [prettierrc  代码格式化](/share/config.html#prettierrc)
+
 - 版本规范和Changlog
+
 - 其他规约
 
 ### 3、质量
@@ -252,20 +320,27 @@ sidebar: auto
 - code review
 
 - 测试基础
+
 - 单元测试
+
 - e2e测试
+
 - 测试驱动开发
+
 - 监控和异常上报
 
 ### 4、工程设计
 
 - 工程设计简介
+
 - 工程结构范式
+
 - 多仓库选型
 
 ### 5、构建艺术
 
 - 构建简史
+
 - Babel
   - token到ast，编译理论
   - 基本概念
@@ -284,6 +359,7 @@ sidebar: auto
 ### 6、持续集成与部署
 
 - CI/CD简介
+
 - 持续集成
   - 巧用GitHub
   - CI平台-义jenkins为例
@@ -300,7 +376,9 @@ sidebar: auto
 ### 7、GIT
 
 - Git原理介绍
+
 - git基础操作-常用命令
+
 - git进阶
   - rebase的作用
   - reset与revert的区别
@@ -313,12 +391,19 @@ sidebar: auto
 ### 8、效率工具
 
 - 真机远程代码调试
+
 - “无线”调试
+
 - 在移动端调试
+
 - 使用代理工具进行调试
+
 - 在公网访问本地服务
+
 - 随机数据的生成
+
 - RESTful API 快速模拟
+
 - SVRX
   - 一个平台代替前面所有工具
   - Server-X的进阶用法
