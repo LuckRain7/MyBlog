@@ -3,9 +3,9 @@ sidebar: auto
 ---
 # JavaScript
 
+## 一、应用
 
-
-## 一、深拷贝和浅拷贝
+### 1、深拷贝和浅拷贝
 
 > 浅拷贝：拷贝的是对象或数组的引用，指向的还是同一地址，改变拷贝值或原值，两者都变化
 >
@@ -50,7 +50,7 @@ console.log(d.other)
 
 
 
-## 二、防抖和节流
+### 2、防抖和节流
 
 >防抖：防止重复点击触发事件
 >
@@ -124,7 +124,7 @@ console.log(d.other)
 
 
 
-## 二、可拖动模态框
+### 3、可拖动模态框
 
 `index.html`
 
@@ -285,3 +285,92 @@ div {
 }
 ```
 
+## API
+
+### 一、Object 
+
+#### [Object.values()]( https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/values )   返回给定对象自身可枚举值的数组。
+
+```js
+var obj = { foo: 'bar', baz: 42 };
+console.log(Object.values(obj)); // ['bar', 42]
+```
+
+#### [Object.keys()]( https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys )：返回一个包含所有给定对象自身可枚举属性名称的数组。
+
+```js
+var obj = { 0: 'a', 1: 'b', 2: 'c' };
+console.log(Object.keys(obj)); // console: ['0', '1', '2']
+```
+
+
+
+- Object.assign()
+
+  通过复制一个或多个对象来创建一个新的对象。
+
+- Object.create()
+
+  使用指定的原型对象和属性创建一个新对象。
+
+- Object.defineProperty()
+
+  给对象添加一个属性并指定该属性的配置。
+
+- Object.defineProperties()
+
+  给对象添加多个属性并分别指定它们的配置。
+
+- Object.entries()
+
+  返回给定对象自身可枚举属性的 `[key, value]` 数组。
+
+- Object.freeze()
+
+  冻结对象：其他代码不能删除或更改任何属性。
+
+- Object.getOwnPropertyDescriptor()
+
+  返回对象指定的属性配置。
+
+- Object.getOwnPropertyNames()
+
+  返回一个数组，它包含了指定对象所有的可枚举或不可枚举的属性名。
+
+- Object.getOwnPropertySymbols()
+
+  返回一个数组，它包含了指定对象自身所有的符号属性。
+
+- Object.getPrototypeOf()
+
+  返回指定对象的原型对象。
+
+- Object.is()
+
+  比较两个值是否相同。所有 NaN 值都相等（这与==和===不同）。
+
+- Object.isExtensible()
+
+  判断对象是否可扩展。
+
+- Object.isFrozen()
+
+  判断对象是否已经冻结。
+
+- Object.isSealed()
+
+  判断对象是否已经密封。
+
+- Object.preventExtensions()
+
+  防止对象的任何扩展。
+
+- Object.seal()
+
+  防止其他代码删除对象的属性。
+
+- Object.setPrototypeOf()
+
+  设置对象的原型（即内部 `[[Prototype]]` 属性）。
+
+- 

@@ -12,8 +12,8 @@ sidebar: auto
 > 官网：[ https://www.npmjs.com/ ]( https://www.npmjs.com/ )
 
 ```bash
-# 设置淘宝镜像
-npm config set registry http://registry.npm.taobao.org
+#npm配置淘宝镜像
+npm config set registry https://registry.npmjs.org/
 npm install #安装模块
 npm uninstall #卸载模块
 # 安装依赖
@@ -24,8 +24,6 @@ npm i [package] -g # 全局安装
 npm run [script]
 #查看npm配置
 npm config list
-#npm配置淘宝镜像
-npm config set registry https://registry.npmjs.org/
 #查看全局安装的包
 npm list -g --depth 0
 ```
@@ -49,14 +47,12 @@ yarn global add [package] # 全局安装
 yarn remove [package] 
 # 安装所有依赖
 yarn install 
-# 设置淘宝镜像
-yarn config set registry http://registry.npm.taobao.org
+#yarn配置淘宝镜像
+yarn config set registry https://registry.npmjs.org/
 #运行脚本指令
 yarn [script]
 #查看yarn配置
 yarn config list
-#yarn配置淘宝镜像
-yarn config set registry https://registry.npmjs.org/
 #查看全局安装的包
 yarn global list
 ```

@@ -5,7 +5,7 @@ sidebar: auto
 
 > version ^3.1.5
 
-## 两个标签
+## 一、两个标签
 
 ### `<router-view></router-view>`
 
@@ -43,6 +43,33 @@ CSS类名：.router-link-active {}
 -  exact-active-class   配置当链接被精确匹配的时候应该激活的 class。 
 
 CSS类名：.router-link-exact-active {}
+
+
+
+
+
+## 二、路由监听
+
+在组件中，通过 Watch 进行监听
+
+```js
+// 写法一
+watch:{
+  $route(to, from){
+    console.log(to.path);
+  }
+},
+
+//写法二
+methods:{
+    routeChange(to,from){
+	//具体操作
+    }
+},
+watch: {
+    $route: 'routeChange',
+},
+```
 
 
 
