@@ -152,6 +152,12 @@ vscode 资源树目录图标
 
 Vue代码段提示
 
+### koroFileHeader **
+
+文件头注释配置及函数注释！！（必备，一个定两个）
+
+中文文档相当详细 NB plus ！！
+
 ## 主题美化插件
 
 ### Darcula Theme - WebStorm Edition
