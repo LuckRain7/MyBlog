@@ -13,7 +13,7 @@ sidebar: auto
 
 ```bash
 #npm配置淘宝镜像
-npm config set registry https://registry.npmjs.org/
+npm config set registry https://registry.npm.taobao.org
 npm install #安装模块
 npm uninstall #卸载模块
 # 安装依赖
@@ -48,7 +48,7 @@ yarn remove [package]
 # 安装所有依赖
 yarn install 
 #yarn配置淘宝镜像
-yarn config set registry https://registry.npmjs.org/
+yarn config set registry https://registry.npm.taobao.org
 #运行脚本指令
 yarn [script]
 #查看yarn配置
