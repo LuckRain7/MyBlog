@@ -30,13 +30,19 @@ sidebar: auto
 - [理解异步](/engineering/异步.html)
 
 - Event Loop 机制
+
   - 浏览器
+
   - Node.js
 
 - 异步编程方法
+
   - [回调函数](/engineering/异步.html#_1-回调函数)
+
   - 发布/订阅
+
   - 深入理解 promise
+
   - generator函数及异步应用
 
 - 深入理解 async 和 await
@@ -119,20 +125,31 @@ sidebar: auto
 ### 2、Vue组件
 
 - 自定义指令
+
 - 插槽
+
 - 双向绑定与单向数据流
+
 - 组件化设计
+
 - 插件
+
 - 组件逻辑复用
 
 ### 3、Vue生态
 
 - 状态管理 vuex
+
 - [路由 vue-router](/Vue/Vue-router)
+
 - [脚手架 vue cli](/Vue/Vue-CLI)
+
 - 静态网站生成器 VuePress
+
 - 服务端渲染 Nuxt.js
+
 - Vue DevTools
+
 - Composition API RFC
 
 ### 4、Vue实践
@@ -261,12 +278,19 @@ sidebar: auto
 ### 1、node.js 基础
 
 - nodejs 发展
+
 - nodejs 提供的能力原生API
+
 - node 原生的Web Server实践
+
 - Node Web Server 单测的写法
+
 - Node 进阶及原理解析
+
 - Node 原生的局限性与框架的必要性
+
 - [NVM  Node版本管理工具](/engineering/nvm) 
+
 - Express 框架应用
 
 ### 2、Web服务及Koa
