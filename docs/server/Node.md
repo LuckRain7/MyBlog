@@ -11,7 +11,29 @@ sidebar: auto
 
 :::
 
-## Express
+## 1、Node基础
+
+### 1-1、什么是Node.js
+
+ Node.js® 是一个基于 [Chrome V8 引擎](https://v8.dev/) 的 JavaScript 运行时。 
+
+ Node.js 特性：
+
+- 非阻塞I/O
+- 事件驱动
+
+[Node.js 发展史]( https://www.jianshu.com/p/4e45641123dc )
+
+与前端的不同
+
+- JS 核心语法不变
+- 前端 BOM DOM  后端 fs http buffer event  os
+
+
+
+
+
+## 2、Express
 
 > 官网 [ https://www.expressjs.com.cn/ ](https://www.expressjs.com.cn/)
 
@@ -125,7 +147,7 @@ app.use(function(err, req, res, next) {
 module.exports = app
 ```
 
-## Koa
+## 3、Koa
 
 > 官网：[ https://koa.bootcss.com/ ](https://koa.bootcss.com/)
 >
@@ -222,7 +244,7 @@ app.listen(4000, function() {
 });
 ```
 
-## Egg
+## 4、Egg
 
 > Egg 奉行『**约定优于配置**』
 >
@@ -270,7 +292,7 @@ Egg
         └── home.test.js
 ```
 
-## webSocket
+## 5、webSocket
 
 > 官网：[ https://eggjs.org/zh-cn/ ](https://eggjs.org/zh-cn/)
 
