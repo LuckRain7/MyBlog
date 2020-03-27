@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Echarts | 震雨Rain</title>
+    <meta name="description" content="震雨rain的博客,Webgis,arcgis,openlayer,css,javascript">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.5966ddac.css" as="style"><link rel="preload" href="/assets/js/app.fd6f5034.js" as="script"><link rel="preload" href="/assets/js/2.00409b72.js" as="script"><link rel="preload" href="/assets/js/26.da66135b.js" as="script"><link rel="prefetch" href="/assets/js/10.c5f30867.js"><link rel="prefetch" href="/assets/js/11.3a742b42.js"><link rel="prefetch" href="/assets/js/12.356b8abe.js"><link rel="prefetch" href="/assets/js/13.b35bed2c.js"><link rel="prefetch" href="/assets/js/14.fac38635.js"><link rel="prefetch" href="/assets/js/15.0473f987.js"><link rel="prefetch" href="/assets/js/16.92152c5e.js"><link rel="prefetch" href="/assets/js/17.ea84fb52.js"><link rel="prefetch" href="/assets/js/18.d0193998.js"><link rel="prefetch" href="/assets/js/19.d3e9dfc4.js"><link rel="prefetch" href="/assets/js/20.1401df56.js"><link rel="prefetch" href="/assets/js/21.be64f2be.js"><link rel="prefetch" href="/assets/js/22.a43f6db3.js"><link rel="prefetch" href="/assets/js/23.04563d3b.js"><link rel="prefetch" href="/assets/js/24.1c20583a.js"><link rel="prefetch" href="/assets/js/25.d67e8e76.js"><link rel="prefetch" href="/assets/js/27.aa917d8f.js"><link rel="prefetch" href="/assets/js/28.479a1a17.js"><link rel="prefetch" href="/assets/js/29.292f5a3a.js"><link rel="prefetch" href="/assets/js/3.a673bb5e.js"><link rel="prefetch" href="/assets/js/30.2bd2c7ba.js"><link rel="prefetch" href="/assets/js/31.4fb840d7.js"><link rel="prefetch" href="/assets/js/32.c4b92464.js"><link rel="prefetch" href="/assets/js/33.1085c2a8.js"><link rel="prefetch" href="/assets/js/34.0734282a.js"><link rel="prefetch" href="/assets/js/35.c8ffbe8d.js"><link rel="prefetch" href="/assets/js/36.695c74df.js"><link rel="prefetch" href="/assets/js/37.0bbbc056.js"><link rel="prefetch" href="/assets/js/38.2025a3c4.js"><link rel="prefetch" href="/assets/js/39.02f99425.js"><link rel="prefetch" href="/assets/js/4.eaa14845.js"><link rel="prefetch" href="/assets/js/40.bb552973.js"><link rel="prefetch" href="/assets/js/41.715fb7cd.js"><link rel="prefetch" href="/assets/js/42.25022fd0.js"><link rel="prefetch" href="/assets/js/43.ae1bda56.js"><link rel="prefetch" href="/assets/js/44.2c3d721f.js"><link rel="prefetch" href="/assets/js/5.891c96a1.js"><link rel="prefetch" href="/assets/js/6.4ccb6e8a.js"><link rel="prefetch" href="/assets/js/7.43788a3e.js"><link rel="prefetch" href="/assets/js/8.7acb3878.js"><link rel="prefetch" href="/assets/js/9.17697dd5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5966ddac.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="http://img.rain7.top/rain7.top.logo.png" alt="震雨Rain" class="logo"> <span class="site-name can-hide">震雨Rain</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/Node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/server/Golang/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/server/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="WebGIS" class="dropdown-title"><span class="title">WebGIS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/WebGIS/Cesium/" class="nav-link">
+  Cesium
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/ArcGIS/" class="nav-link">
+  ArcGIS
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/OpenLayer/" class="nav-link">
+  OpenLayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/package/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub/" class="nav-link">
+  GitHub
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/vscode/" class="nav-link">
+  VS Code必备
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website/" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/notes/" class="nav-link">
+  笔记
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/Node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/server/Golang/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/server/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="WebGIS" class="dropdown-title"><span class="title">WebGIS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/WebGIS/Cesium/" class="nav-link">
+  Cesium
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/ArcGIS/" class="nav-link">
+  ArcGIS
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/OpenLayer/" class="nav-link">
+  OpenLayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/package/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub/" class="nav-link">
+  GitHub
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/vscode/" class="nav-link">
+  VS Code必备
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website/" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/notes/" class="nav-link">
+  笔记
+</a></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="echarts"><a href="#echarts" class="header-anchor">#</a> Echarts</h1> <h2 id="一、安装"><a href="#一、安装" class="header-anchor">#</a> 一、安装</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> echarts
+</code></pre></div><h2 id="二、按需加载"><a href="#二、按需加载" class="header-anchor">#</a> 二、按需加载</h2> <p>以下例子是结合 webpack进行全局封装</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/*
+ *  查询网站
+ *  https://www.echartsjs.com/zh/cheat-sheet.html
+ */</span>
+
+<span class="token comment">// 加载echarts</span>
+<span class="token keyword">import</span> echarts <span class="token keyword">from</span> <span class="token string">'echarts/lib/echarts'</span>
+
+<span class="token comment">// 再引入你需要使用的图表类型</span>
+<span class="token comment">// import 'echarts/lib/chart/bar' // 饼状图</span>
+<span class="token keyword">import</span> <span class="token string">'echarts/lib/chart/line'</span> <span class="token comment">// 折线图Line</span>
+
+<span class="token comment">// 组件</span>
+<span class="token keyword">import</span> <span class="token string">'echarts/lib/component/legend'</span> <span class="token comment">// 图例</span>
+<span class="token keyword">import</span> <span class="token string">'echarts/lib/component/title'</span> <span class="token comment">//标题</span>
+<span class="token keyword">import</span> <span class="token string">'echarts/lib/component/tooltip'</span> <span class="token comment">//提示框</span>
+<span class="token keyword">import</span> <span class="token string">'echarts/lib/component/markPoint'</span> <span class="token comment">//标注</span>
+<span class="token keyword">import</span> <span class="token string">'echarts/lib/component/markLine'</span> <span class="token comment">//标线</span>
+<span class="token keyword">import</span> <span class="token string">'echarts/lib/component/markArea'</span> <span class="token comment">//标域</span>
+<span class="token keyword">import</span> <span class="token string">'echarts/lib/component/timeline'</span> <span class="token comment">//时间轴</span>
+<span class="token keyword">import</span> <span class="token string">'echarts/lib/component/dataZoom'</span> <span class="token comment">//数据区域缩放</span>
+<span class="token keyword">import</span> <span class="token string">'echarts/lib/component/brush'</span> <span class="token comment">//刷选</span>
+<span class="token keyword">import</span> <span class="token string">'echarts/lib/component/visualMap'</span> <span class="token comment">//视觉映射</span>
+<span class="token keyword">import</span> <span class="token string">'echarts/lib/component/toolbox'</span> <span class="token comment">//工具栏</span>
+<span class="token keyword">import</span> <span class="token string">'echarts/lib/component/graphic'</span> <span class="token comment">//自定义图形</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> echarts
+
+</code></pre></div><p>在组件中直接使用</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 引入 ECharts 主模块</span>
+<span class="token keyword">var</span> echarts <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'echarts/lib/echarts'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 引入柱状图</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'echarts/lib/chart/bar'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 引入提示框和标题组件</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'echarts/lib/component/tooltip'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'echarts/lib/component/title'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 基于准备好的dom，初始化echarts实例</span>
+<span class="token keyword">var</span> myChart <span class="token operator">=</span> echarts<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'main'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 绘制图表</span>
+myChart<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'ECharts 入门示例'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    tooltip<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    xAxis<span class="token operator">:</span> <span class="token punctuation">{</span>
+        data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'衬衫'</span><span class="token punctuation">,</span> <span class="token string">'羊毛衫'</span><span class="token punctuation">,</span> <span class="token string">'雪纺衫'</span><span class="token punctuation">,</span> <span class="token string">'裤子'</span><span class="token punctuation">,</span> <span class="token string">'高跟鞋'</span><span class="token punctuation">,</span> <span class="token string">'袜子'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    yAxis<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    series<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">'销量'</span><span class="token punctuation">,</span>
+        type<span class="token operator">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span>
+        data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">36</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="三、使用"><a href="#三、使用" class="header-anchor">#</a> 三、使用</h2> <h3 id="_1、基础使用"><a href="#_1、基础使用" class="header-anchor">#</a> 1、基础使用</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//引入</span>
+<span class="token keyword">const</span> echarts <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'echarts'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 基于准备好的dom，初始化echarts实例</span>
+<span class="token keyword">const</span> <span class="token constant">DOM</span> <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'main'</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> myChart <span class="token operator">=</span> echarts<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token constant">DOM</span><span class="token punctuation">)</span>
+<span class="token comment">// 绘制图表</span>
+myChart<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'ECharts 入门示例'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    tooltip<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    xAxis<span class="token operator">:</span> <span class="token punctuation">{</span>
+        data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'衬衫'</span><span class="token punctuation">,</span> <span class="token string">'羊毛衫'</span><span class="token punctuation">,</span> <span class="token string">'雪纺衫'</span><span class="token punctuation">,</span> <span class="token string">'裤子'</span><span class="token punctuation">,</span> <span class="token string">'高跟鞋'</span><span class="token punctuation">,</span> <span class="token string">'袜子'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    yAxis<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    series<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">'销量'</span><span class="token punctuation">,</span>
+        type<span class="token operator">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span>
+        data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">36</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="_2、添加loading动画"><a href="#_2、添加loading动画" class="header-anchor">#</a> 2、添加loading动画</h3> <div class="language-js extra-class"><pre class="language-js"><code> myChart<span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+</code></pre></div><h3 id="_3、根据窗口的大小变动图表"><a href="#_3、根据窗口的大小变动图表" class="header-anchor">#</a> 3、根据窗口的大小变动图表</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//根据窗口的大小变动图表 --- 重点</span>
+window<span class="token punctuation">.</span><span class="token function-variable function">onresize</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    myChart<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.fd6f5034.js" defer></script><script src="/assets/js/2.00409b72.js" defer></script><script src="/assets/js/26.da66135b.js" defer></script>
+  </body>
+</html>
