@@ -19,6 +19,43 @@ sidebar: auto
 
 ` box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);`
 
+## background属性
+
+>  定义背景效果: 
+>
+>  background-color 设置背景颜色
+>
+>  background-image 设置背景图片
+>
+>  background-repeat 设置背景重复
+>
+>  background-attachment 设置背景图片是固定还是滚动
+>
+>  background-position   设置背景图像的起始位置 
+
+```css
+background: #ffffff url('../assets/zcmap.png') no-repeat 5px 5px; //集合写法
+
+background-color: #ffffff; //设置背景颜色 （可以16进制，也可以使rgb() rgba()）
+
+background-image: url('../assets/zcmap.png'); //图片链接
+
+background-repeat:repeat; //默认。背景图像将在垂直方向和水平方向重复。
+background-repeat:repeat-x; //水平平铺，在水平方向重复
+background-repeat:repeat-y; //垂直平铺，在垂直方向重复
+background-repeat:no-repeat; //图片不重复，只显示一次
+
+background-attachment: scroll; // 默认值。背景图像会随着页面其余部分的滚动而移动。
+background-attachment: fixed; // 当页面的其余部分滚动时，背景图像不会移动。
+background-attachment: inherit; // 规定应该从父元素继承 background-attachment 属性的设置。
+
+background-position: 5px 5px; //第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50%
+background-position: 5% 5%; //第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50%
+background-position: left top; //位置英文  如果仅指定一个关键字，其他值将会是"center"
+```
+
+
+
 ## 平滑滚动
 
 ```css
