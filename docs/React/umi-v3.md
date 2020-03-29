@@ -191,12 +191,14 @@ export default (props: any) => {
 
 ## 3、引入Antd
 
-### 安装
+### 3.1 安装
 
 ```bash
 yarn add antd
 yarn add @umijs/preset-react -D
 ```
+
+umi 3版本无需过多配置 直接就能使用
 
 ### 使用
 

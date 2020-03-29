@@ -250,7 +250,18 @@ app.listen(4000, function() {
 >
 > 官网：[ https://eggjs.org/zh-cn/ ](https://eggjs.org/zh-cn/)
 
-- 目录结构
+### 4.1 安装
+
+通过脚手架安装
+
+```bash
+yarn global add egg-init
+egg-init [dir] --type=simple
+```
+
+
+
+### 4.2 目录结构
 
 ```
 Egg
@@ -291,6 +302,16 @@ Egg
     └── controller
         └── home.test.js
 ```
+
+### 
+
+
+
+
+
+
+
+
 
 ## 5、webSocket
 

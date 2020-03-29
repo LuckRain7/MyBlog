@@ -23,6 +23,10 @@ sidebar: auto
 
 >每周五会更新《科技爱好者周刊》
 
+### 3、 [冴羽博客]( https://github.com/mqyqingfeng/Blog ) 
+
+> 包含： JavaScript深入系列、JavaScript专题系列、ES6系列、React系列。 
+
 
 
 ## 三、资源类
