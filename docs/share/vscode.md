@@ -1,27 +1,9 @@
 ---
 sidebar: auto
 ---
-# VS Code配置插件
+# VS Code 插件推荐
 
-## 成为开发者
-
-[VSCode插件开发全攻略（十）打包、发布、升级](https://www.cnblogs.com/liuxianan/p/vscode-plugin-publish.html)
-
-
-
-## 配置
-
-```json
-{
-   // 保存后代码自动格式化
-  "editor.formatOnType": true, 
-  "editor.formatOnSave": true
-}
-```
-
-
-
-## 前端插件
+## 1.  前端插件
 ### Auto Close Tag
 
 自动闭合标签
@@ -168,7 +150,7 @@ Vue代码段提示
 
 中文文档相当详细 NB plus ！！
 
-## 主题美化插件
+## 2.  主题美化插件
 
 ### Darcula Theme - WebStorm Edition
 
@@ -189,6 +171,12 @@ Vue代码段提示
 > 也是一款相当不错的黑暗主题
 
 ![one darl pro]( https://ww2.sinaimg.cn/large/006tNbRwgy1fvwk4ach5bj31kw16o0uw.jpg )
+
+
+
+## 3.  成为开发者
+
+[VSCode插件开发全攻略（十）打包、发布、升级](https://www.cnblogs.com/liuxianan/p/vscode-plugin-publish.html)
 
 ## eslint
 
