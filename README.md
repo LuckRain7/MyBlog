@@ -47,5 +47,5 @@
 - 工具整理
   - [【提高效率】程序员必备软件推荐]( http://rain7.top/share/software.html )
   - [【提高效率】 前端 VS Code 插件推荐]( http://rain7.top/share/vscode.html )
-  - [【提高效率】前端组件库工具集合]( http://rain7.top/frame/index.html )
+  - [【提高效率】前端组件库工具集合]( http://rain7.top/farme/index.html )
 
