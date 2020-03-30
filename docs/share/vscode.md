@@ -66,7 +66,7 @@ Egg 智能提示等快捷功能
 
 ### GBKtoUTF8
 
-
+编码转换插件
 
 ### Git History
 
@@ -94,7 +94,11 @@ ES6必备  快捷生成代码
 
 ### Path Intellisense
 
-路径补全
+比较基础的路径补全，path 榜一
+
+### Path Autocomplete 
+
+更好的路径补全，支持根路径文件补全
 
 ### Polacode
 
