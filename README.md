@@ -1,26 +1,41 @@
-# Rain‘s Blog
+这里是作为前端学习者的救赎！别问，问就是记性不好！
 
-## tip
-- 内置 stylus lang="styl" 
+希望大家在这里有所收获 （别忘记 **Star** 哟）。 
 
-- 使用浏览器内置API
-  ```html
-  <span id="out-link">备案号：鲁 ICP 备 19058623 号</span>
-  
-  <script>
-  export default {
-    mounted () {
-      var outLink = document.getElementById("out-link")
-      outLink.addEventListener("click",function(){
-          window.open("http://rain7.top")
-      })
-    }
-  }
-  </script>
-  ```
+# 目录
 
-  
+- Vue
 
-## TODO
-- Algolia 搜索  https://docsearch.algolia.com/
 
+
+
+
+- React
+
+
+
+
+
+- Node
+
+
+
+
+
+
+
+- 工程化
+
+
+
+
+
+
+
+- 面试
+
+
+
+
+
+- 前言技术了解和学习
