@@ -98,7 +98,9 @@ ES6必备  快捷生成代码
 
 ### Path Autocomplete 
 
-更好的路径补全，支持根路径文件补全
+>  更好的路径补全，支持根路径文件补全
+
+![Path Autocomplete ](https://raw.githubusercontent.com/ionutvmi/path-autocomplete/master/demo/path-autocomplete.gif)
 
 ### Polacode
 
@@ -132,7 +134,7 @@ Reactjs 快捷代码段
 
 远程服务器文件辅助插件（linux服务器必备）
 
-### Settings Sync
+### Settings Sync **
 
 VS Code设置同步，神插件！！！一键从远程同步配置，再也不怕换电脑了！！
 
@@ -148,9 +150,13 @@ Vue语法提示
 
 帮助用户建立文件头，显示文件编写者及编写时间
 
+![vscode-fileheader]( https://raw.githubusercontent.com/zhaopengme/vscode-fileheader/master/fileheader.gif )
+
 ### vscode-icons
 
 vscode 资源树目录图标
+
+![icons]( https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/images/screenshot.gif )
 
 ### Vue 2 Snippets
 
@@ -158,7 +164,7 @@ Vue代码段提示
 
 ### koroFileHeader **
 
-文件头注释配置及函数注释！！（必备，一个定两个）
+文件头注释配置及函数注释！！（必备，一个顶两个）
 
 中文文档相当详细 NB plus ！！
 
@@ -170,13 +176,19 @@ Vue代码段提示
 
 ### Bluloco Dark
 
-很不错的黑暗主题
+>  很不错的黑暗主题
 
 ![img]( https://raw.githubusercontent.com/uloco/theme-bluloco-dark/master/screenshots/js.png )
 
 ### vscode-perfect-dark-color-theme
 
+
+
 ### One Dark Pro
+
+> 也是一款相当不错的黑暗主题
+
+![one darl pro]( https://ww2.sinaimg.cn/large/006tNbRwgy1fvwk4ach5bj31kw16o0uw.jpg )
 
 ## eslint
 
