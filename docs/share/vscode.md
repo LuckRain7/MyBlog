@@ -174,9 +174,18 @@ Vue代码段提示
 
 
 
-## 3.  成为开发者
 
-[VSCode插件开发全攻略（十）打包、发布、升级](https://www.cnblogs.com/liuxianan/p/vscode-plugin-publish.html)
+
+## 3. 字体推荐
+
+- Monaco  https://github.com/todylu/monaco.ttf 
+- Fira Code  https://github.com/tonsky/FiraCode 
+
+
+
+## 4.  成为开发者
+
+[VSCode插件开发全攻略配套demo](https://github.com/sxei/vscode-plugin-demo)
 
 ## eslint
 
