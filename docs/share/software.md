@@ -93,7 +93,7 @@ HTTP调试抓包工具
 > 网址：[https://studio3t.com/ ](https://studio3t.com/ )
 
 
-![Studio 3T](https://user-gold-cdn.xitu.io/2020/3/31/1712e8ce34282116?w=1433&h=790&f=png&s=296497)
+![Studio 3T](/img/Studio3T.png)
 
 
 #### Terminus  
@@ -103,4 +103,4 @@ HTTP调试抓包工具
 > 网址：[https://github.com/Eugeny/terminus](https://github.com/Eugeny/terminus)
 
 
-![Terminus](https://github.com/Eugeny/terminus/raw/master/docs/readme.png)
+![Terminus](/img/termius.png)
