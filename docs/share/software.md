@@ -6,20 +6,28 @@ sidebar: auto
 
 
 ####  Visual Studio Code（VS code）
-代码编辑器
-
-网址：[ https://code.visualstudio.com/ ]( https://code.visualstudio.com/ )
-
-
+> 地表最强代码编辑器！！！！
+>
+> 网址：[ https://code.visualstudio.com/ ]( https://code.visualstudio.com/ )
 
 
 ####  Typora 
 
-Markdowm编辑器
+> Markdowm编辑器
+>
+> 网址：[ https://www.typora.io/ ]( https://www.typora.io/ )
 
-网址：[ https://www.typora.io/ ]( https://www.typora.io/ )
+#### Bandzip  
 
+> 开源压缩软件
+>
+> 网址：[http://www.bandisoft.com/ ](http://www.bandisoft.com/ )
 
+#### Notepad++ 
+
+> 文本编辑器
+>
+>  URL：[ https://notepad-plus-plus.org/ ]( https://notepad-plus-plus.org/ )
 
 #### Cmder
 
@@ -63,18 +71,36 @@ HTTP调试抓包工具
 
 #### Postman
 
- 接口调试神器，后端大佬们接口还没写好的时候，这个工具用来给前端小伙伴mock一下api，还是蛮不错的哦~ 
-
-网址：[[   https://www.postman.com/  ]]( https://www.postman.com/ )
+> 接口调试神器，后端大佬们接口还没写好的时候，这个工具用来给前端小伙伴mock一下api，还是蛮不错的哦~
+>
+>  网址：[[   https://www.postman.com/  ]]( https://www.postman.com/ )
 
 ![Postman](/img/Postman.png)
 
-#### iterm2
-
-#### uTools
 
 #### Lighthouse
 
 >  自动化页面性能分析工具，会给你分析出当前页面哪些是需要优化的地方，并且提供优化方案~ 很实用 
 >
 > 网址：[ https://developers.google.com/web/tools/lighthouse?hl=zh-cn ]( https://developers.google.com/web/tools/lighthouse?hl=zh-cn )
+
+
+
+#### Studio 3T（MongoDB）  
+
+> Studio 3T是适用于Windows，Mac和Linux的MongoDB的专业GUI，IDE和客户端。
+>
+> 网址：[https://studio3t.com/ ](https://studio3t.com/ )
+
+
+![Studio 3T](https://user-gold-cdn.xitu.io/2020/3/31/1712e8ce34282116?w=1433&h=790&f=png&s=296497)
+
+
+#### Terminus  
+
+> 超级棒的终端！有功能！有颜值！
+>
+> 网址：[https://github.com/Eugeny/terminus](https://github.com/Eugeny/terminus)
+
+
+![Terminus](https://github.com/Eugeny/terminus/raw/master/docs/readme.png)
