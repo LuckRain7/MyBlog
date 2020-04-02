@@ -3,6 +3,8 @@ sidebar: auto
 ---
 # TypeScript
 
+> 版本 ^3.8.3
+
 ##  1.  搭建开发环境
 
 创建自己的项目文件，并执行一下命令
@@ -365,24 +367,29 @@ addFunc = (arg1: number, arg2: number): number => {
 }
 ```
 
+函数重载（只能使用function进行重载）
 
+```typescript
+function handleData(x: string): string[]
+function handleData(x: number): number[]
+function handleData(x: any): any[] {
+    if (typeof x === 'string') {
+        return x.split('')
+    } else {
+        return x.toString().split('').map((item: any) => Number(item))
+    }
+}
+```
 
-可选参数
+## 6.  泛型
 
+基本使用
 
+```typescript
+const getArray = <T>(value: T, times: number = 5): T[] => {
+    return new Array(times).fill(value)
+}
 
+console.log(getArray<number>(123, 4).map((item) => item.toFixed()))
+```
 
-
-
-函数类型
-
- 
-
-
-   使用接口定义函数类型
-
-参数
-     可选参数
-       默认参数
-      剩余参数
-重载

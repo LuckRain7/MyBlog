@@ -13,13 +13,17 @@ sidebar: auto
 
 ## 博客
 
+- [淘系前端团队（FED）用技术为体验提供无限可能](https://fed.taobao.org/)
+
 - [百度EFE（Excellent FrontEnd）技术体系，前身是ECOM前端团队，后经过技术的发展，逐渐形成一套完善的前端技术体系。](https://efe.baidu.com/)
 
--  [阮一峰的网络日志]( http://www.ruanyifeng.com/blog/ )
+- [阮一峰的网络日志]( http://www.ruanyifeng.com/blog/ )
 
--  [冴羽博客，包含： JavaScript深入系列、JavaScript专题系列、ES6系列、React系列。 ]( https://github.com/mqyqingfeng/Blog ) 
+- [冴羽博客，包含： JavaScript深入系列、JavaScript专题系列、ES6系列、React系列。 ]( https://github.com/mqyqingfeng/Blog ) 
 
-- [GitHub上整理 中文独立博客列表](https://github.com/timqian/chinese-independent-blogs )   
+- [GitHub上整理 中文独立博客列表](https://github.com/timqian/chinese-independent-blogs ) 
+
+
 
 
 
@@ -47,6 +51,10 @@ sidebar: auto
 
 - [A Visual Guide to CSS3 Flexbox Properties ― Scotch.io （可视化布局）]( https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties )
 
+- [一键AI抠图 ](https://www.remove.bg/zh)
+
+- [在线PS工具/可以转换Sketch文件](https://www.photopea.com)
+
   
 
 
@@ -65,14 +73,39 @@ sidebar: auto
 
 - [illlustrations - open source illustrations kit（卡通图片）](https://illlustrations.co/ )
 
+- [免费字体 font space](https://www.fontspace.com/)
+
+- [配色类 Color Hunt](http://colorhunt.co)
+
+- [Adobe Color CC 配色神器](https://color.adobe.com/zh/create/color-wheel)
+
+- [WEBSAFECOLORS Web安全色](http://www.bootcss.com/p/websafecolors)
+
+- [LOLCOLORS 色彩搭配](https://www.webdesignrankings.com/resources/lolcolors)
+
+- [COLOR 随机寻找颜色灵感](http://color.aurlien.net)
+
+- [uiGradients 渐变配色](https://uigradients.com)
+
+- [CSS3渐变效果工具](https://www.bestvist.com/css-gradient)
+
+- [中国色](http://zhongguose.com)
+
+- [日本色](http://nipponcolors.com)
+
+- [unDraw 免费可商用自定义颜色图表库](https://undraw.co/illustrations)
 
 
-##  图片生成
+
+##  图片
 
 - [Carbon（代码图片生成）](https://carbon.now.sh/ ) 
 
-
 - [诺基亚短信图片生成器](https://zzkia.noddl.me:8020/?from=www.shadiao.app )
+
+- [wallhaven 壁纸](https://wallhaven.cc)
+
+
 
 
 
@@ -120,3 +153,51 @@ sidebar: auto
 
 
 - HTML Reference - A free guide to all HTML elements and attributes. （HTML指南）   https://htmlreference.io/ 
+
+https://unsplash.com
+
+https://www.pexels.com
+
+https://pixabay.com
+
+https://www.photock.jp
+
+https://www.pakutaso.com
+
+https://foodshot.co
+
+https://sozaing.com
+
+https://www.polayoutu.com/collections
+
+https://isorepublic.com
+
+https://stokpic.com
+
+https://kaboompics.com
+
+https://fancycrave.com
+
+https://realisticshots.com
+
+https://stocksnap.io
+
+https://www.sozai-page.com
+
+https://negativespace.co
+
+https://www.stockio.com
+
+https://www.lifeofpix.com
+
+https://libreshot.com
+
+https://www.gratisography.com
+
+https://skitterphoto.com
+
+https://picjumbo.com
+
+#### 参考文章：
+
+[「秘」那些管UI小姐姐要来的网站](https://mp.weixin.qq.com/s/iuavg_w3uhcjDov4tL-B9Q)
