@@ -5,9 +5,9 @@ sidebar: auto
 
 ## 查询
 
-- [ MDN 最强前端 API 查询！]( https://developer.mozilla.org/zh-CN/ )
+-  [ MDN 最强前端 API 查询！](https://developer.mozilla.org/zh-CN/ )
 
--  [在线手册中心,包含Python，Scrapy，Django，Redis，Flask，Github，Jinja2，Python3，Nodejs，Beautifulsoup，Tornado，Nginx，Jinja2，TensorFlow]( https://docs.pythontab.com/ )
+-  [在线手册中心,包含Python，Scrapy，Django，Redis，Flask，Github，Jinja2，Python3，Nodejs，Beautifulsoup，Tornado，Nginx，Jinja2，TensorFlow](https://docs.pythontab.com/ )
 
 
 
@@ -17,9 +17,9 @@ sidebar: auto
 
 - [百度EFE（Excellent FrontEnd）技术体系，前身是ECOM前端团队，后经过技术的发展，逐渐形成一套完善的前端技术体系。](https://efe.baidu.com/)
 
-- [阮一峰的网络日志]( http://www.ruanyifeng.com/blog/ )
+- [阮一峰的网络日志](http://www.ruanyifeng.com/blog/ )
 
-- [冴羽博客，包含： JavaScript深入系列、JavaScript专题系列、ES6系列、React系列。 ]( https://github.com/mqyqingfeng/Blog ) 
+- [冴羽博客，包含： JavaScript深入系列、JavaScript专题系列、ES6系列、React系列。 ](https://github.com/mqyqingfeng/Blog ) 
 
 - [GitHub上整理 中文独立博客列表](https://github.com/timqian/chinese-independent-blogs ) 
 
@@ -43,13 +43,13 @@ sidebar: auto
 
 - [CodeLF 变量取名字网站](https://unbug.github.io/codelf )
 
-- [正则大全](  https://any86.github.io/any-rule/ )
+- [正则大全](https://any86.github.io/any-rule/ )
 
-- [caniuse（检查前端技术的跨浏览器兼容性）](  https://caniuse.com/ )
+- [caniuse（检查前端技术的跨浏览器兼容性）](https://caniuse.com/ )
 
 - [CSS Grid Generator | LayoutIt! （可视化布局）  ](https://grid.layoutit.com/ )
 
-- [A Visual Guide to CSS3 Flexbox Properties ― Scotch.io （可视化布局）]( https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties )
+- [A Visual Guide to CSS3 Flexbox Properties ― Scotch.io （可视化布局）](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties )
 
 - [一键AI抠图 ](https://www.remove.bg/zh)
 
@@ -87,13 +87,15 @@ sidebar: auto
 
 - [uiGradients 渐变配色](https://uigradients.com)
 
-- [CSS3渐变效果工具](https://www.bestvist.com/css-gradient)
+- [CSS3 渐变效果工具](https://www.bestvist.com/css-gradient)
 
 - [中国色](http://zhongguose.com)
 
 - [日本色](http://nipponcolors.com)
 
 - [unDraw 免费可商用自定义颜色图表库](https://undraw.co/illustrations)
+
+- [For Web Designers And Developers — Smashing Magazine （网页开发设计灵感 | 纯英文）](https://www.smashingmagazine.com/ )
 
 
 
@@ -106,12 +108,27 @@ sidebar: auto
 - [wallhaven 壁纸](https://wallhaven.cc)
 
 
+## JavaScript
 
+- [Front-end Web Development, Chewed Up ← Alligator.io （快速理解那些看似困难的前端代码片段 全英文）](https://alligator.io/ ) 
+
+- [kangax （检查JavaScript版本）](https://kangax.github.io/compat-table/es6/ ) 
+
+
+## CSS
+
+- [CSS Reference - A free visual guide to CSS （CSS 学习指南 全英文）](https://cssreference.io/ )   
+
+## 有趣的网站
+
+> 一下网站希望大家自己去探索
+
+- [The Wick Editor（纯英文）](https://www.wickeditor.com/#/)
 
 
 ## 待整理
 
-- The Wick Editor（ 创建游戏，动画 ）  https://www.wickeditor.com/#/ 
+
 
 
 - CSS-Tricks （学习CSS）  https://css-tricks.com/ 
@@ -123,8 +140,6 @@ sidebar: auto
 - Pony Foo — Web platform, JavaScript, modularity, front-end architecture, performance, and more!（内容提供网站）  https://ponyfoo.com/ 
 
 
-- Smashing Magazine — For Web Designers And Developers — Smashing Magazine （设计灵感） https://www.smashingmagazine.com/ 
-
 
 - Learn to code | freeCodeCamp.org   https://www.freecodecamp.org/ 
 
@@ -135,8 +150,6 @@ sidebar: auto
 - DEV Community 👩‍💻👨‍💻  （分享社区） https://dev.to/ 
 
 
-- Front-end Web Development, Chewed Up ← Alligator.io （快速理解那些看似困难的前端代码片段） https://alligator.io/ 
-
 
 - Flavio Copes （博客）  https://flaviocopes.com/ 
 
@@ -146,10 +159,7 @@ sidebar: auto
 
 - Repl.it - The world's leading online coding platform   https://repl.it/ 
 
-- kangax （检查JavaScript版本） https://kangax.github.io/compat-table/es6/ 
 
-
-- CSS Reference - A free visual guide to CSS （CSS指南）   https://cssreference.io/ 
 
 
 - HTML Reference - A free guide to all HTML elements and attributes. （HTML指南）   https://htmlreference.io/ 
@@ -166,7 +176,6 @@ https://www.pakutaso.com
 
 https://foodshot.co
 
-https://sozaing.com
 
 https://www.polayoutu.com/collections
 
@@ -197,6 +206,10 @@ https://www.gratisography.com
 https://skitterphoto.com
 
 https://picjumbo.com
+
+秀米
+
+135编译器
 
 #### 参考文章：
 
