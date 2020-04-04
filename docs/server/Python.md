@@ -4,10 +4,5 @@ sidebar: auto
 
 # python
 
-## 1
+### TODO
 
-### 1.2
-
-## 2
-
-### 2.2
