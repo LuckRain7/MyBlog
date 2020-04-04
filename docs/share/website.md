@@ -114,6 +114,8 @@ sidebar: auto
 
 - [kangax （检查JavaScript版本）](https://kangax.github.io/compat-table/es6/ ) 
 
+- [127个有帮助的代码判断（需稳定的网络环境）](https://medium.com/better-programming/127-helpful-javascript-snippets-you-can-learn-in-30-seconds-or-less-part-6-of-6-862a6403d334)
+
 
 ## CSS
 
