@@ -160,11 +160,11 @@ sidebar: auto
 
 - Vue-Router（权限控制）
 
-  - vue router的基础应用
+  - [vue router的基础应用](/Vue/Vue-router.html)
 
-  - 编程式导航、 路由的嵌套、 路由重定向
+  - [编程式导航](/Vue/Vue-router.html#_14、编程式的导航)、 [命名视图](/Vue/Vue-router.html#_8、命名视图)、 [路由重定向](/Vue/Vue-router.html#_3、重定向)
 
-  - 路由守卫、 路由懒加载、 路由元信息
+  - [路由守卫](/Vue/Vue-router.html#_11、路由守卫)、 [路由懒加载](/Vue/Vue-router.html#_15、路由懒加载)、 [路由元信息](/Vue/Vue-router.html#_13、路由元信息)、[路由监听](/Vue/Vue-router.html#_5、路由监听)
 
   - 实现动态权限
 
@@ -380,7 +380,7 @@ sidebar: auto
 
 - 企业级React框架
 
-  - [Umi v3](/React/umi-v3)
+  - [Umi v3](/React/umi-v3.html)
 
   - Ant Design pro
 
@@ -419,7 +419,7 @@ sidebar: auto
 
   - Node 进阶及原理解析
 
-  - [NVM  Node版本管理工具](/engineering/nvm) 
+  - [NVM  Node版本管理工具](/engineering/nvm.html) 
   
 - Node 核心模块
 
@@ -1053,7 +1053,7 @@ sidebar: auto
 
 - 脚本世界
 
-  - [npm & yarn  包管理工具](/tools/package) 
+  - [npm & yarn  包管理工具](/tools/package.html) 
 
   - [package.json  项目说明文件](/engineering/package.json.html) 
 
