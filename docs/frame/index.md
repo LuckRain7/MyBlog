@@ -372,6 +372,20 @@ sidebar: auto
 >
 > 网址：[https://stuk.github.io/jszip/](https://stuk.github.io/jszip/)
 
+## 14.  打包工具
+
+#### Webpack
+
+>  现在最常用的前端打包工具
+>
+> 网址：[https://www.webpackjs.com/](https://www.webpackjs.com/)
+
+#### Parcel
+
+>  极速零配置Web应用打包工具
+>
+> 网址：[https://parceljs.org/](https://parceljs.org/)
+
 ## 待整理
 
 direction-reveal
