@@ -57,6 +57,10 @@ git config --global user.email "[email address]"
 # 项目中配置
 git config user.name "[name]"
 git config user.email "[email address]"
+
+
+git reset --hard HEAD^ #版本回退到上一个版本
+git reset --hard [commitId] #取消回退，commitId为你想要回到的未来版本号
 ```
 
 ### git remote 

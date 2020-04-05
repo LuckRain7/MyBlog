@@ -17,12 +17,27 @@ sidebar: auto
 
 - [百度EFE（Excellent FrontEnd）技术体系，前身是ECOM前端团队，后经过技术的发展，逐渐形成一套完善的前端技术体系。](https://efe.baidu.com/)
 
+- [AlloyTeam|腾讯全端 AlloyTeam 团队](http://www.alloyteam.com/)
+
+- [奇舞团 - 360](https://75.team/)
+
+- [凹凸实验室](https://aotu.io/)
+
+- [JDC 京东设计中心](http://jdc.jd.com/)
+
+- [携程UED](http://ued.ctrip.com/)
+
+- [美团技术团队](https://tech.meituan.com/)
+
+- [WecTeam](https://wecteam.io/)
+
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/ )
 
 - [冴羽博客，包含： JavaScript深入系列、JavaScript专题系列、ES6系列、React系列。 ](https://github.com/mqyqingfeng/Blog ) 
 
 - [GitHub上整理 中文独立博客列表](https://github.com/timqian/chinese-independent-blogs ) 
 
+- [Paper 安全技术精粹](https://paper.seebug.org/)
 
 
 
@@ -31,7 +46,11 @@ sidebar: auto
 
 - [基于 IPFS 的电子书搜索引擎](https://i-book.in/) 
 
-- [Awesome Open Source  开源项目查询 ](https://awesomeopensource.com/ )
+- [Awesome Open Source  开源项目查询 ](https://awesomeopensource.com/)
+
+- [互联网上的免费书籍 - 阮一峰整理](https://github.com/ruanyf/free-books)
+
+- [📚 免费的计算机编程类中文书籍 - justjavac整理](https://github.com/justjavac/free-programming-books-zh_CN)
 
 
 
@@ -54,6 +73,8 @@ sidebar: auto
 - [一键AI抠图 ](https://www.remove.bg/zh)
 
 - [在线PS工具/可以转换Sketch文件](https://www.photopea.com)
+
+- [Sprite Cow - 处理精灵图片](http://www.spritecow.com/)
 
   
 
@@ -121,11 +142,27 @@ sidebar: auto
 
 - [CSS Reference - A free visual guide to CSS （CSS 学习指南 全英文）](https://cssreference.io/ )   
 
+## Node
+
+- [《Node.js技术栈》，旨在为大家提供一个较详细的学习教程，侧重点更倾向于 Node.js 服务端所涉及的技术栈](https://www.nodejs.red/#/)
+
+## 会议
+
+- [成都 Web 开发者大会](https://web-conf.dev/#2020/)
+
+## 生活技巧
+
+- [Topbook | 高效生活视频书](https://topbook.cc/overview)
+
 ## 有趣的网站
 
-> 一下网站希望大家自己去探索
+> 以下网站希望大家自己去探索
 
 - [The Wick Editor（纯英文）](https://www.wickeditor.com/#/)
+
+- [毒鸡汤 - 壮士可要来一碗！](http://www.nows.fun/)
+
+- [一个有点沙雕的网站](http://wb.newbfun.com/)
 
 
 ## 待整理
