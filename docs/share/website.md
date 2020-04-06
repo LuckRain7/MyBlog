@@ -76,21 +76,18 @@ sidebar: auto
 
 - [Sprite Cow - 处理精灵图片](http://www.spritecow.com/)
 
-  
+- [Shields.io: Quality metadata badges for open source projects(github徽标制作)](https://shields.io/)
 
-
+- [Postwoman • API request builder](https://postwoman.io/)
 
 
 ## 设计
 
 - [uiGradients - Beautiful colored gradients（渐变色）](https://uigradients.com/) 
 
-
 - [玄色 - 中国传统颜色手册 | Chinese Color Cheatsheet ](https://colors.ichuantong.cn/ ) 
 
-
 - [Material Design Color Palette Generator - Material Palette（颜色）](https://www.materialpalette.com/ )
-
 
 - [illlustrations - open source illustrations kit（卡通图片）](https://illlustrations.co/ )
 
@@ -140,7 +137,9 @@ sidebar: auto
 
 ## CSS
 
-- [CSS Reference - A free visual guide to CSS （CSS 学习指南 全英文）](https://cssreference.io/ )   
+- [CSS Reference - A free visual guide to CSS （CSS 学习指南 全英文）](https://cssreference.io/ )
+
+- [30-seconds/30-seconds-of-css: Short CSS code snippets for all your development needs](https://github.com/30-seconds/30-seconds-of-css)   
 
 ## Node
 
