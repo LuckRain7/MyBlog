@@ -80,6 +80,8 @@ sidebar: auto
 
 - [Postwoman • API request builder](https://postwoman.io/)
 
+- [Codeimg.io 生成好看的代码图片](https://codeimg.io/)
+
 
 ## 设计
 
@@ -115,6 +117,9 @@ sidebar: auto
 
 - [For Web Designers And Developers — Smashing Magazine （网页开发设计灵感 | 纯英文）](https://www.smashingmagazine.com/ )
 
+- [Instagram Fonts Generator (𝓬𝓸𝓹𝔂 𝕒𝕟𝕕 𝓅𝒶𝓈𝓉𝑒) ― IGFonts.io](https://igfonts.io/)
+
+- [Color Picker — A handy design tool from Color Supply（色彩搭配）](https://colorsupplyyy.com/app)
 
 
 ##  图片
@@ -162,6 +167,19 @@ sidebar: auto
 - [毒鸡汤 - 壮士可要来一碗！](http://www.nows.fun/)
 
 - [一个有点沙雕的网站](http://wb.newbfun.com/)
+
+- [表情包在线制作模板大全 - 斗图表情包在线制作](https://www.52doutu.cn/)
+
+- [抽象话生成器 网页版](https://cxh.papapoi.com/?from=groupmessage)
+
+- [Lutheran Insulter](http://ergofabulous.org/luther/?)
+
+- [魔方MoFun - 好玩的网页APP](http://mofun.c7sky.com/)
+
+- [斗图啦 - 真正的斗图网站 ](https://www.doutula.com/)
+
+
+
 
 
 ## 待整理
