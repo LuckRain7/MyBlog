@@ -204,7 +204,7 @@ sidebar: auto
 
   - Vue-devtools 开发插件
 
-  - Nuxt 实战 ([UI组件按需加载](/Vue/nuxt/nuxt.js究极按需引入ant%20design%20vue.html))
+  - [Nuxt 实战(Webhooks生成器项目)](/Vue/nuxt/nuxt实战.html)
 
   - Vue 动画原理
 
