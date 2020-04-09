@@ -99,7 +99,7 @@ console.log(d.other)
                     clearTimeout(timeout)
                 }
                 timeout = setTimeout(() => {
-                    fn.call(this, arguments)
+                    fn.call(this, _arguments)
                 }, time);
             }
         }
