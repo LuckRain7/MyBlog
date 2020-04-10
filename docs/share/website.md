@@ -39,6 +39,8 @@ sidebar: auto
 
 - [Paper 安全技术精粹](https://paper.seebug.org/)
 
+- [Blog - Advanced Web Machinery](https://advancedweb.hu/)
+
 
 
 
@@ -88,6 +90,8 @@ sidebar: auto
 
 - [制作图片网站](https://www.zhizuotu.com/)
 
+- [拷贝兔(Copytool) - 轻量级纯Web跨平台文件、文字分享工具](https://cp.anyknew.com/)
+
 
 ## 设计
 
@@ -127,6 +131,12 @@ sidebar: auto
 
 - [Color Picker — A handy design tool from Color Supply（色彩搭配）](https://colorsupplyyy.com/app)
 
+- [艺术字体在线生成器 艺术字转换器 字体转换器](https://www.qt86.com/)
+
+### Icon
+
+- [图标下载，ICON(SVG/PNG/ICO/ICNS)图标搜索下载 - Easyicon](https://www.easyicon.net/)
+
 
 ##  图片
 
@@ -135,6 +145,10 @@ sidebar: auto
 - [诺基亚短信图片生成器](https://zzkia.noddl.me:8020/?from=www.shadiao.app )
 
 - [wallhaven 壁纸](https://wallhaven.cc)
+
+- [桌面代码壁纸](https://www.ivsky.com/tupian/daima_t39875/)
+
+- [世界著名的免费摄影图库 素材中国, 高清壁纸 - PxHere摄影图库](https://pxhere.com/)
 
 
 ## JavaScript
@@ -160,9 +174,17 @@ sidebar: auto
 
 - [成都 Web 开发者大会](https://web-conf.dev/#2020/)
 
+- [History of Programming Languages（编程语言历史大会）](https://hopl4.sigplan.org/)
+
 ## 生活技巧
 
 - [Topbook | 高效生活视频书](https://topbook.cc/overview)
+
+## 微信
+
+- [微Fotor在线设计工具_免费设计素材和模板_在线平面设计网站](https://www.fotor.com.cn/templates/wxcode/)
+
+
 
 ## 有趣的网站
 
@@ -184,8 +206,19 @@ sidebar: auto
 
 - [斗图啦 - 真正的斗图网站 ](https://www.doutula.com/)
 
+## 系统美化
+
+## 翻译
+
+- [DeepL（人工智能语言辅助）](https://www.deepl.com/home)
 
 
+
+## 搜索
+
+- [Magi（基于机器学习的信息抽取和检索系统）)](https://magi.com/)
+
+- [大圣盘](https://www.dashengpan.com/)
 
 
 ## 待整理

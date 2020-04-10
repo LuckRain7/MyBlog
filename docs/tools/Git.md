@@ -51,6 +51,8 @@ git branch # 列出所有本地分支
 git checkout [分支名] # 切换到指定分支
 git checkout -b [本地分支名] origin/[远程分支名] # 拉取远程分支
 
+#查看项目中git配置
+git config --list
 # 配置全局信息
 git config --global user.name "[name]"
 git config --global user.email "[email address]"

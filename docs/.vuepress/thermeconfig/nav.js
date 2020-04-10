@@ -52,6 +52,7 @@ module.exports = [
     text: "个人分享",
     items: [
 	  { text: "文章", link: "/article/" },
+	  { text: "开源项目", link: "/share/opensource.html" },
       { text: "VS Code必备", link: "/share/vscode/" },
       { text: "软件推荐", link: "/share/software/" },
       { text: "网站推荐", link: "/share/website/" },
