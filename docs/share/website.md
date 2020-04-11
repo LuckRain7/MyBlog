@@ -206,6 +206,8 @@ sidebar: auto
 
 - [斗图啦 - 真正的斗图网站 ](https://www.doutula.com/)
 
+- [土味情话](https://github.com/zerosoul/honeyed-words-generator)
+
 ## 系统美化
 
 ## 翻译
