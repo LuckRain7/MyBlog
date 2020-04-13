@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>如何在 Array.filter 中正确使用 Async | 震雨Rain</title>
+    <meta name="description" content="震雨rain的博客,Webgis,arcgis,openlayer,css,javascript">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.32db2aa6.css" as="style"><link rel="preload" href="/assets/js/app.98db1e42.js" as="script"><link rel="preload" href="/assets/js/2.815c1064.js" as="script"><link rel="preload" href="/assets/js/26.df825f0d.js" as="script"><link rel="prefetch" href="/assets/js/10.c4a4043f.js"><link rel="prefetch" href="/assets/js/11.adffaa86.js"><link rel="prefetch" href="/assets/js/12.08483298.js"><link rel="prefetch" href="/assets/js/13.fb0d3296.js"><link rel="prefetch" href="/assets/js/14.77c565e3.js"><link rel="prefetch" href="/assets/js/15.c8ad7559.js"><link rel="prefetch" href="/assets/js/16.5f825f0a.js"><link rel="prefetch" href="/assets/js/17.2c30d55b.js"><link rel="prefetch" href="/assets/js/18.d15585d4.js"><link rel="prefetch" href="/assets/js/19.30cf8336.js"><link rel="prefetch" href="/assets/js/20.808490f4.js"><link rel="prefetch" href="/assets/js/21.612c6fb7.js"><link rel="prefetch" href="/assets/js/22.512d0046.js"><link rel="prefetch" href="/assets/js/23.02183b91.js"><link rel="prefetch" href="/assets/js/24.c9a58ea6.js"><link rel="prefetch" href="/assets/js/25.48f09f96.js"><link rel="prefetch" href="/assets/js/27.e603f764.js"><link rel="prefetch" href="/assets/js/28.59c4164b.js"><link rel="prefetch" href="/assets/js/29.bdfe4e67.js"><link rel="prefetch" href="/assets/js/3.dddd1a0e.js"><link rel="prefetch" href="/assets/js/30.e2eed3d5.js"><link rel="prefetch" href="/assets/js/31.17b755d5.js"><link rel="prefetch" href="/assets/js/32.94683876.js"><link rel="prefetch" href="/assets/js/33.2bfc3f64.js"><link rel="prefetch" href="/assets/js/34.98702479.js"><link rel="prefetch" href="/assets/js/35.fa10c960.js"><link rel="prefetch" href="/assets/js/36.15427c34.js"><link rel="prefetch" href="/assets/js/37.9760199b.js"><link rel="prefetch" href="/assets/js/38.acc2d3de.js"><link rel="prefetch" href="/assets/js/39.265ba095.js"><link rel="prefetch" href="/assets/js/4.0d32db0b.js"><link rel="prefetch" href="/assets/js/40.424cd7e9.js"><link rel="prefetch" href="/assets/js/41.a2658350.js"><link rel="prefetch" href="/assets/js/42.5f6d8e3a.js"><link rel="prefetch" href="/assets/js/43.de856ee0.js"><link rel="prefetch" href="/assets/js/44.78bd0115.js"><link rel="prefetch" href="/assets/js/45.595738d0.js"><link rel="prefetch" href="/assets/js/46.774c7559.js"><link rel="prefetch" href="/assets/js/47.28df1ed6.js"><link rel="prefetch" href="/assets/js/48.c033b425.js"><link rel="prefetch" href="/assets/js/49.034a3107.js"><link rel="prefetch" href="/assets/js/5.f2e6a4c0.js"><link rel="prefetch" href="/assets/js/50.3587ac71.js"><link rel="prefetch" href="/assets/js/51.005b5b51.js"><link rel="prefetch" href="/assets/js/52.e8a9adad.js"><link rel="prefetch" href="/assets/js/53.b04ca5c7.js"><link rel="prefetch" href="/assets/js/54.6ff7fe59.js"><link rel="prefetch" href="/assets/js/55.d5fc5003.js"><link rel="prefetch" href="/assets/js/56.0b09e657.js"><link rel="prefetch" href="/assets/js/57.dd24bd52.js"><link rel="prefetch" href="/assets/js/58.4539d832.js"><link rel="prefetch" href="/assets/js/59.f0592c3a.js"><link rel="prefetch" href="/assets/js/6.06272484.js"><link rel="prefetch" href="/assets/js/60.48a898d5.js"><link rel="prefetch" href="/assets/js/61.07ffe739.js"><link rel="prefetch" href="/assets/js/62.1fa8112f.js"><link rel="prefetch" href="/assets/js/7.0640f21a.js"><link rel="prefetch" href="/assets/js/8.22f5deb4.js"><link rel="prefetch" href="/assets/js/9.54eeb851.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.32db2aa6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="http://img.rain7.top/rain7.top.logo.png" alt="震雨Rain" class="logo"> <span class="site-name can-hide">震雨Rain</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/Node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/server/Golang/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/server/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="WebGIS" class="dropdown-title"><span class="title">WebGIS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/WebGIS/Cesium/" class="nav-link">
+  Cesium
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/ArcGIS/" class="nav-link">
+  ArcGIS
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/OpenLayer/" class="nav-link">
+  OpenLayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/package/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub/" class="nav-link">
+  GitHub
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/" class="nav-link router-link-active">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/share/opensource.html" class="nav-link">
+  开源项目
+</a></li><li class="dropdown-item"><!----> <a href="/share/vscode/" class="nav-link">
+  VS Code必备
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website/" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/frame/index.html" class="nav-link">
+  前端工具框架推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/notes/" class="nav-link">
+  笔记
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/Node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/server/Golang/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/server/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="WebGIS" class="dropdown-title"><span class="title">WebGIS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/WebGIS/Cesium/" class="nav-link">
+  Cesium
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/ArcGIS/" class="nav-link">
+  ArcGIS
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/OpenLayer/" class="nav-link">
+  OpenLayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/package/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub/" class="nav-link">
+  GitHub
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/" class="nav-link router-link-active">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/share/opensource.html" class="nav-link">
+  开源项目
+</a></li><li class="dropdown-item"><!----> <a href="/share/vscode/" class="nav-link">
+  VS Code必备
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website/" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/frame/index.html" class="nav-link">
+  前端工具框架推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/notes/" class="nav-link">
+  笔记
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>如何在 Array.filter 中正确使用 Async</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/article/%E5%A6%82%E4%BD%95%E5%9C%A8Array.filter%E4%B8%AD%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8Async.html#_0-如何仅保留满足异步条件的元素" class="sidebar-link">0.  如何仅保留满足异步条件的元素</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/article/%E5%A6%82%E4%BD%95%E5%9C%A8Array.filter%E4%B8%AD%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8Async.html#_1-array-filter" class="sidebar-link">1.  Array.filter</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/article/%E5%A6%82%E4%BD%95%E5%9C%A8Array.filter%E4%B8%AD%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8Async.html#_2-filter-结合-map-使用" class="sidebar-link">2.  filter 结合 map 使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/article/%E5%A6%82%E4%BD%95%E5%9C%A8Array.filter%E4%B8%AD%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8Async.html#并发" class="sidebar-link">并发</a></li></ul></li><li><a href="/article/%E5%A6%82%E4%BD%95%E5%9C%A8Array.filter%E4%B8%AD%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8Async.html#_4-filter-结合-reduce-使用" class="sidebar-link">4.  filter 结合 reduce 使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/article/%E5%A6%82%E4%BD%95%E5%9C%A8Array.filter%E4%B8%AD%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8Async.html#顺序处理" class="sidebar-link">顺序处理</a></li></ul></li><li><a href="/article/%E5%A6%82%E4%BD%95%E5%9C%A8Array.filter%E4%B8%AD%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8Async.html#_5-结论" class="sidebar-link">5.  结论</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="如何在-array-filter-中正确使用-async"><a href="#如何在-array-filter-中正确使用-async" class="header-anchor">#</a> 如何在 Array.filter 中正确使用 Async</h1> <p><img src="/img/article/20200413/header.png" alt=""></p> <blockquote><p>本文译自<a href="https://advancedweb.hu/how-to-use-async-functions-with-array-filter-in-javascript/" target="_blank" rel="noopener noreferrer">How to use async functions with Array.filter in Javascript -  <strong>Tamás Sallai</strong> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p></blockquote> <h2 id="_0-如何仅保留满足异步条件的元素"><a href="#_0-如何仅保留满足异步条件的元素" class="header-anchor">#</a> 0.  如何仅保留满足异步条件的元素</h2> <p>在<a href="https://advancedweb.hu/asynchronous-array-functions-in-javascript/" target="_blank" rel="noopener noreferrer">第一篇文章中<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，我们介绍了 async / await 如何帮助处理异步事件，但在异步处理集合时却无济于事。在本文中，我们将研究该<code>filter</code>函数，它可能是支持异步函数的最直观的方法。</p> <h2 id="_1-array-filter"><a href="#_1-array-filter" class="header-anchor">#</a> 1.  Array.filter</h2> <p>该<code>filter</code>函数仅保留通过条件的元素。它得到一个断言( <em>predicate</em> )函数，并且此函数返回 true / false 值。结果集合仅包含断言( <em>predicate</em> )返回 true 的元素。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> syncRes <span class="token operator">=</span> arr<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">i</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> i <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>syncRes<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 2,4</span>
+</code></pre></div><h2 id="_2-filter-结合-map-使用"><a href="#_2-filter-结合-map-使用" class="header-anchor">#</a> 2.  filter 结合 map 使用</h2> <p>这次的异步版本要复杂一些，它分为两个阶段。第一个通过断言函数异步地映射数组，从而生成true / false 值。然后第二步是利用第一步的结果同步 <code>filter</code></p> <p><img src="/img/article/20200413/Async-filter.png" alt=""></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">asyncFilter</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">arr<span class="token punctuation">,</span> predicate</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+	<span class="token keyword">const</span> results <span class="token operator">=</span> <span class="token keyword">await</span> Promise<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>predicate<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">return</span> arr<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">_v<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> results<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> asyncRes <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">asyncFilter</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">i</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+	<span class="token keyword">await</span> <span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> i <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>asyncRes<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 2,4</span>
+</code></pre></div><p>或单行实现：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">asyncFilter</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">arr<span class="token punctuation">,</span> predicate</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> Promise<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>predicate<span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">results</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> arr<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">_v<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> results<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="/img/article/20200413/Async-filter-with-map.png" alt=""></p> <h3 id="并发"><a href="#并发" class="header-anchor">#</a> 并发</h3> <p>上面的实现同时运行所有断言函数。通常，这很好，但是与所有其他功能一样，它可能会使某些资源变得过分紧张。幸运的是，由于上述实现依赖于此 <code>map</code>，<a href="https://advancedweb.hu/how-to-use-async-functions-with-array-map-in-javascript/" target="_blank" rel="noopener noreferrer">因此可以使用相同的并发控件<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p> <h2 id="_4-filter-结合-reduce-使用"><a href="#_4-filter-结合-reduce-使用" class="header-anchor">#</a> 4.  filter 结合 reduce 使用</h2> <p>除了使用异步 <code>map</code> 与同步之外 <code>filter</code> ，异步 <code>reduce</code> <a href="https://advancedweb.hu/how-to-use-async-functions-with-array-reduce-in-javascript/" target="_blank" rel="noopener noreferrer">也可以完成这项工作<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。由于它只是一个功能，因此即使没有提供相同级别的控制，结构也更加容易。</p> <p>首先，从一个空数组（<code>[]</code>）开始。然后通过断言函数运行下一个元素，如果通过则将其追加到数组。如果没有，请跳过它。</p> <p><img src="/img/article/20200413/Async-filter-with-reduce.png" alt=""></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// concurrently</span>
+<span class="token keyword">const</span> <span class="token function-variable function">asyncFilter</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">arr<span class="token punctuation">,</span> predicate</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> 
+	arr<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">memo<span class="token punctuation">,</span> e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+		<span class="token keyword">await</span> <span class="token function">predicate</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">await</span> memo<span class="token punctuation">,</span> e<span class="token punctuation">]</span> <span class="token operator">:</span> memo
+	<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="/img/article/20200413/Async-filter-with-reduce2.png" alt=""></p> <p>请注意，<code>await predicate(e)</code> 在 <code>await memo</code> 之前，这意味着这些将并行调用。</p> <h3 id="顺序处理"><a href="#顺序处理" class="header-anchor">#</a> 顺序处理</h3> <p>要在调用下一个谓词函数之前等待其结束，请更改 <code>await</code>  的顺序：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// sequentially</span>
+<span class="token keyword">const</span> <span class="token function-variable function">asyncFilter</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">arr<span class="token punctuation">,</span> predicate</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> 
+	arr<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">memo<span class="token punctuation">,</span> e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> 
+		<span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">await</span> memo<span class="token punctuation">,</span> <span class="token operator">...</span><span class="token keyword">await</span> <span class="token function">predicate</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token punctuation">[</span>e<span class="token punctuation">]</span> <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+	<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>此实现等待上一个元素，然后根据断言（<code>...[e]</code>或<code>...[]</code>）的结果有条件地附加一个元素。</p> <p><img src="/img/article/20200413/Async-filter-with-reduce-running-sequentially.png" alt=""></p> <h2 id="_5-结论"><a href="#_5-结论" class="header-anchor">#</a> 5.  结论</h2> <p>虽然异步<code>filter</code>是可能的，但它最初的工作方式看起来很奇怪。尽管并发控制仍然可用，但与其他异步功能相比，它们需要更多的计划去控制它。</p> <h4 id="推荐阅读"><a href="#推荐阅读" class="header-anchor">#</a> 推荐阅读</h4> <ul><li><p><a href="https://mp.weixin.qq.com/s/39J2KO8h_cBKg3MWB63L7w" target="_blank" rel="noopener noreferrer">如何在 Array.forEach 中正确使用 Async<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p><a href="https://mp.weixin.qq.com/s/mFmqyicyfaAOdxmhlPmSRQ" target="_blank" rel="noopener noreferrer">如何在 Vue中优雅的使用防抖节流<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.98db1e42.js" defer></script><script src="/assets/js/2.815c1064.js" defer></script><script src="/assets/js/26.df825f0d.js" defer></script>
+  </body>
+</html>
