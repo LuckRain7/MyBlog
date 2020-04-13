@@ -30,7 +30,14 @@ npm list -g --depth 0
 
 >NPM发布自己的组件包
 >
->参考：[手把手教你如何用npm发布包]( https://juejin.im/post/5d2708e26fb9a07f06559812 )
+>npm config set registry http://registry.npmjs.org 
+>
+>然后在终端执行npm login命令：
+>
+>npm publish
+
+
+
 
 ## YARN（推荐）
 
