@@ -1,3 +1,8 @@
+/*
+ *  Description:  
+ *  Author: LuckRain7
+ *  Date: 2020-03-15 17:40:55
+ */
 module.exports = {
   title: "震雨Rain",
   description: "震雨rain的博客,Webgis,arcgis,openlayer,css,javascript",

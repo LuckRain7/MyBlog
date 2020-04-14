@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "dev": "vuepress dev docs",
-    "auto": "node ./docs/.vuepress/utils/auto.js && vuepress dev docs",
     "docs:build": "vuepress build docs",
+    "auto": "node ./docs/.vuepress/utils/auto.js && vuepress dev docs",
     "build": "node ./docs/.vuepress/utils/auto.js && vuepress build docs",
-    "git": "git push gitee master&& git push github master"
+    "dev": "npm run docs:dev",
+    "git": "git push gitee master&& git push github master",
+    "update":"bash deploy.sh"
   },
   "repository": {
     "type": "git",
