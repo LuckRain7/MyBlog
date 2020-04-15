@@ -6,3 +6,5 @@
 - [[2020-04-10] 如何在 Array.forEach 中正确使用 Async](/article/如何在Javascript中对Array.forEach使用异步函数.html)
 
 - [[2020-04-13] 如何在 Array.filter 中正确使用 Async](/article/如何在Array.filter中正确使用Async.html)
+
+- [[2020-04-15] 在 Array.reduce 中正确使用 async](https://mp.weixin.qq.com/s/9wl8-SYspr3s358Tf0CmSg)

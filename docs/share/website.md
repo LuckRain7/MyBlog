@@ -39,10 +39,27 @@ sidebar: auto
 
 - [Paper 安全技术精粹](https://paper.seebug.org/)
 
+- [Vue.js 技术揭秘](https://ustbhuangyi.github.io/vue-analysis/)
+
+- [木易杨前端进阶](https://www.muyiy.cn/)
+
+- [张鑫旭个人主页](https://www.zhangxinxu.com/)
+
+- [awesome-coding-js 用JavaScript实现的算法和数据结构](http://www.conardli.top/docs/)
+
+- [神三元的博客](http://47.98.159.95/my_blog/)
+
+- [前端面试与进阶指南](https://www.cxymsg.com/)
+
+- [全栈修炼](https://biaochenxuying.github.io/blog/)
+
 - [Blog - Advanced Web Machinery](https://advancedweb.hu/)
 
+- [前端小智](https://github.com/qq449245884/xiaozhi)
 
+- [翁天信 · Dandy Weng 的个人网站主页](https://www.dandyweng.com/)
 
+- [Barret李靖 | 小胡子哥的个人网站](https://www.barretlee.com/)
 
 ## 资源
 
@@ -54,7 +71,7 @@ sidebar: auto
 
 - [📚 免费的计算机编程类中文书籍 - justjavac整理](https://github.com/justjavac/free-programming-books-zh_CN)
 
-
+- [USTC-Course - 中国科学技术大学课程资源](https://github.com/USTC-Resource/USTC-Course)
 
 ## 工具
 
@@ -91,6 +108,12 @@ sidebar: auto
 - [制作图片网站](https://www.zhizuotu.com/)
 
 - [拷贝兔(Copytool) - 轻量级纯Web跨平台文件、文字分享工具](https://cp.anyknew.com/)
+
+- [在线工具](https://tool.lu/c/developer/)
+
+- [CodePen: Online Code Editor and Front End Web Developer Community（在线代码编辑）](https://codepen.io/)
+
+
 
 
 ## 设计
@@ -176,15 +199,19 @@ sidebar: auto
 
 - [History of Programming Languages（编程语言历史大会）](https://hopl4.sigplan.org/)
 
+- [Web 全栈大会](https://leinue.github.io/webfullstack-2019/index.html)
+
 ## 生活技巧
 
 - [Topbook | 高效生活视频书](https://topbook.cc/overview)
 
 ## 微信
 
-- [微Fotor在线设计工具_免费设计素材和模板_在线平面设计网站](https://www.fotor.com.cn/templates/wxcode/)
-
 - [MarkDown 排版](https://mdnice.com/)
+
+- [稿定设计-做图做视频必备_在线设计神器_海量版权素材模板](https://www.gaoding.com/)
+
+- [微Fotor在线设计工具_免费设计素材和模板_在线平面设计网站](https://www.fotor.com.cn/templates/wxcode/)
 
 
 
@@ -210,7 +237,21 @@ sidebar: auto
 
 - [土味情话](https://github.com/zerosoul/honeyed-words-generator)
 
+- [Shakespearean Insulter](http://www.pangloss.com/seidel/Shaker/index.html?)
+
 ## 系统美化
+
+## Window
+
+- [致美化 - 最专业的桌面美化交流平台 - 漫锋网](https://zhutix.com/)
+
+- [鼠标指针 - 光标 - 电脑鼠标指针下载 - 致美化 - 漫锋网](https://zhutix.com/tag/cursors/)
+
+### 壁纸
+
+- [Wallpaper Abyss - HD Wallpapers, Background Images](https://wall.alphacoders.com/)
+
+- [Simple Desktops](http://simpledesktops.com/)
 
 ## 翻译
 
@@ -224,42 +265,58 @@ sidebar: auto
 
 - [大圣盘](https://www.dashengpan.com/)
 
+## 技术社区
+
+- [黑客派 - 为未来而构建的开发者社区，找到你所需的技术解决方案、记录和分享我们的程序人生](https://hacpai.com/)
+
+- [CNode：Node.js专业中文社区](https://cnodejs.org/)
+
+
+
+
+## PPT
+
+- [iSlide- 让PPT设计简单起来~ | 中文官网](https://www.islide.cc/)
+
+## 导航网站
+
+- [24k导航_简单事,高效做！！！](https://www.24kdh.com/)
 
 ## 待整理
 
+- [大涛子客栈](https://www.yangtao.site/vuepress/)
 
+- [ConardLi的blog](http://www.conardli.top/blog/)
 
+- [Chenng 的主页](https://www.chenng.cn/)
+
+- [临时邮箱](http://24mail.chacuo.net/)
+
+- [仿站小工具 v10.0 - 官方网站](https://smalltool.github.io/)
+
+- [优启通官网,u盘启动盘制作工具](http://www.uqitong.top/)
+
+- [Java知识分享网-免费Java资源下载](http://www.java1234.com/)
+
+- [coderplanets(页面还好)](https://coderplanets.com/home/posts)
 
 - CSS-Tricks （学习CSS）  https://css-tricks.com/ 
 
-
 - web.dev（Google 开发者）  https://web.dev/ 
-
 
 - Pony Foo — Web platform, JavaScript, modularity, front-end architecture, performance, and more!（内容提供网站）  https://ponyfoo.com/ 
 
-
-
 - Learn to code | freeCodeCamp.org   https://www.freecodecamp.org/ 
-
 
 - Hashnode - Welcome to your developer community  https://hashnode.com/ 
 
-
 - DEV Community 👩‍💻👨‍💻  （分享社区） https://dev.to/ 
-
-
 
 - Flavio Copes （博客）  https://flaviocopes.com/ 
 
-
 - Front-End Front — Basically, front-end news （英文新闻）   https://frontendfront.com/ 
 
-
 - Repl.it - The world's leading online coding platform   https://repl.it/ 
-
-
-
 
 - HTML Reference - A free guide to all HTML elements and attributes. （HTML指南）   https://htmlreference.io/ 
 
