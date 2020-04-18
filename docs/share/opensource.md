@@ -30,7 +30,13 @@ sidebar: auto
 
 - [大屏数据可视化](https://github.com/yyhsong/iDataV)
 
+- [markmap-lib - Visualize your Markdown as mindmaps with Markmap. ](https://markmap.js.org/)
 
+- [ArchiveBox -  The open source self-hosted web archive. Takes browser history/bookmarks/Pocket/Pinboard/etc., saves HTML, JS, PDFs, media, and more...](https://github.com/pirate/ArchiveBox)
+
+- [Devices.css - Modern devices in pure CSS (包含iphone css实现)](https://github.com/picturepan2/devices.css)
+
+- [Blazing fast flame graph tool for V8 and Node(性能分析火焰图)](https://github.com/mapbox/flamebearer)
 
 
 - [front-end-awesome](https://github.com/iq9891/awesome-frontend)

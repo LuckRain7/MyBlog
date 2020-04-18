@@ -113,3 +113,20 @@ HTTP调试抓包工具
 > 网址：[https://www.screentogif.com/?l=zh_cn](https://www.screentogif.com/?l=zh_cn)
 
 ![ScreenToGif](/img/ScreenToGif.png)
+
+
+### 待整理
+
+- [Xmind/ProcessOn]
+
+- [ASCIIFlow Infinity - 画图](http://asciiflow.com/)
+
+- [Navicat Premium]
+
+- [Postman]
+
+- [Postwoman]
+
+- [Charles]
+
+- [Ipic - 图床我是配合Typora一起使用的大家Markdown是不是复制图片进来都是本地的地址，发到网上就会失效的，但是跟Typora搞基的这个工具他可以在你复制进来的时候直接传到网上了，你再去任何平台发表都可以随心所欲了。]()

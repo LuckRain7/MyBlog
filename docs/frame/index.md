@@ -397,3 +397,18 @@ direction-reveal
 lax.js
 
 nodeppt
+
+
+
+- [Branca - Authenticated and encrypted API tokens using modern crypto.(一种安全令牌的数据格式，比 JWT 更安全)](https://branca.io/)
+
+- [PASETO - Paseto is everything you love about JOSE (JWT, JWE, JWS) without any of the many design deficits that plague the JOSE standards.](https://paseto.io/)
+
+
+- 深度学习
+
+	- [TensorFlow.js]
+
+	- [WebDNN]
+
+	- [Keras.js]

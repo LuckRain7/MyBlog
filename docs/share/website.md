@@ -3,15 +3,19 @@ sidebar: auto
 ---
 # 网站推荐
 
-## 查询
+## 1.  查询
 
 -  [ MDN 最强前端 API 查询！](https://developer.mozilla.org/zh-CN/ )
 
 -  [在线手册中心,包含Python，Scrapy，Django，Redis，Flask，Github，Jinja2，Python3，Nodejs，Beautifulsoup，Tornado，Nginx，Jinja2，TensorFlow](https://docs.pythontab.com/ )
 
+- [Devdocs](https://devdocs.io/)
 
 
-## 博客
+
+## 2.  博客
+
+### 2.1  中文
 
 - [淘系前端团队（FED）用技术为体验提供无限可能](https://fed.taobao.org/)
 
@@ -53,13 +57,21 @@ sidebar: auto
 
 - [全栈修炼](https://biaochenxuying.github.io/blog/)
 
-- [Blog - Advanced Web Machinery](https://advancedweb.hu/)
-
 - [前端小智](https://github.com/qq449245884/xiaozhi)
 
 - [翁天信 · Dandy Weng 的个人网站主页](https://www.dandyweng.com/)
 
 - [Barret李靖 | 小胡子哥的个人网站](https://www.barretlee.com/)
+
+- [云谦 - blog](https://github.com/sorrycc/blog)
+
+- [程序员开发学习博客](https://www.maiyewang.com/)
+
+### 2.2  英文
+
+- [Blog - Advanced Web Machinery](https://advancedweb.hu/)
+
+- [AppSignal blog: The latest on everything AppSignal](https://blog.appsignal.com/)
 
 ## 资源
 
@@ -85,10 +97,6 @@ sidebar: auto
 
 - [caniuse（检查前端技术的跨浏览器兼容性）](https://caniuse.com/ )
 
-- [CSS Grid Generator | LayoutIt! （可视化布局）  ](https://grid.layoutit.com/ )
-
-- [A Visual Guide to CSS3 Flexbox Properties ― Scotch.io （可视化布局）](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties )
-
 - [一键AI抠图 ](https://www.remove.bg/zh)
 
 - [在线PS工具/可以转换Sketch文件](https://www.photopea.com)
@@ -100,6 +108,8 @@ sidebar: auto
 - [Postwoman • API request builder](https://postwoman.io/)
 
 - [Codeimg.io 生成好看的代码图片](https://codeimg.io/)
+
+- [Carbon](https://carbon.now.sh/)
 
 - [Convert image format Online - Image Converter Online - 100% free （超强图片格式转换网站）](https://jinaconvert.com/)
 
@@ -113,6 +123,7 @@ sidebar: auto
 
 - [CodePen: Online Code Editor and Front End Web Developer Community（在线代码编辑）](https://codepen.io/)
 
+- [markmap-lib(Markdown -> 思维导图)](https://markmap.js.org/)
 
 
 
@@ -171,7 +182,11 @@ sidebar: auto
 
 - [桌面代码壁纸](https://www.ivsky.com/tupian/daima_t39875/)
 
-- [世界著名的免费摄影图库 素材中国, 高清壁纸 - PxHere摄影图库](https://pxhere.com/)
+- 壁纸网站
+
+  - [世界著名的免费摄影图库 素材中国, 高清壁纸 - PxHere摄影图库](https://pxhere.com/)
+
+  - [Beautiful Free Images & Pictures | Unsplash](https://unsplash.com)
 
 
 ## JavaScript
@@ -189,6 +204,10 @@ sidebar: auto
 
 - [30-seconds/30-seconds-of-css: Short CSS code snippets for all your development needs](https://github.com/30-seconds/30-seconds-of-css)   
 
+- [CSS Grid Generator | LayoutIt! （可视化布局）  ](https://grid.layoutit.com/ )
+
+- [A Visual Guide to CSS3 Flexbox Properties ― Scotch.io （可视化布局）](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties )
+
 ## Node
 
 - [《Node.js技术栈》，旨在为大家提供一个较详细的学习教程，侧重点更倾向于 Node.js 服务端所涉及的技术栈](https://www.nodejs.red/#/)
@@ -200,6 +219,8 @@ sidebar: auto
 - [History of Programming Languages（编程语言历史大会）](https://hopl4.sigplan.org/)
 
 - [Web 全栈大会](https://leinue.github.io/webfullstack-2019/index.html)
+
+- [2050](https://2050.org.cn/)
 
 ## 生活技巧
 
@@ -271,12 +292,16 @@ sidebar: auto
 
 - [CNode：Node.js专业中文社区](https://cnodejs.org/)
 
+## 网页代码运行
 
+- [codefence - an easily embeddable interactive code editor（截图不错）](https://codefence.io/)
 
 
 ## PPT
 
 - [iSlide- 让PPT设计简单起来~ | 中文官网](https://www.islide.cc/)
+
+- [声享 - 在线制作 PPT，让分享更有价值](https://ppt.baomitu.com/)
 
 ## 导航网站
 
@@ -302,6 +327,12 @@ sidebar: auto
 
 - CSS-Tricks （学习CSS）  https://css-tricks.com/ 
 
+- [Feeds Pub( RSS 阅读器)](https://feeds.pub/)
+
+- [JSON Generator](https://next.json-generator.com/)
+
+- [Js Tips - A JavaScript tip per day!](https://www.jstips.co/en/javascript/)
+
 - web.dev（Google 开发者）  https://web.dev/ 
 
 - Pony Foo — Web platform, JavaScript, modularity, front-end architecture, performance, and more!（内容提供网站）  https://ponyfoo.com/ 
@@ -320,7 +351,10 @@ sidebar: auto
 
 - HTML Reference - A free guide to all HTML elements and attributes. （HTML指南）   https://htmlreference.io/ 
 
-https://unsplash.com
+
+
+
+
 
 https://www.pexels.com
 
@@ -366,6 +400,8 @@ https://picjumbo.com
 秀米
 
 135编译器
+
+
 
 #### 参考文章：
 

@@ -1,5 +1,5 @@
 {
-  "name": "vuepress",
+  "name": "vuepress-blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "build": "node ./docs/.vuepress/utils/auto.js && vuepress build docs",
     "dev": "npm run docs:dev",
     "git": "git push gitee master&& git push github master",
-    "update":"bash deploy.sh"
+    "d":"bash deploy.sh"
   },
   "repository": {
     "type": "git",
