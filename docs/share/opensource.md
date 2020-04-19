@@ -38,6 +38,14 @@ sidebar: auto
 
 - [Blazing fast flame graph tool for V8 and Node(性能分析火焰图)](https://github.com/mapbox/flamebearer)
 
+- [MJML: the only framework that makes responsive-email easy ](https://github.com/mjmlio/mjml)
+
+- [Path to a Software Architect (成为更出色的架构师)](https://github.com/justinamiller/SoftwareArchitect)
+
+- [The minimal javascript library to create flowcharts ✨ (一个轻量级的 JavaScript 库，可用于快速创建流程图。)](https://github.com/alyssaxuu/flowy)
+
+- [Python最佳实践指南！](https://pythonguidecn.readthedocs.io/zh/latest/)
+
 
 - [front-end-awesome](https://github.com/iq9891/awesome-frontend)
 

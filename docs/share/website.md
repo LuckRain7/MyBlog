@@ -188,6 +188,10 @@ sidebar: auto
 
   - [Beautiful Free Images & Pictures | Unsplash](https://unsplash.com)
 
+  - [Free stock photos - Kaboompics](https://kaboompics.com/)
+
+  - [泼辣有图 | Polayoutu - Free Chinese stock photos](https://www.polayoutu.com/)
+
 
 ## JavaScript
 
@@ -278,8 +282,6 @@ sidebar: auto
 
 - [DeepL（人工智能语言辅助）](https://www.deepl.com/home)
 
-
-
 ## 搜索
 
 - [Magi（基于机器学习的信息抽取和检索系统）)](https://magi.com/)
@@ -351,7 +353,7 @@ sidebar: auto
 
 - HTML Reference - A free guide to all HTML elements and attributes. （HTML指南）   https://htmlreference.io/ 
 
-
+- [镜像站](https://kkroot.com/)
 
 
 
