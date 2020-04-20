@@ -67,6 +67,8 @@ sidebar: auto
 
 - [程序员开发学习博客](https://www.maiyewang.com/)
 
+- [山月的琐碎博客记录 | 山月行](https://shanyue.tech/)
+
 ### 2.2  英文
 
 - [Blog - Advanced Web Machinery](https://advancedweb.hu/)
