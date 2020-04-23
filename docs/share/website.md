@@ -89,6 +89,8 @@ sidebar: auto
 
 - [USTC-Course - 中国科学技术大学课程资源](https://github.com/USTC-Resource/USTC-Course)
 
+
+
 ## 工具
 
 - [Squoosh 谷歌在线图片压缩](https://squoosh.app/ )
@@ -170,6 +172,8 @@ sidebar: auto
 - [Color Picker — A handy design tool from Color Supply（色彩搭配）](https://colorsupplyyy.com/app)
 
 - [艺术字体在线生成器 艺术字转换器 字体转换器](https://www.qt86.com/)
+
+- [📙 Emojipedia — 😃 Home of Emoji Meanings 💁👌🎍😍](https://emojipedia.org/)
 
 ### 4.1  Icon
 

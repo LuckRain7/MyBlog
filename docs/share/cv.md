@@ -4,7 +4,7 @@ vue文字横向滚动公告
 
  https://segmentfault.com/a/1190000022160405 
 
-
+[【THE LAST TIME】this：call、apply、bind](https://juejin.im/post/5da7cdff6fb9a04de7735742)
 
 2020前端面试，CSS会问你这些 
 
@@ -16,6 +16,8 @@ CSS Grid 布局不好理解？可借助 CSS Grid Generator 快速上手并掌握
 
  https://segmentfault.com/a/1190000022151836 
 
+ ## 待看
+
 
 [去大厂，你就应该了解前端监控和埋点!](https://juejin.im/post/5e9052916fb9a03c9843284f)
 
@@ -26,3 +28,9 @@ CSS Grid 布局不好理解？可借助 CSS Grid Generator 快速上手并掌握
 [认识 webpack-chain、以及 loader、plugin 的简单实现](https://juejin.im/post/5e992987f265da480b2646bc)
 
 [几个非常有意思的javascript知识点总结](https://juejin.im/post/5e97c1206fb9a03c300f9d75)
+
+[Vue的全局过滤器和私有过滤器的实现](https://www.zhangshengrong.com/p/9MNlDEBLNJ/)
+
+[VueJS核心-computed属性源码解析与面试参考回答](https://juejin.im/post/5e9d1c616fb9a03c576cc2ab)
+
+[『字节跳动LeetCode联合周赛』--周赛185(JavaScript) | OFEII](https://juejin.im/post/5e9c74f3e51d4546b3566758)
