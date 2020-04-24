@@ -4,7 +4,7 @@
  *  Date: 2020-03-15 17:40:55
  */
 module.exports = {
-  title: "震雨LuckRain7",
+  title: "震雨luckrain7's 博客",
   description: "震雨LuckRain7的博客,Webgis,arcgis,openlayer,css,javascript",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   markdown: {
@@ -17,7 +17,7 @@ module.exports = {
   },
   themeConfig: {
     //导航栏 logo
-    logo: "https://rain7.top/luckrain7.png",
+    // logo: "https://rain7.top/luckrain7.png",
     // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
     sidebarDepth: 1,
     // 文档更新时间：每个文件git最后提交的时间
