@@ -77,6 +77,12 @@ sidebar: auto
 
 - [Today I Learned](https://github.com/jbranchaud/til)
 
+- [LostMoa](https://lostmoa.com/)
+
+- [Uber Engineering Blog](https://eng.uber.com/)
+
+- [WebAssembly Weekly · A community-driven weekly newsletter about WebAssembly](https://wasmweekly.news/)
+
 ## 3.  资源
 
 - [基于 IPFS 的电子书搜索引擎](https://i-book.in/) 

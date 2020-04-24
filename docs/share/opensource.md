@@ -60,3 +60,18 @@ sidebar: auto
 ## 博主开源项目
 
 - [vue-image-cropper-simple -A simple and effective vue component for image crop. （基于 vue 的图片剪裁组件）](https://github.com/LuckRain7/vue-image-cropper-simple)
+
+
+## 阮一峰杂志
+
+- [HoServer 是基于Node.js开发开箱即用的后台服务和管理平台脚手架，可视化对象定义，一行代码实现增删改查所有接口，内置用户、权限等基本功能。基于 HoServer 可在短时间内开发出高质量的 RESTful API 服务和管理平台，助您大幅缩短项目开发周期，降低开发成本。是您产品占领窗口快速推向市场、接项目提升客户满意度的利器。](https://github.com/hello-react/HoServer)
+
+- [一个开源看板软件，类似 Trello。](https://github.com/wekan/wekan)
+
+- [TablePlus(一个支持多种关系型数据库的图形界面的数据库管理工具)](https://tableplus.com/)
+
+- [pattern.css(一个纯 CSS 库，提供各种形状的背景图案)](https://github.com/bansal-io/pattern.css)
+
+- [Hero Patterns | Free repeatable SVG background patterns for your web projects](http://www.heropatterns.com/)
+
+- [React Suite 是一套 React 组件库，为后台产品而生。同时也是一个具有贴心设计以及对开发者友好的 UI 框架。](https://github.com/rsuite/rsuite/blob/master/README_zh.md)
