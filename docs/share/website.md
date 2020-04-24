@@ -69,6 +69,8 @@ sidebar: auto
 
 - [山月的琐碎博客记录 | 山月行](https://shanyue.tech/)
 
+- [商业分析 (BA) 周刊](https://www.yuque.com/baclub/weekly)
+
 ### 2.2  英文
 
 - [Blog - Advanced Web Machinery](https://advancedweb.hu/)

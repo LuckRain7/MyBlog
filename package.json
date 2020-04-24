@@ -10,7 +10,7 @@
     "build": "node ./docs/.vuepress/utils/auto.js && vuepress build docs",
     "dev": "npm run docs:dev",
     "git": "git push gitee master&& git push github master",
-    "d":"bash deploy.sh"
+    "deploy":"bash deploy.sh"
   },
   "repository": {
     "type": "git",
