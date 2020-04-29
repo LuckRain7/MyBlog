@@ -49,6 +49,8 @@ sidebar: auto
 
 - [front-end-awesome](https://github.com/iq9891/awesome-frontend)
 
+- [架构师技术图谱](https://github.com/toutiaoio/awesome-architecture#%E5%89%8D%E7%AB%AF)
+
 
 ## WebGIS
 

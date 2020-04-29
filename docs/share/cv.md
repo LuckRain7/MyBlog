@@ -34,3 +34,7 @@ CSS Grid 布局不好理解？可借助 CSS Grid Generator 快速上手并掌握
 [VueJS核心-computed属性源码解析与面试参考回答](https://juejin.im/post/5e9d1c616fb9a03c576cc2ab)
 
 [『字节跳动LeetCode联合周赛』--周赛185(JavaScript) | OFEII](https://juejin.im/post/5e9c74f3e51d4546b3566758)
+
+[node.js学习笔记之MongoDB数据库](https://juejin.im/post/5e9e362a6fb9a03c6e6438e2)
+
+[一份vue3-beta.3相关文集前来报告，请您收下](https://segmentfault.com/a/1190000022451034)
