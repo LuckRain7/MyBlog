@@ -13,7 +13,7 @@ sidebar: auto
 
 
 
-## 2.  博客
+## 2.  网站（博客、学习...）
 
 ### 2.1  中文
 
@@ -85,6 +85,10 @@ sidebar: auto
 
 - [WebAssembly Weekly · A community-driven weekly newsletter about WebAssembly](https://wasmweekly.news/)
 
+- [Data Language - We combine vast experience in technical solutions engineering with cutting edge data science](https://datalanguage.com/)
+
+- [Medium – Get smarter about what matters to you.](https://medium.com/)
+
 ## 3.  资源
 
 - [基于 IPFS 的电子书搜索引擎](https://i-book.in/) 
@@ -97,9 +101,9 @@ sidebar: auto
 
 - [USTC-Course - 中国科学技术大学课程资源](https://github.com/USTC-Resource/USTC-Course)
 
+- [Springer 机器学习图书免费下载](https://link.springer.com/book/10.1007/978-0-387-84858-7)
 
-
-## 工具
+## 4.  工具
 
 - [Squoosh 谷歌在线图片压缩](https://squoosh.app/ )
 
@@ -141,7 +145,7 @@ sidebar: auto
 
 
 
-## 4.  设计
+## 5.  设计
 
 - [uiGradients - Beautiful colored gradients（渐变色）](https://uigradients.com/) 
 
@@ -183,12 +187,12 @@ sidebar: auto
 
 - [📙 Emojipedia — 😃 Home of Emoji Meanings 💁👌🎍😍](https://emojipedia.org/)
 
-### 4.1  Icon
+### 5.1  Icon
 
 - [图标下载，ICON(SVG/PNG/ICO/ICNS)图标搜索下载 - Easyicon](https://www.easyicon.net/)
 
 
-##  5.  图片
+##  6.  图片
 
 - [Carbon（代码图片生成）](https://carbon.now.sh/ ) 
 
@@ -209,7 +213,7 @@ sidebar: auto
   - [泼辣有图 | Polayoutu - Free Chinese stock photos](https://www.polayoutu.com/)
 
 
-## JavaScript
+## 7.  JavaScript
 
 - [Front-end Web Development, Chewed Up ← Alligator.io （快速理解那些看似困难的前端代码片段 全英文）](https://alligator.io/ ) 
 
@@ -218,7 +222,7 @@ sidebar: auto
 - [127个有帮助的代码判断（需稳定的网络环境）](https://medium.com/better-programming/127-helpful-javascript-snippets-you-can-learn-in-30-seconds-or-less-part-6-of-6-862a6403d334)
 
 
-## CSS
+## 8.  CSS
 
 - [CSS Reference - A free visual guide to CSS （CSS 学习指南 全英文）](https://cssreference.io/ )
 
@@ -228,11 +232,13 @@ sidebar: auto
 
 - [A Visual Guide to CSS3 Flexbox Properties ― Scotch.io （可视化布局）](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties )
 
-## Node
+- [css-protips (CSS 专业技巧)](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
+
+## 9.  Node
 
 - [《Node.js技术栈》，旨在为大家提供一个较详细的学习教程，侧重点更倾向于 Node.js 服务端所涉及的技术栈](https://www.nodejs.red/#/)
 
-## 会议
+## 10.  会议
 
 - [成都 Web 开发者大会](https://web-conf.dev/#2020/)
 
@@ -242,11 +248,11 @@ sidebar: auto
 
 - [2050](https://2050.org.cn/)
 
-## 生活技巧
+## 11.  生活技巧
 
 - [Topbook | 高效生活视频书](https://topbook.cc/overview)
 
-## 微信
+## 12.  微信
 
 - [MarkDown 排版](https://mdnice.com/)
 
@@ -256,7 +262,7 @@ sidebar: auto
 
 
 
-## 有趣的网站
+## 13.  有趣的网站
 
 > 以下网站希望大家自己去探索
 
@@ -280,31 +286,31 @@ sidebar: auto
 
 - [Shakespearean Insulter](http://www.pangloss.com/seidel/Shaker/index.html?)
 
-## 系统美化
+## 14.  系统美化
 
-## Window
+### 14.1  Window
 
 - [致美化 - 最专业的桌面美化交流平台 - 漫锋网](https://zhutix.com/)
 
 - [鼠标指针 - 光标 - 电脑鼠标指针下载 - 致美化 - 漫锋网](https://zhutix.com/tag/cursors/)
 
-### 壁纸
+### 14.2 壁纸
 
 - [Wallpaper Abyss - HD Wallpapers, Background Images](https://wall.alphacoders.com/)
 
 - [Simple Desktops](http://simpledesktops.com/)
 
-## 翻译
+## 15.  翻译
 
 - [DeepL（人工智能语言辅助）](https://www.deepl.com/home)
 
-## 搜索
+## 16.  搜索
 
 - [Magi（基于机器学习的信息抽取和检索系统）)](https://magi.com/)
 
 - [大圣盘](https://www.dashengpan.com/)
 
-## 技术社区
+## 17.  技术社区
 
 - [黑客派 - 为未来而构建的开发者社区，找到你所需的技术解决方案、记录和分享我们的程序人生](https://hacpai.com/)
 
@@ -315,15 +321,19 @@ sidebar: auto
 - [codefence - an easily embeddable interactive code editor（截图不错）](https://codefence.io/)
 
 
-## PPT
+## 18.  PPT
 
 - [iSlide- 让PPT设计简单起来~ | 中文官网](https://www.islide.cc/)
 
 - [声享 - 在线制作 PPT，让分享更有价值](https://ppt.baomitu.com/)
 
-## 导航网站
+## 19.  导航网站
 
 - [24k导航_简单事,高效做！！！](https://www.24kdh.com/)
+
+## 20.  数据库
+
+- [自来水水质数据库](https://www.iswatersafetodrink.in/China)
 
 ## 待整理
 
