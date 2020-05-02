@@ -10,6 +10,8 @@
 
 [CSS Grid 布局不好理解？可借助 CSS Grid Generator 快速上手并掌握 Grid 布局！](https://segmentfault.com/a/1190000022151836)
 
+[git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
+
   
 
  ## 待看
@@ -34,3 +36,5 @@
 [node.js学习笔记之MongoDB数据库](https://juejin.im/post/5e9e362a6fb9a03c6e6438e2)
 
 [一份vue3-beta.3相关文集前来报告，请您收下](https://segmentfault.com/a/1190000022451034)
+
+[一份关于vue-cli3项目常用项配置](https://segmentfault.com/a/1190000022512358)

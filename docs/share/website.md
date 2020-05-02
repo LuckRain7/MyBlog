@@ -89,6 +89,10 @@ sidebar: auto
 
 - [Medium – Get smarter about what matters to you.](https://medium.com/)
 
+- [2ality – JavaScript and more](https://2ality.com/)
+
+- [DZone: Programming & DevOps news, tutorials & tools](https://dzone.com/)
+
 ## 3.  资源
 
 - [基于 IPFS 的电子书搜索引擎](https://i-book.in/) 
@@ -143,7 +147,9 @@ sidebar: auto
 
 - [markmap-lib(Markdown -> 思维导图)](https://markmap.js.org/)
 
+- [PxCook - 高效易用的自动标注工具,生成前端代码,设计研发协作利器](https://www.fancynode.com.cn/pxcook)
 
+- [秘塔写作猫(帮你推敲用语、斟酌文法、改写文风)](https://xiezuocat.com)
 
 ## 5.  设计
 
@@ -327,9 +333,13 @@ sidebar: auto
 
 - [声享 - 在线制作 PPT，让分享更有价值](https://ppt.baomitu.com/)
 
+- [gossip - 一个高效创建和演示炫酷幻灯片的用户界面！](https://github.com/pearmini/gossip)
+
 ## 19.  导航网站
 
 - [24k导航_简单事,高效做！！！](https://www.24kdh.com/)
+
+- [小呆导航](https://webjike.com/)
 
 ## 20.  数据库
 

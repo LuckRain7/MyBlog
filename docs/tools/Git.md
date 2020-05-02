@@ -128,3 +128,5 @@ git push
 ## 参考文章
 
 [Git常用命令总结](https://www.jianshu.com/p/cdccfef91ae1 )
+
+[git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
