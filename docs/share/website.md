@@ -71,6 +71,8 @@ sidebar: auto
 
 - [商业分析 (BA) 周刊](https://www.yuque.com/baclub/weekly)
 
+- [唐霜的博客_编程的时候我叫“否子戈”！](https://www.tangshuang.net/)
+
 ### 2.2  英文
 
 - [Blog - Advanced Web Machinery](https://advancedweb.hu/)
