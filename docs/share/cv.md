@@ -38,3 +38,5 @@
 [一份vue3-beta.3相关文集前来报告，请您收下](https://segmentfault.com/a/1190000022451034)
 
 [一份关于vue-cli3项目常用项配置](https://segmentfault.com/a/1190000022512358)
+
+[面试官一脸邪乎的问：一个 TCP 连接能发多少个 HTTP 请求？](https://segmentfault.com/a/1190000022549995)

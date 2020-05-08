@@ -46,7 +46,6 @@ sidebar: auto
 
 - [Python最佳实践指南！](https://pythonguidecn.readthedocs.io/zh/latest/)
 
-
 - [front-end-awesome](https://github.com/iq9891/awesome-frontend)
 
 - [架构师技术图谱](https://github.com/toutiaoio/awesome-architecture#%E5%89%8D%E7%AB%AF)
@@ -85,3 +84,7 @@ sidebar: auto
 - [Panolens.js - Javascript panorama viewer based on Three.js(一个360度全景照片浏览的 JS 库。)](https://github.com/pchen66/panolens.js)
 
 - [Cosmos(收集各种算法的代码实现的仓库。)](https://github.com/OpenGenus/cosmos)
+
+- [项目管理软件 Jira 的一个免费仿制品。](https://tara.ai/)
+
+- [一个开源的桌面软件，用于简化 API 的设计和开发。](https://insomnia.rest/)
