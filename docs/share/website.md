@@ -95,6 +95,10 @@ sidebar: auto
 
 - [DZone: Programming & DevOps news, tutorials & tools](https://dzone.com/)
 
+- [CKEditor Ecosystem Blog](https://ckeditor.com/blog/)
+
+- [All posts | Roberto Vitillo's Blog](https://robertovitillo.com/)
+
 ## 3.  资源
 
 - [基于 IPFS 的电子书搜索引擎](https://i-book.in/) 
