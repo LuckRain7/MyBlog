@@ -31,10 +31,10 @@ module.exports = {
       {
         text: "前端",
         items: [
-          { text: "HTML", link: "/frontend/HTML/" },
-          { text: "CSS", link: "/frontend/CSS/" },
-          { text: "JavaScript", link: "/frontend/JavaScript/" },
-          { text: "TypeScript", link: "/frontend/TypeScript/" },
+          { text: "HTML", link: "/frontend/HTML.html" },
+          { text: "CSS", link: "/frontend/CSS.html" },
+          { text: "JavaScript", link: "/frontend/JavaScript.html" },
+          { text: "TypeScript", link: "/frontend/TypeScript.html" },
           { text: "Vue", link: "/Vue/Vue/" },
           { text: "React", link: "/React/React/" },
           { text: "Webpack", link: "/frontend/Webpack/" },
