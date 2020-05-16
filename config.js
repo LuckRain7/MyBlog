@@ -35,7 +35,7 @@ module.exports = {
           { text: "CSS", link: "/frontend/CSS.html" },
           { text: "JavaScript", link: "/frontend/JavaScript.html" },
           { text: "TypeScript", link: "/frontend/TypeScript.html" },
-          { text: "Vue", link: "/Vue/Vue/" },
+          { text: "Vue", link: "/Vue/Vue.html" },
           { text: "React", link: "/React/React/" },
           { text: "Webpack", link: "/frontend/Webpack/" },
         ],
