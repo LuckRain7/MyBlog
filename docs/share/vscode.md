@@ -150,6 +150,10 @@ Vue代码段提示
 
 中文文档相当详细 NB plus ！！
 
+### vscode-drawio
+
+画图插件
+
 ## 2.  主题美化插件
 
 ### Darcula Theme - WebStorm Edition
@@ -179,6 +183,7 @@ Vue代码段提示
 ## 3. 字体推荐
 
 - Monaco  https://github.com/todylu/monaco.ttf 
+
 - Fira Code  https://github.com/tonsky/FiraCode 
 
 
