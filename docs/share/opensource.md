@@ -88,3 +88,9 @@ sidebar: auto
 - [项目管理软件 Jira 的一个免费仿制品。](https://tara.ai/)
 
 - [一个开源的桌面软件，用于简化 API 的设计和开发。](https://insomnia.rest/)
+
+- [Valine - 一个静态网站的评论系统，不需要后端，数据储存在 LeanCloud](https://valine.js.org/)
+
+- [vdoing - VuePress 的一款主题，可以用于个人博客或知识管理。](https://github.com/xugaoyi/vuepress-theme-vdoing)
+
+-  [Link Lock -  一个开源的网址加密服务，允许用户为任意 URL 设定密码。它的特点是纯静态网页实现，不需要后端服务器，采用 AES 加密算法。 ](https://github.com/jstrieb/link-lock) 

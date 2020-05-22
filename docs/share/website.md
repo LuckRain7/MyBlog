@@ -76,28 +76,19 @@ sidebar: auto
 ### 2.2  英文
 
 - [Blog - Advanced Web Machinery](https://advancedweb.hu/)
-
 - [AppSignal blog: The latest on everything AppSignal](https://blog.appsignal.com/)
-
 - [Today I Learned](https://github.com/jbranchaud/til)
-
 - [LostMoa](https://lostmoa.com/)
-
 - [Uber Engineering Blog](https://eng.uber.com/)
-
 - [WebAssembly Weekly · A community-driven weekly newsletter about WebAssembly](https://wasmweekly.news/)
-
 - [Data Language - We combine vast experience in technical solutions engineering with cutting edge data science](https://datalanguage.com/)
-
 - [Medium – Get smarter about what matters to you.](https://medium.com/)
-
 - [2ality – JavaScript and more](https://2ality.com/)
-
 - [DZone: Programming & DevOps news, tutorials & tools](https://dzone.com/)
-
 - [CKEditor Ecosystem Blog](https://ckeditor.com/blog/)
-
 - [All posts | Roberto Vitillo's Blog](https://robertovitillo.com/)
+- [Turn Websites into structured data /Dataflow kit](https://dataflowkit.com/)
+- [Frenxi blog](https://frenxi.com/)
 
 ## 3.  资源
 
