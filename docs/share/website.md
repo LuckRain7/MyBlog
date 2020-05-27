@@ -76,19 +76,38 @@ sidebar: auto
 ### 2.2  英文
 
 - [Blog - Advanced Web Machinery](https://advancedweb.hu/)
+
 - [AppSignal blog: The latest on everything AppSignal](https://blog.appsignal.com/)
+
 - [Today I Learned](https://github.com/jbranchaud/til)
+
 - [LostMoa](https://lostmoa.com/)
+
 - [Uber Engineering Blog](https://eng.uber.com/)
+
 - [WebAssembly Weekly · A community-driven weekly newsletter about WebAssembly](https://wasmweekly.news/)
+
 - [Data Language - We combine vast experience in technical solutions engineering with cutting edge data science](https://datalanguage.com/)
+
 - [Medium – Get smarter about what matters to you.](https://medium.com/)
+
 - [2ality – JavaScript and more](https://2ality.com/)
+
 - [DZone: Programming & DevOps news, tutorials & tools](https://dzone.com/)
+
 - [CKEditor Ecosystem Blog](https://ckeditor.com/blog/)
+
 - [All posts | Roberto Vitillo's Blog](https://robertovitillo.com/)
+
 - [Turn Websites into structured data /Dataflow kit](https://dataflowkit.com/)
+
 - [Frenxi blog](https://frenxi.com/)
+
+- [Hacker Noon](https://hackernoon.com/)
+
+- [OpenAI](https://openai.com/)
+
+- [DEV Community 👩‍💻👨‍💻](https://dev.to/)
 
 ## 3.  资源
 
@@ -193,6 +212,8 @@ sidebar: auto
 ### 5.1  Icon
 
 - [图标下载，ICON(SVG/PNG/ICO/ICNS)图标搜索下载 - Easyicon](https://www.easyicon.net/)
+
+- [Feature Icons - 开源图标库 提供一些  24x24 的常用图标](https://github.com/feathericons/feather)
 
 
 ##  6.  图片
@@ -306,6 +327,8 @@ sidebar: auto
 ## 15.  翻译
 
 - [DeepL（人工智能语言辅助）](https://www.deepl.com/home)
+
+- [百度翻译](https://fanyi.baidu.com/)
 
 ## 16.  搜索
 
