@@ -109,6 +109,8 @@ sidebar: auto
 
 - [DEV Community 👩‍💻👨‍💻](https://dev.to/)
 
+- [Posts :: kitsonkelly.com — A recovering 7ft tall cactus](https://kitsonkelly.com/posts)
+
 ## 3.  资源
 
 - [基于 IPFS 的电子书搜索引擎](https://i-book.in/) 
