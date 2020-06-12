@@ -131,4 +131,8 @@ HTTP调试抓包工具
 
 - [Charles]
 
+- [Zettlr - 一款新的MarkDown编辑器](#)
+
 - [Ipic - 图床我是配合Typora一起使用的大家Markdown是不是复制图片进来都是本地的地址，发到网上就会失效的，但是跟Typora搞基的这个工具他可以在你复制进来的时候直接传到网上了，你再去任何平台发表都可以随心所欲了。]()
+
+[monknow - 新标签页](https://www.monknow.com/zh-CN)

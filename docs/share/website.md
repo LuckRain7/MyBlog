@@ -393,6 +393,8 @@ sidebar: auto
 
 - [Js Tips - A JavaScript tip per day!](https://www.jstips.co/en/javascript/)
 
+[Lottie - 通过以JSON格式加载和渲染高级动画，极大地简化了高级动画的处理。 ​​​​](https://airbnb.design/lottie/)
+
 - web.dev（Google 开发者）  https://web.dev/ 
 
 - Pony Foo — Web platform, JavaScript, modularity, front-end architecture, performance, and more!（内容提供网站）  https://ponyfoo.com/ 
