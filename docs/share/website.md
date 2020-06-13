@@ -35,11 +35,11 @@ sidebar: auto
 
 - [WecTeam](https://wecteam.io/)
 
-- [阮一峰的网络日志](http://www.ruanyifeng.com/blog/ )
+- [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 
-- [冴羽博客，包含： JavaScript深入系列、JavaScript专题系列、ES6系列、React系列。 ](https://github.com/mqyqingfeng/Blog ) 
+- [冴羽博客，包含： JavaScript深入系列、JavaScript专题系列、ES6系列、React系列。 ](https://github.com/mqyqingfeng/Blog) 
 
-- [GitHub上整理 中文独立博客列表](https://github.com/timqian/chinese-independent-blogs ) 
+- [GitHub上整理 中文独立博客列表](https://github.com/timqian/chinese-independent-blogs) 
 
 - [Paper 安全技术精粹](https://paper.seebug.org/)
 
@@ -93,7 +93,7 @@ sidebar: auto
 
 - [2ality – JavaScript and more](https://2ality.com/)
 
-- [DZone: Programming & DevOps news, tutorials & tools](https://dzone.com/)
+- [DZone: Programming & DevOps news, tutorials & tools](https://dzone.com/) 
 
 - [CKEditor Ecosystem Blog](https://ckeditor.com/blog/)
 
@@ -110,6 +110,8 @@ sidebar: auto
 - [DEV Community 👩‍💻👨‍💻](https://dev.to/)
 
 - [Posts :: kitsonkelly.com — A recovering 7ft tall cactus](https://kitsonkelly.com/posts)
+
+- [airpair | Software jobs && programming resources](https://www.airpair.com/)
 
 ## 3.  资源
 
@@ -128,46 +130,28 @@ sidebar: auto
 ## 4.  工具
 
 - [Squoosh 谷歌在线图片压缩](https://squoosh.app/ )
-
 - [ProcessOn 在线画图](https://www.processon.com/)
-
 - [CodeLF 变量取名字网站](https://unbug.github.io/codelf )
-
 - [正则大全](https://any86.github.io/any-rule/ )
-
 - [caniuse（检查前端技术的跨浏览器兼容性）](https://caniuse.com/ )
-
 - [一键AI抠图 ](https://www.remove.bg/zh)
-
 - [在线PS工具/可以转换Sketch文件](https://www.photopea.com)
-
 - [Sprite Cow - 处理精灵图片](http://www.spritecow.com/)
-
 - [Shields.io: Quality metadata badges for open source projects(github徽标制作)](https://shields.io/)
-
 - [Postwoman • API request builder](https://postwoman.io/)
-
 - [Codeimg.io 生成好看的代码图片](https://codeimg.io/)
-
 - [Carbon](https://carbon.now.sh/)
-
 - [Convert image format Online - Image Converter Online - 100% free （超强图片格式转换网站）](https://jinaconvert.com/)
-
 - [Icon Font & SVG Icon Sets ❍ IcoMoon（生成字体图标）](https://icomoon.io/)
-
 - [制作图片网站](https://www.zhizuotu.com/)
-
 - [拷贝兔(Copytool) - 轻量级纯Web跨平台文件、文字分享工具](https://cp.anyknew.com/)
-
 - [在线工具](https://tool.lu/c/developer/)
-
 - [CodePen: Online Code Editor and Front End Web Developer Community（在线代码编辑）](https://codepen.io/)
-
 - [markmap-lib(Markdown -> 思维导图)](https://markmap.js.org/)
-
 - [PxCook - 高效易用的自动标注工具,生成前端代码,设计研发协作利器](https://www.fancynode.com.cn/pxcook)
-
 - [秘塔写作猫(帮你推敲用语、斟酌文法、改写文风)](https://xiezuocat.com)
+
+[[绘图] ASCIIFlow Infinity ](http://asciiflow.com/)
 
 ## 5.  设计
 
@@ -464,6 +448,21 @@ https://picjumbo.com
 135编译器
 
 
+[[Hexo] Volantis - A Wonderful Theme for Hexo](https://volantis.js.org/)
+
+[[Node] TypeScript+Express+NodeJS+MongoDB](https://github.com/cc7gs/frontEnd_note/tree/master/basic/nodejs-basic/framework/express-demo)
+
+[[TypeScript] TypeScript中文网 · TypeScript——JavaScript的超集](https://www.tslang.cn/index.html)
+
+[[CSS] 55 个提高你 CSS 开发效率的必备片段](https://segmentfault.com/a/1190000022019129)
+
+[[js] 【THE LAST TIME】this：call、apply、bind](https://juejin.im/post/5da7cdff6fb9a04de7735742)
+
+[[node] express搭建权限管理系统（基于node_acl）](https://github.com/wuwanyu/node_aclDemo)
+
+[[project] 渤海粮仓科技示范工程大数据平台](http://202.194.131.141/)
+
+[[competition] 易智瑞杯中国大学生GIS软件开发竞赛官方网站](http://contest.esrichina.com.cn/)
 
 #### 参考文章：
 
