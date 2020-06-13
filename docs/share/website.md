@@ -113,6 +113,10 @@ sidebar: auto
 
 - [airpair | Software jobs && programming resources](https://www.airpair.com/)
 
+- [Live Code Stream - Everything related to programming, AI and computer science!](https://livecodestream.dev/)
+
+[Discover dev - 每天列出5～10篇当天值得阅读的软件文章](https://www.discoverdev.io/)
+
 ## 3.  资源
 
 - [基于 IPFS 的电子书搜索引擎](https://i-book.in/) 
