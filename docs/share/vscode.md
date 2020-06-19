@@ -154,6 +154,10 @@ Vue代码段提示
 
 画图插件
 
+### Project Manager
+
+项目管理切换插件
+
 ## 2.  主题美化插件
 
 ### Darcula Theme - WebStorm Edition

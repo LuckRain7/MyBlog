@@ -117,6 +117,8 @@ sidebar: auto
 
 [Discover dev - 每天列出5～10篇当天值得阅读的软件文章](https://www.discoverdev.io/)
 
+[Level Up Coding](https://levelup.gitconnected.com/)
+
 ## 3.  资源
 
 - [基于 IPFS 的电子书搜索引擎](https://i-book.in/) 
@@ -208,13 +210,15 @@ sidebar: auto
 
 ##  6.  图片
 
-- [Carbon（代码图片生成）](https://carbon.now.sh/ ) 
+[Carbon（代码图片生成）](https://carbon.now.sh/) 
 
-- [诺基亚短信图片生成器](https://zzkia.noddl.me:8020/?from=www.shadiao.app )
+[诺基亚短信图片生成器](https://zzkia.noddl.me:8020/?from=www.shadiao.app)
 
-- [wallhaven 壁纸](https://wallhaven.cc)
+[wallhaven 壁纸](https://wallhaven.cc)
 
-- [桌面代码壁纸](https://www.ivsky.com/tupian/daima_t39875/)
+[桌面代码壁纸](https://www.ivsky.com/tupian/daima_t39875/)
+
+[Artvee - 收集古典艺术品的照片和海报](https://artvee.com/)
 
 - 壁纸网站
 
@@ -231,7 +235,7 @@ sidebar: auto
 
 - [Front-end Web Development, Chewed Up ← Alligator.io （快速理解那些看似困难的前端代码片段 全英文）](https://alligator.io/ ) 
 
-- [kangax （检查JavaScript版本）](https://kangax.github.io/compat-table/es6/ ) 
+- [kangax （检查JavaScript版本）](https://kangax.github.io/compat-table/es6/) 
 
 - [127个有帮助的代码判断（需稳定的网络环境）](https://medium.com/better-programming/127-helpful-javascript-snippets-you-can-learn-in-30-seconds-or-less-part-6-of-6-862a6403d334)
 
