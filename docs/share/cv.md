@@ -12,10 +12,11 @@
 
 [git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
 
+[web 图像技术：前端引入图片的各种方式及其优缺点](https://juejin.im/post/5ea22d15e51d45470c12d074)
+
   
 
  ## 待看
-
 
 [去大厂，你就应该了解前端监控和埋点!](https://juejin.im/post/5e9052916fb9a03c9843284f)
 

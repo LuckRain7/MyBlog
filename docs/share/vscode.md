@@ -1,9 +1,11 @@
 ---
 sidebar: auto
 ---
+
 # VS Code 插件推荐
 
 ## 1.  前端插件
+
 ### Auto Close Tag
 
 自动闭合标签
@@ -80,7 +82,7 @@ ES6必备  快捷生成代码
 
 ### Path Autocomplete 
 
->  更好的路径补全，支持根路径文件补全
+> 更好的路径补全，支持根路径文件补全
 
 ![Path Autocomplete ](https://raw.githubusercontent.com/ionutvmi/path-autocomplete/master/demo/path-autocomplete.gif)
 
@@ -166,13 +168,11 @@ Vue代码段提示
 
 ### Bluloco Dark
 
->  很不错的黑暗主题
+> 很不错的黑暗主题
 
 ![img]( https://raw.githubusercontent.com/uloco/theme-bluloco-dark/master/screenshots/js.png )
 
 ### vscode-perfect-dark-color-theme
-
-
 
 ### One Dark Pro
 
@@ -180,17 +180,11 @@ Vue代码段提示
 
 ![one darl pro]( https://ww2.sinaimg.cn/large/006tNbRwgy1fvwk4ach5bj31kw16o0uw.jpg )
 
-
-
-
-
 ## 3. 字体推荐
 
-- Monaco  https://github.com/todylu/monaco.ttf 
+* Monaco  https://github.com/todylu/monaco.ttf 
 
-- Fira Code  https://github.com/tonsky/FiraCode 
-
-
+* Fira Code  https://github.com/tonsky/FiraCode 
 
 ## 4.  成为开发者
 
@@ -200,4 +194,4 @@ Vue代码段提示
 
 文件内eslint忽略写法，放在文件头部
 
-`/* eslint-disable [ignore] */`
+`/* eslint-disable [ignore] */` 
