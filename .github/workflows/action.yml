@@ -32,10 +32,10 @@ jobs:
           cd -
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: docs/.vuepress/dist # The folder the action should deploy.
-          GIT_CONFIG_NAME: luckrain7
-          GIT_CONFIG_EMAIL: luckrain7@foxmail.com
+          token: ${{ secrets.GITHUBTOKEN }}
+          branch: gh-pages # The branch the action should deploy to.
+          folder: docs/.vuepress/dist # The folder the action should deploy.
+          git-config-name: luckrain7
+          git-config-email: luckrain7@foxmail.com
