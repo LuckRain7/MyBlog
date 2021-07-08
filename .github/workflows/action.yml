@@ -28,20 +28,12 @@ jobs:
           npm install
           npm run docs:build
 
-      # 第四步 提交
-      - name: commit
-        run: |
-          cd docs/.vuepress/dist
-          echo 'rain7.top' > CNAME
-          git init
-          git config --local user.email 763839938@qq.com
-          git config --local user.name LuckRain7
-          git add .
-          git commit -m "bot update"
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          github_token: ${{ secrets.GITHUBTOKEN }}
-          branch: gh-pages
-          force: true # 开启强制推送
+          GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: docs/.vuepress/dist # The folder the action should deploy.
+          git-config-name: luckrain7
+          git-config-email: luckrain7@foxmail.com
+          BUILD_SCRIPT: cd docs/.vuepress/dist && echo 'rain7.top' > CNAME && cd -
