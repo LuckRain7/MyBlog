@@ -1,0 +1,47 @@
+# name字段是配置文件的描述
+name: "rain7.top update"
+
+# on字段是触发条件
+on:
+  # 在推送到master分支时会自动运行一次
+  push:
+    branches:
+      - master
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest # 运行环境指定为最新版的 Ubuntu
+    # 步骤
+    steps:
+      # 第一步 从代码仓库获取代码
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      # 第二步 配置安装 Node 环境
+      - name: use Node.js 14
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Install and Build
+        run: |
+          npm install
+          npm run docs:build
+
+      # 第四步 提交
+      - name: commit
+        run: |
+          cd docs/.vuepress/dist
+          echo 'rain7.top' > CNAME
+          git init
+          git config --local user.email 763839938@qq.com
+          git config --local user.name LuckRain7
+          git add .
+          git commit -m "bot update"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUBTOKEN }}
+          branch: gh-page
+          force: true # 开启强制推送

@@ -66,6 +66,7 @@ module.exports = {
       {
         text: "WebGIS",
         items: [
+          { text: "README", link: "/WebGIS/index.html" },
           { text: "Cesium", link: "/WebGIS/Cesium/" },
           { text: "ArcGIS", link: "/WebGIS/ArcGIS/" },
           { text: "OpenLayer", link: "/WebGIS/OpenLayer/" },

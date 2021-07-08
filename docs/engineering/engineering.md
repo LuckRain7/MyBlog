@@ -653,7 +653,6 @@ sidebar: auto
   - ReactNative第三方插件
 
   - 珠峰课堂项目实战
-  
 
 
 
@@ -1017,9 +1016,9 @@ sidebar: auto
 
 - [Git原理介绍](/tools/Git.html#git-原理)
 
-- [git基础操作-常用命令](/tools/Git.html#git-常用命令)
+- [Git基础操作-常用命令](/tools/Git.html#git-常用命令)
 
-- git进阶
+- Git进阶
 
   - [rebase的作用](/tools/Git.html#git-rebase)
 
@@ -1029,7 +1028,7 @@ sidebar: auto
 
   - cherry-pick
 
-  - git与shell结合
+  - Git 与 shell结合
 
 - 前端工程化应用- husky link-staged
 
@@ -1045,7 +1044,7 @@ sidebar: auto
 
   - bash简介和快速入门
 
-  - node开发简单CLI工具
+  - node 开发简单 CLI 工具
 
 - 规范先行
 
@@ -1080,8 +1079,6 @@ sidebar: auto
   - 工程结构范式
 
   - 多仓库选型
-
-
 
 - 持续集成与部署
 

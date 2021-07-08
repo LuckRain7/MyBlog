@@ -38,7 +38,7 @@ git commit -m 'deploy'
 # git push  -f git@gitee.com:LuckRain/blog.git master
 
 # coding
-git push  -f git@e.coding.net:luckrain7/luckrain7.git master
+# git push  -f git@e.coding.net:luckrain7/luckrain7.git master
 
 # GitHub
 git push  -f git@github.com:LuckRain7/MyBlog.git master:gh-pages
