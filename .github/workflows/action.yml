@@ -43,5 +43,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUBTOKEN }}
-          branch: gh-page
+          branch: gh-pages
           force: true # 开启强制推送
