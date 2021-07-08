@@ -1,6 +1,0 @@
----
-sidebar: auto
----
-# Golang
-
-TODO

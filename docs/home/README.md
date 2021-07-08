@@ -1,6 +1,0 @@
----
-sidebar: false
----
-
-
-<MyHome/>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript | 震雨 luckrain7&#39;s 博客</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="震雨LuckRain7的博客,Webgis,arcgis,openlayer,css,javascript">
+    
+    <link rel="preload" href="/assets/css/0.styles.44f275cc.css" as="style"><link rel="preload" href="/assets/js/app.05604544.js" as="script"><link rel="preload" href="/assets/js/2.ca3eec8b.js" as="script"><link rel="preload" href="/assets/js/39.0c9c12df.js" as="script"><link rel="prefetch" href="/assets/js/10.f0b6186a.js"><link rel="prefetch" href="/assets/js/11.4e54ff32.js"><link rel="prefetch" href="/assets/js/12.d70483f6.js"><link rel="prefetch" href="/assets/js/13.bbe5f21d.js"><link rel="prefetch" href="/assets/js/14.ca8f8016.js"><link rel="prefetch" href="/assets/js/15.40575666.js"><link rel="prefetch" href="/assets/js/16.d4cb592d.js"><link rel="prefetch" href="/assets/js/17.b65f58dd.js"><link rel="prefetch" href="/assets/js/18.9c7aa04d.js"><link rel="prefetch" href="/assets/js/19.dd858908.js"><link rel="prefetch" href="/assets/js/20.fb5a80ca.js"><link rel="prefetch" href="/assets/js/21.8f7b555f.js"><link rel="prefetch" href="/assets/js/22.0164c279.js"><link rel="prefetch" href="/assets/js/23.fe721c45.js"><link rel="prefetch" href="/assets/js/24.3e90a8a0.js"><link rel="prefetch" href="/assets/js/25.242fb25e.js"><link rel="prefetch" href="/assets/js/26.19896185.js"><link rel="prefetch" href="/assets/js/27.1bb4c917.js"><link rel="prefetch" href="/assets/js/28.07f1b987.js"><link rel="prefetch" href="/assets/js/29.8828f920.js"><link rel="prefetch" href="/assets/js/3.5d5931d8.js"><link rel="prefetch" href="/assets/js/30.a8528128.js"><link rel="prefetch" href="/assets/js/31.5257589b.js"><link rel="prefetch" href="/assets/js/32.e0d57d07.js"><link rel="prefetch" href="/assets/js/33.c7ea5808.js"><link rel="prefetch" href="/assets/js/34.f2eacfca.js"><link rel="prefetch" href="/assets/js/35.3c98b76c.js"><link rel="prefetch" href="/assets/js/36.5be4f329.js"><link rel="prefetch" href="/assets/js/37.82b5f7b3.js"><link rel="prefetch" href="/assets/js/38.df914927.js"><link rel="prefetch" href="/assets/js/4.03c6dbef.js"><link rel="prefetch" href="/assets/js/40.a16fddb1.js"><link rel="prefetch" href="/assets/js/41.627bffa0.js"><link rel="prefetch" href="/assets/js/42.b7e91d65.js"><link rel="prefetch" href="/assets/js/43.cc1f53b4.js"><link rel="prefetch" href="/assets/js/44.b204531c.js"><link rel="prefetch" href="/assets/js/45.2604901f.js"><link rel="prefetch" href="/assets/js/46.5f2eb192.js"><link rel="prefetch" href="/assets/js/47.d2e8c1a1.js"><link rel="prefetch" href="/assets/js/48.29de5188.js"><link rel="prefetch" href="/assets/js/49.7d0f1ab8.js"><link rel="prefetch" href="/assets/js/5.e9cc3631.js"><link rel="prefetch" href="/assets/js/50.d2e1acc5.js"><link rel="prefetch" href="/assets/js/51.e127391e.js"><link rel="prefetch" href="/assets/js/52.76633561.js"><link rel="prefetch" href="/assets/js/53.d304e7e3.js"><link rel="prefetch" href="/assets/js/54.033bb2bb.js"><link rel="prefetch" href="/assets/js/55.1960cc45.js"><link rel="prefetch" href="/assets/js/56.28e839df.js"><link rel="prefetch" href="/assets/js/57.b79a2323.js"><link rel="prefetch" href="/assets/js/58.6093dd4d.js"><link rel="prefetch" href="/assets/js/59.67b0f1ee.js"><link rel="prefetch" href="/assets/js/6.7e15d66f.js"><link rel="prefetch" href="/assets/js/60.11ed73da.js"><link rel="prefetch" href="/assets/js/61.12674dad.js"><link rel="prefetch" href="/assets/js/62.671fc3c6.js"><link rel="prefetch" href="/assets/js/63.bb8d1a0c.js"><link rel="prefetch" href="/assets/js/64.2063410b.js"><link rel="prefetch" href="/assets/js/65.a4f12549.js"><link rel="prefetch" href="/assets/js/66.4e5848e4.js"><link rel="prefetch" href="/assets/js/67.8c2d90c8.js"><link rel="prefetch" href="/assets/js/68.0877a4fa.js"><link rel="prefetch" href="/assets/js/7.131d84a9.js"><link rel="prefetch" href="/assets/js/8.9ee35ff1.js"><link rel="prefetch" href="/assets/js/9.cacb5f06.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.44f275cc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">震雨 luckrain7's 博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ms/DesignMode.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Algorithm.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/ms/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/ms/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/ms/safe.html" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow down"></span></button> <button type="button" aria-label="服务端" class="mobile-dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/Node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/server/Golang/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/server/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="WebGIS" class="dropdown-title"><span class="title">WebGIS</span> <span class="arrow down"></span></button> <button type="button" aria-label="WebGIS" class="mobile-dropdown-title"><span class="title">WebGIS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/WebGIS/index.html" class="nav-link">
+  README
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/Cesium/" class="nav-link">
+  Cesium
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/ArcGIS/" class="nav-link">
+  ArcGIS
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/OpenLayer/" class="nav-link">
+  OpenLayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="必备工具" class="mobile-dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/package/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub/" class="nav-link">
+  GitHub
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人分享" class="mobile-dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/index.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/share/opensource.html" class="nav-link">
+  开源项目
+</a></li><li class="dropdown-item"><!----> <a href="/share/vscode/" class="nav-link">
+  VS Code必备
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website.html" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/frame/index.html" class="nav-link">
+  前端工具框架推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/notes/" class="nav-link">
+  笔记
+</a></li></ul></div></div> <a href="https://github.com/LuckRain7" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ms/DesignMode.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Algorithm.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/ms/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/ms/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/ms/safe.html" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow down"></span></button> <button type="button" aria-label="服务端" class="mobile-dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/Node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/server/Golang/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/server/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="WebGIS" class="dropdown-title"><span class="title">WebGIS</span> <span class="arrow down"></span></button> <button type="button" aria-label="WebGIS" class="mobile-dropdown-title"><span class="title">WebGIS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/WebGIS/index.html" class="nav-link">
+  README
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/Cesium/" class="nav-link">
+  Cesium
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/ArcGIS/" class="nav-link">
+  ArcGIS
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/OpenLayer/" class="nav-link">
+  OpenLayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="必备工具" class="mobile-dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/package/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub/" class="nav-link">
+  GitHub
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人分享" class="mobile-dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/index.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/share/opensource.html" class="nav-link">
+  开源项目
+</a></li><li class="dropdown-item"><!----> <a href="/share/vscode/" class="nav-link">
+  VS Code必备
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website.html" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/frame/index.html" class="nav-link">
+  前端工具框架推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/notes/" class="nav-link">
+  笔记
+</a></li></ul></div></div> <a href="https://github.com/LuckRain7" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend/JavaScript.html#一、应用" class="sidebar-link">一、应用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/JavaScript.html#_1、深拷贝和浅拷贝" class="sidebar-link">1、深拷贝和浅拷贝</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript.html#_2、防抖和节流" class="sidebar-link">2、防抖和节流</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript.html#_3、可拖动模态框" class="sidebar-link">3、可拖动模态框</a></li></ul></li><li><a href="/frontend/JavaScript.html#api" class="sidebar-link">API</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/JavaScript.html#一、object" class="sidebar-link">一、Object</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="javascript"><a href="#javascript" class="header-anchor">#</a> JavaScript</h1> <h2 id="一、应用"><a href="#一、应用" class="header-anchor">#</a> 一、应用</h2> <h3 id="_1、深拷贝和浅拷贝"><a href="#_1、深拷贝和浅拷贝" class="header-anchor">#</a> 1、深拷贝和浅拷贝</h3> <p>赋值操作则是两个对象一起指向一个对象，无论谁改变了对象里面的内容，都会互相影响。</p> <p>浅拷贝和深拷贝都是将拷贝的内容放入新的对象中去，区别在于浅拷贝只会新增一个外层对象来放要拷贝对象的所有内容，所以如果要拷贝的对象里面的属性是对象则拷贝的是对象的引用，而深拷贝则是被拷贝对象包含多少对象，深拷贝就会对应生成多少对象来一一对应往里装被拷贝对象里的内容，所有的对象都是独立全新的拷贝一份。</p> <p><strong>简单来说</strong>：</p> <ul><li>赋值操作两个变量指向同一个对象，两者互相影响。</li> <li>浅拷贝新生成一个对象，对象里面的属性是基本类型，拷贝的就是基本类型的值；如果属性是内存地址（引用类型），拷贝的就是内存地址。</li> <li>深拷贝会新生成所有对象（值对象里面层层嵌套对象），对象里面的属性是基本类型，拷贝的就是基本类型的值；如果属性是内存地址（引用类型），会新生成一个对象将内容拷贝进去。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//浅拷贝</span>
+<span class="token keyword">const</span> obj1 <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token operator">:</span> <span class="token punctuation">{</span>a<span class="token operator">:</span> <span class="token string">&quot;hello&quot;</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token number">21</span><span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> obj2 <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> obj1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 深拷贝</span>
+<span class="token keyword">function</span> <span class="token function">deepCloneByJson</span><span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 有缺陷 不能实现复杂的拷贝  function</span>
+    <span class="token keyword">return</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 递归拷贝</span>
+<span class="token comment">// hash的使用</span>
+<span class="token keyword">function</span> <span class="token function">deepClone</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> hash <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">WeakMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>obj <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> obj <span class="token comment">//判断空值</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>obj <span class="token keyword">instanceof</span> <span class="token class-name">Date</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span> <span class="token comment">//判断日期</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>obj <span class="token keyword">instanceof</span> <span class="token class-name">RegExp</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">RegExp</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+    <span class="token comment">// 如果是函数或者普通值的话 不需要深拷贝</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> obj <span class="token operator">!==</span> <span class="token string">'object'</span><span class="token punctuation">)</span> <span class="token keyword">return</span> obj
+    <span class="token comment">// 是对象的话就要进行深拷贝</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>hash<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">return</span> hash<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+
+    <span class="token keyword">let</span> cloneObj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">obj<span class="token punctuation">.</span>constructor</span>
+    hash<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> cloneObj<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> key <span class="token keyword">in</span> obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>obj<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 实现一个递归拷贝</span>
+            cloneObj<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">deepClone</span><span class="token punctuation">(</span>obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span> hash<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> cloneObj
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'zzy'</span><span class="token punctuation">,</span> age<span class="token operator">:</span> <span class="token number">18</span> <span class="token punctuation">}</span>
+obj<span class="token punctuation">.</span>other <span class="token operator">=</span> obj
+<span class="token keyword">let</span> d <span class="token operator">=</span> <span class="token function">deepClone</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+d<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">20</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>d<span class="token punctuation">.</span>other<span class="token punctuation">)</span>
+</code></pre></div><h3 id="_2、防抖和节流"><a href="#_2、防抖和节流" class="header-anchor">#</a> 2、防抖和节流</h3> <blockquote><p>防抖：防止重复点击触发事件</p> <p>节流：指定时间间隔内只会执行一次任务</p></blockquote> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1.0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>X-UA-Compatible<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ie=edge<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>节流防抖<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>f<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>防抖<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>j<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>节流<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+
+        window<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">let</span> myDebounce <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;f&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            myDebounce<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span> <span class="token function">debounce</span><span class="token punctuation">(</span>test<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token keyword">let</span> myThrottle <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;j&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            myThrottle<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span> <span class="token function">throttle</span><span class="token punctuation">(</span>test<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">,</span> <span class="token string">'zz'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 防抖</span>
+        <span class="token keyword">function</span> <span class="token function">debounce</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> time</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">let</span> _arguments <span class="token operator">=</span> arguments
+            <span class="token keyword">let</span> timeout <span class="token operator">=</span> <span class="token keyword">null</span>
+            <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>timeout<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timeout<span class="token punctuation">)</span>
+                <span class="token punctuation">}</span>
+                timeout <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                    <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> _arguments<span class="token punctuation">)</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span> time<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">function</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">' 防抖：防止重复点击触发事件'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">' 节流：指定时间间隔内只会执行一次任务'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 节流</span>
+        <span class="token keyword">function</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> time</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">let</span> _arguments <span class="token operator">=</span> arguments
+            <span class="token keyword">let</span> canRun <span class="token operator">=</span> <span class="token boolean">true</span>
+            <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>canRun<span class="token punctuation">)</span> <span class="token keyword">return</span>
+                canRun <span class="token operator">=</span> <span class="token boolean">false</span>
+                <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                    <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> _arguments<span class="token punctuation">)</span>
+                    canRun <span class="token operator">=</span> <span class="token boolean">true</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span> time<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="_3、可拖动模态框"><a href="#_3、可拖动模态框" class="header-anchor">#</a> 3、可拖动模态框</h3> <p><code>index.html</code></p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1.0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>X-UA-Compatible<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ie=edge<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css<span class="token punctuation">&quot;</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>stylesheet<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>stylesheet<span class="token punctuation">&quot;</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>css/index.css<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 设置遮罩  蒙层效果--&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mask<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- 模态框 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>model<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>model-hd<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>fa fa-star<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>可拖动的模态框<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>javascript:;<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>fa fa-times<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>index.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><code>main.js</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> model <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'model'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 居中显示</span>
+model<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>innerWidth <span class="token operator">-</span> <span class="token number">450</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token string">'px'</span>
+model<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>innerHeight <span class="token operator">-</span> <span class="token number">350</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token string">'px'</span>
+
+<span class="token keyword">let</span> x<span class="token punctuation">,</span> y<span class="token punctuation">,</span>
+    isDrop <span class="token operator">=</span> <span class="token boolean">false</span> <span class="token comment">//移动状态的判断鼠标按下才能移动</span>
+
+model<span class="token punctuation">.</span><span class="token function-variable function">onmousedown</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> e <span class="token operator">=</span> event <span class="token operator">||</span> window<span class="token punctuation">.</span>event
+    x <span class="token operator">=</span> e<span class="token punctuation">.</span>clientX <span class="token operator">-</span> model<span class="token punctuation">.</span>offsetLeft<span class="token punctuation">;</span>
+    y <span class="token operator">=</span> e<span class="token punctuation">.</span>clientY <span class="token operator">-</span> model<span class="token punctuation">.</span>offsetTop<span class="token punctuation">;</span>
+    isDrop <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">//设为true表示可以移动</span>
+<span class="token punctuation">}</span>
+
+document<span class="token punctuation">.</span><span class="token function-variable function">onmousemove</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//是否为可移动状态                　　　　　　　　　　　 　　　　　　　</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>isDrop<span class="token punctuation">)</span> <span class="token punctuation">{</span>　　　　
+        <span class="token keyword">let</span> e <span class="token operator">=</span> event <span class="token operator">||</span> window<span class="token punctuation">.</span>event                   　　
+        <span class="token keyword">let</span> moveX <span class="token operator">=</span> e<span class="token punctuation">.</span>clientX <span class="token operator">-</span> x <span class="token comment">//得到距离左边移动距离  </span>
+        <span class="token keyword">let</span> moveY <span class="token operator">=</span> e<span class="token punctuation">.</span>clientY <span class="token operator">-</span> y <span class="token comment">//得到距离上边移动距离</span>
+        <span class="token comment">//可移动最大距离</span>
+        <span class="token keyword">let</span> maxX <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientWidth <span class="token operator">-</span> model<span class="token punctuation">.</span>offsetWidth
+        <span class="token keyword">let</span> maxY <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientHeight <span class="token operator">-</span> model<span class="token punctuation">.</span>offsetHeight
+
+        <span class="token comment">//范围限定</span>
+        moveX<span class="token operator">=</span>Math<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span>maxX<span class="token punctuation">,</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>moveX<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        moveY<span class="token operator">=</span>Math<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span>maxY<span class="token punctuation">,</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>moveY<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        model<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> moveX <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span>　　
+        model<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> moveY <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span>　　　　　　　　　　
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>　　　　　　　　　　
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+document<span class="token punctuation">.</span><span class="token function-variable function">onmouseup</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    isDrop <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span> <span class="token comment">//设置为false不可移动</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">// clientX、clientY 点击位置距离当前body可视区域的x，y坐标</span>
+<span class="token comment">// pageX、pageY 对于整个页面来说，包括了被卷去的body部分的长度</span>
+<span class="token comment">// screenX、screenY  点击位置距离当前电脑屏幕的x，y坐标</span>
+<span class="token comment">// offsetX、offsetY  相对于带有定位的父盒子的x，y坐标</span>
+</code></pre></div><p><code>index.css</code></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">html,
+body</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token comment">/* 调整北京图片的三种方式 */</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>../img/bg.jpg<span class="token punctuation">)</span></span><span class="token punctuation">;</span>
+  <span class="token property">background-repeat</span><span class="token punctuation">:</span> no-repeat<span class="token punctuation">;</span>
+  <span class="token property">background-size</span><span class="token punctuation">:</span> 100% 100%<span class="token punctuation">;</span>
+  <span class="token property">background-position</span><span class="token punctuation">:</span> 0 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">h3</span> <span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">a</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* 去掉下划线 */</span>
+  <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.mask</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> 0.6<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#model</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 450px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 350px<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#model .model-hd</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #4896dc<span class="token punctuation">;</span>
+  <span class="token comment">/* 十字图标 让用户明白可以拖动 */</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> move<span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0 15px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#model .model-hd h3</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#model .model-hd h3 i</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #f1c747<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#model .model-hd a</span> <span class="token punctuation">{</span>
+  <span class="token property">float</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+  <span class="token property">margin-top</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="api"><a href="#api" class="header-anchor">#</a> API</h2> <h3 id="一、object"><a href="#一、object" class="header-anchor">#</a> 一、Object</h3> <h4 id="object-values-返回给定对象自身可枚举值的数组。"><a href="#object-values-返回给定对象自身可枚举值的数组。" class="header-anchor">#</a> <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/values" target="_blank" rel="noopener noreferrer">Object.values()<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>   返回给定对象自身可枚举值的数组。</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> foo<span class="token operator">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span> baz<span class="token operator">:</span> <span class="token number">42</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Object<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ['bar', 42]</span>
+</code></pre></div><h4 id="object-keys-返回一个包含所有给定对象自身可枚举属性名称的数组。"><a href="#object-keys-返回一个包含所有给定对象自身可枚举属性名称的数组。" class="header-anchor">#</a> <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys" target="_blank" rel="noopener noreferrer">Object.keys()<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>：返回一个包含所有给定对象自身可枚举属性名称的数组。</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token number">0</span><span class="token operator">:</span> <span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token operator">:</span> <span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token operator">:</span> <span class="token string">'c'</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// console: ['0', '1', '2']</span>
+</code></pre></div><ul><li><p>Object.assign()</p> <p>通过复制一个或多个对象来创建一个新的对象。</p></li> <li><p>Object.create()</p> <p>使用指定的原型对象和属性创建一个新对象。</p></li> <li><p>Object.defineProperty()</p> <p>给对象添加一个属性并指定该属性的配置。</p></li> <li><p>Object.defineProperties()</p> <p>给对象添加多个属性并分别指定它们的配置。</p></li> <li><p>Object.entries()</p> <p>返回给定对象自身可枚举属性的 <code>[key, value]</code> 数组。</p></li> <li><p>Object.freeze()</p> <p>冻结对象：其他代码不能删除或更改任何属性。</p></li> <li><p>Object.getOwnPropertyDescriptor()</p> <p>返回对象指定的属性配置。</p></li> <li><p>Object.getOwnPropertyNames()</p> <p>返回一个数组，它包含了指定对象所有的可枚举或不可枚举的属性名。</p></li> <li><p>Object.getOwnPropertySymbols()</p> <p>返回一个数组，它包含了指定对象自身所有的符号属性。</p></li> <li><p>Object.getPrototypeOf()</p> <p>返回指定对象的原型对象。</p></li> <li><p>Object.is()</p> <p>比较两个值是否相同。所有 NaN 值都相等（这与==和===不同）。</p></li> <li><p>Object.isExtensible()</p> <p>判断对象是否可扩展。</p></li> <li><p>Object.isFrozen()</p> <p>判断对象是否已经冻结。</p></li> <li><p>Object.isSealed()</p> <p>判断对象是否已经密封。</p></li> <li><p>Object.preventExtensions()</p> <p>防止对象的任何扩展。</p></li> <li><p>Object.seal()</p> <p>防止其他代码删除对象的属性。</p></li> <li><p>Object.setPrototypeOf()</p> <p>设置对象的原型（即内部 <code>[[Prototype]]</code> 属性）。</p></li></ul> <hr> <p>参考文章：</p> <p><a href="https://segmentfault.com/a/1190000021239893" target="_blank" rel="noopener noreferrer">Javascript浅拷贝和深拷贝<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.05604544.js" defer></script><script src="/assets/js/2.ca3eec8b.js" defer></script><script src="/assets/js/39.0c9c12df.js" defer></script>
+  </body>
+</html>

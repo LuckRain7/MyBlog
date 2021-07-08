@@ -1,8 +1,0 @@
----
-sidebar: auto
----
-
-# python
-
-### TODO
-

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>异步编程 | 震雨 luckrain7&#39;s 博客</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="震雨LuckRain7的博客,Webgis,arcgis,openlayer,css,javascript">
+    
+    <link rel="preload" href="/assets/css/0.styles.44f275cc.css" as="style"><link rel="preload" href="/assets/js/app.05604544.js" as="script"><link rel="preload" href="/assets/js/2.ca3eec8b.js" as="script"><link rel="preload" href="/assets/js/32.e0d57d07.js" as="script"><link rel="prefetch" href="/assets/js/10.f0b6186a.js"><link rel="prefetch" href="/assets/js/11.4e54ff32.js"><link rel="prefetch" href="/assets/js/12.d70483f6.js"><link rel="prefetch" href="/assets/js/13.bbe5f21d.js"><link rel="prefetch" href="/assets/js/14.ca8f8016.js"><link rel="prefetch" href="/assets/js/15.40575666.js"><link rel="prefetch" href="/assets/js/16.d4cb592d.js"><link rel="prefetch" href="/assets/js/17.b65f58dd.js"><link rel="prefetch" href="/assets/js/18.9c7aa04d.js"><link rel="prefetch" href="/assets/js/19.dd858908.js"><link rel="prefetch" href="/assets/js/20.fb5a80ca.js"><link rel="prefetch" href="/assets/js/21.8f7b555f.js"><link rel="prefetch" href="/assets/js/22.0164c279.js"><link rel="prefetch" href="/assets/js/23.fe721c45.js"><link rel="prefetch" href="/assets/js/24.3e90a8a0.js"><link rel="prefetch" href="/assets/js/25.242fb25e.js"><link rel="prefetch" href="/assets/js/26.19896185.js"><link rel="prefetch" href="/assets/js/27.1bb4c917.js"><link rel="prefetch" href="/assets/js/28.07f1b987.js"><link rel="prefetch" href="/assets/js/29.8828f920.js"><link rel="prefetch" href="/assets/js/3.5d5931d8.js"><link rel="prefetch" href="/assets/js/30.a8528128.js"><link rel="prefetch" href="/assets/js/31.5257589b.js"><link rel="prefetch" href="/assets/js/33.c7ea5808.js"><link rel="prefetch" href="/assets/js/34.f2eacfca.js"><link rel="prefetch" href="/assets/js/35.3c98b76c.js"><link rel="prefetch" href="/assets/js/36.5be4f329.js"><link rel="prefetch" href="/assets/js/37.82b5f7b3.js"><link rel="prefetch" href="/assets/js/38.df914927.js"><link rel="prefetch" href="/assets/js/39.0c9c12df.js"><link rel="prefetch" href="/assets/js/4.03c6dbef.js"><link rel="prefetch" href="/assets/js/40.a16fddb1.js"><link rel="prefetch" href="/assets/js/41.627bffa0.js"><link rel="prefetch" href="/assets/js/42.b7e91d65.js"><link rel="prefetch" href="/assets/js/43.cc1f53b4.js"><link rel="prefetch" href="/assets/js/44.b204531c.js"><link rel="prefetch" href="/assets/js/45.2604901f.js"><link rel="prefetch" href="/assets/js/46.5f2eb192.js"><link rel="prefetch" href="/assets/js/47.d2e8c1a1.js"><link rel="prefetch" href="/assets/js/48.29de5188.js"><link rel="prefetch" href="/assets/js/49.7d0f1ab8.js"><link rel="prefetch" href="/assets/js/5.e9cc3631.js"><link rel="prefetch" href="/assets/js/50.d2e1acc5.js"><link rel="prefetch" href="/assets/js/51.e127391e.js"><link rel="prefetch" href="/assets/js/52.76633561.js"><link rel="prefetch" href="/assets/js/53.d304e7e3.js"><link rel="prefetch" href="/assets/js/54.033bb2bb.js"><link rel="prefetch" href="/assets/js/55.1960cc45.js"><link rel="prefetch" href="/assets/js/56.28e839df.js"><link rel="prefetch" href="/assets/js/57.b79a2323.js"><link rel="prefetch" href="/assets/js/58.6093dd4d.js"><link rel="prefetch" href="/assets/js/59.67b0f1ee.js"><link rel="prefetch" href="/assets/js/6.7e15d66f.js"><link rel="prefetch" href="/assets/js/60.11ed73da.js"><link rel="prefetch" href="/assets/js/61.12674dad.js"><link rel="prefetch" href="/assets/js/62.671fc3c6.js"><link rel="prefetch" href="/assets/js/63.bb8d1a0c.js"><link rel="prefetch" href="/assets/js/64.2063410b.js"><link rel="prefetch" href="/assets/js/65.a4f12549.js"><link rel="prefetch" href="/assets/js/66.4e5848e4.js"><link rel="prefetch" href="/assets/js/67.8c2d90c8.js"><link rel="prefetch" href="/assets/js/68.0877a4fa.js"><link rel="prefetch" href="/assets/js/7.131d84a9.js"><link rel="prefetch" href="/assets/js/8.9ee35ff1.js"><link rel="prefetch" href="/assets/js/9.cacb5f06.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.44f275cc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">震雨 luckrain7's 博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ms/DesignMode.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Algorithm.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/ms/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/ms/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/ms/safe.html" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow down"></span></button> <button type="button" aria-label="服务端" class="mobile-dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/Node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/server/Golang/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/server/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="WebGIS" class="dropdown-title"><span class="title">WebGIS</span> <span class="arrow down"></span></button> <button type="button" aria-label="WebGIS" class="mobile-dropdown-title"><span class="title">WebGIS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/WebGIS/index.html" class="nav-link">
+  README
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/Cesium/" class="nav-link">
+  Cesium
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/ArcGIS/" class="nav-link">
+  ArcGIS
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/OpenLayer/" class="nav-link">
+  OpenLayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="必备工具" class="mobile-dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/package/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub/" class="nav-link">
+  GitHub
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人分享" class="mobile-dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/index.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/share/opensource.html" class="nav-link">
+  开源项目
+</a></li><li class="dropdown-item"><!----> <a href="/share/vscode/" class="nav-link">
+  VS Code必备
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website.html" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/frame/index.html" class="nav-link">
+  前端工具框架推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/notes/" class="nav-link">
+  笔记
+</a></li></ul></div></div> <a href="https://github.com/LuckRain7" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ms/DesignMode.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Algorithm.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/ms/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/ms/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/ms/safe.html" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow down"></span></button> <button type="button" aria-label="服务端" class="mobile-dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/Node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/server/Golang/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/server/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="WebGIS" class="dropdown-title"><span class="title">WebGIS</span> <span class="arrow down"></span></button> <button type="button" aria-label="WebGIS" class="mobile-dropdown-title"><span class="title">WebGIS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/WebGIS/index.html" class="nav-link">
+  README
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/Cesium/" class="nav-link">
+  Cesium
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/ArcGIS/" class="nav-link">
+  ArcGIS
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/OpenLayer/" class="nav-link">
+  OpenLayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="必备工具" class="mobile-dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/package/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub/" class="nav-link">
+  GitHub
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人分享" class="mobile-dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/index.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/share/opensource.html" class="nav-link">
+  开源项目
+</a></li><li class="dropdown-item"><!----> <a href="/share/vscode/" class="nav-link">
+  VS Code必备
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website.html" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/frame/index.html" class="nav-link">
+  前端工具框架推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/notes/" class="nav-link">
+  笔记
+</a></li></ul></div></div> <a href="https://github.com/LuckRain7" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>异步编程</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/engineering/%E5%BC%82%E6%AD%A5.html#一、理解异步" class="sidebar-link">一、理解异步</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/engineering/%E5%BC%82%E6%AD%A5.html#_1、首先大家了解几个概念" class="sidebar-link">1、首先大家了解几个概念</a></li></ul></li><li><a href="/engineering/%E5%BC%82%E6%AD%A5.html#二、异步解决方案" class="sidebar-link">二、异步解决方案</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/engineering/%E5%BC%82%E6%AD%A5.html#_1-回调函数" class="sidebar-link">(1) 回调函数</a></li><li class="sidebar-sub-header"><a href="/engineering/%E5%BC%82%E6%AD%A5.html#_2-promise" class="sidebar-link">(2) Promise</a></li><li class="sidebar-sub-header"><a href="/engineering/%E5%BC%82%E6%AD%A5.html#_3-generator" class="sidebar-link">(3) Generator</a></li><li class="sidebar-sub-header"><a href="/engineering/%E5%BC%82%E6%AD%A5.html#_4-async-await" class="sidebar-link">(4) Async/Await</a></li></ul></li><li><a href="/engineering/%E5%BC%82%E6%AD%A5.html#参考文章" class="sidebar-link">参考文章：</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="异步编程"><a href="#异步编程" class="header-anchor">#</a> 异步编程</h1> <h2 id="一、理解异步"><a href="#一、理解异步" class="header-anchor">#</a> 一、理解异步</h2> <h3 id="_1、首先大家了解几个概念"><a href="#_1、首先大家了解几个概念" class="header-anchor">#</a> 1、首先大家了解几个概念</h3> <h4 id="_1-javascript-单线程"><a href="#_1-javascript-单线程" class="header-anchor">#</a> (1) JavaScript 单线程</h4> <p>Why？-&gt; 与它的用途有关。作为浏览器脚本语言，JavaScript的主要用途是与用户互动，以及操作DOM。这决定了它只能是单线程，否则会带来很复杂的同步问题。比如，假定JavaScript同时有两个线程，一个线程在某个DOM节点上添加内容，另一个线程删除了这个节点，这时浏览器应该以哪个线程为准？</p> <h4 id="_2-浏览器是多个线程"><a href="#_2-浏览器是多个线程" class="header-anchor">#</a> (2) 浏览器是多个线程</h4> <ul><li>GUI渲染线程（webkit内核）：渲染页面 HTML CSS</li> <li>JS引擎线程（单线程）：执行JS代码</li> <li>事件触发线程 ：控制交互</li> <li>定时触发器线程 ： setTimeout 和 setInteval</li> <li>异步 http 请求线程 ：处理 ajax请求等</li> <li>事件轮询处理线程 ： 轮询消息队列，event loop</li></ul> <h4 id="_3-执行模式-同步-synchronous-和-异步-asynchronous"><a href="#_3-执行模式-同步-synchronous-和-异步-asynchronous" class="header-anchor">#</a> (3) 执行模式 ：同步（Synchronous）和 异步（Asynchronous）</h4> <p>同步（Synchronous）模式：任务依次执行，后一个任务需等待前一任务解说，然后再执行。</p> <p>获取后台数据，若是同步的话，需要等到数据返回，才能做其他事情，此时若是网络不好，接下来的操作也无法执行了，所以出现了异步解决方案。</p> <p>异步（Asynchronous）模式：每一个任务有一个或多个回调函数（callback），前一个任务结束后，不是执行后一个任务，而是执行回调函数，后一个任务则是不等前一个任务结束就执行，所以程序的执行顺序与任务的排列顺序是不一致的、异步的。</p> <h4 id="_4-微任务-宏任务"><a href="#_4-微任务-宏任务" class="header-anchor">#</a> (4) 微任务 宏任务</h4> <p>微任务包括 <code>process.nextTick</code> ，<code>promise</code> ，<code>MutationObserver</code>，其中 <code>process.nextTick</code> 为 Node 独有。</p> <p>宏任务包括 <code>script</code> ， <code>setTimeout</code> ，<code>setInterval</code> ，<code>setImmediate</code> ，<code>I/O</code> ，<code>UI rendering</code>。</p> <p>这里很多人会有个误区，认为微任务快于宏任务，其实是错误的。因为宏任务中包括了 <code>script</code> ，浏览器会先执行一个宏任务，接下来有异步代码的话才会先执行微任务。</p> <h4 id="_5-event-loop-事件轮询"><a href="#_5-event-loop-事件轮询" class="header-anchor">#</a> (5) Event Loop（事件轮询）</h4> <p>Event Loop 是一个程序结构，用于等待和发送消息和事件。</p> <p>Event Loop 执行顺序如下所示：</p> <ul><li>首先执行同步代码，这属于宏任务</li> <li>当执行完所有同步代码后，执行栈为空，查询是否有异步代码需要执行</li> <li>执行所有微任务</li> <li>当执行完所有微任务后，如有必要会渲染页面</li> <li>然后开始下一轮 Event Loop，执行宏任务中的异步代码，也就是 <code>setTimeout</code> 中的回调函数</li></ul> <p><strong>综上大家是否理解</strong></p> <h2 id="二、异步解决方案"><a href="#二、异步解决方案" class="header-anchor">#</a> 二、异步解决方案</h2> <h3 id="_1-回调函数"><a href="#_1-回调函数" class="header-anchor">#</a> (1) 回调函数</h3> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token keyword">function</span> <span class="token function">ajax</span><span class="token punctuation">(</span><span class="token parameter">callback</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token string">'已拿到数据'</span>
+        <span class="token function">callback</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">2000</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token function">ajax</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token comment">//结果 1 -&gt; 2 -&gt; 3 -&gt; 已拿到数据</span>
+</code></pre></div><h3 id="_2-promise"><a href="#_2-promise" class="header-anchor">#</a> (2) Promise</h3> <blockquote><p>Promise 是异步编程的一种解决方案，比传统的解决方案——回调函数和事件——更合理和更强大。它由社区最早提出和实现，ES6 将其写进了语言标准，统一了用法，原生提供了<code>Promise</code>对象。</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> getAjaxData <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/data'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> data <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>data<span class="token punctuation">.</span>code <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">//成功 resolve()出数据</span>
+            <span class="token function">resolve</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 失败reject() 出错误信息</span>
+            <span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+getAjaxData<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 使用拿到的数据</span>
+    <span class="token function">render</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="_3-generator"><a href="#_3-generator" class="header-anchor">#</a> (3) Generator</h3> <blockquote><p>Generator 函数是 ES6 提供的一种异步编程解决方案，语法行为与传统函数完全不同</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">readFile</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">fileName</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span>fileName<span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">error<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">gen</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token operator">*</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> f1 <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'/etc/fstab'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> f2 <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'/etc/shells'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>f1<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>f2<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="_4-async-await"><a href="#_4-async-await" class="header-anchor">#</a> (4) Async/Await</h3> <blockquote><p>ES2017 标准引入了 async 函数，使得异步操作变得更加方便。</p> <p>async 函数是什么？一句话，它就是 Generator 函数的语法糖。</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">asyncReadFile</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> f1 <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'/etc/fstab'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> f2 <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'/etc/shells'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>f1<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>f2<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="参考文章"><a href="#参考文章" class="header-anchor">#</a> 参考文章：</h2> <p><a href="http://www.ruanyifeng.com/blog/2012/12/asynchronous%EF%BC%BFjavascript.html" target="_blank" rel="noopener noreferrer">Javascript异步编程的4种方法- 阮一峰<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://es6.ruanyifeng.com/" target="_blank" rel="noopener noreferrer">《ECMAScript 6 入门教程》<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.05604544.js" defer></script><script src="/assets/js/2.ca3eec8b.js" defer></script><script src="/assets/js/32.e0d57d07.js" defer></script>
+  </body>
+</html>

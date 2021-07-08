@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue-CLI | 震雨 luckrain7&#39;s 博客</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="震雨LuckRain7的博客,Webgis,arcgis,openlayer,css,javascript">
+    
+    <link rel="preload" href="/assets/css/0.styles.44f275cc.css" as="style"><link rel="preload" href="/assets/js/app.05604544.js" as="script"><link rel="preload" href="/assets/js/2.ca3eec8b.js" as="script"><link rel="preload" href="/assets/js/15.40575666.js" as="script"><link rel="preload" href="/assets/js/6.7e15d66f.js" as="script"><link rel="prefetch" href="/assets/js/10.f0b6186a.js"><link rel="prefetch" href="/assets/js/11.4e54ff32.js"><link rel="prefetch" href="/assets/js/12.d70483f6.js"><link rel="prefetch" href="/assets/js/13.bbe5f21d.js"><link rel="prefetch" href="/assets/js/14.ca8f8016.js"><link rel="prefetch" href="/assets/js/16.d4cb592d.js"><link rel="prefetch" href="/assets/js/17.b65f58dd.js"><link rel="prefetch" href="/assets/js/18.9c7aa04d.js"><link rel="prefetch" href="/assets/js/19.dd858908.js"><link rel="prefetch" href="/assets/js/20.fb5a80ca.js"><link rel="prefetch" href="/assets/js/21.8f7b555f.js"><link rel="prefetch" href="/assets/js/22.0164c279.js"><link rel="prefetch" href="/assets/js/23.fe721c45.js"><link rel="prefetch" href="/assets/js/24.3e90a8a0.js"><link rel="prefetch" href="/assets/js/25.242fb25e.js"><link rel="prefetch" href="/assets/js/26.19896185.js"><link rel="prefetch" href="/assets/js/27.1bb4c917.js"><link rel="prefetch" href="/assets/js/28.07f1b987.js"><link rel="prefetch" href="/assets/js/29.8828f920.js"><link rel="prefetch" href="/assets/js/3.5d5931d8.js"><link rel="prefetch" href="/assets/js/30.a8528128.js"><link rel="prefetch" href="/assets/js/31.5257589b.js"><link rel="prefetch" href="/assets/js/32.e0d57d07.js"><link rel="prefetch" href="/assets/js/33.c7ea5808.js"><link rel="prefetch" href="/assets/js/34.f2eacfca.js"><link rel="prefetch" href="/assets/js/35.3c98b76c.js"><link rel="prefetch" href="/assets/js/36.5be4f329.js"><link rel="prefetch" href="/assets/js/37.82b5f7b3.js"><link rel="prefetch" href="/assets/js/38.df914927.js"><link rel="prefetch" href="/assets/js/39.0c9c12df.js"><link rel="prefetch" href="/assets/js/4.03c6dbef.js"><link rel="prefetch" href="/assets/js/40.a16fddb1.js"><link rel="prefetch" href="/assets/js/41.627bffa0.js"><link rel="prefetch" href="/assets/js/42.b7e91d65.js"><link rel="prefetch" href="/assets/js/43.cc1f53b4.js"><link rel="prefetch" href="/assets/js/44.b204531c.js"><link rel="prefetch" href="/assets/js/45.2604901f.js"><link rel="prefetch" href="/assets/js/46.5f2eb192.js"><link rel="prefetch" href="/assets/js/47.d2e8c1a1.js"><link rel="prefetch" href="/assets/js/48.29de5188.js"><link rel="prefetch" href="/assets/js/49.7d0f1ab8.js"><link rel="prefetch" href="/assets/js/5.e9cc3631.js"><link rel="prefetch" href="/assets/js/50.d2e1acc5.js"><link rel="prefetch" href="/assets/js/51.e127391e.js"><link rel="prefetch" href="/assets/js/52.76633561.js"><link rel="prefetch" href="/assets/js/53.d304e7e3.js"><link rel="prefetch" href="/assets/js/54.033bb2bb.js"><link rel="prefetch" href="/assets/js/55.1960cc45.js"><link rel="prefetch" href="/assets/js/56.28e839df.js"><link rel="prefetch" href="/assets/js/57.b79a2323.js"><link rel="prefetch" href="/assets/js/58.6093dd4d.js"><link rel="prefetch" href="/assets/js/59.67b0f1ee.js"><link rel="prefetch" href="/assets/js/60.11ed73da.js"><link rel="prefetch" href="/assets/js/61.12674dad.js"><link rel="prefetch" href="/assets/js/62.671fc3c6.js"><link rel="prefetch" href="/assets/js/63.bb8d1a0c.js"><link rel="prefetch" href="/assets/js/64.2063410b.js"><link rel="prefetch" href="/assets/js/65.a4f12549.js"><link rel="prefetch" href="/assets/js/66.4e5848e4.js"><link rel="prefetch" href="/assets/js/67.8c2d90c8.js"><link rel="prefetch" href="/assets/js/68.0877a4fa.js"><link rel="prefetch" href="/assets/js/7.131d84a9.js"><link rel="prefetch" href="/assets/js/8.9ee35ff1.js"><link rel="prefetch" href="/assets/js/9.cacb5f06.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.44f275cc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">震雨 luckrain7's 博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ms/DesignMode.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Algorithm.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/ms/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/ms/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/ms/safe.html" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow down"></span></button> <button type="button" aria-label="服务端" class="mobile-dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/Node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/server/Golang/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/server/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="WebGIS" class="dropdown-title"><span class="title">WebGIS</span> <span class="arrow down"></span></button> <button type="button" aria-label="WebGIS" class="mobile-dropdown-title"><span class="title">WebGIS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/WebGIS/index.html" class="nav-link">
+  README
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/Cesium/" class="nav-link">
+  Cesium
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/ArcGIS/" class="nav-link">
+  ArcGIS
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/OpenLayer/" class="nav-link">
+  OpenLayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="必备工具" class="mobile-dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/package/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub/" class="nav-link">
+  GitHub
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人分享" class="mobile-dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/index.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/share/opensource.html" class="nav-link">
+  开源项目
+</a></li><li class="dropdown-item"><!----> <a href="/share/vscode/" class="nav-link">
+  VS Code必备
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website.html" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/frame/index.html" class="nav-link">
+  前端工具框架推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/notes/" class="nav-link">
+  笔记
+</a></li></ul></div></div> <a href="https://github.com/LuckRain7" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ms/DesignMode.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Algorithm.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/ms/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/ms/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/ms/safe.html" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow down"></span></button> <button type="button" aria-label="服务端" class="mobile-dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/Node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/server/Golang/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/server/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="WebGIS" class="dropdown-title"><span class="title">WebGIS</span> <span class="arrow down"></span></button> <button type="button" aria-label="WebGIS" class="mobile-dropdown-title"><span class="title">WebGIS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/WebGIS/index.html" class="nav-link">
+  README
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/Cesium/" class="nav-link">
+  Cesium
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/ArcGIS/" class="nav-link">
+  ArcGIS
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/OpenLayer/" class="nav-link">
+  OpenLayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="必备工具" class="mobile-dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/package/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub/" class="nav-link">
+  GitHub
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人分享" class="mobile-dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/index.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/share/opensource.html" class="nav-link">
+  开源项目
+</a></li><li class="dropdown-item"><!----> <a href="/share/vscode/" class="nav-link">
+  VS Code必备
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website.html" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/frame/index.html" class="nav-link">
+  前端工具框架推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/notes/" class="nav-link">
+  笔记
+</a></li></ul></div></div> <a href="https://github.com/LuckRain7" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue-CLI</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Vue/Vue-CLI.html#一、安装" class="sidebar-link">一、安装</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Vue/Vue-CLI.html#二、使用" class="sidebar-link">二、使用</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Vue/Vue-CLI.html#插件" class="sidebar-link">插件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Vue/Vue-CLI.html#代码压缩" class="sidebar-link">代码压缩</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue-cli"><a href="#vue-cli" class="header-anchor">#</a> Vue-CLI</h1> <blockquote><p>版本 @vue/cli 4.2.3</p></blockquote> <h2 id="一、安装"><a href="#一、安装" class="header-anchor">#</a> 一、安装</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> global <span class="token function">add</span> @vue/cli
+</code></pre></div><h2 id="二、使用"><a href="#二、使用" class="header-anchor">#</a> 二、使用</h2> <div class="language-bas extra-class"><pre class="language-text"><code>vue create [appname]
+</code></pre></div><p>执行命令后会进行先择</p> <div class="language-bash extra-class"><pre class="language-bash"><code>Vue CLI v4.2.3
+? Please pick a preset: <span class="token punctuation">(</span>Use arrow keys<span class="token punctuation">)</span>
+<span class="token operator">&gt;</span> default <span class="token punctuation">(</span>babel, eslint<span class="token punctuation">)</span>   <span class="token comment">#默认项目  内含babel eslint</span>
+  Manually <span class="token keyword">select</span> features  <span class="token comment"># 自定义选项（肯定选择个呀！）</span>
+</code></pre></div><p>选择需要插件</p> <div class="language-bash extra-class"><pre class="language-bash"><code>? Check the features needed <span class="token keyword">for</span> your project: <span class="token comment">#用空格进行选择  回车确定进入下一步</span>
+ <span class="token punctuation">(</span>*<span class="token punctuation">)</span> Babel                                <span class="token comment">#babel必装</span>
+ <span class="token punctuation">(</span> <span class="token punctuation">)</span> TypeScript                           <span class="token comment">#用 TypeScript 的话选上</span>
+ <span class="token punctuation">(</span> <span class="token punctuation">)</span> Progressive Web App <span class="token punctuation">(</span>PWA<span class="token punctuation">)</span> Support    <span class="token comment">#是否需要 PWA</span>
+ <span class="token punctuation">(</span>*<span class="token punctuation">)</span> Router                               <span class="token comment">#Router必备</span>
+ <span class="token punctuation">(</span>*<span class="token punctuation">)</span> Vuex                                 <span class="token comment">#Vuex 必备</span>
+<span class="token operator">&gt;</span><span class="token punctuation">(</span>*<span class="token punctuation">)</span> CSS Pre-processors                   <span class="token comment">#需不需要css预处理器（人生苦短，用起来！）</span>
+ <span class="token punctuation">(</span>*<span class="token punctuation">)</span> Linter / Formatter                   <span class="token comment">#需不需要规范和格式化工具</span>
+ <span class="token punctuation">(</span> <span class="token punctuation">)</span> Unit Testing                         <span class="token comment">#单元测试工具</span>
+ <span class="token punctuation">(</span> <span class="token punctuation">)</span> E2E Testing                          <span class="token comment">#E2E 工具</span>
+</code></pre></div><p>路由模式的选择，输入y 选择经典路由 ; 输入n 使用hash路由  根据个人喜好</p> <div class="language-bash extra-class"><pre class="language-bash"><code>? Use <span class="token function">history</span> mode <span class="token keyword">for</span> router? <span class="token punctuation">(</span>Requires proper server setup <span class="token keyword">for</span> index fallback <span class="token keyword">in</span> production<span class="token punctuation">)</span> <span class="token punctuation">(</span>Y/n<span class="token punctuation">)</span>   y
+</code></pre></div><p>选择css预处理器 （sass和less差不都，语法稍稍不同）</p> <div class="language-bash extra-class"><pre class="language-bash"><code>? Pick a CSS pre-processor <span class="token punctuation">(</span>PostCSS, Autoprefixer and CSS Modules are supported by default<span class="token punctuation">)</span>: <span class="token punctuation">(</span>Use arrow keys<span class="token punctuation">)</span> 
+  Sass/SCSS <span class="token punctuation">(</span>with dart-sass<span class="token punctuation">)</span>   
+  Sass/SCSS <span class="token punctuation">(</span>with node-sass<span class="token punctuation">)</span>   
+<span class="token operator">&gt;</span> Less                         
+  Stylus                       
+</code></pre></div><p>选择代码规范和格式化样式，不是很想被支配的就选第一个</p> <div class="language-bash extra-class"><pre class="language-bash"><code>? Pick a linter / formatter config: <span class="token punctuation">(</span>Use arrow keys<span class="token punctuation">)</span> 
+  ESLint with error prevention only
+  ESLint + Airbnb config
+  ESLint + Standard config
+<span class="token operator">&gt;</span> ESLint + Prettier
+</code></pre></div><p>配置代码检查</p> <div class="language-bash extra-class"><pre class="language-bash"><code>? Pick additional lint features: <span class="token punctuation">(</span>Press <span class="token operator">&lt;</span>space<span class="token operator">&gt;</span> to select, <span class="token operator">&lt;</span>a<span class="token operator">&gt;</span> to toggle all, <span class="token operator">&lt;</span>i<span class="token operator">&gt;</span> to invert selection<span class="token punctuation">)</span>
+<span class="token operator">&gt;</span><span class="token punctuation">(</span>*<span class="token punctuation">)</span> Lint on save             <span class="token comment">#保存时进行检查</span>
+ <span class="token punctuation">(</span> <span class="token punctuation">)</span> Lint and fix on commit   <span class="token comment">#保存时进行检查并且进行修复</span>
+</code></pre></div><p>配置文件存储</p> <div class="language-bash extra-class"><pre class="language-bash"><code>? Where <span class="token keyword">do</span> you prefer placing config <span class="token keyword">for</span> Babel, ESLint, etc.? <span class="token punctuation">(</span>Use arrow keys<span class="token punctuation">)</span>
+<span class="token operator">&gt;</span> In dedicated config files   <span class="token comment"># 形成单独文件</span>
+  In package.json             <span class="token comment"># 放到 package.json 里</span>
+</code></pre></div><p>是否记住这次的配置选择</p> <div class="language-bash extra-class"><pre class="language-bash"><code>? Save this as a preset <span class="token keyword">for</span> future projects? <span class="token punctuation">(</span>y/N<span class="token punctuation">)</span> n
+</code></pre></div><p>完成，进入项目 ，执行yarn serve 启动项目</p> <h2 id="插件"><a href="#插件" class="header-anchor">#</a> 插件</h2> <h3 id="代码压缩"><a href="#代码压缩" class="header-anchor">#</a> 代码压缩</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 生产环境</span>
+<span class="token keyword">const</span> merge <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;lodash/merge&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  common <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./common&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  UglifyJsPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;uglifyjs-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  CompressionWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;compression-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  productionGzipExtensions <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;css&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  production <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">configureWebpack</span><span class="token operator">:</span> <span class="token parameter">config</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      config<span class="token punctuation">.</span>plugins<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">CompressionWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          algorithm<span class="token operator">:</span> <span class="token string">&quot;gzip&quot;</span><span class="token punctuation">,</span>
+          test<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">RegExp</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">\\.(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>productionGzipExtensions<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">&quot;|&quot;</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">)$</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          threshold<span class="token operator">:</span> <span class="token number">10240</span><span class="token punctuation">,</span>
+          minRatio<span class="token operator">:</span> <span class="token number">0.8</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">)</span><span class="token punctuation">;</span>
+      config<span class="token punctuation">.</span>plugins<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">UglifyJsPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          uglifyOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+            warnings<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            compress<span class="token operator">:</span> <span class="token punctuation">{</span>
+              drop_debugger<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// console</span>
+              drop_console<span class="token operator">:</span> <span class="token boolean">true</span>
+              <span class="token comment">//   pure_funcs: [&quot;console.log&quot;] // 移除console</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          sourceMap<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+          parallel<span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">merge</span><span class="token punctuation">(</span>common<span class="token punctuation">,</span> production<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><hr> <div class="Vue"><div class="mid"><div>Vue 内部索引</div> <ul><li>Vue</li> <li>Vue-router</li> <li>Vuex</li> <li>Vue-CLI</li></ul></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.05604544.js" defer></script><script src="/assets/js/2.ca3eec8b.js" defer></script><script src="/assets/js/15.40575666.js" defer></script><script src="/assets/js/6.7e15d66f.js" defer></script>
+  </body>
+</html>
