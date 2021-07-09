@@ -19,3 +19,37 @@ pre 元素中允许的文本可以包括物理样式和基于内容的样式变�
 <pre>{{ code }}</pre>
 ```
 
+##  MutationObserver
+
+> API 提供了监视对 DOM 树所做更改的能力
+>
+> 兼容性：https://caniuse.com/?search=MutationObserver
+
+```js
+const $body = document.getElementById('body');
+
+// 需要注意兼容性问题
+const MutationObserver = window.MutationObserver || window.webkitMutationObserver || window.MozMutationObserver;
+
+// 观察器的配置（需要观察什么变动）
+const config = {
+  childList: true, // 子节点的变动（新增、删除或者更改）
+  attributes: true, // 属性的变动
+  characterData: true, // 节点内容或节点文本的变动
+  subtree: true, // 是否将观察器应用于该节点的所有后代节点
+  attributeFilter: [] // 要监视的特定属性名称的数组
+};
+
+const mutationObserver = new MutationObserver(function (mutations) {
+  console.log('body 发生了变动：', mutations);
+})
+
+mutationObserver.observe($body, config);
+```
+
+参考：
+
+[MutationObserver MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver)
+
+[MutationObserver.observe() - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver/observe)
+

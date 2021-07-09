@@ -21,6 +21,8 @@ sidebar: auto
 
 ## GitHub action
 
+Github Action 是 Github 提供的一套快速便捷的 CI/CD 方案。
+
 在根目录下添加文件： `.github/workflows/action.yml`
 
 action配置：（以 VuePress 打包上传 GitHub pages 为例）
@@ -71,11 +73,17 @@ jobs:
 
 ```
 
+*推荐阅读*
+
 * GitHub支持
   + [Publishing a package using an action](https://docs.github.com/en/packages/managing-github-packages-using-github-actions-workflows/publishing-and-installing-a-package-with-github-actions#publishing-a-package-using-an-action)
   + [HTTP-based Git access by an installation](https://docs.github.com/en/developers/apps/building-github-apps/authenticating-with-github-apps#http-based-git-access-by-an-installation)
 * 参考文章
   + [GitHub Actions 入门教程 - 阮一峰](https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
+
+*相关 Action 库推荐*
+
+* [GitHub Pages Deploy Action](https://github.com/JamesIves/github-pages-deploy-action)
 
 ## Vue项目推荐
 
