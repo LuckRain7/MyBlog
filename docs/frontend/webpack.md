@@ -614,7 +614,6 @@ module.exports = loader;
 
 ```
 yarn add schema-utils
-
 ```
 
 自动添加文件依赖
@@ -737,9 +736,8 @@ module.exports = loader;
 
 安装拿后缀
 
-```
+```bash
 yarn add mime
-
 ```
 
 ```javascript
@@ -789,12 +787,10 @@ setTimeout(function () {
 
 安装less包
 
-```
+```bash
 yarn add less
-
 ```
 
- 
 
 ```javascript
 # webpack.config.js
@@ -859,10 +855,10 @@ function loader(source) {
 }
 // 在style-loader上 写了pitch
 // style-loader  less-loader!css-loader/./index.less
-loader.pitch = function (remainingRequest) { //剩余请求
-    //让style-loader 去处理 less-loader!css-loader/./index.less
+loader.pitch = function (remainingRequest) { // 剩余请求
+    // 让style-loader 去处理 less-loader!css-loader/./index.less
     // require路径 返回的就是css-loader处理好的结果require
-    //使用require进行行内loader 执行除了style之外的两个loader
+    // 使用require进行行内loader 执行除了style之外的两个loader
     return `
     const style = document.createElement('style');
     style.innerHTML = require(${loaderUtils.stringifyRequest(this, '!!' + remainingRequest)});
@@ -879,39 +875,38 @@ module.exports = loader;
 执行css-loader
 ```
 
-## 六、webpack中的Plugin
-## 六、webpack中的Plugin
+## 六、webpack 中的 Plugin
 
 加载插件的对象
 
-| 对象                    | 钩子                       |
-| ----------------------- | -------------------------- |
-| Compiler 编译对象       | run 开始运行               |
-|                         | compile 开始编译           |
-|                         | compilation 创建编译对象   |
-|                         | make 创建模块对象          |
-|                         | emit 发射文件              |
-|                         | done 完成                  |
-| Compilation 资源构建    | buildModule 创建模块       |
-|                         | normalModule 普通模块加载  |
-|                         | finishModules 模块加载完成 |
-|                         | seal 封装 整理代码         |
-|                         | opitimze 优化              |
-|                         | after-seal 封装后          |
-| Module Factory 模块处理 | beforeResolver 解析前      |
-|                         | afterResolver 解析后       |
-|                         | parser 解析                |
-| Module 模块             |                            |
-| Parser 解析             | program 开始遍历           |
-|                         | statement 语句             |
-|                         | call 调用                  |
-|                         | expression 处理表达式      |
-| Template 模板           | hash 处理 hash             |
-|                         | bootstrap 启动             |
-|                         | localVars 变量             |
-|                         | render 渲染                |
+| 对象						| 钩子						|
+| -----------------------	| --------------------------|
+| Compiler 编译对象			| run 开始运行				|
+|							| compile 开始编译			|
+|							| compilation 创建编译对象	|
+|							| make 创建模块对象			|
+|							| emit 发射文件				|
+|							| done 完成					|
+| Compilation 资源构建		| buildModule 创建模块		|
+|							| normalModule 普通模块加载	|
+|							| finishModules 模块加载完成  |
+|							| seal 封装 整理代码		    |
+|							| opitimze 优化				|
+|							| after-seal 封装后			|
+| Module Factory 模块处理   	| beforeResolver 解析前		|
+|							| afterResolver 解析后		|
+|							| parser 解析				|
+| Module 模块				|							|
+| Parser 解析				| program 开始遍历			|
+|							| statement 语句			    |
+|							| call 调用					|
+|							| expression 处理表达式		|
+| Template 模板				| hash 处理 hash			    |
+|							| bootstrap 启动			    |
+|							| localVars 变量			    |
+|							| render 渲染				|
 
-在插件开发中最重要的两个资源就是compiler 和 compilation 对象。compiler对象代表了完整的webpack环境配置。compilation对象代表了一次资源版本构建。
+在插件开发中最重要的两个资源就是 compiler 和 compilation 对象。compiler 对象代表了完整的 webpack 环境配置。compilation 对象代表了一次资源版本构建。
 
 基本配置
 
@@ -919,9 +914,7 @@ module.exports = loader;
 # webpack.config.js
 
 const path = require('path');
-
 const DonePlugin = require('./plugins/DonePlugin.js');
-
 const AsyncPlugin = require('./plugins/AsyncPlugin.js');
 
 module.exports = {
@@ -977,7 +970,7 @@ module.exports = AsyncPlugin;
 
 ```
 
-文件列表插件
+### 文件列表插件
 
 yarn add -D html-webpack-plugin
 
@@ -987,7 +980,6 @@ yarn add -D html-webpack-plugin
 new FileListPlugin({
     filename: 'list.md'
 })
-
 
 
 # FileListPlugin.js
@@ -1021,29 +1013,29 @@ module.exports = FileListPlugin;
 
 ### 内联样式插件
 
-yarn add css-loader mini-css-extract-plugin -D
+yarn add -D css-loader mini-css-extract-plugin 
 
- yarn add --dev html-webpack-plugin@next
+yarn add -D html-webpack-plugin@next
 
 ```javascript
  # webpack.config.js
  
 plugins: [
-        new DonePlugin(),
-        new AsyncPlugin(),
-        new HtmlWebpackPlugin({
-            template: './src/index.html'
-        }),
-        new FileListPlugin({
-            filename: 'list.md'
-        }),
-        new MiniCssExtractPlugin({
-            filename:'main.css'
-        }),
-        new InlineSourcePlugin({
-            match:/\.(js|css)$/
-        })
-    ],
+    new DonePlugin(),
+    new AsyncPlugin(),
+    new HtmlWebpackPlugin({
+        template: './src/index.html'
+    }),
+    new FileListPlugin({
+        filename: 'list.md'
+    }),
+    new MiniCssExtractPlugin({
+        filename:'main.css'
+    }),
+    new InlineSourcePlugin({
+        match:/\.(js|css)$/
+    })
+],
     
     
  # InlineSourcePlugin.js
@@ -1083,7 +1075,7 @@ class InlineSourcePlugin {
         return tag;
     }
 
-    //处理引入标签 
+    //处理引入标签
     processTags(data,compilation) {
         let headTags = [];
         let bodyTags = [];

@@ -4,15 +4,15 @@ sidebar: auto
 
 # GIT
 
-## git 是什么？
+## Git 是什么？
 
  Git是目前世界上最先进的分布式版本控制系统（没有之一）。
 
-## git 原理
+## Git 原理
 
 还是去看看阮老师写的吧，链接：  [Git 原理入门- 阮一峰]( http://www.ruanyifeng.com/blog/2018/10/git-internals.html )
 
-## git 目录
+## Git 目录
 
 .git目录下有几个重要的文件/文件夹
 
@@ -25,7 +25,7 @@ sidebar: auto
 
 ![git-catalog](/img/git-catalog.png)
 
-## git 常用命令
+## Git 常用命令
 
 ```bash
 git init # 初始化git
@@ -89,7 +89,7 @@ rebase操作可以把本地未push的分叉提交历史整理成直线；
 
 rebase的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比。
 
-## git的常见应用
+## Git 常见应用
 
 ### 1、本地项目上传至多个远程库
 
@@ -139,13 +139,13 @@ git branch -D [本地分支名称] # 删除本地分支
 git checkout [本地分支名称] # 切换本地分支
 ```
 
-## Git提交规范
+## Git 提交规范
 
 ```
 Feat：新功能（feature）
 Fix：修补bug
 docs：文档（documentation）
-style： 格式（不影响代码运行的变动）
+Style： 格式（不影响代码运行的变动）
 refactor：重构（即不是新增功能，也不是修改bug的代码变动）
 test：增加测试
 chore：构建过程或辅助工具的变动
@@ -158,4 +158,4 @@ Modify: 修改
 
 [Git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
 
-[提醒！你可能会忽略的 Git 提交规范](https://segmentfault.com/a/1190000022440330)https://segmentfault.com/a/1190000022440330)
+[提醒！你可能会忽略的 Git 提交规范](https://segmentfault.com/a/1190000022440330)
