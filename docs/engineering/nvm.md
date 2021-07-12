@@ -24,7 +24,7 @@
 
 - Linux
 
-```bash
+```shell
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 ```
@@ -43,7 +43,7 @@ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | 
 
  下面命令以 node 10 版本为例
 
-```bash
+```shell
 nvm -v # 查看当前NVM版本
 
 nvm ls #查找本电脑上所有的node版本

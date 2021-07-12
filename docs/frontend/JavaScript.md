@@ -301,14 +301,14 @@ div {
 
 #### [Object.values()]( https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/values )   返回给定对象自身可枚举值的数组。
 
-```js
+```JavaScript
 var obj = { foo: 'bar', baz: 42 };
 console.log(Object.values(obj)); // ['bar', 42]
 ```
 
 #### [Object.keys()]( https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys )：返回一个包含所有给定对象自身可枚举属性名称的数组。
 
-```js
+```JavaScript
 var obj = { 0: 'a', 1: 'b', 2: 'c' };
 console.log(Object.keys(obj)); // console: ['0', '1', '2']
 ```
@@ -387,4 +387,4 @@ console.log(Object.keys(obj)); // console: ['0', '1', '2']
 
 参考文章：
 
-[Javascript浅拷贝和深拷贝](https://segmentfault.com/a/1190000021239893)
+[Javascript 浅拷贝和深拷贝](https://segmentfault.com/a/1190000021239893)

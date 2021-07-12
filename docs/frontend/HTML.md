@@ -4,7 +4,7 @@ sidebar: auto
 
 # HTML
 
-## 1.  `<pre></pre>`
+## 1. `<pre></pre>`
 
 pre 元素可定义预格式化的文本。被包围在 pre 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。
 
@@ -19,13 +19,11 @@ pre 元素中允许的文本可以包括物理样式和基于内容的样式变�
 <pre>{{ code }}</pre>
 ```
 
-##  MutationObserver
+## 2. MutationObserver
 
-> API 提供了监视对 DOM 树所做更改的能力
->
-> 兼容性：https://caniuse.com/?search=MutationObserver
+> API 提供了监视对 DOM 树所做更改的能力 | [兼容性](https://caniuse.com/?search=MutationObserver)
 
-```js
+```JavaScript
 const $body = document.getElementById('body');
 
 // 需要注意兼容性问题

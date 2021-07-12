@@ -12,7 +12,7 @@ sidebar: auto
 
 > 官网：[ https://www.npmjs.com/ ]( https://www.npmjs.com/ )
 
-```bash
+```shell
 #npm配置淘宝镜像
 npm config set registry https://registry.npm.taobao.org
 npm install #安装模块
@@ -42,7 +42,7 @@ npm list -g --depth 0 # 查看全局安装的包
 
 > 官网：[ https://yarn.bootcss.com/ ]( https://yarn.bootcss.com/ )
 
-```bash
+```shell
 yarn init # 初始化项目
 
 # 安装依赖

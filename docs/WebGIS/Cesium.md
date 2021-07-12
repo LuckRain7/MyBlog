@@ -34,11 +34,11 @@ handler.setInputAction(function(evt) {
 
 Set a function to be executed on an input event.(设置要在输入事件上执行的函数。)
 
-| Name       | Type     | Description                                                                                                                   |
-| ---------- | -------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `action`   | function | Function to be executed when the input event occurs.(输入事件发生时要执行的功能。)                                            |
-| `type`     | Number   | The ScreenSpaceEventType of input event.(输入事件的 ScreenSpaceEventType。)                                                   |
-| `modifier` | Number   | optionalA KeyboardEventModifier key that is held when a `type` event occurs.(发生类型事件时保持的 KeyboardEventModifier 键。) |
+| Name		| Type		| Description																													|
+| ----------| --------	| -----------------------------------------------------------------------------------------------------------------------------	|
+| `action`	| function	| Function to be executed when the input event occurs.(输入事件发生时要执行的功能。)											|
+| `type`	| Number	| The ScreenSpaceEventType of input event.(输入事件的 ScreenSpaceEventType。)													|
+| `modifier`| Number	| optionalA KeyboardEventModifier key that is held when a `type` event occurs.(发生类型事件时保持的 KeyboardEventModifier 键。)	|
 
 ## 标注 LabelGraphics
 

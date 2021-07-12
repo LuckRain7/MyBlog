@@ -11,10 +11,20 @@ sidebar: auto
 
 ## APP
 
-* [Typora](https://www.typora.io/) [ Markdown 编辑器 ] 
-* IINA [ 视频播放器 ]
-* Mos [ 鼠标滚轮平滑滚动 ]
-* iTerm + zsh [ 终端工具 ]
+* [ Markdown 编辑器 ]  [Typora](https://www.typora.io/) 
+* [ 视频播放器 ] IINA 
+* [ 鼠标滚轮平滑滚动 ] Mos 
+* [ 终端工具 ] iTerm + zsh 
+- [ PDF 编辑器 ] PDF Expert 
+- [ Web 浏览器 ] Chrome | Firefox | Edge
+- [ 抓包工具 ] Charles 
+- [ 代码编辑器 ] Visual Studio Code | Sublime Text 
+- [ 截图工具 ] Xnip 
+- [ 风扇控制 ] Macs Fan Control 
+- [ 翻译 ] DeepL 
+- [ 压缩软件 ] MacZip 
+- [ 虚拟机 ] VMware Fusion 
+- [ 脑图 ] Xmind 
 
 ## Yarn 
 
@@ -32,7 +42,7 @@ sidebar: auto
 
 2、换源地址：[https://www.zhihu.com/question/31360766/answer/749386652](https://www.zhihu.com/question/31360766/answer/749386652)
 
-```bash
+```shell
 # 替换 Homebrew
 git -C "$(brew --repo)" remote set-url origin https://mirrors.ustc.edu.cn/brew.git
 
@@ -46,6 +56,7 @@ git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.ustc
 # 对于 bash 用户：
 echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.bash_profile
 source ~/.bash_profile
+
 # 对于 zsh 用户：
 echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.zshrc
 source ~/.zshrc
@@ -57,10 +68,10 @@ install:  brew install nginx
 
 nginx 路径:  /usr/local/etc/nginx/
 
-```bash
-sudo nginx             #启动
-sudo nginx -s reload   #重启
-sudo nginx -s stop     #结束
+```shell
+sudo nginx             # 启动
+sudo nginx -s reload   # 重启
+sudo nginx -s stop     # 结束
 ```
 
 ---

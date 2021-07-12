@@ -4,9 +4,9 @@ sidebar: auto
 
 # CSS
 
-##  box-shadow
+## box-shadow
 
-语法： ` box-shadow: h-shadow v-shadow blur spread color inset`
+语法： `box-shadow: h-shadow v-shadow blur spread color inset`
 
 | 属性       | 值                                                  |
 | ---------- | --------------------------------------------------- |
@@ -19,7 +19,7 @@ sidebar: auto
 
 常用：
 
- ` box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); `
+ `box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); `
 
 ## background属性
 
@@ -36,24 +36,24 @@ sidebar: auto
 > background-position   设置背景图像的起始位置 
 
 ```css
-background: #ffffff url('../assets/zcmap.png') no-repeat 5px 5px; //集合写法
+background: #ffffff url('../assets/zcmap.png') no-repeat 5px 5px; /*  集合写法 */
 
-background-color: #ffffff; //设置背景颜色 （可以16进制，也可以使rgb() rgba()）
+background-color: #ffffff; /*  设置背景颜色 （可以16进制，也可以使rgb() rgba()） */
 
-background-image: url('../assets/zcmap.png'); //图片链接
+background-image: url('../assets/zcmap.png'); /* 图片链接 */
 
-background-repeat:repeat; //默认。背景图像将在垂直方向和水平方向重复。
-background-repeat:repeat-x; //水平平铺，在水平方向重复
-background-repeat:repeat-y; //垂直平铺，在垂直方向重复
-background-repeat:no-repeat; //图片不重复，只显示一次
+background-repeat:repeat; /* 默认。背景图像将在垂直方向和水平方向重复。*/
+background-repeat:repeat-x; /*  水平平铺，在水平方向重复 */
+background-repeat:repeat-y; /*  垂直平铺，在垂直方向重复 */
+background-repeat:no-repeat; /*  图片不重复，只显示一次 */
 
-background-attachment: scroll; // 默认值。背景图像会随着页面其余部分的滚动而移动。
-background-attachment: fixed; // 当页面的其余部分滚动时，背景图像不会移动。
-background-attachment: inherit; // 规定应该从父元素继承 background-attachment 属性的设置。
+background-attachment: scroll; /* 默认值。背景图像会随着页面其余部分的滚动而移动。 */
+background-attachment: fixed; /* 当页面的其余部分滚动时，背景图像不会移动。 */
+background-attachment: inherit; /* 规定应该从父元素继承 background-attachment 属性的设置。 */
 
-background-position: 5px 5px; //第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50%
-background-position: 5% 5%; //第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50%
-background-position: left top; //位置英文  如果仅指定一个关键字，其他值将会是"center"
+background-position: 5px 5px; /* 第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50% */
+background-position: 5% 5%; /* 第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50% */
+background-position: left top; /* 位置英文  如果仅指定一个关键字，其他值将会是"center" */
 ```
 
 ## 平滑滚动
@@ -106,7 +106,7 @@ header {
 
 ### sass
 
-> 世界上最成熟、最稳定、最强大的专业级CSS扩展语言！
+> 世界上最成熟、最稳定、最强大的专业级 CSS 扩展语言！
 
 定义变量 Variables
 
@@ -170,15 +170,15 @@ $highlight-color: #F90;
 
 ```css
 *::-webkit-scrollbar {
-  /*滚动条整体样式*/
+  /* 滚动条整体样式 */
   width: 8px;
-  /*高宽分别对应横竖滚动条的尺寸*/
+  /* 高宽分别对应横竖滚动条的尺寸 */
   height: 4px;
   scrollbar-arrow-color: red;
 }
 
 *::-webkit-scrollbar-thumb {
-  /*滚动条里面小方块*/
+  /* 滚动条里面小方块 */
   border-radius: 5px;
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 0, 0.2);
@@ -186,7 +186,7 @@ $highlight-color: #F90;
 }
 
 *::-webkit-scrollbar-track {
-  /*滚动条里面轨道*/
+  /* 滚动条里面轨道 */
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 0;
   background: rgba(0, 0, 0, 0.1);
