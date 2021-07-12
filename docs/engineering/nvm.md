@@ -33,7 +33,7 @@ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | 
 
 默认nvm是国外的源，下载基本上是下载不下来的！！！请安一下步骤操作
 
-1、  新建系统环境变量 `NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node`
+1、新建系统环境变量 `NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node`
 
 2、命令行执行   `nvm node_mirror https://npm.taobao.org/mirrors/node/ ` 切换Node源
 

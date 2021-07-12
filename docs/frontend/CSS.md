@@ -1,10 +1,12 @@
 ---
 sidebar: auto
 ---
+
 # CSS
+
 ##  box-shadow
 
-语法：` box-shadow: h-shadow v-shadow blur spread color inset`
+语法： ` box-shadow: h-shadow v-shadow blur spread color inset`
 
 | 属性       | 值                                                  |
 | ---------- | --------------------------------------------------- |
@@ -17,21 +19,21 @@ sidebar: auto
 
 常用：
 
-` box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);`
+ ` box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); `
 
 ## background属性
 
->  定义背景效果: 
+> 定义背景效果: 
 >
->  background-color 设置背景颜色
+> background-color 设置背景颜色
 >
->  background-image 设置背景图片
+> background-image 设置背景图片
 >
->  background-repeat 设置背景重复
+> background-repeat 设置背景重复
 >
->  background-attachment 设置背景图片是固定还是滚动
+> background-attachment 设置背景图片是固定还是滚动
 >
->  background-position   设置背景图像的起始位置 
+> background-position   设置背景图像的起始位置 
 
 ```css
 background: #ffffff url('../assets/zcmap.png') no-repeat 5px 5px; //集合写法
@@ -54,8 +56,6 @@ background-position: 5% 5%; //第一个值是水平位置，第二个值是垂�
 background-position: left top; //位置英文  如果仅指定一个关键字，其他值将会是"center"
 ```
 
-
-
 ## 平滑滚动
 
 ```css
@@ -66,7 +66,7 @@ html {
 
 ## 截断文本
 
-这就是`text-overflow`和`line-clamp`
+这就是 `text-overflow` 和 `line-clamp`
 
 ```css
 .text-container h2 {
@@ -164,17 +164,19 @@ $highlight-color: #F90;
 
 ## border 属性
 
-- border-radius: 左上 右上 右下 左下
+* border-radius: 左上 右上 右下 左下
 
 ## 滚动条样式
 
 ```css
 *::-webkit-scrollbar {
   /*滚动条整体样式*/
-  width: 8px; /*高宽分别对应横竖滚动条的尺寸*/
+  width: 8px;
+  /*高宽分别对应横竖滚动条的尺寸*/
   height: 4px;
   scrollbar-arrow-color: red;
 }
+
 *::-webkit-scrollbar-thumb {
   /*滚动条里面小方块*/
   border-radius: 5px;
@@ -182,6 +184,7 @@ $highlight-color: #F90;
   background: rgba(0, 0, 0, 0.2);
   scrollbar-arrow-color: red;
 }
+
 *::-webkit-scrollbar-track {
   /*滚动条里面轨道*/
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
@@ -190,3 +193,58 @@ $highlight-color: #F90;
 }
 ```
 
+## transform
+
+```css
+/* Keyword values */
+transform: none;
+
+/* 2D 转换，使用六个值的矩阵。 */
+transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+/* 3D 转换，使用 16 个值的 4x4 矩阵。 */
+transform: matrix3d(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0);
+
+
+/* 位移 2D 3D */
+transform: translate(12px, 50%);
+transform: translateX(2em);
+transform: translateY(3in);
+transform: translate3d(12px, 50%, 3em);
+transform: translateZ(2px);
+
+/* 缩放 2D 3D */
+transform: scale(2, 0.5);
+transform: scaleX(2);
+transform: scaleY(0.5);
+transform: scale3d(2.5, 1.2, 0.3);
+transform: scaleZ(0.3);
+
+/* 旋转 2D 3D */
+transform: rotate(0.5turn);
+transform: rotate3d(1, 2.0, 3.0, 10deg);
+transform: rotateX(10deg);
+transform: rotateY(10deg);
+transform: rotateZ(10deg);
+
+/* 倾斜 */
+transform: skew(30deg, 20deg);
+transform: skewX(30deg);
+transform: skewY(1.07rad);
+
+/* 为 3D 转换元素定义透视视图。 */
+transform: perspective(17px);
+
+/* Multiple function values */
+transform: translateX(10px) rotate(10deg) translateY(5px);
+
+/* Global values */
+transform: inherit;
+transform: initial;
+transform: unset;
+```
+
+
+
+参考资料：
+- [transform - CSS（层叠样式表） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform)
+- [兼容性](https://caniuse.com/?search=transform)
