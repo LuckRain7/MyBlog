@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Glob | 震雨 luckrain7&#39;s 博客</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="震雨LuckRain7的博客,Webgis,arcgis,openlayer,css,javascript">
+    
+    <link rel="preload" href="/assets/css/0.styles.44f275cc.css" as="style"><link rel="preload" href="/assets/js/app.3757cc9d.js" as="script"><link rel="preload" href="/assets/js/2.ca3eec8b.js" as="script"><link rel="preload" href="/assets/js/12.1e4b7876.js" as="script"><link rel="prefetch" href="/assets/js/10.f0b6186a.js"><link rel="prefetch" href="/assets/js/11.4e54ff32.js"><link rel="prefetch" href="/assets/js/13.c0e262d8.js"><link rel="prefetch" href="/assets/js/14.34e7f984.js"><link rel="prefetch" href="/assets/js/15.71fcf906.js"><link rel="prefetch" href="/assets/js/16.6f0f0881.js"><link rel="prefetch" href="/assets/js/17.b8b57247.js"><link rel="prefetch" href="/assets/js/18.7cede4c4.js"><link rel="prefetch" href="/assets/js/19.1e6d2014.js"><link rel="prefetch" href="/assets/js/20.cad462ca.js"><link rel="prefetch" href="/assets/js/21.cdb43eee.js"><link rel="prefetch" href="/assets/js/22.477a6708.js"><link rel="prefetch" href="/assets/js/23.5181b6e8.js"><link rel="prefetch" href="/assets/js/24.9e33d20f.js"><link rel="prefetch" href="/assets/js/25.b40d099d.js"><link rel="prefetch" href="/assets/js/26.9d07ee20.js"><link rel="prefetch" href="/assets/js/27.0b5904b7.js"><link rel="prefetch" href="/assets/js/28.73521311.js"><link rel="prefetch" href="/assets/js/29.d8de292b.js"><link rel="prefetch" href="/assets/js/3.5d5931d8.js"><link rel="prefetch" href="/assets/js/30.d7d9e829.js"><link rel="prefetch" href="/assets/js/31.7d433223.js"><link rel="prefetch" href="/assets/js/32.5c17f7c2.js"><link rel="prefetch" href="/assets/js/33.35d27d05.js"><link rel="prefetch" href="/assets/js/34.384abb43.js"><link rel="prefetch" href="/assets/js/35.edf41005.js"><link rel="prefetch" href="/assets/js/36.be2a2796.js"><link rel="prefetch" href="/assets/js/37.be45cbe9.js"><link rel="prefetch" href="/assets/js/38.6c773423.js"><link rel="prefetch" href="/assets/js/39.3722c2d8.js"><link rel="prefetch" href="/assets/js/4.7700a83f.js"><link rel="prefetch" href="/assets/js/40.1627b771.js"><link rel="prefetch" href="/assets/js/41.b6246234.js"><link rel="prefetch" href="/assets/js/42.6b1bc255.js"><link rel="prefetch" href="/assets/js/43.d207b192.js"><link rel="prefetch" href="/assets/js/44.450e99c9.js"><link rel="prefetch" href="/assets/js/45.85ae833d.js"><link rel="prefetch" href="/assets/js/46.6ffac39d.js"><link rel="prefetch" href="/assets/js/47.63a7de24.js"><link rel="prefetch" href="/assets/js/48.a81952f2.js"><link rel="prefetch" href="/assets/js/49.53646767.js"><link rel="prefetch" href="/assets/js/5.e9cc3631.js"><link rel="prefetch" href="/assets/js/50.15472559.js"><link rel="prefetch" href="/assets/js/51.13c0827a.js"><link rel="prefetch" href="/assets/js/52.00432c94.js"><link rel="prefetch" href="/assets/js/53.7d159a34.js"><link rel="prefetch" href="/assets/js/54.65974641.js"><link rel="prefetch" href="/assets/js/55.9d45f23e.js"><link rel="prefetch" href="/assets/js/56.a2a59d65.js"><link rel="prefetch" href="/assets/js/57.f1a31396.js"><link rel="prefetch" href="/assets/js/58.e79782fe.js"><link rel="prefetch" href="/assets/js/59.235b69fd.js"><link rel="prefetch" href="/assets/js/6.7e15d66f.js"><link rel="prefetch" href="/assets/js/60.9025ea59.js"><link rel="prefetch" href="/assets/js/61.7ab89a78.js"><link rel="prefetch" href="/assets/js/62.ed6deb42.js"><link rel="prefetch" href="/assets/js/63.03aaba9f.js"><link rel="prefetch" href="/assets/js/64.f20b129d.js"><link rel="prefetch" href="/assets/js/65.85f6cb43.js"><link rel="prefetch" href="/assets/js/66.d4640ea2.js"><link rel="prefetch" href="/assets/js/67.d55cecc4.js"><link rel="prefetch" href="/assets/js/68.e62beb3a.js"><link rel="prefetch" href="/assets/js/69.0567e1bc.js"><link rel="prefetch" href="/assets/js/7.95442f82.js"><link rel="prefetch" href="/assets/js/70.7a307b72.js"><link rel="prefetch" href="/assets/js/71.76d9baf7.js"><link rel="prefetch" href="/assets/js/72.6eb9150d.js"><link rel="prefetch" href="/assets/js/8.9ee35ff1.js"><link rel="prefetch" href="/assets/js/9.cacb5f06.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.44f275cc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">震雨 luckrain7's 博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ms/DesignMode.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Algorithm.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/ms/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/ms/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/ms/safe.html" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow down"></span></button> <button type="button" aria-label="服务端" class="mobile-dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/Node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/server/Golang/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/server/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="WebGIS" class="dropdown-title"><span class="title">WebGIS</span> <span class="arrow down"></span></button> <button type="button" aria-label="WebGIS" class="mobile-dropdown-title"><span class="title">WebGIS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/WebGIS/index.html" class="nav-link">
+  README
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/Cesium/" class="nav-link">
+  Cesium
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/ArcGIS/" class="nav-link">
+  ArcGIS
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/OpenLayer/" class="nav-link">
+  OpenLayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="必备工具" class="mobile-dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/package/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub/" class="nav-link">
+  GitHub
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人分享" class="mobile-dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/index.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/share/opensource.html" class="nav-link">
+  开源项目
+</a></li><li class="dropdown-item"><!----> <a href="/share/vscode/" class="nav-link">
+  VS Code必备
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website.html" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/frame/index.html" class="nav-link">
+  前端工具框架推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/notes/" class="nav-link">
+  笔记
+</a></li></ul></div></div> <a href="https://github.com/LuckRain7" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ms/DesignMode.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Algorithm.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/ms/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/ms/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/ms/safe.html" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/ms/Vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow down"></span></button> <button type="button" aria-label="服务端" class="mobile-dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/Node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/server/Golang/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/server/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="WebGIS" class="dropdown-title"><span class="title">WebGIS</span> <span class="arrow down"></span></button> <button type="button" aria-label="WebGIS" class="mobile-dropdown-title"><span class="title">WebGIS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/WebGIS/index.html" class="nav-link">
+  README
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/Cesium/" class="nav-link">
+  Cesium
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/ArcGIS/" class="nav-link">
+  ArcGIS
+</a></li><li class="dropdown-item"><!----> <a href="/WebGIS/OpenLayer/" class="nav-link">
+  OpenLayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="必备工具" class="mobile-dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/package/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub/" class="nav-link">
+  GitHub
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人分享" class="mobile-dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/index.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/share/opensource.html" class="nav-link">
+  开源项目
+</a></li><li class="dropdown-item"><!----> <a href="/share/vscode/" class="nav-link">
+  VS Code必备
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website.html" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/frame/index.html" class="nav-link">
+  前端工具框架推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/notes/" class="nav-link">
+  笔记
+</a></li></ul></div></div> <a href="https://github.com/LuckRain7" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Glob</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/NPM/Glob.html#使用" class="sidebar-link">使用</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/NPM/Glob.html#glob-primer" class="sidebar-link">Glob Primer</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/NPM/Glob.html#dots" class="sidebar-link">Dots</a></li><li class="sidebar-sub-header"><a href="/NPM/Glob.html#basename-matching" class="sidebar-link">Basename Matching</a></li><li class="sidebar-sub-header"><a href="/NPM/Glob.html#empty-sets" class="sidebar-link">Empty Sets</a></li><li class="sidebar-sub-header"><a href="/NPM/Glob.html#see-also" class="sidebar-link">See Also:</a></li></ul></li><li><a href="/NPM/Glob.html#glob-hasmagic-pattern-options" class="sidebar-link">glob.hasMagic(pattern, [options])</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/NPM/Glob.html#glob-pattern-options-cb" class="sidebar-link">glob(pattern, [options], cb)</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/NPM/Glob.html#glob-sync-pattern-options" class="sidebar-link">glob.sync(pattern, [options])</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/NPM/Glob.html#class-glob-glob" class="sidebar-link">Class: glob.Glob</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/NPM/Glob.html#new-glob-glob-pattern-options-cb" class="sidebar-link">new glob.Glob(pattern, [options], [cb])</a></li><li class="sidebar-sub-header"><a href="/NPM/Glob.html#properties" class="sidebar-link">Properties</a></li><li class="sidebar-sub-header"><a href="/NPM/Glob.html#events" class="sidebar-link">Events</a></li><li class="sidebar-sub-header"><a href="/NPM/Glob.html#methods" class="sidebar-link">Methods</a></li><li class="sidebar-sub-header"><a href="/NPM/Glob.html#options" class="sidebar-link">Options</a></li></ul></li><li><a href="/NPM/Glob.html#comparisons-to-other-fnmatch-glob-implementations" class="sidebar-link">Comparisons to other fnmatch/glob implementations</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/NPM/Glob.html#comments-and-negation" class="sidebar-link">Comments and Negation</a></li></ul></li><li><a href="/NPM/Glob.html#windows" class="sidebar-link">Windows</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/NPM/Glob.html#race-conditions" class="sidebar-link">Race Conditions</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/NPM/Glob.html#glob-logo" class="sidebar-link">Glob Logo</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/NPM/Glob.html#contributing" class="sidebar-link">Contributing</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/NPM/Glob.html#参考" class="sidebar-link">参考</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="glob"><a href="#glob" class="header-anchor">#</a> Glob</h1> <p>使用 shell 模式来匹配文件，如星号等。</p> <p><a href="https://travis-ci.org/isaacs/node-glob/" target="_blank" rel="noopener noreferrer"><img src="https://travis-ci.org/isaacs/node-glob.svg?branch=master" alt="Build Status"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://ci.appveyor.com/project/isaacs/node-glob" target="_blank" rel="noopener noreferrer"><img src="https://ci.appveyor.com/api/projects/status/kd7f3yftf7unxlsx?svg=true" alt="Build Status"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://coveralls.io/github/isaacs/node-glob?branch=master" target="_blank" rel="noopener noreferrer"><img src="https://coveralls.io/repos/isaacs/node-glob/badge.svg?branch=master&amp;service=github" alt="Coverage Status"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>这是一个 glob 的 JavaScript 实现。 它使用 <code>minimatch</code> 库来进行匹配。</p> <p><img src="logo/glob.png" alt="a fun cartoon logo made of glob characters"></p> <h2 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h2> <p>用 npm 安装</p> <div class="language- extra-class"><pre class="language-text"><code>npm i glob
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> glob <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;glob&quot;</span><span class="token punctuation">)</span>
+
+<span class="token comment">// options 是可选的</span>
+<span class="token function">glob</span><span class="token punctuation">(</span><span class="token string">&quot;**/*.js&quot;</span><span class="token punctuation">,</span> options<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">er<span class="token punctuation">,</span> files</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// files 是匹配到的文件的数组.</span>
+  <span class="token comment">// 如果 `nonull` 选项被设置为true, 而且没有找到任何文件,那么 files 就是 glob 规则本身,而不是空数组</span>
+  <span class="token comment">// er 是当寻找的过程中遇的错误</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="glob-primer"><a href="#glob-primer" class="header-anchor">#</a> Glob Primer</h2> <p>&quot;Globs&quot; are the patterns you type when you do stuff like <code>ls *.js</code> on
+the command line, or put <code>build/*</code> in a <code>.gitignore</code> file.</p> <p>Before parsing the path part patterns, braced sections are expanded
+into a set.  Braced sections start with <code>{</code> and end with <code>}</code>, with any
+number of comma-delimited sections within.  Braced sections may contain
+slash characters, so <code>a{/b/c,bcd}</code> would expand into <code>a/b/c</code> and <code>abcd</code>.</p> <p>The following characters have special magic meaning when used in a
+path portion:</p> <ul><li><code>*</code> Matches 0 or more characters in a single path portion</li> <li><code>?</code> Matches 1 character</li> <li><code>[...]</code> Matches a range of characters, similar to a RegExp range.
+If the first character of the range is <code>!</code> or <code>^</code> then it matches
+any character not in the range.</li> <li><code>!(pattern|pattern|pattern)</code> Matches anything that does not match
+any of the patterns provided.</li> <li><code>?(pattern|pattern|pattern)</code> Matches zero or one occurrence of the
+patterns provided.</li> <li><code>+(pattern|pattern|pattern)</code> Matches one or more occurrences of the
+patterns provided.</li> <li><code>*(a|b|c)</code> Matches zero or more occurrences of the patterns provided</li> <li><code>@(pattern|pat*|pat?erN)</code> Matches exactly one of the patterns
+provided</li> <li><code>**</code> If a &quot;globstar&quot; is alone in a path portion, then it matches
+zero or more directories and subdirectories searching for matches.
+It does not crawl symlinked directories.</li></ul> <h3 id="dots"><a href="#dots" class="header-anchor">#</a> Dots</h3> <p>If a file or directory path portion has a <code>.</code> as the first character,
+then it will not match any glob pattern unless that pattern's
+corresponding path part also has a <code>.</code> as its first character.</p> <p>For example, the pattern <code>a/.*/c</code> would match the file at <code>a/.b/c</code>.
+However the pattern <code>a/*/c</code> would not, because <code>*</code> does not start with
+a dot character.</p> <p>You can make glob treat dots as normal characters by setting
+<code>dot:true</code> in the options.</p> <h3 id="basename-matching"><a href="#basename-matching" class="header-anchor">#</a> Basename Matching</h3> <p>If you set <code>matchBase:true</code> in the options, and the pattern has no
+slashes in it, then it will seek for any file anywhere in the tree
+with a matching basename.  For example, <code>*.js</code> would match
+<code>test/simple/basic.js</code>.</p> <h3 id="empty-sets"><a href="#empty-sets" class="header-anchor">#</a> Empty Sets</h3> <p>If no matching files are found, then an empty array is returned.  This
+differs from the shell, where the pattern itself is returned.  For
+example:</p> <div class="language- extra-class"><pre><code>$ echo a*s*d*f
+a*s*d*f
+</code></pre></div><p>To get the bash-style behavior, set the <code>nonull:true</code> in the options.</p> <h3 id="see-also"><a href="#see-also" class="header-anchor">#</a> See Also:</h3> <ul><li><code>man sh</code></li> <li><code>man bash</code> (Search for &quot;Pattern Matching&quot;)</li> <li><code>man 3 fnmatch</code></li> <li><code>man 5 gitignore</code></li> <li><a href="https://github.com/isaacs/minimatch" target="_blank" rel="noopener noreferrer">minimatch documentation<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="glob-hasmagic-pattern-options"><a href="#glob-hasmagic-pattern-options" class="header-anchor">#</a> glob.hasMagic(pattern, [options])</h2> <p>Returns <code>true</code> if there are any special characters in the pattern, and
+<code>false</code> otherwise.</p> <p>Note that the options affect the results.  If <code>noext:true</code> is set in
+the options object, then <code>+(a|b)</code> will not be considered a magic
+pattern.  If the pattern has a brace expansion, like <code>a/{b/c,x/y}</code>
+then that is considered magical, unless <code>nobrace:true</code> is set in the
+options.</p> <h2 id="glob-pattern-options-cb"><a href="#glob-pattern-options-cb" class="header-anchor">#</a> glob(pattern, [options], cb)</h2> <ul><li><code>pattern</code> <code>{String}</code> Pattern to be matched</li> <li><code>options</code> <code>{Object}</code></li> <li><code>cb</code> <code>{Function}</code> <ul><li><code>err</code> <code>{Error | null}</code></li> <li><code>matches</code> <code>{Array&lt;String&gt;}</code> filenames found matching the pattern</li></ul></li></ul> <p>Perform an asynchronous glob search.</p> <h2 id="glob-sync-pattern-options"><a href="#glob-sync-pattern-options" class="header-anchor">#</a> glob.sync(pattern, [options])</h2> <ul><li><code>pattern</code> <code>{String}</code> Pattern to be matched</li> <li><code>options</code> <code>{Object}</code></li> <li>return: <code>{Array&lt;String&gt;}</code> filenames found matching the pattern</li></ul> <p>Perform a synchronous glob search.</p> <h2 id="class-glob-glob"><a href="#class-glob-glob" class="header-anchor">#</a> Class: glob.Glob</h2> <p>Create a Glob object by instantiating the <code>glob.Glob</code> class.</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> Glob <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;glob&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>Glob
+<span class="token keyword">var</span> mg <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Glob</span><span class="token punctuation">(</span>pattern<span class="token punctuation">,</span> options<span class="token punctuation">,</span> cb<span class="token punctuation">)</span>
+</code></pre></div><p>It's an EventEmitter, and starts walking the filesystem to find matches
+immediately.</p> <h3 id="new-glob-glob-pattern-options-cb"><a href="#new-glob-glob-pattern-options-cb" class="header-anchor">#</a> new glob.Glob(pattern, [options], [cb])</h3> <ul><li><code>pattern</code> <code>{String}</code> pattern to search for</li> <li><code>options</code> <code>{Object}</code></li> <li><code>cb</code> <code>{Function}</code> Called when an error occurs, or matches are found
+<ul><li><code>err</code> <code>{Error | null}</code></li> <li><code>matches</code> <code>{Array&lt;String&gt;}</code> filenames found matching the pattern</li></ul></li></ul> <p>Note that if the <code>sync</code> flag is set in the options, then matches will
+be immediately available on the <code>g.found</code> member.</p> <h3 id="properties"><a href="#properties" class="header-anchor">#</a> Properties</h3> <ul><li><code>minimatch</code> The minimatch object that the glob uses.</li> <li><code>options</code> The options object passed in.</li> <li><code>aborted</code> Boolean which is set to true when calling <code>abort()</code>.  There
+is no way at this time to continue a glob search after aborting, but
+you can re-use the statCache to avoid having to duplicate syscalls.</li> <li><code>cache</code> Convenience object.  Each field has the following possible
+values:
+<ul><li><code>false</code> - Path does not exist</li> <li><code>true</code> - Path exists</li> <li><code>'FILE'</code> - Path exists, and is not a directory</li> <li><code>'DIR'</code> - Path exists, and is a directory</li> <li><code>[file, entries, ...]</code> - Path exists, is a directory, and the
+array value is the results of <code>fs.readdir</code></li></ul></li> <li><code>statCache</code> Cache of <code>fs.stat</code> results, to prevent statting the same
+path multiple times.</li> <li><code>symlinks</code> A record of which paths are symbolic links, which is
+relevant in resolving <code>**</code> patterns.</li> <li><code>realpathCache</code> An optional object which is passed to <code>fs.realpath</code>
+to minimize unnecessary syscalls.  It is stored on the instantiated
+Glob object, and may be re-used.</li></ul> <h3 id="events"><a href="#events" class="header-anchor">#</a> Events</h3> <ul><li><code>end</code> When the matching is finished, this is emitted with all the
+matches found.  If the <code>nonull</code> option is set, and no match was found,
+then the <code>matches</code> list contains the original pattern.  The matches
+are sorted, unless the <code>nosort</code> flag is set.</li> <li><code>match</code> Every time a match is found, this is emitted with the specific
+thing that matched. It is not deduplicated or resolved to a realpath.</li> <li><code>error</code> Emitted when an unexpected error is encountered, or whenever
+any fs error occurs if <code>options.strict</code> is set.</li> <li><code>abort</code> When <code>abort()</code> is called, this event is raised.</li></ul> <h3 id="methods"><a href="#methods" class="header-anchor">#</a> Methods</h3> <ul><li><code>pause</code> Temporarily stop the search</li> <li><code>resume</code> Resume the search</li> <li><code>abort</code> Stop the search forever</li></ul> <h3 id="options"><a href="#options" class="header-anchor">#</a> Options</h3> <p>All the options that can be passed to Minimatch can also be passed to
+Glob to change pattern matching behavior.  Also, some have been added,
+or have glob-specific ramifications.</p> <p>All options are false by default, unless otherwise noted.</p> <p>All options are added to the Glob object, as well.</p> <p>If you are running many <code>glob</code> operations, you can pass a Glob object
+as the <code>options</code> argument to a subsequent operation to shortcut some
+<code>stat</code> and <code>readdir</code> calls.  At the very least, you may pass in shared
+<code>symlinks</code>, <code>statCache</code>, <code>realpathCache</code>, and <code>cache</code> options, so that
+parallel glob operations will be sped up by sharing information about
+the filesystem.</p> <ul><li><code>cwd</code> The current working directory in which to search.  Defaults
+to <code>process.cwd()</code>.</li> <li><code>root</code> The place where patterns starting with <code>/</code> will be mounted
+onto.  Defaults to <code>path.resolve(options.cwd, &quot;/&quot;)</code> (<code>/</code> on Unix
+systems, and <code>C:\</code> or some such on Windows.)</li> <li><code>dot</code> Include <code>.dot</code> files in normal matches and <code>globstar</code> matches.
+Note that an explicit dot in a portion of the pattern will always
+match dot files.</li> <li><code>nomount</code> By default, a pattern starting with a forward-slash will be
+&quot;mounted&quot; onto the root setting, so that a valid filesystem path is
+returned.  Set this flag to disable that behavior.</li> <li><code>mark</code> Add a <code>/</code> character to directory matches.  Note that this
+requires additional stat calls.</li> <li><code>nosort</code> Don't sort the results.</li> <li><code>stat</code> Set to true to stat <em>all</em> results.  This reduces performance
+somewhat, and is completely unnecessary, unless <code>readdir</code> is presumed
+to be an untrustworthy indicator of file existence.</li> <li><code>silent</code> When an unusual error is encountered when attempting to
+read a directory, a warning will be printed to stderr.  Set the
+<code>silent</code> option to true to suppress these warnings.</li> <li><code>strict</code> When an unusual error is encountered when attempting to
+read a directory, the process will just continue on in search of
+other matches.  Set the <code>strict</code> option to raise an error in these
+cases.</li> <li><code>cache</code> See <code>cache</code> property above.  Pass in a previously generated
+cache object to save some fs calls.</li> <li><code>statCache</code> A cache of results of filesystem information, to prevent
+unnecessary stat calls.  While it should not normally be necessary
+to set this, you may pass the statCache from one glob() call to the
+options object of another, if you know that the filesystem will not
+change between calls.  (See &quot;Race Conditions&quot; below.)</li> <li><code>symlinks</code> A cache of known symbolic links.  You may pass in a
+previously generated <code>symlinks</code> object to save <code>lstat</code> calls when
+resolving <code>**</code> matches.</li> <li><code>sync</code> DEPRECATED: use <code>glob.sync(pattern, opts)</code> instead.</li> <li><code>nounique</code> In some cases, brace-expanded patterns can result in the
+same file showing up multiple times in the result set.  By default,
+this implementation prevents duplicates in the result set.  Set this
+flag to disable that behavior.</li> <li><code>nonull</code> Set to never return an empty set, instead returning a set
+containing the pattern itself.  This is the default in glob(3).</li> <li><code>debug</code> Set to enable debug logging in minimatch and glob.</li> <li><code>nobrace</code> Do not expand <code>{a,b}</code> and <code>{1..3}</code> brace sets.</li> <li><code>noglobstar</code> Do not match <code>**</code> against multiple filenames.  (Ie,
+treat it as a normal <code>*</code> instead.)</li> <li><code>noext</code> Do not match <code>+(a|b)</code> &quot;extglob&quot; patterns.</li> <li><code>nocase</code> Perform a case-insensitive match.  Note: on
+case-insensitive filesystems, non-magic patterns will match by
+default, since <code>stat</code> and <code>readdir</code> will not raise errors.</li> <li><code>matchBase</code> Perform a basename-only match if the pattern does not
+contain any slash characters.  That is, <code>*.js</code> would be treated as
+equivalent to <code>**/*.js</code>, matching all js files in all directories.</li> <li><code>nodir</code> Do not match directories, only files.  (Note: to match
+<em>only</em> directories, simply put a <code>/</code> at the end of the pattern.)</li> <li><code>ignore</code> Add a pattern or an array of glob patterns to exclude matches.
+Note: <code>ignore</code> patterns are <em>always</em> in <code>dot:true</code> mode, regardless
+of any other settings.</li> <li><code>follow</code> Follow symlinked directories when expanding <code>**</code> patterns.
+Note that this can result in a lot of duplicate references in the
+presence of cyclic links.</li> <li><code>realpath</code> Set to true to call <code>fs.realpath</code> on all of the results.
+In the case of a symlink that cannot be resolved, the full absolute
+path to the matched entry is returned (though it will usually be a
+broken symlink)</li> <li><code>absolute</code> Set to true to always receive absolute paths for matched
+files.  Unlike <code>realpath</code>, this also affects the values returned in
+the <code>match</code> event.</li></ul> <h2 id="comparisons-to-other-fnmatch-glob-implementations"><a href="#comparisons-to-other-fnmatch-glob-implementations" class="header-anchor">#</a> Comparisons to other fnmatch/glob implementations</h2> <p>While strict compliance with the existing standards is a worthwhile
+goal, some discrepancies exist between node-glob and other
+implementations, and are intentional.</p> <p>The double-star character <code>**</code> is supported by default, unless the
+<code>noglobstar</code> flag is set.  This is supported in the manner of bsdglob
+and bash 4.3, where <code>**</code> only has special significance if it is the only
+thing in a path part.  That is, <code>a/**/b</code> will match <code>a/x/y/b</code>, but
+<code>a/**b</code> will not.</p> <p>Note that symlinked directories are not crawled as part of a <code>**</code>,
+though their contents may match against subsequent portions of the
+pattern.  This prevents infinite loops and duplicates and the like.</p> <p>If an escaped pattern has no matches, and the <code>nonull</code> flag is set,
+then glob returns the pattern as-provided, rather than
+interpreting the character escapes.  For example,
+<code>glob.match([], &quot;\\*a\\?&quot;)</code> will return <code>&quot;\\*a\\?&quot;</code> rather than
+<code>&quot;*a?&quot;</code>.  This is akin to setting the <code>nullglob</code> option in bash, except
+that it does not resolve escaped pattern characters.</p> <p>If brace expansion is not disabled, then it is performed before any
+other interpretation of the glob pattern.  Thus, a pattern like
+<code>+(a|{b),c)}</code>, which would not be valid in bash or zsh, is expanded
+<strong>first</strong> into the set of <code>+(a|b)</code> and <code>+(a|c)</code>, and those patterns are
+checked for validity.  Since those two are valid, matching proceeds.</p> <h3 id="comments-and-negation"><a href="#comments-and-negation" class="header-anchor">#</a> Comments and Negation</h3> <p>Previously, this module let you mark a pattern as a &quot;comment&quot; if it
+started with a <code>#</code> character, or a &quot;negated&quot; pattern if it started
+with a <code>!</code> character.</p> <p>These options were deprecated in version 5, and removed in version 6.</p> <p>To specify things that should not match, use the <code>ignore</code> option.</p> <h2 id="windows"><a href="#windows" class="header-anchor">#</a> Windows</h2> <p><strong>Please only use forward-slashes in glob expressions.</strong></p> <p>Though windows uses either <code>/</code> or <code>\</code> as its path separator, only <code>/</code>
+characters are used by this glob implementation.  You must use
+forward-slashes <strong>only</strong> in glob expressions.  Back-slashes will always
+be interpreted as escape characters, not path separators.</p> <p>Results from absolute patterns such as <code>/foo/*</code> are mounted onto the
+root setting using <code>path.join</code>.  On windows, this will by default result
+in <code>/foo/*</code> matching <code>C:\foo\bar.txt</code>.</p> <h2 id="race-conditions"><a href="#race-conditions" class="header-anchor">#</a> Race Conditions</h2> <p>Glob searching, by its very nature, is susceptible to race conditions,
+since it relies on directory walking and such.</p> <p>As a result, it is possible that a file that exists when glob looks for
+it may have been deleted or modified by the time it returns the result.</p> <p>As part of its internal implementation, this program caches all stat
+and readdir calls that it makes, in order to cut down on system
+overhead.  However, this also makes it even more susceptible to races,
+especially if the cache or statCache objects are reused between glob
+calls.</p> <p>Users are thus advised not to use a glob result as a guarantee of
+filesystem state in the face of rapid changes.  For the vast majority
+of operations, this is never a problem.</p> <h2 id="glob-logo"><a href="#glob-logo" class="header-anchor">#</a> Glob Logo</h2> <p>Glob's logo was created by <a href="http://tanyabrassie.com/" target="_blank" rel="noopener noreferrer">Tanya Brassie<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>. Logo files can be found <a href="https://github.com/isaacs/node-glob/tree/master/logo" target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <p>The logo is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution-ShareAlike 4.0 International License<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <h2 id="contributing"><a href="#contributing" class="header-anchor">#</a> Contributing</h2> <p>Any change to behavior (including bugfixes) must come with a test.</p> <p>Patches that fail tests or reduce performance will be rejected.</p> <div class="language- extra-class"><pre class="language-text"><code># to run tests
+npm test
+
+# to re-generate test fixtures
+npm run test-regen
+
+# to benchmark against bash/zsh
+npm run bench
+
+# to profile javascript
+npm run prof
+</code></pre></div><p><img src="oh-my-glob.gif" alt=""></p> <h2 id="参考"><a href="#参考" class="header-anchor">#</a> 参考</h2> <p><a href="https://www.cnblogs.com/yanglang/p/9875110.html" target="_blank" rel="noopener noreferrer">node-glob学习<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.3757cc9d.js" defer></script><script src="/assets/js/2.ca3eec8b.js" defer></script><script src="/assets/js/12.1e4b7876.js" defer></script>
+  </body>
+</html>
