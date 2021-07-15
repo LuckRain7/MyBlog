@@ -123,7 +123,7 @@ zip.generateAsync({type:"blob"})
 const ZIP = require('jszip')
 
 async function createZIP(data, filename) {
-  //初始化 jszip
+  // 初始化 jszip
   const zip = new ZIP()
 
   // 读取文件内容

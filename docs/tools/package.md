@@ -19,24 +19,39 @@ npm install #安装模块
 npm uninstall #卸载模块
 
 # 安装依赖
-npm i [packageName] -s # 在项目中安装指依赖
-npm i [packageName] -D # 在项目中安装开发依赖
-npm i [packageName] -g # 全局安装
+npm i [package_name] -s # 在项目中安装指依赖
+npm i [package_name] -D # 在项目中安装开发依赖
+npm i [package_name] -g # 全局安装
 
 npm run [script] # 运行脚本指令
 
 npm config list # 查看npm配置
 
 npm list -g --depth 0 # 查看全局安装的包
+```·
+
+**NPM发布自己的组件包**
+
+```shell
+npm config set registry http://registry.npmjs.org # 切换回npm源
+
+npm login # 登录
+
+npm publish # 发包
 ```
 
-> NPM发布自己的组件包
->
-> npm config set registry http://registry.npmjs.org 
->
-> 然后在终端执行npm login命令：
->
-> npm publish
+**添加私有源**
+
+```shell
+npm i -g nrm # 先安装 nrm
+
+nrm add [registry_name] [registry_url] # 添加私有源地址 起一个别名
+
+nrm use [registry_name] # 切换到私有源
+
+npm adduser --registry [registry_url] [email] # 进行私有源登录
+```
+
 
 ## YARN（推荐）
 
@@ -46,11 +61,11 @@ npm list -g --depth 0 # 查看全局安装的包
 yarn init # 初始化项目
 
 # 安装依赖
-yarn add [packageName] # 在项目中安装指依赖
-yarn add [packageName] -D # 在项目中安装开发依赖
-yarn global add [packageName] # 全局安装
+yarn add [package_name] # 在项目中安装指依赖
+yarn add [package_name] -D # 在项目中安装开发依赖
+yarn global add [package_name] # 全局安装
 
-yarn remove [packageName] # 删除依赖
+yarn remove [package_name] # 删除依赖
 
 yarn install # 安装所有依赖
 
@@ -62,4 +77,26 @@ yarn [script] # 运行脚本指令
 yarn config list # 查看yarn配置
 
 yarn global list #查看全局安装的包
+```
+
+## nrm -- NPM registry manager
+
+> nrm(npm registry manager )是npm的镜像源管理工具，有时候国外资源太慢，使用这个就可以快速地在 npm 源间切换
+
+**安装**
+
+```shell
+yarn global add nrm 
+# or
+npm install -g nrm
+```
+
+**常用命令**
+
+```shell
+nrm ls # 查看源
+
+nrm use taobao # 切换源
+
+nrm add [registry_name] [registry_url] # 添加源
 ```

@@ -73,6 +73,8 @@ module.exports = {
           { text: "包管理器", link: "/tools/package/" },
           { text: "Git", link: "/tools/Git/" },
           { text: "GitHub", link: "/tools/GitHub/" },
+          { text: "Mac", link: "/tools/Mac/" },
+          { text: "VS Code", link: "/tools/vscode/" },
         ],
       },
       {
@@ -80,7 +82,6 @@ module.exports = {
         items: [
           { text: "文章", link: "/article/index.html" },
           { text: "开源项目", link: "/share/opensource.html" },
-          { text: "VS Code必备", link: "/share/vscode/" },
           { text: "软件推荐", link: "/share/software/" },
           { text: "网站推荐", link: "/share/website.html" },
           { text: "前端工具框架推荐", link: "/frame/index.html" },

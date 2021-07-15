@@ -25,6 +25,7 @@ sidebar: auto
 - [ 压缩软件 ] MacZip 
 - [ 虚拟机 ] VMware Fusion 
 - [ 脑图 ] Xmind 
+- [ 更好用的 command + tab ] [Contexts](https://contexts.co/)
 
 ## Yarn 
 
