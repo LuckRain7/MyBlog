@@ -75,4 +75,45 @@ sudo nginx -s reload   # 重启
 sudo nginx -s stop     # 结束
 ```
 
+## 终端配置
+
+**tree**
+
+> 命令行打印目录树
+
+```shell
+# 安装
+brew install tree
+
+# 使用
+# 我们要在目录遍历时使用 -L 参数指定遍历层级
+tree -L 2 # 遍历两级目录
+```
+
+**autojump**
+
+> 快捷目录跳转
+
+```shell
+# 安装
+brew install autojump
+
+# 在 .zshrc 中添加插件
+vim ~/.zshrc # 
+# 找到 plugins 并添加 autojump插件
+plugins = ( git autojump )
+# 重启 zsh
+source ~/.zshrc
+```
+
+
+**zsh-syntax-highlighting**
+
+> 命令行高亮
+
+
+
+**zsh-autosuggestions**
+
+> 命令记忆提示
 ---

@@ -1,6 +1,7 @@
 ---
 sidebar: auto
 ---
+
 # TypeScript
 
 > 版本 ^3.8.3
@@ -9,24 +10,24 @@ sidebar: auto
 
 创建自己的项目文件，并执行一下命令
 
-```bash
- #初始化项目(npm初始化项目中共字段比yarn多)
+```shell
+# 初始化项目(npm初始化项目中共字段比yarn多)
 npm init -y
 
-#下载 typescript 和 tslint
-yarn add typescript tslint -D
+# 下载 typescript 和 tslint
+yarn add -D typescript tslint 
 
 # 初始化ts(生成tsconfig.json)
 tsc --init
 
 # 安装webpack4
-yarn add webpack webpack-cli webpack-dev-server -D
+yarn add -D webpack webpack-cli webpack-dev-server 
 
 # 安装ts解析
-tyarn add ts-loader -D
+yarn add -D ts-loader 
 
 #安装插件
-tyarn add clean-webpack-plugin html-webpack-plugin -D
+yarn add -D clean-webpack-plugin html-webpack-plugin 
 ```
 
 配置 启动脚本
@@ -35,7 +36,7 @@ tyarn add clean-webpack-plugin html-webpack-plugin -D
 
 配置webpack
 
-```js
+```JavaScript
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
@@ -82,7 +83,33 @@ module.exports = {
 
 ## 2.  tsconfig.json详解
 
-TODO
+```json
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "ES2018", // 编译的目标是什么版本的
+    "module": "commonjs", // 生成模块代码时指定模块系统
+    "moduleResolution": "node", // 指定如何解析模块以进行导入
+    "experimentalDecorators": true, // 启用实验性的 ES 装饰器
+    "emitDecoratorMetadata": true,
+    "inlineSourceMap":true, // 生成目标文件的inline SourceMap，inline SourceMap会包含在生成的js文件中
+    "noImplicitThis": true, // 不允许this有隐式的any类型
+    "noUnusedLocals": true, // 检查只声明、未使用的局部变量(只提示不报错)
+    "stripInternal": true,
+    "skipLibCheck": false,
+    "pretty": true,
+    "declaration": true, // 是否自动创建类型声明文件
+    "typeRoots": [ "./typings", "./node_modules/@types"],
+    "outDir": "dist" // 输出目录
+  },
+  // 编译器排除文件
+  "exclude": [
+    "dist",
+    "node_modules",
+    "test"
+  ]
+}
+```
 
 ## 3.  基础类型
 
