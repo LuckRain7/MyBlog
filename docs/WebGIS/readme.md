@@ -90,13 +90,18 @@ sidebar: auto
 
 ArcGIS 平台
 
-- ArcMap(数据处理) + ArcGIS Server(地图服务) + ArcGIS API for JavaScript(二、三维)+ PostgreSQL/PostGIS(数据存储)
+- ArcMap (数据处理) 
+- ArcGIS Server (地图服务) 
+- ArcGIS API for JavaScript (二、三维)
+- PostgreSQL/PostGIS (数据存储)
 
 开源平台
 
-- uDig(数据处理) + Geoserver(地图服务) + OpenLayers(二维) + Cesium(三维) + PostgreSQL/PostGIS(数据存储)
-
-![系统部署图](/Users/nowcoder/Documents/系统部署图.png)
+- uDig (数据处理) 
+- Geoserver (地图服务) 
+- OpenLayers (二维) 
+- Cesium (三维) 
+- PostgreSQL/PostGIS (数据存储)
 
 
 
@@ -166,7 +171,7 @@ WMS提供如下操作:
 - 图层列表
 - 图例
 
-### 2.3 分析功能
+### 2.2 分析功能
 
 - 空间查询（地图点 -> 信息）
 - 属性查询（信息 -> 地图点）
@@ -178,17 +183,13 @@ WMS提供如下操作:
 
 - 网络分析（分析路径、分析可达辐射范围...）
 
-### 2.4  国内开箱即用平台
+### 2.3  国内开箱即用平台
 
 平台提供底图（矢量图、影像图、注记、路网数据），可进行基本的点（特殊位置标记，标记点信息）、线（路径规划，距离测量）、面（面积测量，覆盖区域）操作，地址坐标查询（正/逆地址解析），定位服务，坐标转换。
 
 - 百度地图
 - 高德地图
 - 腾讯地图
-
-PS：商用需要付费。
-
-
 
 ## 3.  WebGIS 与前端
 
@@ -198,7 +199,24 @@ PS：商用需要付费。
 
 [WebGL](https://get.webgl.org/)
 
-### 3.2  WebGIS 类
+### 3.2 Vue
+
+**与 Vue 相结合**
+
+- 【百度地图】[Dafrok/vue-baidu-map](https://github.com/Dafrok/vue-baidu-map)  10个月没有维护
+
+- 【高德地图】[ElemeFE/vue-amap](https://github.com/ElemeFE/vue-amap) 2年没有维护
+
+- 【腾讯地图】webpack 进行第三方包处理
+
+- 【ArcGIS】[Esri/esri-loader](https://github.com/Esri/esri-loader) 14天前维护
+  - 与 Dojo 深度绑定 AMD模块化规范
+
+- 【OpenLayers】原生支持 ES Modules
+
+- 【cesium】webpack 进行第三方包处理
+
+### 3.3  WebGIS 类
 
 ```
 Map  
