@@ -38,6 +38,7 @@ git add . #添加所有文件到暂存区
 git add [文件名] #添加指定文件到暂存区
 
 git commit -m [提交信息] # 提交暂存区到仓库区
+git commit --amend # 会将修改追加到上一次的提交里
 
 git pull # 取回远程仓库的变化，并与本地分支合并
 git pull --rebase # 推荐添加 --rebase

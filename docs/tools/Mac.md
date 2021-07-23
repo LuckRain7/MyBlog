@@ -11,10 +11,10 @@ sidebar: auto
 
 ## APP
 
-* [ Markdown 编辑器 ]  [Typora](https://www.typora.io/) 
-* [ 视频播放器 ] IINA 
-* [ 鼠标滚轮平滑滚动 ] Mos 
-* [ 终端工具 ] iTerm + zsh 
+- [ Markdown 编辑器 ]  [Typora](https://www.typora.io/) 
+- [ 视频播放器 ] IINA 
+- [ 鼠标滚轮平滑滚动 ] Mos 
+- [ 终端工具 ] iTerm + zsh 
 - [ PDF 编辑器 ] PDF Expert 
 - [ Web 浏览器 ] Chrome | Firefox | Edge
 - [ 抓包工具 ] Charles 
@@ -111,9 +111,16 @@ source ~/.zshrc
 
 > 命令行高亮
 
-
-
 **zsh-autosuggestions**
 
 > 命令记忆提示
+
 ---
+
+## 修改启动台图标排布
+
+```shell
+defaults write com.apple.dock springboard-rows -int 7
+defaults write com.apple.dock springboard-columns -int 6
+defaults write com.apple.dock ResetLaunchPad -bool TRUE;killall Dock
+```
