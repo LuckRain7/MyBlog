@@ -2,10 +2,6 @@
 sidebar: auto
 ---
 
-
-
-
-
 # Koa
 
 > 官网：[ https://koa.bootcss.com/ ](https://koa.bootcss.com/)

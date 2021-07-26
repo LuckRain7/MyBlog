@@ -11,11 +11,11 @@ sidebar: auto
 
 ```json
 {
-    "singleQuote": true, //单引号
-    "semi": false, //是否需要分号
+    "singleQuote": true, // 单引号
+    "semi": false, // 是否需要分号
     "tabWidth": 2, // tab缩进大小,默认为2
     "bracketSpacing":true, // 对象中的空格 默认true
-    "printWidth": 100, //每行最多多少个字符换行
+    "printWidth": 100, // 每行最多多少个字符换行
     "trailingComma": "es5", // 对象属性最后有 "," 
 }
 ```

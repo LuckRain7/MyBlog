@@ -691,7 +691,7 @@ sidebar: auto
 
 ## Nginx
 
-- nginx的安装和使用
+- [nginx的安装和使用](/engineering/nginx.html#_1-安装)
 
 - 模块和基本配置
 
@@ -708,8 +708,6 @@ sidebar: auto
 - rewrite
 
 - 负载均衡集群
-
-
 
 ## Docker
 

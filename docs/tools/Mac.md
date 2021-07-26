@@ -117,6 +117,15 @@ source ~/.zshrc
 
 ---
 
+## Chrome 插件
+
+- octotree GitHub 目录插件 [GitHub](https://github.com/ovity/octotree) | [官网 GitHub code tree](https://www.octotree.io/)
+- 沙拉查词-聚合词典划词翻译
+- Vue.js devtools
+- AdBlock — 最佳广告拦截工具
+- Infinity 新标签页 (Pro)
+- Tampermonkey 脚本
+
 ## 修改启动台图标排布
 
 ```shell

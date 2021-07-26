@@ -430,9 +430,15 @@ Array.reduce(function(accumulator, currentValue, currentIndex, array), initialVa
 //所以最后结果就是37
 ```
 
+## vue
 
+### v-model 
 
+**修饰符：**
 
+- `.lazy` - 取代 input 监听 change 事件
+- `.number` - 输入字符串转为有效的数字
+- `.trim` - 输入首尾空格过滤
 
 
 

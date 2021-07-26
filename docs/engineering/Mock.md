@@ -76,7 +76,7 @@ Mock.mock( rurl, rtype, function( options ) )   常用
 | Date                | date（日期字符串）, time（时间字符串）, datetime（日期和时间字符串）, now（当前的日期和时间字符串） |
 | Image(TODO)         | image, dataImage                                             |
 | Color(TODO)         | color                                                        |
-| Text（TODO）        | paragraph（文本）, sentence, word, title, cparagraph（中文文本）, csentence, cword, ctitle |
+| Text（TODO）         | paragraph（文本）, sentence, word, title, cparagraph（中文文本）, csentence, cword, ctitle |
 | Name(TODO)          | first（英文名）, last（英文姓）, name（英文姓名）, cfirst（中文姓）, clast（中文名）, cname（中文姓名） |
 | Web(TODO)           | url, domain, email, ip, tld                                  |
 | Address(TODO)       | area, region（（中国）大区）,province（（中国）省（或直辖市、自治区、特别行政区））,city（（中国）市）,county（（中国）县） |

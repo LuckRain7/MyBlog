@@ -2,11 +2,6 @@
 sidebar: auto
 ---
 
-
-
-
-
-
 # Express
 
 > 官网 [ https://www.expressjs.com.cn/ ](https://www.expressjs.com.cn/)
