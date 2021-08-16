@@ -91,6 +91,15 @@ jobs:
 
 ## 开源项目推荐
 
- [GitHub-Chinese-Top-Charts](https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts) 
+### [GitHub-Chinese-Top-Charts](https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts) 
 
 > 🇨🇳 GitHub中文排行榜，帮助你发现高分优秀中文项目、更高效地吸收国人的优秀经验成果；榜单每周更新一次，敬请关注！（武汉加油！中国加油！世界加油！）
+
+### [whistle](https://github.com/avwo/whistle)
+
+> whistle(读音 [ˈwɪsəl]，拼音 [wēisǒu] )是基于 Node 实现的跨平台抓包调试代理工具，有以下基本功能：
+> - 查看 HTTP、HTTPS、HTTP2、WebSocket、TCP 请求响应数据
+> - 设置 hosts（支持 IPv6）、http-proxy、https-proxy、socks
+> - 作为HTTP代理或反向代理
+> - 集成常用的 web 调试工具，如 weinre 和 log 等
+> - 支持用 Node 编写插件扩展

@@ -26,6 +26,8 @@ sidebar: auto
 - [ 虚拟机 ] VMware Fusion 
 - [ 脑图 ] Xmind 
 - [ 更好用的 command + tab ] [Contexts](https://contexts.co/)
+- [ Homebrew 可视化工具 ] [Cakebrew](https://www.cakebrew.com/)
+- [ 系统清理 ] [腾讯柠檬](https://lemon.qq.com/lab/)
 
 ## Yarn 
 
@@ -132,4 +134,11 @@ source ~/.zshrc
 defaults write com.apple.dock springboard-rows -int 7
 defaults write com.apple.dock springboard-columns -int 6
 defaults write com.apple.dock ResetLaunchPad -bool TRUE;killall Dock
+```
+
+## 命令行
+
+```shell
+sudo lsof -i :9000  # 查看端口号进程
+sudo kill -9 PID    # 杀掉对应PID的进程
 ```
