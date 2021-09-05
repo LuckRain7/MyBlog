@@ -403,15 +403,7 @@ Vue.prototype.$http = Http
 
 ## API
 
-
-
-
-
-
-
-
-
-
+### Vue.extend()
 
 
 

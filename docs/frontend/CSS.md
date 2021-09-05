@@ -245,3 +245,26 @@ transform: unset;
 参考资料：
 - [transform - CSS（层叠样式表） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform)
 - [兼容性](https://caniuse.com/?search=transform)
+
+## 毛玻璃效果
+
+```css
+&::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 47px;
+    z-index: -2;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    
+    /* 实际起作用代码 */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+```
+
+参考链接: [什么是毛玻璃效果（Glassmorphism）？仅使用 HTML 和 CSS 来实现])(https://chinese.freecodecamp.org/news/glassmorphism-design-effect-with-html-css/)

@@ -97,6 +97,8 @@ jobs:
 
 ### [whistle](https://github.com/avwo/whistle)
 
+whistle-plugins 插件地址: [https://github.com/whistle-plugins](https://github.com/whistle-plugins)
+
 > whistle(读音 [ˈwɪsəl]，拼音 [wēisǒu] )是基于 Node 实现的跨平台抓包调试代理工具，有以下基本功能：
 > - 查看 HTTP、HTTPS、HTTP2、WebSocket、TCP 请求响应数据
 > - 设置 hosts（支持 IPv6）、http-proxy、https-proxy、socks
