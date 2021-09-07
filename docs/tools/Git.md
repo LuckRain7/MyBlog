@@ -153,7 +153,17 @@ chore：构建过程或辅助工具的变动
 Modify: 修改
 ```
 
-## Git 工作区
+## Git 暂存
+
+>
+
+```bash
+git stash                 # 将修改存储到暂存区，工作区会删除这些修改
+git stash pop             # 取出修改
+git stash list            # 查看暂存区的所有暂存修改
+git stash apply stash@{0} # 取出相应的暂存
+git stash drop stash@{0}  # 将记录列表中取出的对应暂存记录删除
+```
 
 todo
 
