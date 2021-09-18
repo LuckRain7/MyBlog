@@ -6,6 +6,7 @@ sidebar: auto
 ## JavaScript
 
 - 函数
+
   - underscore源码分析
 
   - compose函数和pipe函数
@@ -17,6 +18,7 @@ sidebar: auto
   - [深拷贝和浅拷贝](/frontend/JavaScript.html#一、深拷贝和浅拷贝)
 
 - 异步编程
+
   - [理解异步](/engineering/异步.html)
 
   - Event Loop 机制
@@ -60,7 +62,6 @@ sidebar: auto
   - V8垃圾回收机制分类
 
   - 引用计数、标记清除、标记整理和增量标记
-
 
 
 ## 计算机网络
@@ -394,8 +395,6 @@ sidebar: auto
 
     - Hooks的原理和实现
 
-
-
 ## Node.JS
 
 - Node 基础
@@ -498,8 +497,11 @@ sidebar: auto
 - Babel
 
   - token到ast，编译理论
+
   - 基本概念
+
   - 使用
+
   - 插件编写
 
 - 设计思想
@@ -747,25 +749,25 @@ sidebar: auto
 
 ## MongoDB
 
-- Mongodb安装和使用
+- [MongoDB 安装和使用](/DB/MongoDB.html)
 
-- Mongodb的系统架构
+- MongoDB 的系统架构
 
-- Mongodb高级查询
+- MongoDB 高级查询
 
-- Mongodb索引
+- MongoDB 索引
 
-- Mangodb安全与权限
+- MongoDB 安全与权限
 
-- mongoose模块之Schema
+- mongoose 模块之 Schema
 
-- mongoose模块之Model
+- mongoose 模块之 Model
 
-## MYSQL
+## MySQL
 
-- MYSQL安装与使用
+- MySQL 安装与使用
 
-- MYSQL系统架构
+- MySQL 系统架构
 
 - 数据处理之增删改查
 
@@ -798,8 +800,6 @@ sidebar: auto
 - 事务
 
 - 备份和恢复
-
-
 
 ## 设计模式
 
@@ -1020,17 +1020,15 @@ sidebar: auto
 
   - [rebase的作用](/tools/Git.html#git-rebase)
 
-  - reset与revert的区别
+  - reset 与 revert 的区别
 
   - reflog
 
-  - cherry-pick
+  - cherry-pick []()
 
-  - Git 与 shell结合
+  - Git 与 shell 结合
 
 - 前端工程化应用- husky link-staged
-
-
 
 ## 工程化
 
@@ -1040,7 +1038,7 @@ sidebar: auto
 
   - [package.json  项目说明文件](/engineering/package.json.html) 
 
-  - bash简介和快速入门
+  - bash 简介和快速入门
 
   - node 开发简单 CLI 工具
 
@@ -1050,9 +1048,9 @@ sidebar: auto
 
     - Eslint
 
-    - [prettierrc  代码格式化](/share/config.html#prettierrc)
+    - [prettierrc 代码格式化](/share/config.html#prettierrc)
 
-  - 版本规范和Changlog
+  - 版本规范和 Changlog
 
   - 其他规约
 

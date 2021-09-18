@@ -94,7 +94,6 @@ module.exports = {
     displayAllHeaders: false,
     activeHeaderLinks: true,
     // sidebar: require("./thermeConfig/Sidebar.js"),
-
     repo: "https://github.com/LuckRain7",
   },
 

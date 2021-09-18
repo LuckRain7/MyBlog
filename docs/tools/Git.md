@@ -165,7 +165,14 @@ git stash apply stash@{0} # 取出相应的暂存
 git stash drop stash@{0}  # 将记录列表中取出的对应暂存记录删除
 ```
 
-todo
+## Git cherry-pick
+
+> git cherry-pick 是将某个分支的 commit 提交到当前分支
+
+```bash
+git checkout <needPickBranch>   # 进入需要被提交的分支
+git cherry-pick <commitHash>    # 填写 commitHash 进行提交
+```
 
 ## 参考文章
 
@@ -174,3 +181,5 @@ todo
 [Git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
 
 [提醒！你可能会忽略的 Git 提交规范](https://segmentfault.com/a/1190000022440330)
+
+[git cherry-pick 教程](https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html)
