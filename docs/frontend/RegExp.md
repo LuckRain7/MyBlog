@@ -2,9 +2,8 @@
 
 用来处理字符串的规则
 
-- 只能处理字符串
-- 他是一个规则：可以验证字符串是否符合某些规则（test），也可以吧字符串中符合规则的内容捕捉到（exec/match）
-
+* 只能处理字符串
+* 他是一个规则：可以验证字符串是否符合某些规则（test），也可以吧字符串中符合规则的内容捕捉到（exec/match）
 
 ```JavaScript
 let str = "good good study, day day up!"
@@ -13,7 +12,7 @@ let reg = /\d+/;
 reg.test(str)
 
 str = "2021-07-25"
-reg.exec(str) 
+reg.exec(str)
 // ["2021", index: 0, input: "2021-07-25", groups: undefined]
 ```
 
@@ -31,8 +30,8 @@ let reg2 = new RegExp("\\d+")
 
 正则表达式由两部分组成
 
-- 元字符
-- 修饰符
+* 元字符
+* 修饰符
 
 ```
 /* 常用元字符 */
@@ -76,9 +75,6 @@ i       // 忽略大小写匹配
 m       // 进行多次匹配
 g       // 全局匹配
 ```
-
-
-
 
 ## 常用正则
 

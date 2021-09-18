@@ -1,6 +1,7 @@
 ---
 sidebar: auto
 ---
+
 # MongoDB
 
 > 以下系统环境为 Mac
@@ -76,7 +77,6 @@ source ~/.bash_profile
 mongo_start # 启动
 ```
 
-
 ```shell
 # 新终端标签页
 mongo # 开启 MongoDB 链接
@@ -116,4 +116,3 @@ db.createUser(
   }
 )
 ```
-
