@@ -220,7 +220,7 @@ sidebar: auto
 
   + 集成 VueSSR 和 Vuex 实现数据同步
 
-  + webpack 构建 Vue SSR 项目
+  + Webpack 构建 Vue SSR 项目
 
   + 路由懒加载
 
@@ -670,7 +670,7 @@ sidebar: auto
 
 ## 前端性能优化
 
-* webpack优化方案
+* webpack 优化方案
 
 * 浏览器缓存原理和最佳设置策略
 
@@ -682,7 +682,7 @@ sidebar: auto
 
 * 节流与防抖
 
-* 通过Performance监控性能
+* 通过 Performance 监控性能
 
 ## Linux
 
@@ -1016,11 +1016,11 @@ sidebar: auto
 
 * [Git基础操作-常用命令](/tools/Git.html#git-常用命令)
 
-* Git进阶
+* Git 进阶
 
   + [rebase的作用](/tools/Git.html#git-rebase)
 
-  + reset 与 revert 的区别
+  + [reset 与 revert 的区别](/tools/Git.html#reset-revert)
 
   + reflog
 

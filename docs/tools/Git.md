@@ -10,7 +10,7 @@ sidebar: auto
 
 ## Git 原理
 
-还是去看看阮老师写的吧，链接：  [Git 原理入门- 阮一峰]( http://www.ruanyifeng.com/blog/2018/10/git-internals.html )
+还是去看看阮老师写的吧，链接：  [Git 原理入门- 阮一峰](http://www.ruanyifeng.com/blog/2018/10/git-internals.html)
 
 ## Git 目录
 
@@ -174,12 +174,39 @@ git checkout <needPickBranch>   # 进入需要被提交的分支
 git cherry-pick <commitHash>    # 填写 commitHash 进行提交
 ```
 
+## reset 与 revert
+
+**git revert**
+
+> 回滚(撤销)对应commit 。git revert 后多出一条 commit 来提醒开发者，这里是回撤。
+
+```bash
+git revert HEAD             # 撤销前一次 commit
+git revert HEAD^            # 撤销前前一次 commit
+git revert <commitHash>     # 撤销指定的版本
+
+# 参数
+git revert <commitHash> --no-edit   # 执行时不打开默认编辑器，直接使用 Git 自动生成的提交信息。
+git revert <commitHash> --no-commit # 只抵消暂存区和工作区的文件变化，不产生新的提交。
+```
+
+**git reset**
+
+> 回退到对应 commit 版本，直接将之前 commit 丢弃。
+
+```BASH
+git reset HEAD                  # 回退前一次 commit
+git reset HEAD^                 # 回退前前一次 commit
+git reset <commitHash>          # 回退到指定的版本
+
+# 参数
+git reset --hard <commitHash>   # --hard 参数可以让工作区里面的文件也回到以前的状态。
+```
+
 ## 参考文章
 
-[Git常用命令总结](https://www.jianshu.com/p/cdccfef91ae1 )
-
-[Git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
-
-[提醒！你可能会忽略的 Git 提交规范](https://segmentfault.com/a/1190000022440330)
-
-[git cherry-pick 教程](https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html)
+* [Git常用命令总结](https://www.jianshu.com/p/cdccfef91ae1)
+* [Git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
+* [提醒！你可能会忽略的 Git 提交规范](https://segmentfault.com/a/1190000022440330)
+* [git cherry-pick 教程](https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html)
+* [如何撤销 Git 操作？](https://www.ruanyifeng.com/blog/2019/12/git-undo.html)
