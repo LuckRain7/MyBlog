@@ -1,3 +1,7 @@
+---
+sidebar: auto
+---
+
 # package.json
 
 ## 作用
@@ -63,8 +67,8 @@
   "license": "UNLICENSED",
   // engines指明了该项目所需要的node.js版本及其他版本信息。
   "engines": {
-    "node": "12.13.0", 
-    "npm": "xx.xx.xx", 
+    "node": "12.13.0",
+    "npm": "xx.xx.xx",
   }
 }
 ```
@@ -83,7 +87,4 @@ yarn add [packName] -D
 
 ### 2、script 运行脚本
 
-`yarn [scriptName]`  和  `npm run [scriptName]`  是一样的
-
-
-------------------------------------------------------------------------------------------------
+`yarn [scriptName]` 和 `npm run [scriptName]` 是一样的

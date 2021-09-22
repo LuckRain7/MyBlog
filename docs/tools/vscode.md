@@ -18,7 +18,7 @@ sidebar: auto
 
  通过使用警告、信息、TODO等注释来改进代码注释 
 
-![Better Comments]( https://raw.githubusercontent.com/aaron-bond/better-comments/master/images/better-comments.PNG )
+![Better Comments](https://raw.githubusercontent.com/aaron-bond/better-comments/master/images/better-comments.PNG)
 
 ###  Bracket Pair Colorizer
 
@@ -194,4 +194,4 @@ Vue代码段提示
 
 文件内eslint忽略写法，放在文件头部
 
-`/* eslint-disable [ignore] */` 
+ `/* eslint-disable [ignore] */`

@@ -1,8 +1,8 @@
 ---
 sidebar: auto
 ---
-# 书签
 
+# 书签
 
 ## 待看
 
@@ -24,8 +24,6 @@ sidebar: auto
 
 [高质量前端快照方案：来自页面的「自拍」 - 云音乐前端专栏 - SegmentFault 思否](https://segmentfault.com/a/1190000021275782)
 
-
-
 ## A- 前端
 
 ### A-1 webpack
@@ -44,13 +42,9 @@ sidebar: auto
 
 [Nestjs入门（三） | tc9011's](https://tc9011.com/2019/07/31/nestjs入门（三）/)
 
-
-
 ### 模块化
 
 [前端模块化一——规范详述 - 掘金](https://juejin.im/post/5d2599716fb9a07ee0633f78)
-
-
 
 ### uni-app
 
@@ -58,32 +52,24 @@ sidebar: auto
 
 [uni-app（优雅的“排雷”集锦） - 掘金](https://juejin.im/post/5d1dc1186fb9a07ee85c4820#heading-6)
 
-
-
 ### UI
 
 [Bulma: Free, open source, and modern CSS framework based on Flexbox](https://bulma.io/)
-
-
 
 ### AssemblyScript
 
 [AssemblyScript 入门指南 - 疯狂的技术宅 - SegmentFault 思否](https://segmentfault.com/a/1190000021063091)
 
-
-
 ### Websocket
 
 [WebSocket 原理浅析与实现简单聊天 - 政采云前端团队](https://www.zoo.team/article/websocket)
 
-[Socket.IO](https://socket.io/)
-
-
+[Socket. IO](https://socket.io/)
 
 ### TypeScript
 
 [使用 TS 声明文件+JSDoc 对 es 项目提供智能提示 - 掘金](https://juejin.im/post/5de0bc15f265da060f24f38f)
-- https://mp.weixin.qq.com/s/IRy31fMArrch1-S2OBsqSw
+* https://mp.weixin.qq.com/s/IRy31fMArrch1-S2OBsqSw
 
 [DevDocs API Documentation](https://devdocs.io/)
 
@@ -522,8 +508,6 @@ sidebar: auto
 
 [System Log Parser (0.6.3.1) -- deprecated](https://www.arcgis.com/home/item.html?id=90134fb0f1c148a48c65319287dde2f7)
 
-
-
 [最短路径问题---Dijkstra算法详解 - William - CSDN博客](https://blog.csdn.net/qq_35644234/article/details/60870719)
 
 [使用ArcGIS GP服务之一框架介绍 - HPhone - 博客园](http://www.cnblogs.com/HPhone/archive/2012/11/05/2755833.html)
@@ -564,10 +548,10 @@ sidebar: auto
 
 ### mySQL
 
-[安装mysql Install/Remove of the Service Denied!错误的解决办法 - lxpbs8851的专栏 - CSDN博客](https://blog.csdn.net/lxpbs8851/article/details/14161935)
+[安装mysql Install/Remove of the Service Denied! 错误的解决办法 - lxpbs8851的专栏 - CSDN博客](https://blog.csdn.net/lxpbs8851/article/details/14161935)
 [MySQL 安装 | 菜鸟教程](http://www.runoob.com/mysql/mysql-install.html)
 [MySQL-mysql 8.0.11安装教程 - Laumians - 博客园](https://www.cnblogs.com/laumians-notes/p/9069498.html)
-[小白学mysql 5.7.21遇到的安装丢失msvcp120.dll,msvcr120.dll,0xc000007b+服务无法启动 - jun_ya_song的博客 - CSDN博客](https://blog.csdn.net/jun_ya_song/article/details/81083158)
+[小白学mysql 5.7.21遇到的安装丢失msvcp120.dll, msvcr120.dll, 0xc000007b+服务无法启动 - jun_ya_song的博客 - CSDN博客](https://blog.csdn.net/jun_ya_song/article/details/81083158)
 [安装mysql时出现应用程序无法正常启动（0xc000007b）、初始化失败以及密码忘记怎样重置？ - ssy_1991的博客 - CSDN博客](https://blog.csdn.net/zztingfeng/article/details/80155624)
 
 [(5条消息)MySQL-mysql 8.0.17安装 - Charonmomo的博客 - CSDN博客](https://blog.csdn.net/Charonmomo/article/details/98440968)
@@ -589,7 +573,7 @@ sidebar: auto
 
 [Eva Icons - beautifully crafted Open Source UI icons for common actions and items.](https://akveo.github.io/eva-icons/#/)
 
-[Icons8 - 离线使用90,600 个图标(Mac和Windows)](https://icons8.cn/app)
+[Icons8 - 离线使用90, 600 个图标(Mac和Windows)](https://icons8.cn/app)
 
 [ImgURL图床](https://imgurl.org/)
 
@@ -603,7 +587,7 @@ sidebar: auto
 
  [Simple Desktops](http://simpledesktops.com/) 
 
-[cnBeta.COM - 中文业界资讯站](https://www.cnbeta.com/)
+[cnBeta. COM - 中文业界资讯站](https://www.cnbeta.com/)
 
 [牛客网- 互联网求职神器和备考学习平台](https://www.nowcoder.com/)
 
@@ -637,7 +621,7 @@ sidebar: auto
 
 [心谭博客](https://xin-tan.com/)
 
-[LiangJunrong/document-library: jsliang 的文档库. 里面包含了个人撰写的所有前端文章，例如 Vue、React,、ECharts、微信小程序等……](https://github.com/LiangJunrong/document-library)
+[LiangJunrong/document-library: jsliang 的文档库. 里面包含了个人撰写的所有前端文章，例如 Vue、React, 、ECharts、微信小程序等……](https://github.com/LiangJunrong/document-library)
 
 [Blog | GoDotDotDot](https://blog.godotdotdot.com/)
 
@@ -699,7 +683,7 @@ sidebar: auto
 
 [【整理】20个让你效率更高的CSS代码技巧 - CSS技术学习 - SegmentFault 思否](https://segmentfault.com/a/1190000019542534?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com&share_user=1030000000178452)
 
-[cubic-bezier(.34,-0.16,1,.76) ✿ cubic-bezier.com](https://cubic-bezier.com/#.34,-0.16,1,.76)
+[cubic-bezier(.34, -0.16, 1, .76) ✿ cubic-bezier.com](https://cubic-bezier.com/#.34,-0.16,1,.76)
 
 [使用“变量种子计数器”扩展CSS动画更多可能性 « 张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/wordpress/2019/05/css-variable-seed-extend-animation/?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com)
 
@@ -713,7 +697,7 @@ sidebar: auto
 
 [CSS Grid Generator](https://cssgrid-generator.netlify.com/)
 
-[MUURI – 响应式、可排序、可拖拽的布局插件 - H5 - AAA教育资讯官网_AAA教育UI设计培训,AAA教育HTML5培训,AAA教育web前端培训,AAA教育产品经理培训](http://www.aaa-cg.com.cn/xue/h5/228.html)
+[MUURI – 响应式、可排序、可拖拽的布局插件 - H5 - AAA教育资讯官网_AAA教育UI设计培训, AAA教育HTML5培训, AAA教育web前端培训, AAA教育产品经理培训](http://www.aaa-cg.com.cn/xue/h5/228.html)
 
 [Muuri - Responsive, sortable, filterable and draggable grid layouts](https://haltu.github.io/muuri/)
 
@@ -853,7 +837,7 @@ sidebar: auto
 
 [一人之下漫画-428-在线漫画阅读-土豪漫画](https://www.tohomh123.com/yirenzhixia/453.html)
 
-[通过实现25个数组方法来理解及高效使用数组方法(长文,建议收藏) - 掘金](https://juejin.im/post/5d82c12ff265da03a31d6f92#heading-16)
+[通过实现25个数组方法来理解及高效使用数组方法(长文, 建议收藏) - 掘金](https://juejin.im/post/5d82c12ff265da03a31d6f92#heading-16)
 
 [解密国内BAT等大厂前端技术体系-阿里篇（长文建议收藏）](https://mp.weixin.qq.com/s/haSCjEOVCZSeaT2q5E2BQw)
 
@@ -934,8 +918,6 @@ sidebar: auto
 [workload-admin](http://rain7.top:4000/admin/admin.html)
 
 [woekload-user](http://rain7.top:4000/user/user.html)
-
-
 
 ## 外边的世界
 

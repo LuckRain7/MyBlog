@@ -64,9 +64,9 @@ sidebar: auto
 
   + 深入理解 async 和 await
 
-  + 处理异步的框架爱RxJS
+  + 处理异步的框架 RxJS
 
-  + webWorker 的多线程机制
+  + Web Worker 的多线程机制
 
 * 模块加载
 
@@ -82,9 +82,9 @@ sidebar: auto
 
 * V8 内存管理
 
-  + JavaScript中的垃圾收集、内存管理
+  + JavaScript 中的垃圾收集、内存管理
 
-  + V8垃圾回收机制分类
+  + V8 垃圾回收机制分类
 
   + 引用计数、标记清除、标记整理和增量标记
 
@@ -134,7 +134,7 @@ sidebar: auto
 
   + 应用层
 
-    - .HTTP、HTTPS、HTTP2
+    - HTTP、HTTPS、HTTP2
 
 * 网络请求
 
@@ -170,7 +170,7 @@ sidebar: auto
 
     - 组件间通信、EventBus应用
 
-    - 组件slot用法
+    - 组件 slot 用法
 
     - 双向绑定与单向数据流
 
@@ -180,7 +180,7 @@ sidebar: auto
 
     - 上拉刷新、下拉加载、图片懒加载
 
-    - 数据获取和axios应用拦截器
+    - [axios 数据获取/应用拦截器](/engineering/axios.html)
 
 * Vue-Router（权限控制）
 
@@ -206,21 +206,21 @@ sidebar: auto
 
   + Vue CLI 4.0 项目搭建
 
-  + 如何 Mock 后台数据
+  + [如何 Mock 后台数据](/engineering/Mock.html)
 
   + 项目布署和上线
 
 * Vue SSR 服务端渲染
 
-  + SSR原理和设计理念
+  + SSR 原理和设计理念
 
   + 集成路由及代码分割
 
-  + 集成KOA实现服务器端渲染
+  + 集成 KOA 实现服务器端渲染
 
-  + 集成VueSSR和Vuex实现数据同步
+  + 集成 VueSSR 和 Vuex 实现数据同步
 
-  + webpack构建Vue SSR项目
+  + webpack 构建 Vue SSR 项目
 
   + 路由懒加载
 
@@ -232,7 +232,7 @@ sidebar: auto
 
   + Vue 动画原理
 
-* Vue实践
+* Vue 实践
 
   + 动画切换效果
 
@@ -252,15 +252,15 @@ sidebar: auto
 
 * 深入Vue源码
 
-  + MVVM响应式原理及源码分析
+  + MVVM 响应式原理及源码分析
 
   + 手写实现Vue3.0响应式原理
 
-  + 手写实现Vue-Router
+  + 手写实现 Vue-Router
 
-  + 手写实现vuex中的state、getter、commit、dispatch、actions/mutations、模块化
+  + 手写实现 vuex 中的 state、getter、commit、dispatch、actions/mutations、模块化
 
-  + 虚拟DOM
+  + 虚拟 DOM
 
   + DOM diff
 
@@ -328,7 +328,7 @@ sidebar: auto
 
   + 预渲染
 
-  + Koa2+Nextjs服务器端渲染实战
+  + Koa2+Nextjs 服务器端渲染实战
 
 * 组件化开发
 
@@ -348,9 +348,9 @@ sidebar: auto
 
   + umi配置静态和动态路由、权限和动画、UMI实现原理，手写实现UMI
 
-  + dva创建应用、集成AntDesign. 定义路由和UI组件、链接仓库、使用effects和reducers
+  + dva 创建应用、集成 AntDesign. 定义路由和UI组件、链接仓库、使用effects和reducers
 
-  + 手写实现dva和核心库redux- saga
+  + 手写实现dva和核心库 redux- saga
 
   + 使用Button、Modal、 Loading、 Notifcation、 Message、 List、Carousel等AntDesign组件
 
@@ -1028,7 +1028,7 @@ sidebar: auto
 
   + Git 与 shell 结合
 
-* 前端工程化应用- husky link-staged
+* 前端工程化应用 husky link-staged
 
 ## 工程化
 
@@ -1048,7 +1048,7 @@ sidebar: auto
 
     - Eslint
 
-    - [.prettier 代码格式化](/share/config.html#prettier)
+    - [prettier 代码格式化](/share/config.html#prettier)
 
   + 版本规范和 Changlog
 

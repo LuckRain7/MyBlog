@@ -6,23 +6,27 @@ sidebar: auto
 
 > 官网 [ https://www.expressjs.com.cn/ ](https://www.expressjs.com.cn/)
 
-- cors -> 跨域模块
+* cors -> 跨域模块
 
-  ```js
-  # yarn add cors
+  
+
+```js
+  // yarn add cors
 
   const cors = require('cors')
   app.use(cors())
-  ```
+```
 
-- express-generator -> express 官方项目生成器
+* express-generator -> express 官方项目生成器
 
-  ```json
+  
+
+```json
   # yarn global add express-generator
   # express [文件名]
-  ```
+```
 
-- [ejs](https://ejs.bootcss.com/) -> 模板引擎
+* [ejs](https://ejs.bootcss.com/) -> 模板引擎
 
 > 快速构建
 
@@ -84,7 +88,9 @@ app.use(logger('dev')) //日志设置，使用参见https://github.com/expressjs
 // app.use(express.json())
 // app.use(express.urlencoded({ extended: false }))
 app.use(bodyParser.json()) //解析JSON格式的post参数
-app.use(bodyParser.urlencoded({ extended: false })) //解析urlencoeded编码的post参数，URLEncoded编码中,所有的字符均为ANSCII码
+app.use(bodyParser.urlencoded({
+  extended: false
+})) //解析urlencoeded编码的post参数，URLEncoded编码中,所有的字符均为ANSCII码
 
 app.use(cookieParser()) //cookie设置
 app.use(express.static(path.join(__dirname, 'public'))) //静态文件
@@ -105,7 +111,6 @@ app.use(function(err, req, res, next) {
   // 开发环境错误处理
   res.locals.message = err.message
 
-
   res.locals.error = req.app.get('env') === 'development' ? err : {}
 
   // render the error page
@@ -115,4 +120,3 @@ app.use(function(err, req, res, next) {
 
 module.exports = app
 ```
-

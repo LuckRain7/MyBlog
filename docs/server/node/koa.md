@@ -8,11 +8,11 @@ sidebar: auto
 >
 > Koa 是一个新的 web 框架，由 Express 幕后的原班人马打造， 致力于成为 web 应用和 API 开发领域中的一个更小、更富有表现力、更健壮的基石。 通过利用 async 函数，Koa 帮你丢弃回调函数，并有力地增强错误处理。 Koa 并没有捆绑任何中间件， 而是提供了一套优雅的方法，帮助您快速而愉快地编写服务端应用程序。 
 
-- koa-cors -> 跨域
-- koa-router -> 路由
-- koa-static -> 静态资源
-- koa-body -> 解析 body
-- koa-logger -> 日志管理
+* koa-cors -> 跨域
+* koa-router -> 路由
+* koa-static -> 静态资源
+* koa-body -> 解析 body
+* koa-logger -> 日志管理
 
 > 快速构建
 
@@ -64,7 +64,9 @@ const routerUser = require("./router/user.js");
 // 数据库
 const MongoDB = require("./mongoDB/Link.js");
 // 校验函数
-const { verifyToken } = require("./config/jwt.js");
+const {
+  verifyToken
+} = require("./config/jwt.js");
 // 初始化
 const app = new Koa();
 // 处理错误路由
@@ -98,4 +100,3 @@ app.listen(4000, function() {
   console.log("run in 4000");
 });
 ```
-

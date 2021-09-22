@@ -11,23 +11,23 @@ sidebar: auto
 
 ## APP
 
-- [ Markdown 编辑器 ]  [Typora](https://www.typora.io/) 
-- [ 视频播放器 ] IINA 
-- [ 鼠标滚轮平滑滚动 ] Mos 
-- [ 终端工具 ] iTerm + zsh 
-- [ PDF 编辑器 ] PDF Expert 
-- [ Web 浏览器 ] Chrome | Firefox | Edge
-- [ 抓包工具 ] Charles 
-- [ 代码编辑器 ] Visual Studio Code | Sublime Text 
-- [ 截图工具 ] Xnip 
-- [ 风扇控制 ] Macs Fan Control 
-- [ 翻译 ] DeepL 
-- [ 压缩软件 ] MacZip 
-- [ 虚拟机 ] VMware Fusion 
-- [ 脑图 ] Xmind 
-- [ 更好用的 command + tab ] [Contexts](https://contexts.co/)
-- [ Homebrew 可视化工具 ] [Cakebrew](https://www.cakebrew.com/)
-- [ 系统清理 ] [腾讯柠檬](https://lemon.qq.com/lab/)
+* [ Markdown 编辑器 ]  [Typora](https://www.typora.io/) 
+* [ 视频播放器 ] IINA 
+* [ 鼠标滚轮平滑滚动 ] Mos 
+* [ 终端工具 ] iTerm + zsh 
+* [ PDF 编辑器 ] PDF Expert 
+* [ Web 浏览器 ] Chrome | Firefox | Edge
+* [ 抓包工具 ] Charles 
+* [ 代码编辑器 ] Visual Studio Code | Sublime Text 
+* [ 截图工具 ] Xnip 
+* [ 风扇控制 ] Macs Fan Control 
+* [ 翻译 ] DeepL 
+* [ 压缩软件 ] MacZip 
+* [ 虚拟机 ] VMware Fusion 
+* [ 脑图 ] Xmind 
+* [ 更好用的 command + tab ] [Contexts](https://contexts.co/)
+* [ Homebrew 可视化工具 ] [Cakebrew](https://www.cakebrew.com/)
+* [ 系统清理 ] [腾讯柠檬](https://lemon.qq.com/lab/)
 
 ## Yarn 
 
@@ -108,7 +108,6 @@ plugins = ( git autojump )
 source ~/.zshrc
 ```
 
-
 **zsh-syntax-highlighting**
 
 > 命令行高亮
@@ -121,12 +120,12 @@ source ~/.zshrc
 
 ## Chrome 插件
 
-- octotree GitHub 目录插件 [GitHub](https://github.com/ovity/octotree) | [官网 GitHub code tree](https://www.octotree.io/)
-- 沙拉查词-聚合词典划词翻译
-- Vue.js devtools
-- AdBlock — 最佳广告拦截工具
-- Infinity 新标签页 (Pro)
-- Tampermonkey 脚本
+* octotree GitHub 目录插件 [GitHub](https://github.com/ovity/octotree) | [官网 GitHub code tree](https://www.octotree.io/)
+* 沙拉查词-聚合词典划词翻译
+* Vue.js devtools
+* AdBlock — 最佳广告拦截工具
+* Infinity 新标签页 (Pro)
+* Tampermonkey 脚本
 
 ## 修改启动台图标排布
 

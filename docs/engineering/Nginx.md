@@ -21,4 +21,3 @@ sudo nginx           # 启动（管理员）
 sudo nginx -s stop   # 关闭（管理员）
 sudo nginx -s reload # 重启（管理员）
 ```
-

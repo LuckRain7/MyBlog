@@ -10,7 +10,7 @@ sidebar: auto
 
 ## 安装
 
-```BASH
+```bash
 npm install -g less
 # or
 yarn add less
