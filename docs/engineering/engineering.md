@@ -4,13 +4,37 @@ sidebar: auto
 
 # 前端知识图谱
 
+## HTML
+
+* 元素
+
+* DOM
+
+## CSS
+
+* CSSOM
+
+* 选择器
+
+* 布局
+
+* 交互
+
+* 绘制
+
+* 预处理器
+
+  + [sass](/frontend/css/sass.html)
+
+  + [less](/frontend/css/less.html)
+
 ## JavaScript
 
 * 函数
 
-  + underscore源码分析
+  + underscore 源码分析
 
-  + compose函数和pipe函数
+  + compose 函数和 pipe 函数
 
   + 高阶函数
 
@@ -36,7 +60,7 @@ sidebar: auto
 
     - 深入理解 promise
 
-    - generator函数及异步应用
+    - generator 函数及异步应用
 
   + 深入理解 async 和 await
 
@@ -1024,7 +1048,7 @@ sidebar: auto
 
     - Eslint
 
-    - [prettierrc 代码格式化](/share/config.html#prettierrc)
+    - [.prettier 代码格式化](/share/config.html#prettier)
 
   + 版本规范和 Changlog
 

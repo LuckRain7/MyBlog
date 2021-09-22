@@ -1,9 +1,10 @@
 ---
 sidebar: auto
 ---
+
 # 配置文件
 
-##  .prettierrc
+##  .prettier
 
 > 官网：[ https://prettier.io/ ]( https://prettier.io/ )
 >
@@ -132,4 +133,3 @@ dist
 .tern-port
 
 ```
-

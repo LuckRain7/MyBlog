@@ -21,7 +21,7 @@ sidebar: auto
 
  `box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); `
 
-## background属性
+## background 属性
 
 > 定义背景效果: 
 >
@@ -36,24 +36,37 @@ sidebar: auto
 > background-position   设置背景图像的起始位置 
 
 ```css
-background: #ffffff url('../assets/zcmap.png') no-repeat 5px 5px; /*  集合写法 */
+background: #ffffff url('../assets/zcmap.png') no-repeat 5px 5px;
+/*  集合写法 */
 
-background-color: #ffffff; /*  设置背景颜色 （可以16进制，也可以使rgb() rgba()） */
+background-color: #ffffff;
+/*  设置背景颜色 （可以16进制，也可以使rgb() rgba()） */
 
-background-image: url('../assets/zcmap.png'); /* 图片链接 */
+background-image: url('../assets/zcmap.png');
+/* 图片链接 */
 
-background-repeat:repeat; /* 默认。背景图像将在垂直方向和水平方向重复。*/
-background-repeat:repeat-x; /*  水平平铺，在水平方向重复 */
-background-repeat:repeat-y; /*  垂直平铺，在垂直方向重复 */
-background-repeat:no-repeat; /*  图片不重复，只显示一次 */
+background-repeat:repeat;
+/* 默认。背景图像将在垂直方向和水平方向重复。*/
+background-repeat:repeat-x;
+/*  水平平铺，在水平方向重复 */
+background-repeat:repeat-y;
+/*  垂直平铺，在垂直方向重复 */
+background-repeat:no-repeat;
+/*  图片不重复，只显示一次 */
 
-background-attachment: scroll; /* 默认值。背景图像会随着页面其余部分的滚动而移动。 */
-background-attachment: fixed; /* 当页面的其余部分滚动时，背景图像不会移动。 */
-background-attachment: inherit; /* 规定应该从父元素继承 background-attachment 属性的设置。 */
+background-attachment: scroll;
+/* 默认值。背景图像会随着页面其余部分的滚动而移动。 */
+background-attachment: fixed;
+/* 当页面的其余部分滚动时，背景图像不会移动。 */
+background-attachment: inherit;
+/* 规定应该从父元素继承 background-attachment 属性的设置。 */
 
-background-position: 5px 5px; /* 第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50% */
-background-position: 5% 5%; /* 第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50% */
-background-position: left top; /* 位置英文  如果仅指定一个关键字，其他值将会是"center" */
+background-position: 5px 5px;
+/* 第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50% */
+background-position: 5% 5%;
+/* 第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50% */
+background-position: left top;
+/* 位置英文  如果仅指定一个关键字，其他值将会是"center" */
 ```
 
 ## 平滑滚动
@@ -100,66 +113,6 @@ header {
   position: sticky;
   top: 0;
 }
-```
-
-## CSS预处理器
-
-### sass
-
-> 世界上最成熟、最稳定、最强大的专业级 CSS 扩展语言！
-
-定义变量 Variables
-
-```scss
-$highlight-color: #F90;
-```
-
-支持嵌套 Nested Rules
-
-```scss
-#header {
-  color: black;
-  .navigation {
-    font-size: 12px;
-  }
-  .logo {
-    width: 300px;
-  }
-}
-```
-
-### less
-
-> Less 是一门 CSS 预处理语言，它扩展了 CSS 语言，增加了变量、Mixin、函数等特性，使 CSS 更易维护和扩展。
->
-> Less 可以运行在 Node 或浏览器端。
-
-定义变量 Variables
-
-```less
-@nice-blue: #5B83AD;
-```
-
-支持嵌套 Nested Rules
-
-```less
-#header {
-  color: black;
-  .navigation {
-    font-size: 12px;
-  }
-  .logo {
-    width: 300px;
-  }
-}
-```
-
-支持加减乘除操作 Operations
-
-```less
-// numbers are converted into the same units
-@conversion-1: 5cm + 10mm; // result is 6cm
-@conversion-2: 2 - 3cm - 5mm; // result is 1.5cm
 ```
 
 ## border 属性
@@ -243,28 +196,28 @@ transform: unset;
 ```
 
 参考资料：
-- [transform - CSS（层叠样式表） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform)
-- [兼容性](https://caniuse.com/?search=transform)
+* [transform - CSS（层叠样式表） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform)
+* [兼容性](https://caniuse.com/?search=transform)
 
 ## 毛玻璃效果
 
 ```css
 &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 47px;
-    z-index: -2;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
-    
-    /* 实际起作用代码 */
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 47px;
+  z-index: -2;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+
+  /* 实际起作用代码 */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 ```
 
-参考链接: [什么是毛玻璃效果（Glassmorphism）？仅使用 HTML 和 CSS 来实现])(https://chinese.freecodecamp.org/news/glassmorphism-design-effect-with-html-css/)
+参考链接: [什么是毛玻璃效果（Glassmorphism）？仅使用 HTML 和 CSS 来实现](https://chinese.freecodecamp.org/news/glassmorphism-design-effect-with-html-css/)
