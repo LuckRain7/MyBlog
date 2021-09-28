@@ -33,7 +33,7 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | b
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 ```
 
-## 2. 解决NVM源问题
+## 2. 解决 NVM 源问题
 
 默认 nvm 是国外的源，下载基本上是下载不下来的！！！请安一下步骤操作
 

@@ -6,22 +6,22 @@ sidebar: auto
 
 > 模拟数据
 
-## 安装
+## 1. 安装
 
 ```bash
 yarn add mockjs -D
 ```
 
-## 一、语法规范
+## 2. 语法规范
 
-### 1、数据模板定义规范 DTD
+### 2.1 数据模板定义规范 DTD
 
 ```
 '属性名|生成规则': 属性值
 'name|rule': value
 ```
 
-### 2、数据占位符定义规范 DPD
+### 2.2 数据占位符定义规范 DPD
 
 ```
 @占位符
@@ -50,9 +50,9 @@ Mock.mock({
 }
 ```
 
-## 二、函数
+## 3. 函数
 
-### 1、Mock.mock
+### 3.1 Mock.mock
 
 > rurl： 表示需要拦截的 URL，可以是 URL 字符串或 URL 正则 
 >
@@ -70,7 +70,7 @@ Mock.mock( rurl, rtype, template )
 
 Mock.mock( rurl, rtype, function( options ) )   常用
 
-### 2、Mock. Random
+### 3.2 Mock. Random
 
 对照表
 
@@ -179,11 +179,13 @@ Random.extend({
 Random.constellation()
 // => "水瓶座"
 Mock.mock('@constellation')
-// => "天蝎座"
+// => "天蝎座"k
 Mock.mock({
   constellation: '@constellation'
 })
 // => { constellation: "射手座" }
 ```
 
-## 三、常用例子
+## 4. 常用例子
+
+TODO

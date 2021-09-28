@@ -4,11 +4,11 @@ sidebar: auto
 
 # package.json
 
-## 作用
+## 1. 作用
 
 **package.json** 包含关于项目的重要信息。  定义了这个项目所需要的各种模块，以及项目的配置信息（比如名称、版本、许可证等元数据） 
 
-## 常见字段
+## 2. 常见字段
 
 ```javascript
 {
@@ -73,9 +73,9 @@ sidebar: auto
 }
 ```
 
-## 注意
+## 3. 注意
 
-### 1、dependencies 与 devDependencies 的区别
+### 3.1 dependencies 与 devDependencies 的区别
 
 dependencies是项目依赖，项目打包时一同打包
 
@@ -85,6 +85,6 @@ devDependencies 是项目开发依赖，只有开发的时候用
 
 yarn add [packName] -D
 
-### 2、script 运行脚本
+### 3.2 script 运行脚本
 
 `yarn [scriptName]` 和 `npm run [scriptName]` 是一样的

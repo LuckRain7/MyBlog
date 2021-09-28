@@ -4,12 +4,12 @@ sidebar: auto
 
 # Axios
 
-## 安装
+## 1. 安装
 
 ```BASH
 yarn add axios
 ```
 
-## 简单封装
+## 2. 简单封装
 
 TODO
