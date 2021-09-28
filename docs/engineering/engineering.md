@@ -1012,19 +1012,19 @@ sidebar: auto
 
 ## Git
 
-* [Git原理介绍](/tools/Git.html#git-原理)
+* [Git原理介绍](/tools/Git.html#_1-git-原理)
 
-* [Git基础操作-常用命令](/tools/Git.html#git-常用命令)
+* [Git基础操作-常用命令](/tools/Git.html#_3-常用命令)
 
 * Git 进阶
 
-  + [rebase的作用](/tools/Git.html#git-rebase)
+  + [rebase 的作用](/tools/Git.html#_3-2-git-rebase)
 
-  + [reset 与 revert 的区别](/tools/Git.html#reset-revert)
+  + [reset 与 revert 的区别](/tools/Git.html#_7-reset-与-revert-回滚-回退)
 
   + reflog
 
-  + [cherry-pick](/tools/Git.html#git-cherry-pick)
+  + [cherry-pick](/tools/Git.html#_6-git-cherry-pick)
 
   + Git 与 shell 结合
 
@@ -1034,9 +1034,9 @@ sidebar: auto
 
 * 脚本世界
 
-  + [npm & yarn  包管理工具](/tools/package.html) 
+  + [npm & yarn 包管理工具](/tools/package.html) 
 
-  + [package.json  项目说明文件](/engineering/package.json.html) 
+  + [package.json 项目说明文件](/engineering/package.json.html) 
 
   + bash 简介和快速入门
 

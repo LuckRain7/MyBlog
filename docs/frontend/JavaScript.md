@@ -193,7 +193,7 @@ document.onmousemove = function(event) {
   //是否为可移动状态                　　　　　　　　　　　 　　　　　　　
   if (isDrop) {
     let e = event || window.event
-    let moveX = e.clientX - x //得到距离左边移动距离  
+    let moveX = e.clientX - x //得到距离左边移动距离
     let moveY = e.clientY - y //得到距离上边移动距离
     //可移动最大距离
     let maxX = document.documentElement.clientWidth - model.offsetWidth
@@ -296,9 +296,9 @@ div {
 
 ## API
 
-### 一、Object 
+### 1、Object 
 
-#### [Object.values()]( https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/values )   返回给定对象自身可枚举值的数组。
+#### [Object.values()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/values)  返回给定对象自身可枚举值的数组。
 
 ```JavaScript
 var obj = {
@@ -308,7 +308,7 @@ var obj = {
 console.log(Object.values(obj)); // ['bar', 42]
 ```
 
-#### [Object.keys()]( https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys )：返回一个包含所有给定对象自身可枚举属性名称的数组。
+#### [Object.keys()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)  返回一个包含所有给定对象自身可枚举属性名称的数组。
 
 ```JavaScript
 var obj = {
@@ -317,6 +317,14 @@ var obj = {
   2: 'c'
 };
 console.log(Object.keys(obj)); // console: ['0', '1', '2']
+```
+
+#### [Object.entries()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)  返回给定对象自身可枚举属性的 `[key, value]` 数组。
+
+```JavaScript
+for (const [key, value] of Object.entries(object)) {
+  console.log(`${key}: ${value}`);
+}
 ```
 
 * Object.assign()
@@ -334,10 +342,6 @@ console.log(Object.keys(obj)); // console: ['0', '1', '2']
 * Object.defineProperties()
 
   给对象添加多个属性并分别指定它们的配置。
-
-* Object.entries()
-
-  返回给定对象自身可枚举属性的 `[key, value]` 数组。
 
 * Object.freeze()
 
@@ -392,3 +396,63 @@ console.log(Object.keys(obj)); // console: ['0', '1', '2']
 参考文章：
 
 [Javascript 浅拷贝和深拷贝](https://segmentfault.com/a/1190000021239893)
+
+## ES 2020
+
+### 链判断运算符 ?.
+
+> 针对对象的多层属性值，进行判断，判断当前属性是否判断
+>
+> 用法：<判断属性>?.（? 判断的是前面的属性，而不是后面的属性）
+
+* object?.prop
+
+* object?.[string]
+
+* function?.(...args)
+
+```JavaScript
+const test = {
+  a: 1,
+  b: 2,
+}
+
+test.no
+// undefined
+
+test.no.a
+// VM363:1 Uncaught TypeError: Cannot read properties of undefined (reading 'a')
+//     at <anonymous>:1:8
+
+test.no?.a // 判断 no 是否存在
+// undefined
+
+test.no()
+// Uncaught TypeError: test?.c is not a function
+//     at <anonymous>:1:7
+
+test.no?.()
+// undefined
+```
+
+### null undefined 判断运算符（??）
+
+> 判断左侧的值为 null 或 undefined 时，才会返回右侧的值。
+>
+> 可以配合 ?. 使用
+
+```JavaScript
+const test = {
+  a: 1,
+  b: 2,
+}
+
+const c = test.c ?? 'Hello, world! C'
+const d = test.c?.d ?? 'Hello, world! D'
+```
+
+**?? 与 || 的区别**
+
+* ?? 只对判断值为 null 或 undefined 时，才会生效
+
+* || 对属性的值为 ''、false、0、null、undefined 等都生效
