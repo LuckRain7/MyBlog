@@ -4,7 +4,7 @@ sidebar: auto
 
 # JavaScript
 
-## 1、应用
+## 1.  应用
 
 ### 1.1  深拷贝和浅拷贝
 
@@ -298,7 +298,7 @@ div {
 
 :::
 
-## 2、API
+## 2.  API
 
 ### 2.1  Object 
 
@@ -401,19 +401,21 @@ for (const [key, value] of Object.entries(object)) {
 
 [Javascript 浅拷贝和深拷贝](https://segmentfault.com/a/1190000021239893)
 
-## 3、ECMAScript 2015（ES6）
+## 3. ECMAScript 2015（ES6）
 
-## 4、ECMAScript 2016（ES7）
+## 4. ECMAScript 2016（ES7）
 
-## 5、ECMAScript 2017（ES8）
+## 5. ECMAScript 2017（ES8）
 
-## 6、ECMAScript 2018（ES9）
+## 6. ECMAScript 2018（ES9）
 
-## 7、ECMAScript 2019（ES10）
+## 7. ECMAScript 2019（ES10）
 
-## 8、ECMAScript 2020（ES11）
+## 8. ECMAScript 2020（ES11）
 
-### ?. 链判断操作符
+### 8.1 对象扩展
+
+#### 8.1.1 ?. 链判断操作符
 
 > 针对对象的多层属性值，进行判断，判断当前属性是否判断
 >
@@ -449,7 +451,7 @@ test.no?.()
 // undefined
 ```
 
-### ?? 空判断操作符
+#### 8.1.2 ?? 空判断操作符
 
 > 判断左侧的值为 null 或 undefined 时，才会返回右侧的值。
 >

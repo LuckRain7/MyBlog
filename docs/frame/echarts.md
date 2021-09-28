@@ -1,12 +1,12 @@
 # Echarts
 
-## 一、安装
+## 1. 安装
 
 ```bash
 yarn add echarts
 ```
 
-## 二、按需加载
+## 2. 按需加载
 
 以下例子是结合 webpack进行全局封装
 
@@ -38,7 +38,6 @@ import 'echarts/lib/component/toolbox' //工具栏
 import 'echarts/lib/component/graphic' //自定义图形
 
 export default echarts
-
 ```
 
 在组件中直接使用
@@ -56,27 +55,25 @@ require('echarts/lib/component/title');
 var myChart = echarts.init(document.getElementById('main'));
 // 绘制图表
 myChart.setOption({
-    title: {
-        text: 'ECharts 入门示例'
-    },
-    tooltip: {},
-    xAxis: {
-        data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
-    },
-    yAxis: {},
-    series: [{
-        name: '销量',
-        type: 'bar',
-        data: [5, 20, 36, 10, 10, 20]
-    }]
+  title: {
+    text: 'ECharts 入门示例'
+  },
+  tooltip: {},
+  xAxis: {
+    data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+  },
+  yAxis: {},
+  series: [{
+    name: '销量',
+    type: 'bar',
+    data: [5, 20, 36, 10, 10, 20]
+  }]
 });
 ```
 
+## 3. 使用
 
-
-## 三、使用
-
-### 1、基础使用
+### 3.1 基础使用
 
 ```js
 //引入
@@ -86,34 +83,33 @@ const DOM = document.getElementById('main')
 let myChart = echarts.init(DOM)
 // 绘制图表
 myChart.setOption({
-    title: {
-        text: 'ECharts 入门示例'
-    },
-    tooltip: {},
-    xAxis: {
-        data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
-    },
-    yAxis: {},
-    series: [{
-        name: '销量',
-        type: 'bar',
-        data: [5, 20, 36, 10, 10, 20]
-    }]
+  title: {
+    text: 'ECharts 入门示例'
+  },
+  tooltip: {},
+  xAxis: {
+    data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+  },
+  yAxis: {},
+  series: [{
+    name: '销量',
+    type: 'bar',
+    data: [5, 20, 36, 10, 10, 20]
+  }]
 });
 ```
 
-### 2、添加loading动画
+### 3.2 添加loading动画
 
 ```js
- myChart.hideLoading(); 
+ myChart.hideLoading();
 ```
 
-### 3、根据窗口的大小变动图表
+### 3.3 根据窗口的大小变动图表
 
 ```js
 //根据窗口的大小变动图表 --- 重点
-window.onresize = function(){
-    myChart.resize();
+window.onresize = function() {
+  myChart.resize();
 }
 ```
-

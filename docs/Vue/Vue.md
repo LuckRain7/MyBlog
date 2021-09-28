@@ -4,7 +4,7 @@ sidebar: auto
 
 # Vue
 
-## Vue 核心 API&&组件设计
+## Vue 核心 API&& 组件设计
 
 - 官方推荐使用的引用组件的命名形式
 

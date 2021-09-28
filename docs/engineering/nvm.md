@@ -4,7 +4,7 @@ sidebar: auto
 
 # NVM
 
-## 安装
+## 1. 安装
 
 * win10下安装
 
@@ -33,9 +33,9 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | b
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 ```
 
-## 解决NVM源问题
+## 2. 解决NVM源问题
 
-默认nvm是国外的源，下载基本上是下载不下来的！！！请安一下步骤操作
+默认 nvm 是国外的源，下载基本上是下载不下来的！！！请安一下步骤操作
 
 1、新建系统环境变量 `NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node`
 
@@ -43,17 +43,17 @@ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | 
 
 3、命令行执行 ` nvm npm_mirror https://npm.taobao.org/mirrors/npm/ ` 切换npm源
 
-## 常用命令
+## 3. 常用命令
 
  下面命令以 node 10 版本为例
 
 ```shell
 nvm -v # 查看当前NVM版本
 
-nvm ls #查找本电脑上所有的node版本
+nvm ls # 查找本电脑上所有的node版本
 
-nvm install v10.19.0 #安装指定版本
-nvm uninstall v10.19.0 #卸载指定版本
+nvm install v10.19.0 # 安装指定版本
+nvm uninstall v10.19.0 # 卸载指定版本
 
-nvm use v10.19.0 ## 切换使用指定的版本node
+nvm use v10.19.0 # 切换使用指定的版本node
 ```

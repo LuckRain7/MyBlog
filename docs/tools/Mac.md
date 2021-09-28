@@ -9,7 +9,7 @@ sidebar: auto
 
 :::
 
-## APP
+## 1. APP
 
 * [ Markdown 编辑器 ]  [Typora](https://www.typora.io/) 
 * [ 视频播放器 ] IINA 
@@ -19,17 +19,17 @@ sidebar: auto
 * [ Web 浏览器 ] Chrome | Firefox | Edge
 * [ 抓包工具 ] Charles 
 * [ 代码编辑器 ] Visual Studio Code | Sublime Text 
-* [ 截图工具 ] Xnip 
+* [ 截图工具 ] Xnip
 * [ 风扇控制 ] Macs Fan Control 
-* [ 翻译 ] DeepL 
-* [ 压缩软件 ] MacZip 
+* [ 翻译 ] DeepL
+* [ 压缩软件 ] MacZip
 * [ 虚拟机 ] VMware Fusion 
 * [ 脑图 ] Xmind 
 * [ 更好用的 command + tab ] [Contexts](https://contexts.co/)
 * [ Homebrew 可视化工具 ] [Cakebrew](https://www.cakebrew.com/)
 * [ 系统清理 ] [腾讯柠檬](https://lemon.qq.com/lab/)
 
-## Yarn 
+## 2. Yarn 
 
 > 压缩包安装 ↓
 
@@ -37,7 +37,7 @@ sidebar: auto
 
 2、配置环境变量：export PATH="$PATH:/Users/nowcoder/app/yarn/bin/"
 
-## HomeBrew
+## 3. HomeBrew
 
 > 踩坑：推荐中科院的源
 
@@ -65,7 +65,7 @@ echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 source ~/.zshrc
 ```
 
-## Nginx
+## 4. Nginx
 
 install:  brew install nginx
 
@@ -77,7 +77,7 @@ sudo nginx -s reload   # 重启
 sudo nginx -s stop     # 结束
 ```
 
-## 终端配置
+## 5. 终端配置
 
 **tree**
 
@@ -102,8 +102,10 @@ brew install autojump
 
 # 在 .zshrc 中添加插件
 vim ~/.zshrc # 
+
 # 找到 plugins 并添加 autojump插件
 plugins = ( git autojump )
+
 # 重启 zsh
 source ~/.zshrc
 ```
@@ -118,7 +120,7 @@ source ~/.zshrc
 
 ---
 
-## Chrome 插件
+## 6. Chrome 插件
 
 * octotree GitHub 目录插件 [GitHub](https://github.com/ovity/octotree) | [官网 GitHub code tree](https://www.octotree.io/)
 * 沙拉查词-聚合词典划词翻译
@@ -127,7 +129,7 @@ source ~/.zshrc
 * Infinity 新标签页 (Pro)
 * Tampermonkey 脚本
 
-## 修改启动台图标排布
+## 7. 修改启动台图标排布
 
 ```shell
 defaults write com.apple.dock springboard-rows -int 7
@@ -135,7 +137,7 @@ defaults write com.apple.dock springboard-columns -int 6
 defaults write com.apple.dock ResetLaunchPad -bool TRUE;killall Dock
 ```
 
-## 命令行
+## 8. 命令行
 
 ```shell
 sudo lsof -i :9000  # 查看端口号进程

@@ -52,7 +52,6 @@ nrm use [registry_name] # 切换到私有源
 npm adduser --registry [registry_url] [email] # 进行私有源登录
 ```
 
-
 ## YARN（推荐）
 
 > 官网：[ https://yarn.bootcss.com/ ]( https://yarn.bootcss.com/ )
@@ -79,7 +78,7 @@ yarn config list # 查看yarn配置
 yarn global list #查看全局安装的包
 ```
 
-## nrm -- NPM registry manager
+## NRM -- NPM registry manager
 
 > nrm(npm registry manager )是npm的镜像源管理工具，有时候国外资源太慢，使用这个就可以快速地在 npm 源间切换
 
