@@ -4,9 +4,9 @@ sidebar: auto
 
 # JavaScript
 
-## 一、应用
+## 1、应用
 
-### 1、深拷贝和浅拷贝
+### 1.1  深拷贝和浅拷贝
 
 赋值操作则是两个对象一起指向一个对象，无论谁改变了对象里面的内容，都会互相影响。
 
@@ -67,7 +67,7 @@ console.log(obj)
 console.log(d.other)
 ```
 
-### 2、防抖和节流
+### 1.2  防抖和节流
 
 > 防抖：防止重复点击触发事件
 >
@@ -135,7 +135,9 @@ console.log(d.other)
 </html>
 ```
 
-### 3、可拖动模态框
+### 1.3  可拖动模态框
+
+::: details 具体代码
 
  `index.html`
 
@@ -294,9 +296,11 @@ div {
 }
 ```
 
-## API
+:::
 
-### 1、Object 
+## 2、API
+
+### 2.1  Object 
 
 #### [Object.values()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/values)  返回给定对象自身可枚举值的数组。
 
@@ -397,9 +401,19 @@ for (const [key, value] of Object.entries(object)) {
 
 [Javascript 浅拷贝和深拷贝](https://segmentfault.com/a/1190000021239893)
 
-## ES 2020
+## 3、ECMAScript 2015（ES6）
 
-### 链判断运算符 ?.
+## 4、ECMAScript 2016（ES7）
+
+## 5、ECMAScript 2017（ES8）
+
+## 6、ECMAScript 2018（ES9）
+
+## 7、ECMAScript 2019（ES10）
+
+## 8、ECMAScript 2020（ES11）
+
+### ?. 链判断操作符
 
 > 针对对象的多层属性值，进行判断，判断当前属性是否判断
 >
@@ -407,7 +421,7 @@ for (const [key, value] of Object.entries(object)) {
 
 * object?.prop
 
-* object?.[string]
+* object?.[expr]
 
 * function?.(...args)
 
@@ -435,7 +449,7 @@ test.no?.()
 // undefined
 ```
 
-### null undefined 判断运算符（??）
+### ?? 空判断操作符
 
 > 判断左侧的值为 null 或 undefined 时，才会返回右侧的值。
 >
@@ -456,3 +470,7 @@ const d = test.c?.d ?? 'Hello, world! D'
 * ?? 只对判断值为 null 或 undefined 时，才会生效
 
 * || 对属性的值为 ''、false、0、null、undefined 等都生效
+
+## 参考资料
+
+* [1.5万字概括ES6全部特性(已更新ES2020)](https://juejin.cn/post/6844903959283367950)
