@@ -4,7 +4,7 @@
 
 **element-ui 时间选择器限制范围（随动）**
 
-```js
+```JavaScript
 data() {
   let _minTime = null;
   let _maxTime = null;

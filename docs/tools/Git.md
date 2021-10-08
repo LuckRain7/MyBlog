@@ -139,6 +139,18 @@ git stash apply stash@{0} # 取出相应的暂存
 git stash drop stash@{0}  # 将记录列表中取出的对应暂存记录删除
 ```
 
+### 4.7 清除无用的 branch ref
+
+> [git官网: git remote prune [-n | --dry-run] <name>…​](https://git-scm.com/docs/git-remote#Documentation/git-remote.txt-empruneem)
+>
+> Deletes stale references associated with `<name>`. By default, stale remote-tracking branches under `<name>` are deleted, but depending on global configuration and the configuration of the remote we might even prune local tags that haven’t been pushed there. Equivalent to git fetch --prune <name>, except that no new references will be fetched.
+> 
+> 删除与 `<name>` 关联的陈旧引用。 默认情况下，删除 `<name>` 下过时的远程跟踪分支，但根据全局配置和远程配置，我们甚至可能会修剪尚未推送到那里的本地标签。 等同于 git fetch --prune <name> ，除了不会获取新的引用。
+
+```bash
+git remote prune origin  # 清除无用的 branch ref
+```
+
 ## 5. git提交规范
 
 ```

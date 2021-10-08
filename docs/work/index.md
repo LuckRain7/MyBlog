@@ -6,9 +6,47 @@ sidebar: auto
 
 ## 1. Web
 
-### 1.1 来源
+### 1.1 埋点页面来源
 
-document.referrer
+document.referrer + pageSource 透传
+
+```JavaScript
+const PageSourcePathnameMap = {}; // 路径翻译 /home => 1001首页
+const PageSourceIdMap = {}; // 透传翻译 1001 => 1001首页
+const PageSourceOriginMap = {}; // 涉及到后端重定向 只能拿到 Origin
+
+function getPageSourceVar() {
+    const pageSource = Uri.getParam('pageSource');
+    if (pageSource) return decodeURIComponent(pageSource);
+    if (pageSource) {
+        const res = PageSourceIdMap[pageSource];
+        if (res) return res;
+    }
+
+    const referrer = document.referrer;
+    if (!referrer) return '直接访问';
+
+    let aTag = document.createElement('A');
+    aTag.href = referrer;
+    const pathname = aTag.pathname;
+
+    let pageSourceVar = '未知来源';
+    if (pathname && pathname !== '/') {
+        for (const [key, value] of Object.entries(PageSourcePathnameMap)) {
+            if (pathname.includes(key)) {
+                pageSourceVar = value;
+            }
+        }
+    } else {
+        for (const [key, value] of Object.entries(PageSourceOriginMap)) {
+            if (referrer.includes(key)) {
+                pageSourceVar = value;
+            }
+        }
+    }
+    return pageSourceVar;
+}
+```
 
 ## 2. H5
 
@@ -18,10 +56,9 @@ document.referrer
 
 > 背景：进行路径匹配 Web H5 自适应
 > 
-> /user/:name   /user/:name/detail/:url
+> 例子：1、 /user/:name    2、 /user/:name/detail/:url
 
 借鉴 vue-router 的路由匹配，使用 [Path-to-RegExp](https://github.com/pillarjs/path-to-regexp)。
-
 
 ```Vue
 <script>
