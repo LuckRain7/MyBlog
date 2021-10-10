@@ -92,7 +92,7 @@ sidebar: auto
 
 * 网络协议
 
-  + OSI七层模型
+  + OSI 七层模型
 
   + TCP/IP 参考模型
 
@@ -108,15 +108,15 @@ sidebar: auto
 
     - 冲突检测
 
-    - MAC地址
+    - MAC 地址
 
     - 以太网帧
 
-    - ARP协议
+    - ARP 协议
 
   + 互联网层(网络层)
 
-    - IP协议
+    - IP 协议
 
     - 选址
 
@@ -124,21 +124,21 @@ sidebar: auto
 
   + 传输层
 
-    - TCP数据包、TCP序列号
+    - TCP 数据包、TCP 序列号
 
     - 滑动窗口的拥塞检测
 
     - 三次握手和四次挥手
 
-    - UDP协议、DNS协议
+    - UDP 协议、DNS 协议
 
   + 应用层
 
-    - HTTP
+    - [HTTP](/engineering/network/http.html#_1-http)
 
-    - HTTPS
+    - [HTTPS](/engineering/network/http.html#_2-https)
 
-    - HTTP2
+    - [HTTP2](/engineering/network/http.html#_3-http2)
 
 * 网络请求
 
@@ -148,9 +148,9 @@ sidebar: auto
 
     - Ajax 和 Fetch
 
-    - 文件上传
+    - [文件上传](https://github.com/LuckRain7/growth-record/tree/master/Demo/file-upload)
 
-    - Axios 源码分析
+    - [Axios 源码分析](https://github.com/LuckRain7/Knowledge-Sharing/blob/master/translate/axios.md)
 
   + WebSocket
 
