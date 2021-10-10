@@ -302,7 +302,7 @@ div {
 
 ### 2.1  Object 
 
-#### [Object.values()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/values)  返回给定对象自身可枚举值的数组。
+#### 2.1.1 [Object.values()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/values)  返回给定对象自身可枚举值的数组。
 
 ```JavaScript
 var obj = {
@@ -312,7 +312,7 @@ var obj = {
 console.log(Object.values(obj)); // ['bar', 42]
 ```
 
-#### [Object.keys()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)  返回一个包含所有给定对象自身可枚举属性名称的数组。
+#### 2.1.2 [Object.keys()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)  返回一个包含所有给定对象自身可枚举属性名称的数组。
 
 ```JavaScript
 var obj = {
@@ -323,7 +323,7 @@ var obj = {
 console.log(Object.keys(obj)); // console: ['0', '1', '2']
 ```
 
-#### [Object.entries()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)  返回给定对象自身可枚举属性的 `[key, value]` 数组。
+#### 2.1.3 [Object.entries()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)  返回给定对象自身可枚举属性的 `[key, value]` 数组。
 
 ```JavaScript
 for (const [key, value] of Object.entries(object)) {

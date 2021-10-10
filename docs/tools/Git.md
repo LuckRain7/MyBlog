@@ -92,11 +92,11 @@ git remote add github [项目URL地址]
 git remote rm [origin] # 删除
 
 # 推送
-git push gitee master
+git push gitee  master
 git push github master
 ```
 
-### 4.2 git远程分支强制覆盖本地分支
+### 4.2 git 远程分支强制覆盖本地分支
 
 ```bash
 git fetch --all  
@@ -104,7 +104,7 @@ git reset --hard [origin/master]
 git pull
 ```
 
-### 4.3 git忽略规则(.gitignore配置）不生效解决方案
+### 4.3 git 忽略规则(.gitignore配置）不生效解决方案
 
 > 清除缓存 重新提交
 
@@ -151,7 +151,7 @@ git stash drop stash@{0}  # 将记录列表中取出的对应暂存记录删除
 git remote prune origin  # 清除无用的 branch ref
 ```
 
-## 5. git提交规范
+## 5. git 提交规范
 
 ```
 Feat：新功能（feature）

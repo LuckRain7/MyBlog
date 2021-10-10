@@ -134,7 +134,11 @@ sidebar: auto
 
   + 应用层
 
-    - HTTP、HTTPS、HTTP2
+    - HTTP
+
+    - HTTPS
+
+    - HTTP2
 
 * 网络请求
 
@@ -146,7 +150,7 @@ sidebar: auto
 
     - 文件上传
 
-    - Axios源码分析
+    - Axios 源码分析
 
   + WebSocket
 
@@ -154,7 +158,7 @@ sidebar: auto
 
 * 网络安全
 
-  + Web漏洞的分析与防御、同源策略
+  + Web 漏洞的分析与防御、同源策略
 
   + XSS（跨站脚本攻击）
 

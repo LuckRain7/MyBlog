@@ -129,3 +129,23 @@ export default {
 };
 </script>
 ```
+
+### 3.2 nginx 用户校验
+
+```JavaScript
+// 1、添加请求头
+ctx.headers.Authorization = 'Basic xxxxxxxxxxxx=';
+
+// 2、可以通过 curl 携带参数转发
+const cookie = ctx.get('cookie');
+const options = {
+    dataType: param.dataType || 'json',
+    type: param.type || 'GET',
+    data: param.data,
+    headers: {Cookie: cookie},
+    auth: 'username:password'
+};
+
+const res = await ctx.curl(`${url}`,options)
+return res
+```
