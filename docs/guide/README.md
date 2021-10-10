@@ -1,3 +1,7 @@
+---
+sidebar: auto
+---
+
 # 指南
 
-[缓存相关](/cache)
+[缓存相关](/cache/)
