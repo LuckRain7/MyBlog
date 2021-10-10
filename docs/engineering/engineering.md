@@ -152,7 +152,7 @@ sidebar: auto
 
     - [Axios 源码分析](https://github.com/LuckRain7/Knowledge-Sharing/blob/master/translate/axios.md)
 
-  + WebSocket
+  + [WebSocket](/server/Node.html#_1-2-websocket)
 
   + 缓存
 
