@@ -86,7 +86,7 @@ module.exports = {
           { text: "网站推荐", link: "/share/website.html" },
           { text: "前端工具框架推荐", link: "/frame/index.html" },
           { text: "配置文件", link: "/share/config/" },
-          { text: "笔记", link: "/share/notes/" },
+          // { text: "笔记", link: "/share/notes/" },
         ],
       },
     ],
@@ -95,6 +95,9 @@ module.exports = {
     activeHeaderLinks: true,
     // sidebar: require("./thermeConfig/Sidebar.js"),
     repo: "https://github.com/LuckRain7",
+    sidebar: {
+      "/cache/": ["", "browser-cache", "cdn-cache"], // 缓存相关
+    },
   },
 
   // 插件

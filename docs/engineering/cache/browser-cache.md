@@ -2,13 +2,11 @@
 sidebar: auto
 ---
 
-# 1. web 缓存
+# 浏览器缓存
 
-> web 缓存分为很多种，比如**数据库缓存、代理服务器缓存、还有我们熟悉的 CDN 缓存**，以及浏览器缓存。
+> web 缓存分为很多种，比如：数据库缓存 / 代理服务器缓存 / CDN 缓存 / 浏览器缓存 。
 >
 > 流程：浏览器 -> 代理服务器 -> 资源服务器
-
-## 1.1. 浏览器缓存
 
 **HTTP 缓存又分为强缓存和协商缓存：**
 
@@ -33,11 +31,11 @@ sidebar: auto
 
 可以得出：强缓存与协商缓存区别：强缓存不发生请求到服务器，协商缓存会发请求到服务器。
 
-### 1.1.1. 强缓存
+## 1. 强缓存
 
 **页面的缓存状态是由 header 决定的**，header 的参数有四种：
 
-#### 1.1.1.1. Cache-Control（重要策略）
+### 1.1 Cache-Control（重要策略）
 
 * max-age
   + （单位为 s）指定设置缓存最大的有效时间，定义的是时间长短
@@ -60,17 +58,17 @@ sidebar: auto
 * must-revalidate
   + 指定如果页面是过期的，则去服务器进行获取。
 
-#### 1.1.1.2. Expires
+### 1.2 Expires
 
 example： `Expires: Wed, 01 Mar 2017 11:20:22 GMT`
 
 缓存过期时间，用来指定资源到期的时间，是服务器端的具体的时间点。也就是说，Expires=max-age + 请求时间，需要和 Last-modified 结合使用。但在上面我们提到过，cache-control 的优先级更高。
 
-### 1.1.2. 协商缓存
+## 2. 协商缓存
 
 > 协商缓存浏览器响应 Code 是 304
 
-#### 1.1.2.1. Last-modified
+### 2.1 Last-modified
 
 1. 浏览器第一次跟服务器请求一个资源，服务器在返回这个资源的同时，会在 `Respone` 的 `Header` 的 `Last-Modified` 值设置为，该资源最后修改的时间；
 
@@ -82,7 +80,7 @@ example： `Expires: Wed, 01 Mar 2017 11:20:22 GMT`
 
 服务器端文件的最后修改时间，需要和 cache-control 共同使用，是检查服务器端资源是否更新的一种方式。当浏览器再次进行请求时，会向服务器传送 If-Modified-Since 报头，询问 Last-Modified 时间点之后资源是否被修改过。如果没有修改，则返回码为 304，使用缓存；如果修改过，则再次去服务器请求资源，返回码和首次请求相同为 200，资源为服务器最新资源。
 
-#### 1.1.2.2. ETag
+### 2.2 ETag
 
 > Etag 是服务器响应请求时，返回当前资源文件的一个唯一标识(由服务器生成)。
 
@@ -114,7 +112,7 @@ b、如果资源修改非常频繁，在秒以下的时间内进行修改，而L
 c、一些资源的最后修改时间改变了，但是内容没改变，使用ETag就认为资源还是没有修改的。
 ```
 
-#### 1.1.2.3. e-tag 和 Last-Modified 优先级哪个高？**
+### 2.3 e-tag 和 Last-Modified 优先级
 
 Last-Modified 与 ETag 是可以一起使用的（见下图），**服务器会优先验证** ETag ，一致的情况下，才会继续比对 Last-Modified，最后才决定是否返回 304 Not Modified。
 
@@ -126,7 +124,7 @@ ETag 可以解决 Last-Modified 存在的一些问题，**既生 `Last-Modified`
 
 * 某些服务器不能精确的得到文件的最后修改时间。
 
-### 1.1.3. LocalStorage 和 sessionStorage
+## 3. LocalStorage / sessionStorage / cookie
 
 除了开头提到的那么多缓存方式以外，还有一种我们都熟悉的缓存方式，**LocalStorage 和 sessionStorage**。
 
@@ -138,11 +136,23 @@ LocalStorage 在 PC 上的兼容性不太好，而且当网络速度快、协商
 
 在前端开发中缓存是必不可少的，那么使用怎样的缓存方式更高效、让我们项目的性能更优，还是需要我们仔细斟酌。
 
-## 1.2. 数据库缓存
+### 3.1 三者区别
 
-## 1.3. 代理服务器缓存
+1. 都会在浏览器端保存，有大小限制，同源限制
 
-## 1.4. CDN 缓存
+2. cookie 会在请求时发送到服务器，作为会话标识，服务器可修改 cookie；web storage 不会发送到服务器
+
+3. cookie 有 path 概念，子路径可以访问父路径 cookie，父路径不能访问子路径 cookie
+
+4. 有效期：cookie 在设置的有效期内有效，默认为浏览器关闭；sessionStorage 在窗口关闭前有效，localStorage 长期有效，直到用户删除
+
+5. 共享：sessionStorage 不能共享，localStorage 在同源文档之间共享，cookie 在同源且符合 path 规则的文档之间共享
+
+6. localStorage 的修改会促发其他文档窗口的 update 事件
+
+7. cookie 有 secure 属性要求 HTTPS 传输
+
+8. 浏览器不能保存超过 300 个 cookie，单个服务器不能超过 20 个，每个 cookie 不能超过 4k。web storage 大小支持能达到 5M
 
 ---
 
