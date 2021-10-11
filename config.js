@@ -98,6 +98,7 @@ module.exports = {
     // 集合的形式
     sidebar: {
       "/cache/": ["", "browser-cache", "cdn-cache"], // 缓存相关
+      "/Vue/": ["", "Vue", "Vue-CLI", "Vue-router", "Vuex", "ui"],
     },
   },
 
