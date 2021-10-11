@@ -678,7 +678,7 @@ sidebar: auto
 
 * CDN 缓存优化
 
-* EventLoop异步更新
+* EventLoop 异步更新
 
 * 避免回流和重绘
 
@@ -688,9 +688,9 @@ sidebar: auto
 
 ## Linux
 
-* Linux与Windows的不同
+* Linux 与 Windows 的不同
 
-* Linux安装和虚拟机的使用
+* Linux 安装和虚拟机的使用
 
 * 桥接、NAT、Host-Only等 网络连接
 
@@ -746,9 +746,9 @@ sidebar: auto
 
 * jenkins job
 
-* shell集成
+* shell 集成
 
-* 集成nginx和git
+* 集成 nginx 和 git
 
 * 持续集成和部署
 
@@ -867,7 +867,7 @@ sidebar: auto
   + 建造者模式(Builder)
 
   + 抽象工厂模式(Abstract Factory)
-  
+
   + 原型模式(Prototype)
 
   + 工厂方法模式(Factory Method)

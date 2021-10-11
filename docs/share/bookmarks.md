@@ -18,8 +18,6 @@ sidebar: auto
 
 [一文学会 Node.js 中的流 - 疯狂的技术宅 - SegmentFault 思否](https://segmentfault.com/a/1190000021180266)
 
-[你可能不知道的15个 Git 命令 - 疯狂的技术宅 - SegmentFault 思否](https://segmentfault.com/a/1190000021190289)
-
 [现代前端库开发指南系列（三）：从说明文档看库的前世今生 - 实用至上 - SegmentFault 思否](https://segmentfault.com/a/1190000021243173)
 
 [高质量前端快照方案：来自页面的「自拍」 - 云音乐前端专栏 - SegmentFault 思否](https://segmentfault.com/a/1190000021275782)
@@ -122,8 +120,6 @@ sidebar: auto
 [【前端基础进阶】JS原型、原型链、对象详解 - 考拉阅读前端团队 - SegmentFault 思否](https://segmentfault.com/a/1190000018308979?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com&share_user=1030000000178452)
 
 [JavaScript 高阶函数快速入门 - 掘金](https://juejin.im/post/5c920f22f265da60f41cac63)
-
-[19 年 3 月 GitHub 上最流行的 34 个 JS 仓库 - 掘金](https://juejin.im/post/5c94b286e51d455cdb786b9b)
 
 [一个HTTP打趴80%面试者 - 个人文章 - SegmentFault 思否](https://segmentfault.com/a/1190000018584779?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com&share_user=1030000000178452)
 
