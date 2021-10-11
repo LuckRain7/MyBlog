@@ -154,7 +154,7 @@ sidebar: auto
 
   + [WebSocket](/server/Node.html#_1-2-websocket)
 
-  + 缓存
+  + [缓存](https://rain7.top/cache/)
 
 * 网络安全
 
@@ -172,7 +172,7 @@ sidebar: auto
 
     - 组件的属性和校验
 
-    - 组件间通信、EventBus应用
+    - 组件间通信、EventBus 应用
 
     - 组件 slot 用法
 
@@ -294,7 +294,7 @@ sidebar: auto
 
   + 权限管理和受保护的路由
 
-  + 手写1个完整的React- router4路由库（HashRouter和BrowserRouter、Route、Switch、Link和NavLink、Prompt 、Redirect）
+  + 手写1个完整的 React-router4 路由库（HashRouter和BrowserRouter、Route、Switch、Link和NavLink、Prompt 、Redirect）
 
 * Reudx（状态管理）
 
@@ -312,23 +312,23 @@ sidebar: auto
 
     - mobx（mobx实战observable、computed、 autorun、when、reaction）
 
-  + 手写实现Redux、react-redux、 connected- react-router
+  + 手写实现 Redux、react-redux、 connected-react-router
 
-  + 手写Redux、react-redux、 redux-logger. redux-promise、redux- thunk、redux- -saga、redux- actions、reselect、 redux-persist等经典redux中间件类库
+  + 手写Redux、react-redux、 redux-logger. redux-promise、redux-thunk、redux-saga、redux- actions、reselect、 redux-persist等经典redux中间件类库
 
 * SSR 服务器端渲染
 
-  + 客户端渲染VS服务端渲染
+  + 客户端渲染 VS 服务端渲染
 
-  + React中的服务端渲染
+  + React 中的服务端渲染
 
   + 同构的原理和意义
 
-  + SSR中使用路由
+  + SSR 中使用路由
 
-  + SSR中使用Redux
+  + SSR 中使用Redux
 
-  + SEO优化
+  + SEO 优化
 
   + 预渲染
 
@@ -390,7 +390,7 @@ sidebar: auto
 
   + React new feature
 
-* 企业级React框架
+* 企业级 React 框架
 
   + [Umi v3](/React/umi-v3.html)
 
@@ -431,7 +431,7 @@ sidebar: auto
   + Node 进阶及原理解析
 
   + [NVM  Node版本管理工具](/engineering/nvm.html) 
-  
+
 * Node 核心模块
 
   + Event loop和事件队列
@@ -454,7 +454,7 @@ sidebar: auto
 
     - Koa 给出的答卷，解决原生困境、重写 Web Server、进阶及原理解析
 
-    - Koa 源码分析 & 手写Koa 核心代码
+    - Koa 源码分析 & 手写 Koa 核心代码
 
     - Koa 在企业开发中的应用
 
@@ -498,7 +498,7 @@ sidebar: auto
 
   + 多语言、防盗链、正向和反向代理服务器
 
-  + 加密和签名算法 
+  + 加密和签名算法
 
 ## Webpack
 
@@ -531,8 +531,6 @@ sidebar: auto
 * 设计思想
 
   + Tapable源码分析
-
-  
 
 ## TypeScript
 
@@ -567,9 +565,9 @@ sidebar: auto
 * Notification
 
 * API
-  
+
 * workbox应用
-  
+
 * Vue中应用PWA
 
 ## 微前端
@@ -632,9 +630,9 @@ sidebar: auto
 
   + 调试
 
-  + 使用hbuilder
+  + 使用 hbuilder
 
-  + nlex布局
+  + nlex 布局
 
   + 多端发布
 
@@ -700,7 +698,7 @@ sidebar: auto
 
 * Linux常用命令VI编辑器、用户与权限管理、服务管理、软件管理、网络管理、系统命令
 
-* Shell实战监控服务和主机网络状态
+* Shell 实战监控服务和主机网络状态
 
 ## Nginx
 

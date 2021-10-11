@@ -11,7 +11,7 @@
     "dev": "npm run docs:dev",
     "git": "git push gitee master&& git push github master",
     "deploy": "bash deploy.sh",
-    "online": "bash upload.sh"
+    "up": "bash upload.sh"
   },
   "repository": {
     "type": "git",

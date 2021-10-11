@@ -1,15 +1,14 @@
 ---
 sidebar: auto
 ---
+
 # 推荐软件
 
-
-
 ###  Visual Studio Code（VS code）
+
 > 地表最强代码编辑器！！！！
 >
 > 网址：[ https://code.visualstudio.com/ ]( https://code.visualstudio.com/ )
-
 
 ###  Typora 
 
@@ -27,7 +26,7 @@ sidebar: auto
 
 > 文本编辑器
 >
->  URL：[ https://notepad-plus-plus.org/ ]( https://notepad-plus-plus.org/ )
+> URL：[ https://notepad-plus-plus.org/ ]( https://notepad-plus-plus.org/ )
 
 ### Cmder
 
@@ -73,18 +72,15 @@ HTTP调试抓包工具
 
 > 接口调试神器，后端大佬们接口还没写好的时候，这个工具用来给前端小伙伴mock一下api，还是蛮不错的哦~
 >
->  网址：[[   https://www.postman.com/  ]]( https://www.postman.com/ )
+> 网址：[[   https://www.postman.com/  ]]( https://www.postman.com/ )
 
 ![Postman](/img/Postman.png)
 
-
 ### Lighthouse
 
->  自动化页面性能分析工具，会给你分析出当前页面哪些是需要优化的地方，并且提供优化方案~ 很实用 
+> 自动化页面性能分析工具，会给你分析出当前页面哪些是需要优化的地方，并且提供优化方案~ 很实用 
 >
 > 网址：[ https://developers.google.com/web/tools/lighthouse?hl=zh-cn ]( https://developers.google.com/web/tools/lighthouse?hl=zh-cn )
-
-
 
 ### Studio 3T（MongoDB）  
 
@@ -92,9 +88,7 @@ HTTP调试抓包工具
 >
 > 网址：[https://studio3t.com/ ](https://studio3t.com/ )
 
-
 ![Studio 3T](/img/Studio3T.png)
-
 
 ### Terminus  
 
@@ -102,9 +96,7 @@ HTTP调试抓包工具
 >
 > 网址：[https://github.com/Eugeny/terminus](https://github.com/Eugeny/terminus)
 
-
 ![Terminus](/img/termius.png)
-
 
 ### ScreenToGif
 
@@ -114,25 +106,24 @@ HTTP调试抓包工具
 
 ![ScreenToGif](/img/ScreenToGif.png)
 
-
 ### 待整理
 
-- [Xmind/ProcessOn]
+* [Xmind/ProcessOn]
 
-- [ASCIIFlow Infinity - 画图](http://asciiflow.com/)
+* [ASCIIFlow Infinity - 画图](http://asciiflow.com/)
 
-- [Navicat Premium]
+* [Navicat Premium]
 
-- [Postman]
+* [Postman]
 
-- [Postwoman]
+* [Postwoman]
 
-- [狸窝全能视频转换器(简单的视频剪辑)]
+* [狸窝全能视频转换器(简单的视频剪辑)]
 
-- [Charles]
+* [Charles]
 
-- [Zettlr - 一款新的MarkDown编辑器](#)
+* [Zettlr - 一款新的MarkDown编辑器](#)
 
-- [Ipic - 图床我是配合Typora一起使用的大家Markdown是不是复制图片进来都是本地的地址，发到网上就会失效的，但是跟Typora搞基的这个工具他可以在你复制进来的时候直接传到网上了，你再去任何平台发表都可以随心所欲了。]()
+* [Ipic - 图床我是配合Typora一起使用的大家Markdown是不是复制图片进来都是本地的地址，发到网上就会失效的，但是跟Typora搞基的这个工具他可以在你复制进来的时候直接传到网上了，你再去任何平台发表都可以随心所欲了。]()
 
-[monknow - 新标签页](https://www.monknow.com/zh-CN)
+* [monknow - 新标签页](https://www.monknow.com/zh-CN)
