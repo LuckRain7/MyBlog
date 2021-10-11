@@ -95,6 +95,7 @@ module.exports = {
     activeHeaderLinks: true,
     // sidebar: require("./thermeConfig/Sidebar.js"),
     repo: "https://github.com/LuckRain7",
+    // 集合的形式
     sidebar: {
       "/cache/": ["", "browser-cache", "cdn-cache"], // 缓存相关
     },
@@ -111,13 +112,3 @@ module.exports = {
     ],
   ],
 };
-
-// function getCacheSidebar() {
-//   return [
-//     {
-//       title: "Web 缓存",
-//       collapsable: false,
-//       children: ["", "browser-cache", "cdn-cache"],
-//     },
-//   ];
-// }
