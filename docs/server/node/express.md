@@ -8,8 +8,6 @@ sidebar: auto
 
 * cors -> 跨域模块
 
-  
-
 ```js
   // yarn add cors
 
@@ -18,8 +16,6 @@ sidebar: auto
 ```
 
 * express-generator -> express 官方项目生成器
-
-  
 
 ```json
   # yarn global add express-generator
@@ -89,7 +85,7 @@ app.use(logger('dev')) //日志设置，使用参见https://github.com/expressjs
 // app.use(express.urlencoded({ extended: false }))
 app.use(bodyParser.json()) //解析JSON格式的post参数
 app.use(bodyParser.urlencoded({
-  extended: false
+    extended: false
 })) //解析urlencoeded编码的post参数，URLEncoded编码中,所有的字符均为ANSCII码
 
 app.use(cookieParser()) //cookie设置
@@ -102,20 +98,20 @@ app.use('/admin/api', adminRouter)
 
 // 捕捉404错误并进行错误处理
 app.use(function(req, res, next) {
-  next(createError(404))
+    next(createError(404))
 })
 
 // error handler
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  // 开发环境错误处理
-  res.locals.message = err.message
+    // set locals, only providing error in development
+    // 开发环境错误处理
+    res.locals.message = err.message
 
-  res.locals.error = req.app.get('env') === 'development' ? err : {}
+    res.locals.error = req.app.get('env') === 'development' ? err : {}
 
-  // render the error page
-  res.status(err.status || 500)
-  res.render('error')
+    // render the error page
+    res.status(err.status || 500)
+    res.render('error')
 })
 
 module.exports = app
