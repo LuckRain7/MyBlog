@@ -1,8 +1,12 @@
+---
+sidebar: auto
+---
+
 # UI 框架
 
 ## element-ui
 
-**element-ui 时间选择器限制范围（随动）**
+element-ui 时间选择器限制范围（随动）
 
 ```JavaScript
 data() {
