@@ -1,4 +1,4 @@
-# UI框架
+# UI 框架
 
 ## element-ui
 
@@ -6,27 +6,27 @@
 
 ```JavaScript
 data() {
-  let _minTime = null;
-  let _maxTime = null;
+    let _minTime = null;
+    let _maxTime = null;
 
-  return {
-    pickerOptions: {
-      onPick: time => {
-        if (!time.maxDate) {
-          let timeRange = 7 * 24 * 60 * 60 * 1000; // 7天
-          _minTime = time.minDate.getTime() - timeRange;
-          _maxTime = time.minDate.getTime() + timeRange;
-        } else {
-          _minTime = _maxTime = null;
+    return {
+        pickerOptions: {
+            onPick: time => {
+                if (!time.maxDate) {
+                    let timeRange = 7 * 24 * 60 * 60 * 1000; // 7天
+                    _minTime = time.minDate.getTime() - timeRange;
+                    _maxTime = time.minDate.getTime() + timeRange;
+                } else {
+                    _minTime = _maxTime = null;
+                }
+            },
+            disabledDate: time => {
+                if (_minTime && _maxTime) {
+                    return time.getTime() < _minTime || time.getTime() > _maxTime;
+                }
+            }
         }
-      },
-      disabledDate: time => {
-        if (_minTime && _maxTime) {
-          return time.getTime() < _minTime || time.getTime() > _maxTime;
-        }
-      }
     }
-  }
 }
 ```
 
