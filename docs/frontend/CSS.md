@@ -222,29 +222,34 @@ transform: unset;
 
 参考链接: [什么是毛玻璃效果（Glassmorphism）？仅使用 HTML 和 CSS 来实现](https://chinese.freecodecamp.org/news/glassmorphism-design-effect-with-html-css/)
 
-## 修改 input placeholder 样式
+## input 相关
+
+### placeholder 样式修改
 
 ```html
-<input type="text" class="placehoder-custom" placeholder="请输入用户名搜索">
-<input type="text" placeholder="请输入用户名搜索">
+<input type="text" placeholder="请输入内容">
 ```
 
 ```css
-input {
-    width: 300px;
-    height: 30px;
-    border: none;
-    outline: none;
-    display: block;
-    margin: 15px;
-    border: solid 1px #dee0e9;
-    padding: 0 15px;
-    border-radius: 15px;
+input::-webkit-input-placeholder {    /* Chrome/Opera/Safari */
+    color: red;
 }
+input::-moz-placeholder { /* Firefox 19+ */  
+    color: red;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+    color: red;
+}
+input:-moz-placeholder { /* Firefox 18- */
+    color: red;
+}
+```
 
-.placehoder-custom::-webkit-input-placeholder {
-    color: #babbc1;
-    font-size: 12px;
+### input 聚焦时的样式
+
+```css
+input:focus {   
+  background-color: red;
 }
 ```
 
@@ -312,5 +317,35 @@ input {
 
 img {
     width: 100%;
+}
+```
+
+## 绘制三角形
+
+```css
+/* 正三角 */
+.up-triangle {
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 0 25px 40px 25px;
+   border-color: transparent transparent rgb(245, 129, 127) transparent;
+ }
+
+ /* 倒三角 */
+ .down-triangle {
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 40px 25px 0 25px;
+   border-color:  rgb(245, 129, 127) transparent transparent transparent;
+ }
+```
+
+## 表格边框合并
+
+```css
+table{
+  border-collapse: collapse;
 }
 ```
