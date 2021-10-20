@@ -26,3 +26,12 @@ sidebar: auto
     flex: auto;
 }
 ```
+
+## js
+
+```js
+
+if (!$(window).scrollTop()) return;
+$('html,body').animate({scrollTop: 0}, 500);
+    
+```

@@ -494,7 +494,7 @@ sidebar: auto
 
   + JWT 权限认证原理
 
-  + 手写Express、koa2
+  + 手写 Express、koa2
 
   + 多语言、防盗链、正向和反向代理服务器
 
@@ -502,21 +502,21 @@ sidebar: auto
 
 ## Webpack
 
-* webpack4实战entry、output、 loaders、 plugins、 文件指纹
+* webpack4 实战entry、output、 loaders、 plugins、 文件指纹
 
-* webpack4优化(dll、resolve、 模块热替换、压缩、代码分割、可视化工具)
+* webpack4 优化(dll、resolve、 模块热替换、压缩、代码分割、可视化工具)
 
-* Webpack4源码分析，懒加载原理、热更新原理
+* Webpack4 源码分析，懒加载原理、热更新原理
 
-* 编写自定义Loader(style-loader css-loader less-loader等)
+* 编写自定义 Loader(style-loader css-loader less-loader等)
 
-* 编写自定义Plugin(html-webpack- plugin) 
+* 编写自定义 Plugin(html-webpack- plugin) 
 
 * 编写Babel treeshaking插件
 
 * Webpack的事件机制tapable和AST抽象语法树
 
-* 手写自己的Webpack4
+* 手写自己的 Webpack4
 
 * Babel
 
@@ -536,7 +536,7 @@ sidebar: auto
 
 * 开发环境
 
-* TypeScript安装和编译
+* TypeScript 安装和编译
 
 * 数据类型、函数、类、接口、泛型
 
@@ -1080,13 +1080,13 @@ sidebar: auto
 
 * 持续集成与部署
 
-  + CI/CD简介
+  + CI/CD 简介
 
   + 持续集成
 
-    - 巧用 GitHub
+    - [巧用 GitHub](/tools/GitHub.html#github-action)
 
-    - CI平台-义 jenkins 为例
+    - CI平台 - Jenkins
 
   + 部署
 
