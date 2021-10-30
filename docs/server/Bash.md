@@ -4,17 +4,22 @@ sidebar: auto
 
 # Bash
 
-## 定义执行语言
-    
+## 1. 定义解释器
 
-## 定义变量
+```bash
+#!/bin/bash
+#!/usr/bin/env bash
+#!/usr/bin/env node
+```
+
+## 2. 定义变量
 
 ```bash
 env=develop
 env="Hello World"
 ```
 
-## 条件判断
+## 3. 条件判断
 
 ```bash
 if [ $a == $b ]
@@ -39,7 +44,7 @@ if [ $a == $b ]
 - [正数判断](https://wangdoc.com/bash/condition.html#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%A4%E6%96%AD)
 - [正则判断](https://wangdoc.com/bash/condition.html#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%A4%E6%96%AD)
 
-## 循环
+## 4. 循环
 
 ```bash
 # for循环

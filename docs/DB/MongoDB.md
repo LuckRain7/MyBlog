@@ -6,13 +6,13 @@ sidebar: auto
 
 > 以下系统环境为 Mac
 
-## MongoDB安装和使用
+## 1. MongoDB 安装和使用
 
-### 下载
+### 1.1 下载
 
 由于 MongoDB 修改了自己的开源协议，Homebrew 不再提供，只能去[官网](https://www.mongodb.com/try/download/community?jmp=nav)下载。
 
-### 安装
+### 1.2 安装
 
 ```shell
 # 打开 bash_profile 文件
@@ -28,7 +28,7 @@ source ~/.bash_profile
 mongod --version
 ```
 
-### 启动
+### 1.3 启动
 
 在 MongoDB 目录中新建 data 和 log 文件夹、mongo.conf
 
@@ -85,7 +85,7 @@ mongo # 开启 MongoDB 链接
 show dbs # 会显示 admin config local
 ```
 
-### 数据库常用命令
+### 1.4 数据库常用命令
 
 ```shell
 show dbs     # 查询所有数据库
@@ -100,7 +100,7 @@ show tables         # 列出所有 tables
 db.createCollection("test",{size:20,capped:5,max:100}) # 插入一条数据
 ```
 
-### 报错
+### 1.5 报错
 
 > Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
 

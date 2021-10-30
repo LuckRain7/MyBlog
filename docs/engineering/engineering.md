@@ -1040,7 +1040,7 @@ sidebar: auto
 
   + [package.json 项目说明文件](/engineering/package.json.html) 
 
-  + bash 简介和快速入门
+  + [bash 简介和快速入门](/server/Bash.html)
 
   + node 开发简单 CLI 工具
 
