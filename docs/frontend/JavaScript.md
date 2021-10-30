@@ -440,7 +440,7 @@ test.no.a
 // VM363:1 Uncaught TypeError: Cannot read properties of undefined (reading 'a')
 //     at <anonymous>:1:8
 
-test.no?.a // 判断 no 是否存在
+test.no?.a // 判断 no 是否存在
 // undefined
 
 test.no()

@@ -582,7 +582,7 @@ sidebar: auto
 
   + 初始化工程
 
-  + . app相关概念
+  + .app相关概念
 
   + 路由拦截
 
@@ -616,7 +616,7 @@ sidebar: auto
 
   + dart语法
 
-  + flutter环境配置
+  + flutter 环境配置
 
   + 常用组件
 
@@ -1080,13 +1080,13 @@ sidebar: auto
 
 * 持续集成与部署
 
-  + CI/CD 简介
+  + CI/CD简介
 
   + 持续集成
 
-    - [巧用 GitHub](/tools/GitHub.html#github-action)
+    - 巧用 GitHub
 
-    - CI平台 - Jenkins
+    - CI平台-以 jenkins 为例
 
   + 部署
 
