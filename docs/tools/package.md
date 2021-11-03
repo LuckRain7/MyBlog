@@ -75,7 +75,9 @@ yarn [script] # 运行脚本指令
 
 yarn config list # 查看yarn配置
 
-yarn global list #查看全局安装的包
+yarn global list # 查看全局安装的包
+
+yarn cache clean # 清除缓存
 ```
 
 ## NRM -- NPM registry manager
