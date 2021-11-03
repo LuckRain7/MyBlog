@@ -50,6 +50,8 @@ nrm add [registry_name] [registry_url] # 添加私有源地址 起一个别名
 nrm use [registry_name] # 切换到私有源
 
 npm adduser --registry [registry_url] [email] # 进行私有源登录
+
+npm cache clean --force # 清除缓存
 ```
 
 ## YARN（推荐）
@@ -78,6 +80,10 @@ yarn config list # 查看yarn配置
 yarn global list # 查看全局安装的包
 
 yarn cache clean # 清除缓存
+
+yarn global bin # 查看 yarn 全局bin位置
+yarn global dir # 查看 yarn 全局安装位置
+yarn cache dir # 查看 yarn 全局cache位置
 ```
 
 ## NRM -- NPM registry manager
