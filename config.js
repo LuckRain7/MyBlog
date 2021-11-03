@@ -86,6 +86,7 @@ module.exports = {
           { text: "网站推荐", link: "/share/website.html" },
           { text: "前端工具框架推荐", link: "/frame/index.html" },
           { text: "配置文件", link: "/share/config/" },
+          { text: "快捷键", link: "/share/shortcuts.html" },
           // { text: "笔记", link: "/share/notes/" },
         ],
       },
