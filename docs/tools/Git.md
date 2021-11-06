@@ -77,9 +77,9 @@ git remote update origin --prune    # 更新远程仓库的分支
 
 ### 3.2 git rebase
 
-rebase 操作可以把本地未 push 的分叉提交历史整理成直线；
+git rebase 一般被翻译为 变基，这个名字很灵性。他会找共同的父亲，然后将 commit 插入到 commit 列表中，可以把本地未 push 的分叉提交历史整理成直线；
 
-rebase 的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比。
+**git rebase 不适合多人协作!**
 
 ## 4. 常见应用
 
