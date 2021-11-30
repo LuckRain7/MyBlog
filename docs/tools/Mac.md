@@ -28,6 +28,7 @@ sidebar: auto
 * [ 更好用的 command + tab ] [Contexts](https://contexts.co/)
 * [ Homebrew 可视化工具 ] [Cakebrew](https://www.cakebrew.com/)
 * [ 系统清理 ] [腾讯柠檬](https://lemon.qq.com/lab/)
+* [Postman -  接口请求](https://www.postman.com/)
 
 ## 2. Yarn 
 

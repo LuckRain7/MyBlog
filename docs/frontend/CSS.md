@@ -34,39 +34,50 @@ sidebar: auto
 > background-attachment 设置背景图片是固定还是滚动
 >
 > background-position   设置背景图像的起始位置 
+> 
+> background-size 指定背景图片大小。
 
 ```css
-background: #ffffff url('../assets/zcmap.png') no-repeat 5px 5px;
 /*  集合写法 */
+background: #ffffff url('../assets/zcmap.png') no-repeat 5px 5px;
 
-background-color: #ffffff;
 /*  设置背景颜色 （可以16进制，也可以使rgb() rgba()） */
+background-color: #ffffff;
 
-background-image: url('../assets/zcmap.png');
 /* 图片链接 */
+background-image: url('../assets/zcmap.png');
 
-background-repeat:repeat;
 /* 默认。背景图像将在垂直方向和水平方向重复。*/
-background-repeat:repeat-x;
+background-repeat:repeat;
 /*  水平平铺，在水平方向重复 */
-background-repeat:repeat-y;
+background-repeat:repeat-x;
 /*  垂直平铺，在垂直方向重复 */
-background-repeat:no-repeat;
+background-repeat:repeat-y;
 /*  图片不重复，只显示一次 */
+background-repeat:no-repeat;
 
-background-attachment: scroll;
+
 /* 默认值。背景图像会随着页面其余部分的滚动而移动。 */
-background-attachment: fixed;
+background-attachment: scroll;
 /* 当页面的其余部分滚动时，背景图像不会移动。 */
-background-attachment: inherit;
+background-attachment: fixed;
 /* 规定应该从父元素继承 background-attachment 属性的设置。 */
+background-attachment: inherit;
 
+
+/* 第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50% */
 background-position: 5px 5px;
 /* 第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50% */
 background-position: 5% 5%;
-/* 第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50% */
-background-position: left top;
 /* 位置英文  如果仅指定一个关键字，其他值将会是"center" */
+background-position: left top;
+
+
+/* 设置背景图片高度和宽度。第一个值设置宽度，第二个值设置的高度。如果只给出一个值，第二个是设置为 auto(自动) */
+/* 将计算相对于背景定位区域的百分比。第一个值设置宽度，第二个值设置的高度。如果只给出一个值，第二个是设置为"auto(自动)" */
+/* 保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。 */
+/* 保持图像的纵横比并将图像缩放成将适合背景定位区域的最大大小。 */
+background-size: length|percentage|cover|contain;
 ```
 
 ## 平滑滚动
