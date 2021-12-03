@@ -151,6 +151,14 @@ git stash drop stash@{0}  # 将记录列表中取出的对应暂存记录删除
 git remote prune origin  # 清除无用的 branch ref
 ```
 
+### 4.8 撤销本次 pull rebase(变基) 回退到 pull 前的代码
+
+```BASH
+git reflog                      # 参看本地记录
+git reset --hard <commitId>     # 回退到指定 commit
+git rebase --abort              # 取消 rebase 状态
+```
+
 ## 5. git 提交规范
 
 ```
