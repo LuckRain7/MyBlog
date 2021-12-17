@@ -38,3 +38,23 @@ actionValidateJobReferrerUserId(rule, value, callback) {
     return callback(new Error('请输入正确的用户ID（数字）'));
 }
 ```
+
+## Element-UI
+
+### 清除 校验提示信息
+
+```js
+this.$nextTick(() => {
+    this.$refs.form?.clearValidate && this.$refs.form.clearValidate();
+});
+```
+
+### 校验正则
+
+```JS
+// 数字校验，只能输入 数字 & 逗号
+const Reg = /^[\d,]*$/;
+
+// 匹配16进制的颜色
+const colorReg = /#[0-9a-fA-F]{6}/;
+```
