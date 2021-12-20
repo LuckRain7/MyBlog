@@ -29,8 +29,9 @@ sidebar: auto
 * [ Homebrew 可视化工具 ] [Cakebrew](https://www.cakebrew.com/)
 * [ 系统清理 ] [腾讯柠檬](https://lemon.qq.com/lab/)
 * [Postman -  接口请求](https://www.postman.com/)
+* [TotalFinder - Finder增强，多标签页管理Finder](https://totalfinder.binaryage.com/)
 
-## 2. Yarn 
+## 2. Yarn
 
 > 压缩包安装 ↓
 
