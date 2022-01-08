@@ -159,6 +159,12 @@ git reset --hard <commitId>     # 回退到指定 commit
 git rebase --abort              # 取消 rebase 状态
 ```
 
+### 4.9 批量删除分支
+
+```bash
+git branch |grep 'xxx' |xargs git branch -D # xxx 为匹配字符
+```
+
 ## 5. git 提交规范
 
 ```
