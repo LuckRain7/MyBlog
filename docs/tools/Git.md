@@ -165,6 +165,15 @@ git rebase --abort              # 取消 rebase 状态
 git branch |grep 'xxx' |xargs git branch -D # xxx 为匹配字符
 ```
 
+## 4.10 代码回退到某个 commit 位置
+
+> 谨慎使用，回退不可逆 或使用 --soft
+
+```BASH
+git log  # 查找指定 commit 的 id
+git reset –hard edfab6afce95d0ebbd35d34219dba365773b5b4e # 版本回退
+```
+
 ## 5. git 提交规范
 
 ```
