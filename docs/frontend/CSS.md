@@ -34,7 +34,7 @@ sidebar: auto
 > background-attachment 设置背景图片是固定还是滚动
 >
 > background-position   设置背景图像的起始位置 
-> 
+>  
 > background-size 指定背景图片大小。
 
 ```css
@@ -56,7 +56,6 @@ background-repeat:repeat-y;
 /*  图片不重复，只显示一次 */
 background-repeat:no-repeat;
 
-
 /* 默认值。背景图像会随着页面其余部分的滚动而移动。 */
 background-attachment: scroll;
 /* 当页面的其余部分滚动时，背景图像不会移动。 */
@@ -64,14 +63,12 @@ background-attachment: fixed;
 /* 规定应该从父元素继承 background-attachment 属性的设置。 */
 background-attachment: inherit;
 
-
 /* 第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50% */
 background-position: 5px 5px;
 /* 第一个值是水平位置，第二个值是垂直，如果仅指定一个关键字，其他值将会是50% */
 background-position: 5% 5%;
 /* 位置英文  如果仅指定一个关键字，其他值将会是"center" */
 background-position: left top;
-
 
 /* 设置背景图片高度和宽度。第一个值设置宽度，第二个值设置的高度。如果只给出一个值，第二个是设置为 auto(自动) */
 /* 将计算相对于背景定位区域的百分比。第一个值设置宽度，第二个值设置的高度。如果只给出一个值，第二个是设置为"auto(自动)" */
@@ -242,16 +239,23 @@ transform: unset;
 ```
 
 ```css
-input::-webkit-input-placeholder {    /* Chrome/Opera/Safari */
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
     color: red;
 }
-input::-moz-placeholder { /* Firefox 19+ */  
+
+input::-moz-placeholder {
+    /* Firefox 19+ */
     color: red;
 }
-input:-ms-input-placeholder { /* IE 10+ */
+
+input:-ms-input-placeholder {
+    /* IE 10+ */
     color: red;
 }
-input:-moz-placeholder { /* Firefox 18- */
+
+input:-moz-placeholder {
+    /* Firefox 18- */
     color: red;
 }
 ```
@@ -259,8 +263,8 @@ input:-moz-placeholder { /* Firefox 18- */
 ### input 聚焦时的样式
 
 ```css
-input:focus {   
-  background-color: red;
+input:focus {
+    background-color: red;
 }
 ```
 
@@ -336,27 +340,53 @@ img {
 ```css
 /* 正三角 */
 .up-triangle {
-   width: 0;
-   height: 0;
-   border-style: solid;
-   border-width: 0 25px 40px 25px;
-   border-color: transparent transparent rgb(245, 129, 127) transparent;
- }
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 40px 25px;
+    border-color: transparent transparent rgb(245, 129, 127) transparent;
+}
 
- /* 倒三角 */
- .down-triangle {
-   width: 0;
-   height: 0;
-   border-style: solid;
-   border-width: 40px 25px 0 25px;
-   border-color:  rgb(245, 129, 127) transparent transparent transparent;
- }
+/* 倒三角 */
+.down-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 25px 0 25px;
+    border-color: rgb(245, 129, 127) transparent transparent transparent;
+}
 ```
 
 ## 表格边框合并
 
 ```css
-table{
-  border-collapse: collapse;
+table {
+    border-collapse: collapse;
 }
+```
+
+## 选择器
+
+> 优先级 !important > 行内样式 > ID选择器 > 类、伪类、属性 > 元素、伪元素 > 继承 > 通配符
+
+```css
+ul li // 后代选择器
+ul>li>p // 子选择器
+h1+p // 相邻兄弟选择器 
+h1~p // 一般兄弟选择器
+
+// 伪类选择器
+:nth-child(n) // 孩子选择器
+:first-child // 第一个子元素
+:last-child // 最后一个子元素
+
+:nth-of-type(n) // 同类型的第n个元素
+:first-of-type // 同类型的第一个子元素
+:last-of-type // 同类型的最后一个子元素
+
+:only-child // 父元素唯一的子元素
+:empty // 没有子元素
+
+:nth-last-child(n) // 倒数第n个子元素
+:nth-last-of-type(n) // 同类型的倒数第n个子元素
 ```
