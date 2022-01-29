@@ -280,7 +280,9 @@ input:focus {
 }
 ```
 
-## 图片尺寸自适应
+## 图片相关
+
+### 1. 图片尺寸自适应
 
 ```html
 <div class="box">
@@ -332,6 +334,32 @@ input:focus {
 
 img {
     width: 100%;
+}
+```
+
+### 2. 超长图自适应
+
+```html
+<!-- banner 2560*400  -->
+<div class="banner-wrap">
+    <img :src="activityInfo.pcHeadImg" alt="" />
+</div>
+```
+
+```css
+// 头图
+.banner-wrap {
+    position: absolute;
+    min-width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 ```
 
