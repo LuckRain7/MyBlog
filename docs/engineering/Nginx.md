@@ -108,3 +108,5 @@ $request_uri : 包含请求参数的原始URI，不包含主机名，如: ”/fo
 $uri : 不带请求参数的当前URI，$uri不包含主机名，如”/foo/bar.html”。
 $document_uri : 与$uri相同
 ```
+
+## 5. 转发与重定向之间的区别
