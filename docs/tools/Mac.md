@@ -31,6 +31,7 @@ sidebar: auto
 * [Postman -  接口请求](https://www.postman.com/)
 * [TotalFinder - Finder增强，多标签页管理Finder](https://totalfinder.binaryage.com/)
 * [Sequel Pro - MySQL 数据库连接软件](https://www.sequelpro.com/)
+* Fig - 命令行提示工具
 
 ## 2. Yarn
 
