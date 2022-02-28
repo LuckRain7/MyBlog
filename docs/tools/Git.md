@@ -232,3 +232,5 @@ git reset --hard <commitHash>   # --hard 参数可以让工作区里面的文件
 * [提醒！你可能会忽略的 Git 提交规范](https://segmentfault.com/a/1190000022440330)
 * [git cherry-pick 教程](https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html)
 * [如何撤销 Git 操作？](https://www.ruanyifeng.com/blog/2019/12/git-undo.html)
+* [我在工作中是如何使用 git 的](https://juejin.cn/post/6974184935804534815)
+
