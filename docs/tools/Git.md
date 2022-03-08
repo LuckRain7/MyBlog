@@ -61,6 +61,9 @@ git config --global user.email "[email address]"
 # 项目中配置
 git config user.name "[name]"
 git config user.email "[email address]"
+
+# 查看当前分支是从哪个分支拉出来的
+git reflog --date=local | grep <branchName>
 ```
 
 ### 3.1 git remote 
