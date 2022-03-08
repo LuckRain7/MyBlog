@@ -418,3 +418,7 @@ h1~p // 一般兄弟选择器
 :nth-last-child(n) // 倒数第n个子元素
 :nth-last-of-type(n) // 同类型的倒数第n个子元素
 ```
+
+## Tips
+
+- [CSS 命令 `font-variant-east-asian: traditional;`，可以让网站字体从简体变成繁体。](https://www.zhangxinxu.com/wordpress/2021/01/css-simplified-traditional-chinese/)
