@@ -107,3 +107,7 @@ sidebar: auto
 文件内eslint忽略写法，放在文件头部
 
  `/* eslint-disable [ignore] */`
+
+## 5. 快捷操作
+
+- 添加代码片段： （⇧⌘P ) -> Surround With Snippet -> ....
