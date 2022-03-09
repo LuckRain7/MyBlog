@@ -6,7 +6,7 @@ sidebar: auto
 
 ## 1. 作用
 
-**package.json** 包含关于项目的重要信息。  定义了这个项目所需要的各种模块，以及项目的配置信息（比如名称、版本、许可证等元数据） 
+**package.json** 包含关于项目的重要信息。 定义了这个项目所需要的各种模块，以及项目的配置信息（比如名称、版本、许可证等元数据）
 
 ## 2. 常见字段
 
@@ -77,7 +77,7 @@ sidebar: auto
 
 ### 3.1 dependencies 与 devDependencies 的区别
 
-dependencies是项目依赖，项目打包时一同打包
+dependencies 是项目依赖，项目打包时一同打包
 
 yarn add [packName]
 

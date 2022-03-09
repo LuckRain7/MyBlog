@@ -26,7 +26,7 @@ if [ $a == $b ]
     then
         echo "a 等于 b"
  elif [ $a -gt $b ]
-    then    
+    then
         echo "a 大于 b"
  elif [ $a -lt $b ]
     then
@@ -37,7 +37,7 @@ if [ $a == $b ]
  fi
 ```
 
-判断条件    
+判断条件
 
 - [字符串判断条件](https://wangdoc.com/bash/condition.html#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%A4%E6%96%AD)
 - [文件判断](https://wangdoc.com/bash/condition.html#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%A4%E6%96%AD)

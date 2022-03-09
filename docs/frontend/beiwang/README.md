@@ -29,7 +29,7 @@ sidebar: auto
 
 ## JavaScript
 
-### 
+###
 
 ```js
 actionValidateJobReferrerUserId(rule, value, callback) {
@@ -45,7 +45,7 @@ actionValidateJobReferrerUserId(rule, value, callback) {
 
 ```js
 this.$nextTick(() => {
-    this.$refs.form?.clearValidate && this.$refs.form.clearValidate();
+  this.$refs.form?.clearValidate && this.$refs.form.clearValidate();
 });
 ```
 
