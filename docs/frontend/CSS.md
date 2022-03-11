@@ -14,20 +14,64 @@ ul>li>p // 子选择器
 h1+p // 相邻兄弟选择器
 h1~p // 一般兄弟选择器
 
+div[title]          // 具有title属性的div标签
+div [title]         // 具有 title 属性的 div 的子元素
+div[title="rain"]
+div[title~="rain"]  // 也可以加入一些正则
+div[title$="rain"]
+div[title^="rain"]
+div[title|="rain"]
+div[title*="rain"]
+
 // 伪类选择器
 :nth-child(n) // 孩子选择器
-:first-child // 第一个子元素
-:last-child // 最后一个子元素
+:first-child  // 第一个子元素
+:last-child   // 最后一个子元素
 
 :nth-of-type(n) // 同类型的第n个元素
-:first-of-type // 同类型的第一个子元素
-:last-of-type // 同类型的最后一个子元素
+:first-of-type  // 同类型的第一个子元素
+:last-of-type   // 同类型的最后一个子元素
 
-:only-child // 父元素唯一的子元素
-:empty // 没有子元素
+:only-child   // 父元素唯一的子元素
+:empty        // 没有子元素
 
-:nth-last-child(n) // 倒数第n个子元素
-:nth-last-of-type(n) // 同类型的倒数第n个子元素
+:nth-last-child(n)    // 倒数第n个子元素
+:nth-last-of-type(n)  // 同类型的倒数第n个子元素
+```
+
+the first rule (A) is more specific than the second one (B). [W3C CSS 2.1 Specification](https://www.w3.org/TR/CSS21/selector.html)
+
+```css
+A:
+a#a-02 {
+  background-image: url(n.gif);
+}
+
+and
+
+B:
+a[id="a-02"] {
+  background-image: url(n.png);
+}
+```
+
+自定义提示
+
+```css
+[title] {
+  position: relative;
+  display: block;
+}
+[title]:hover:after {
+  content: attr(title);
+  color: hotpink;
+  background-color: slateblue;
+  display: block;
+  padding: 0.225em 0.35em;
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+}
 ```
 
 ## box-shadow
@@ -409,3 +453,9 @@ img {
 - 平滑滚动 `scroll-behavior: smooth;`
 
 - `border-radius` 顺序： 左上 右上 右下 左下
+
+---
+
+参考文章：
+
+- [要提升前端布局能力，这些 CSS 属性需要学习下！](https://segmentfault.com/a/1190000038154167?_ea=79107425)
