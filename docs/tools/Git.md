@@ -235,13 +235,13 @@ git reset --hard <commitHash>   # --hard 参数可以让工作区里面的文件
 ```bash
 git reflog [show] [log-options] [<ref>]
 
-# “expire”子命令会删除掉更老的 reflog 条目。
+# expire 子命令会删除掉更老的 reflog 条目。
 git reflog expire [--expire=<time>] [--expire-unreachable=<time>] [--rewrite] [--updateref] [--stale-fix] [--dry-run | -n] [--verbose] [--all | <refs>…​]
 
-# “delete”子命令从 reflog 中删除一个条目。
+# delete 子命令从 reflog 中删除一个条目。
 git reflog delete [--rewrite] [--updateref] [--dry-run | -n] [--verbose] ref@{specifier}…​
 
-# “exists”子命令检查一个 ref 是否有一个 reflog。
+# exists 子命令检查一个 ref 是否有一个 reflog。
 git reflog exists <ref>
 ```
 
