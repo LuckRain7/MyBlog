@@ -8,10 +8,10 @@ sidebar: auto
 [[toc]]
 :::
 
-## NPM
+## npm
 
-> 官网：[ https://www.npmjs.com/ ]( https://www.npmjs.com/ )
->  
+> 官网：[ https://www.npmjs.com/ ](https://www.npmjs.com/)
+>
 > NPM 核心目标：Bring the best of open source to you, your team and your company.
 
 ### 1. 操作
@@ -37,7 +37,7 @@ npm list -g --depth 0 # 查看全局安装的包
 npm config get cache
 ```
 
-**NPM发布自己的组件包**
+**NPM 发布自己的组件包**
 
 ```shell
 npm config set registry http://registry.npmjs.org # 切换回npm源
@@ -64,22 +64,24 @@ npm cache clean --force # 清除缓存
 ### 2. NPM 的安装机制
 
 1. 执行 `npm install`
-2. 获取并检查 npm 的配置（项目下的.npmrc -> 系统用户的 .npmrc -> 全局的 .npmrc -> npm默认的 .npmrc）
+2. 获取并检查 npm 的配置（项目下的.npmrc -> 系统用户的 .npmrc -> 全局的 .npmrc -> npm 默认的 .npmrc）
 3. 检查项目是否有 `package-lock.json`
+
    - yes: 检查 package-lock.json 和 package.json 声明的依赖是否一致
 
-     - 一致：直接使用  package-lock.json 中的依赖信息，进行加载（本地缓存 -> 网络）
+     - 一致：直接使用 package-lock.json 中的依赖信息，进行加载（本地缓存 -> 网络）
      - 不一致：不同版本 npm 的应对也不一致
        - npm v5.0.x 根据 package-lock.json 下载
-       - V5.1.0-v5.4.2 当package.json 声明的依赖版本规范有符合的更新的版本时候，会忽略 package-lock.json ，按照 package.json 进行安装，更新到 package-lock.json
+       - V5.1.0-v5.4.2 当 package.json 声明的依赖版本规范有符合的更新的版本时候，会忽略 package-lock.json ，按照 package.json 进行安装，更新到 package-lock.json
        - V5.4.2⬆️ 兼容则根据 package-lock.json，不兼容则根据 package.json 安装。
 
    - No: 根据 package.json 递归构建依赖树（扁平化）（本地缓存 -> 网络）
+
 4. 生成 package-lock.json 文件
 
-## YARN（推荐）
+## Yarn
 
-> 官网：[ https://yarn.bootcss.com/ ]( https://yarn.bootcss.com/ )
+> 官网：[ https://yarn.bootcss.com/ ](https://yarn.bootcss.com/)
 
 ### 1. 使用
 
@@ -121,20 +123,20 @@ yarn cache dir # 查看 yarn 全局cache位置
 
 Q: 如何去判断缓存中有当前的依赖包呢？
 
-A: 其实呢，在Yarn中会根据 cacheFolder + slug + node_modules + pkg.name 生成一个路径; 判断系统中是否存在该 path, 如果存在证明已经有缓存, 不用重新下载。这个 path 也就是依赖包缓存的具体路径。
+A: 其实呢，在 Yarn 中会根据 cacheFolder + slug + node_modules + pkg.name 生成一个路径; 判断系统中是否存在该 path, 如果存在证明已经有缓存, 不用重新下载。这个 path 也就是依赖包缓存的具体路径。
 
 ### 3. 备注
 
 yarn 默认采用的是 `perfer-online` 模式，即优先使用网络资源。如果网络资源请求失败，再去请求缓存数据。
 
-## NRM -- NPM registry manager
+## nrm
 
-> nrm(npm registry manager )是npm的镜像源管理工具，有时候国外资源太慢，使用这个就可以快速地在 npm 源间切换
+> nrm(npm registry manager )是 npm 的镜像源管理工具，有时候国外资源太慢，使用这个就可以快速地在 npm 源间切换
 
 **安装**
 
 ```shell
-yarn global add nrm 
+yarn global add nrm
 # or
 npm install -g nrm
 ```
@@ -151,4 +153,4 @@ nrm add [registry_name] [registry_url] # 添加源
 
 参考文献：
 
-[字节的一个小问题 npm 和 yarn不一样吗？ - 酒窝yun过去了](https://juejin.cn/post/7060844948316225572)
+[字节的一个小问题 npm 和 yarn 不一样吗？ - 酒窝 yun 过去了](https://juejin.cn/post/7060844948316225572)

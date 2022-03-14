@@ -35,46 +35,44 @@ module.exports = {
           { text: "Webpack", link: "/frontend/Webpack/" },
         ],
       },
-      {
-        text: "前端工程化",
-        link: "/engineering/engineering/",
-      },
-      {
-        text: "面试",
-        items: [
-          { text: "设计模式", link: "/ms/DesignMode.html" },
-          { text: "算法", link: "/ms/Algorithm.html" },
-          { text: "JavaScript", link: "/ms/JavaScript.html" },
-          { text: "CSS", link: "/ms/CSS.html" },
-          { text: "前端安全", link: "/ms/safe.html" },
-          { text: "Vue", link: "/ms/Vue.html" },
-        ],
-      },
-      {
-        text: "服务端",
-        items: [
-          { text: "Node.js", link: "/server/Node/" },
-          { text: "Golang", link: "/server/Golang/" },
-          { text: "Python", link: "/server/Python/" },
-        ],
-      },
-      {
-        text: "WebGIS",
-        items: [
-          { text: "README", link: "/WebGIS/index.html" },
-          { text: "Cesium", link: "/WebGIS/Cesium/" },
-          { text: "ArcGIS", link: "/WebGIS/ArcGIS/" },
-          { text: "OpenLayer", link: "/WebGIS/OpenLayer/" },
-        ],
-      },
+      { text: "前端工程化", link: "/engineering/engineering/" },
+      { text: "Node.js", link: "/server/Node/" },
+      // {
+      //   text: "面试",
+      //   items: [
+      //     { text: "设计模式", link: "/ms/DesignMode.html" },
+      //     { text: "算法", link: "/ms/Algorithm.html" },
+      //     { text: "JavaScript", link: "/ms/JavaScript.html" },
+      //     { text: "CSS", link: "/ms/CSS.html" },
+      //     { text: "前端安全", link: "/ms/safe.html" },
+      //     { text: "Vue", link: "/ms/Vue.html" },
+      //   ],
+      // },
+      // {
+      //   text: "服务端",
+      //   items: [
+      //     { text: "Node.js", link: "/server/Node/" },
+      //     { text: "Golang", link: "/server/Golang/" },
+      //     { text: "Python", link: "/server/Python/" },
+      //   ],
+      // },
+      // {
+      //   text: "WebGIS",
+      //   items: [
+      //     { text: "README", link: "/WebGIS/index.html" },
+      //     { text: "Cesium", link: "/WebGIS/Cesium/" },
+      //     { text: "ArcGIS", link: "/WebGIS/ArcGIS/" },
+      //     { text: "OpenLayer", link: "/WebGIS/OpenLayer/" },
+      //   ],
+      // },
       {
         text: "必备工具",
         items: [
-          { text: "包管理器", link: "/tools/package/" },
-          { text: "Git", link: "/tools/Git/" },
-          { text: "GitHub", link: "/tools/GitHub/" },
-          { text: "Mac", link: "/tools/Mac/" },
-          { text: "VS Code", link: "/tools/vscode/" },
+          { text: "Git", link: "/tools/Git.html" },
+          { text: "Mac", link: "/tools/Mac.html" },
+          { text: "GitHub", link: "/tools/GitHub.html" },
+          { text: "VS Code", link: "/tools/vscode.html" },
+          { text: "包管理器", link: "/tools/package.html" },
         ],
       },
       {
