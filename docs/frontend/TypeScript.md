@@ -107,8 +107,6 @@ module.exports = {
 
 ## 3. 基础类型
 
-position：src\example\basic-type.ts
-
 ```typescript
 // 布尔值
 let bool: boolean = true;
@@ -117,20 +115,15 @@ let bool: boolean = true;
 let num: number = 123;
 
 // 字符串类型
-let str: string;
-str = "abe";
-str = `数值是${num}`;
+let str: string = "rain";
 
 // 数组类型
-let arr1: number[];
-arr1 = [5];
-let arr2: Array<number>;
-let arr3: (string | number)[];
-arr3 = [1, "a"];
+let arr1: number[] = [5];
+let arr2: Array<number> = [7];
+let arr3: (string | number)[] = [1, "a"];
 
 // 元祖类型(数值个数和类型要对应)
-let tuple: [string, number, boolean];
-tuple = ["a", 1, true];
+let tuple: [string, number, boolean] = ["a", 1, true];
 
 // 枚举类型
 enum Roles {
@@ -138,26 +131,22 @@ enum Roles {
   ADMIN = 2,
   USER = 3,
 }
-console.log(Roles.SUPER_ADMIN); //打印1
-console.log(Roles.ADMIN); //打印2
-console.log(Roles.USER); //打印3
-console.log(Roles[2]); //打印 ADMIN
+console.log(Roles.SUPER_ADMIN); // 打印1
+console.log(Roles.ADMIN); // 打印2
+console.log(Roles.USER); // 打印3
+console.log(Roles[2]); // 打印 ADMIN
 
 // any类型:可以是任何类型
 let value: any;
-value = "abc";
-value = 123;
 
 // void类型:没有返回值
 const consoleText = (text: string): void => {
   console.log("text");
 };
 
-// null和undefined
-let u: undefined;
-u = undefined;
-let n: null;
-n = null;
+// null 和 undefined
+let u: undefined = undefined;
+let n: null = null;
 
 // never类型 永远不存在的值类型(抛错和死循环)
 const errorFunc = (message: string): never => {
@@ -167,15 +156,14 @@ const infiniteFunc = (): never => {
   while (true) {}
 };
 
-// object
+// 对象类型
 let obj: object = {
   name: "json",
 };
-let obj2 = obj;
 
 // 类型断言
 // 两种形式  (<string>target) (target as string)
-// .tsx 中只能使用(target as string)
+// tips： .tsx 中只能使用 (target as string)这种形式的类型断言
 const getLength = (target: string | number): number => {
   if ((<string>target).length || (target as string).length === 0) {
     return (<string>target).length;
@@ -185,11 +173,9 @@ const getLength = (target: string | number): number => {
 };
 ```
 
-TIP：.tsx 中只能使用(target as string) 这种形式的类型断言
-
 ## 4. 接口
 
-### 4-1 基本用法：
+### 4.1 基本用法：
 
 接口定义对象类型
 
@@ -206,14 +192,14 @@ const getFullName = ({ firstName, lastName }: NameInfo): string => {
 console.log(
   getFullName({
     firstName: "rain",
-    lastName: "tom",
+    lastName: "luck",
   })
 );
 ```
 
-### 4-2 可选属性：
+### 4.2 可选属性：
 
-color?: string
+`color?: string`
 
 ```typescript
 // 设置可选属性 使用？进行标识(color?: string)
@@ -232,7 +218,7 @@ console.log(
 );
 ```
 
-### 4-3 多余属性检查
+### 4.3 多余属性检查
 
 方法一：类型断言
 
@@ -290,7 +276,7 @@ const vegetableInfo = {
 console.log(getVegetables(vegetableInfo));
 ```
 
-### 4-4 只读属性
+### 4.4 只读属性
 
 `readonly type: string,`
 
@@ -305,7 +291,7 @@ const vegetableObj: Vegetables = {
 vegetableInfo.type = "carrot"; //报错！！
 ```
 
-### 4-5 接口定义函数结构
+### 4.5 接口定义函数结构
 
 ```typescript
 interface AddFunc {
@@ -317,18 +303,18 @@ const add: AddFunc = (n1, n2) => {
 };
 ```
 
-### 4-6 定义索引类型
+### 4.6 定义索引类型
 
 ```typescript
 interface RoleDic {
-  [di: number]: string;
+  [id: number]: string;
 }
 const role1: RoleDic = {
   0: "super_admin",
 };
 ```
 
-### 4-7 接口的继承
+### 4.7 接口的继承
 
 ```typescript
 interface Vegetables {
@@ -349,7 +335,7 @@ const tomato: Tomato = {
 };
 ```
 
-### 4-8 混合类型接口
+### 4.8 混合类型接口
 
 ```typescript
 interface Counter {
