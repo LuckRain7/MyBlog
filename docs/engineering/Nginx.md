@@ -124,7 +124,7 @@ flag
 
 **example:**
 
-```bash
+```nginx
 rewrite ^/recommend/campus$ $scheme://nowpick.nowcoder.com/w/recommend/campus redirect ;
 rewrite ^/school/schedule/(\d+)$ https://nowpick.nowcoder.com/w/school/schedule/$1 redirect ;
 rewrite ^/activity/v2/special-activity/index/(\w+)$ $scheme://www.nowcoder.com/jobs/activity/v2/special-activity/index/$1 redirect ;

@@ -228,6 +228,39 @@ git reset <commitHash>          # 回退到指定的版本
 git reset --hard <commitHash>   # --hard 参数可以让工作区里面的文件也回到以前的状态。
 ```
 
+## 8. git reflog
+
+`git reflog <subcommand> <options>`
+
+```bash
+git reflog [show] [log-options] [<ref>]
+
+# “expire”子命令会删除掉更老的 reflog 条目。
+git reflog expire [--expire=<time>] [--expire-unreachable=<time>] [--rewrite] [--updateref] [--stale-fix] [--dry-run | -n] [--verbose] [--all | <refs>…​]
+
+# “delete”子命令从 reflog 中删除一个条目。
+git reflog delete [--rewrite] [--updateref] [--dry-run | -n] [--verbose] ref@{specifier}…​
+
+# “exists”子命令检查一个 ref 是否有一个 reflog。
+git reflog exists <ref>
+```
+
+git log 是显示当前的 HEAD 和它的祖先的，递归是沿着当前指针的父亲，父亲的父亲，…，这样的原则。
+
+git reflog 根本不遍历 HEAD 的祖先。它是 HEAD 所指向的一个顺序的提交列表：它的 undo 历史。reflog 并不是 repo（仓库）的一部分，它单独存储，而且不包含在 pushes，fetches 或者 clones 里面，它纯属是本地的。
+
+reflog 可以很好地帮助你恢复你误操作的数据，例如你错误地 reset 了一个旧的提交，或者 rebase，…，这个时候你可以使用 reflog 去查看在误操作之前的信息，并且使用 git reset --hard 去恢复之前的状态。
+
+下面研究一下这个命令的具体用法。
+
+先了解一下 git 的版本表示方法：
+
+HEAD@{2} means “where HEAD used to be two moves ago”, master@{one.week.ago}means “where master used to point to one week ago in this local repository”
+
+HEAD@{2}表示 HEAD 指针在两次移动之前的情况；而 master@{one.week.ago}表示 master 在本地仓库一周之前的情况。
+
+“show”子命令显示所指定的参考的日志。
+
 ---
 
 参考文章
