@@ -6,23 +6,23 @@ sidebar: auto
 
 > 官网 [ https://www.expressjs.com.cn/ ](https://www.expressjs.com.cn/)
 
-* cors -> 跨域模块
+- cors -> 跨域模块
 
 ```js
 // yarn add cors
 
-const cors = require('cors')
-app.use(cors())
+const cors = require("cors");
+app.use(cors());
 ```
 
-* express-generator -> express 官方项目生成器
+- express-generator -> express 官方项目生成器
 
 ```json
 # yarn global add express-generator
 # express [文件名]
 ```
 
-* [ejs](https://ejs.bootcss.com/) -> 模板引擎
+- [ejs](https://ejs.bootcss.com/) -> 模板引擎
 
 > 快速构建
 

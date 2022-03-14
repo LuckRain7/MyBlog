@@ -1,6 +1,10 @@
+---
+sidebar: auto
+---
+
 # docker
 
-## 1. 安装
+## 1.Install
 
 [How to Install Docker on macOS (2022 Updated Gide)](https://gizmoxo.com/install-docker-macos/)
 
@@ -12,6 +16,8 @@ docker images  # 列出镜像
 docker ps           # 列出本机运行的容器
 docker stop <id>    # 停止运行的容器
 ```
+
+---
 
 参考文章：
 
