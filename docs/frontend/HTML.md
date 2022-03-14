@@ -4,13 +4,13 @@ sidebar: auto
 
 # HTML
 
-> [HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).](https://developer.mozilla.org/en-US/docs/Web/HTML)
->
-> [DOM - Document Object Model](https://developer.mozilla.org/en-US/docs/DOM/DOM_Reference/Introduction)
->
-> [BOM - Browser Object Model](https://developer.mozilla.org/en-US/docs/WebAPI/Browser)
+[HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
-## Elements
+[DOM - Document Object Model](https://developer.mozilla.org/en-US/docs/DOM/DOM_Reference/Introduction)
+
+[BOM - Browser Object Model](https://developer.mozilla.org/en-US/docs/WebAPI/Browser)
+
+## 1. Elements
 
 ### `<pre></pre>`
 
@@ -26,11 +26,11 @@ pre 元素中允许的文本可以包括物理样式和基于内容的样式变�
 <pre>{{ code }}</pre>
 ```
 
-## DOM
+## 2. DOM
 
-## BOM
+## 3.BOM
 
-### 1. MutationObserver
+### MutationObserver
 
 > API 提供了监视对 DOM 树所做更改的能力 | [兼容性](https://caniuse.com/?search=MutationObserver)
 

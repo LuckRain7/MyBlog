@@ -24,7 +24,7 @@ sudo nginx -s reload # 重启（管理员）
 
 ## 3. location
 
-location路径映射路径
+location 路径映射路径
 
 ```text
 =      进行普通字符精确匹配。也就是完全匹配。
@@ -35,7 +35,7 @@ location路径映射路径
 /      通用匹配，任何请求都会匹配到
 ```
 
-location优先级从高到底: 
+location 优先级从高到底:
 
 ```text
 = > /a/b/c >  ^~ path >  ~,~* path > /a/b > /
@@ -109,4 +109,29 @@ $uri : 不带请求参数的当前URI，$uri不包含主机名，如”/foo/bar.
 $document_uri : 与$uri相同
 ```
 
-## 5. 转发与重定向之间的区别
+## 5. rewrite
+
+> 重写链接
+
+`rewrite regex replacement [flag];`
+
+flag
+
+- last：停止处理当前的 ngx_http_rewrite_module 的指令集，并开始搜索与更改后的 URI 相匹配的 location;
+- break：停止处理当前的 ngx_http_rewrite_module 指令集，就像上面说的 break 指令一样;
+- redirect：返回 302 临时重定向。
+- permanent：返回 301 永久重定向。
+
+**example:**
+
+```bash
+rewrite ^/recommend/campus$ $scheme://nowpick.nowcoder.com/w/recommend/campus redirect ;
+rewrite ^/school/schedule/(\d+)$ https://nowpick.nowcoder.com/w/school/schedule/$1 redirect ;
+rewrite ^/activity/v2/special-activity/index/(\w+)$ $scheme://www.nowcoder.com/jobs/activity/v2/special-activity/index/$1 redirect ;
+```
+
+---
+
+TODO
+
+- 转发与重定向之间的区别

@@ -8,11 +8,11 @@ sidebar: auto
 
 Git 是目前世界上最先进的分布式版本控制系统（没有之一）。
 
-还是去看看阮老师写的吧，链接：  [Git 原理入门- 阮一峰](http://www.ruanyifeng.com/blog/2018/10/git-internals.html)
+还是去看看阮老师写的吧，链接： [Git 原理入门- 阮一峰](http://www.ruanyifeng.com/blog/2018/10/git-internals.html)
 
 ## 2. 目录解析
 
-.git目录下有几个重要的文件/文件夹
+.git 目录下有几个重要的文件/文件夹
 
 ```bash
 * config    # 文件，主要存储项目的一些配置信息
@@ -66,9 +66,9 @@ git config user.email "[email address]"
 git reflog --date=local | grep <branchName>
 ```
 
-### 3.1 git remote 
+### 3.1 git remote
 
-> 管理远程仓库 
+> 管理远程仓库
 
 ```bash
 git remote                          # 查看远程仓库
@@ -102,12 +102,12 @@ git push github master
 ### 4.2 git 远程分支强制覆盖本地分支
 
 ```bash
-git fetch --all  
-git reset --hard [origin/master] 
+git fetch --all
+git reset --hard [origin/master]
 git pull
 ```
 
-### 4.3 git 忽略规则(.gitignore配置）不生效解决方案
+### 4.3 .gitignore 不生效解决方案
 
 > 清除缓存 重新提交
 
@@ -144,10 +144,10 @@ git stash drop stash@{0}  # 将记录列表中取出的对应暂存记录删除
 
 ### 4.7 清除无用的 branch ref
 
-> [git官网: git remote prune [-n | --dry-run] <name>…​](https://git-scm.com/docs/git-remote#Documentation/git-remote.txt-empruneem)
+> [git 官网: git remote prune [-n | --dry-run] <name>…​](https://git-scm.com/docs/git-remote#Documentation/git-remote.txt-empruneem)
 >
 > Deletes stale references associated with `<name>` . By default, stale remote-tracking branches under `<name>` are deleted, but depending on global configuration and the configuration of the remote we might even prune local tags that haven’t been pushed there. Equivalent to git fetch --prune <name>, except that no new references will be fetched.
->  
+>
 > 删除与 `<name>` 关联的陈旧引用。 默认情况下，删除 `<name>` 下过时的远程跟踪分支，但根据全局配置和远程配置，我们甚至可能会修剪尚未推送到那里的本地标签。 等同于 git fetch --prune <name> ，除了不会获取新的引用。
 
 ```bash
@@ -168,7 +168,7 @@ git rebase --abort              # 取消 rebase 状态
 git branch |grep 'xxx' |xargs git branch -D # xxx 为匹配字符
 ```
 
-## 4.10 代码回退到某个 commit 位置
+### 4.10 代码回退到某个 commit
 
 > 谨慎使用，回退不可逆 或使用 --soft
 
@@ -182,11 +182,11 @@ git reset –hard edfab6afce95d0ebbd35d34219dba365773b5b4e # 版本回退
 ```
 Feat：新功能（feature）
 Fix：修补bug
-docs：文档（documentation）
+Docs：文档（documentation）
 Style： 格式（不影响代码运行的变动）
-refactor：重构（即不是新增功能，也不是修改bug的代码变动）
-test：增加测试
-chore：构建过程或辅助工具的变动
+Refactor：重构（即不是新增功能，也不是修改bug的代码变动）
+Test：增加测试
+Chore：构建过程或辅助工具的变动
 Modify: 修改
 ```
 
@@ -203,7 +203,7 @@ git cherry-pick <commitHash>    # 填写 commitHash 进行提交
 
 **git revert**
 
-> 回滚(撤销)对应commit 。git revert 后多出一条 commit 来提醒开发者，这里是回撤。
+> 回滚(撤销)对应 commit 。git revert 后多出一条 commit 来提醒开发者，这里是回撤。
 
 ```bash
 git revert HEAD             # 撤销前一次 commit
@@ -228,12 +228,13 @@ git reset <commitHash>          # 回退到指定的版本
 git reset --hard <commitHash>   # --hard 参数可以让工作区里面的文件也回到以前的状态。
 ```
 
-## 参考文章
+---
 
-* [Git常用命令总结](https://www.jianshu.com/p/cdccfef91ae1)
-* [Git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
-* [提醒！你可能会忽略的 Git 提交规范](https://segmentfault.com/a/1190000022440330)
-* [git cherry-pick 教程](https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html)
-* [如何撤销 Git 操作？](https://www.ruanyifeng.com/blog/2019/12/git-undo.html)
-* [我在工作中是如何使用 git 的](https://juejin.cn/post/6974184935804534815)
+参考文章
 
+- [Git 常用命令总结](https://www.jianshu.com/p/cdccfef91ae1)
+- [Git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
+- [提醒！你可能会忽略的 Git 提交规范](https://segmentfault.com/a/1190000022440330)
+- [git cherry-pick 教程](https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html)
+- [如何撤销 Git 操作？](https://www.ruanyifeng.com/blog/2019/12/git-undo.html)
+- [我在工作中是如何使用 git 的](https://juejin.cn/post/6974184935804534815)
