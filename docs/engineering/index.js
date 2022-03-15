@@ -1,4 +1,4 @@
-[
+const a = [
     {
         "parentId": "",
         "name": "初阶",
@@ -11675,3 +11675,15 @@
         ]
     }
 ]
+
+go(a)
+
+function go(arr){
+    arr.forEach(element => {
+        console.log(element.id);
+        if(element.children?.length){
+            go(element.children)
+        }
+    });
+  
+}

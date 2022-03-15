@@ -6,11 +6,11 @@ sidebar: auto
 
 ## 1. 安装
 
-* win10下安装
+- win10 下安装
 
 下载地址：[https://github.com/coreybutler/nvm-windows/releases](https://github.com/coreybutler/nvm-windows/releases)
 
-百度网盘地址: 链接：https://pan.baidu.com/s/1q8ogEnJv59k6LSLPOp1ngw  提取码：8nuh
+百度网盘地址: 链接：https://pan.baidu.com/s/1q8ogEnJv59k6LSLPOp1ngw 提取码：8nuh
 
 ![nvm](/img/nvm1.png)
 
@@ -18,15 +18,15 @@ sidebar: auto
 >
 > **nvm-setup.zip**：安装包，下载之后点击安装，无需配置就可以使用，方便。
 >
-> Source code(zip)：zip压缩的源码
+> Source code(zip)：zip 压缩的源码
 >
-> Sourc code(tar.gz)：tar.gz的源码，一般用于*nix系统
+> Sourc code(tar.gz)：tar.gz 的源码，一般用于\*nix 系统
 
 默认安装即可（别问可不可以自定义 问就是闭眼下一步）
 
 验证安装是否成功，运行 `nvm -v` ，出现版本信息
 
-* Linux
+- Linux
 
 ```shell
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
@@ -39,13 +39,13 @@ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | 
 
 1、新建系统环境变量 `NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node`
 
-2、命令行执行 `nvm node_mirror https://npm.taobao.org/mirrors/node/ ` 切换Node源
+2、命令行执行 `nvm node_mirror https://npm.taobao.org/mirrors/node/` 切换 Node 源
 
-3、命令行执行 ` nvm npm_mirror https://npm.taobao.org/mirrors/npm/ ` 切换npm源
+3、命令行执行 `nvm npm_mirror https://npm.taobao.org/mirrors/npm/` 切换 npm 源
 
 ## 3. 常用命令
 
- 下面命令以 node 10 版本为例
+下面命令以 node 10 版本为例
 
 ```shell
 nvm -v # 查看当前NVM版本

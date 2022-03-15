@@ -6,7 +6,7 @@ sidebar: auto
 
 ## ES6 模块
 
-> ES6中的模块加载方案是一种浏览器和服务器通用的解决方案 
+> ES6 中的模块加载方案是一种浏览器和服务器通用的解决方案
 
 导入
 
@@ -31,35 +31,35 @@ import {
 
 export 可导出多个
 
-export default 为模块默认输出。 
+export default 为模块默认输出。
 
 ```js
 //写法一
-export const name = 'RAIN';
-export const age = '18';
+export const name = "RAIN";
+export const age = "18";
 
 //写法二
-const name = 'RAIN';
-const age = '18';
+const name = "RAIN";
+const age = "18";
 export default {
   name,
-  age
-}
+  age,
+};
 ```
 
 ## CommonJS
 
-> Node使用的规范
+> Node 使用的规范
 
 引用：
 
 ```js
-const user = require('./user')
+const user = require("./user");
 ```
 
 导出：
 
-`module.exports` 属性表示当前模块对外输出的接口，其他文件加载该模块，实际上就是读取 `module.exports` 变量。 
+`module.exports` 属性表示当前模块对外输出的接口，其他文件加载该模块，实际上就是读取 `module.exports` 变量。
 
 ```js
 export const name = 'RAIN';
@@ -77,4 +77,4 @@ export.age = '18';
 
 ## AMD
 
-AMD：Asynchronous Module Definition（异步模块规范），最老的方式之一，专为浏览器而设计。 
+AMD：Asynchronous Module Definition（异步模块规范），最老的方式之一，专为浏览器而设计。
