@@ -11,12 +11,20 @@ sidebar: auto
   - [DOM - Document Object Model](/frontend/HTML.html#_2-dom)
   - [BOM - Browser Object Model](/frontend/HTML.htmll#_3-bom)
 - CSS
-  - CSSOM
-  - 选择器
+  - [选择器](/frontend/CSS.html#_1-选择器)
+  - [CSSOM](/frontend/CSS.html#_2-cssom)
   - 布局
+    - 正常布局流(Normal flow)
+    - display 属性(The display property)
+    - 弹性盒子(Flexbox)
+    - Grid 布局(Grid)
+    - 浮动布局(Floats)
+    - 定位(Positioning)
+    - 表格布局(Table layout)
+    - 多列布局(Multiple-column layout)
   - 交互
   - 绘制
-  - 预处理器： [Sass](/frontend/css/sass.html) [Less](/frontend/css/less.html)
+  - 预处理器： [Sass](/frontend/css/sass.html) | [Less](/frontend/css/less.html)
 
 ## JavaScript
 

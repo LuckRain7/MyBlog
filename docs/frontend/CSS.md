@@ -4,7 +4,7 @@ sidebar: auto
 
 # CSS
 
-## 选择器
+## 1. 选择器
 
 > 优先级 !important > 行内样式 > ID 选择器 > 类、伪类、属性 > 元素、伪元素 > 继承 > 通配符
 
@@ -74,7 +74,13 @@ a[id="a-02"] {
 }
 ```
 
-## box-shadow
+## 2. CSSOM
+
+> [CSS Object Model](https://developer.mozilla.org/zh-CN/docs/Web/API/CSS_Object_Model) 是一组允许用 JavaScript 操纵 CSS 的 API。 它是继 DOM 和 HTML API 之后，又一个操纵 CSS 的接口，从而能够动态地读取和修改 CSS 样式。
+
+## 3. Style
+
+### box-shadow
 
 语法： `box-shadow: h-shadow v-shadow blur spread color inset`
 
@@ -91,7 +97,7 @@ a[id="a-02"] {
 
 `box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);`
 
-## background 属性
+### background
 
 > 定义背景效果:
 >
@@ -146,6 +152,73 @@ background-position: left top;
 /* 保持图像的纵横比并将图像缩放成将适合背景定位区域的最大大小。 */
 background-size: length|percentage|cover|contain;
 ```
+
+### transform
+
+```css
+/* Keyword values */
+transform: none;
+
+/* 2D 转换，使用六个值的矩阵。 */
+transform: matrix(1, 2, 3, 4, 5, 6);
+/* 3D 转换，使用 16 个值的 4x4 矩阵。 */
+transform: matrix3d(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
+
+/* 位移 2D 3D */
+transform: translate(12px, 50%);
+transform: translateX(2em);
+transform: translateY(3in);
+transform: translate3d(12px, 50%, 3em);
+transform: translateZ(2px);
+
+/* 缩放 2D 3D */
+transform: scale(2, 0.5);
+transform: scaleX(2);
+transform: scaleY(0.5);
+transform: scale3d(2.5, 1.2, 0.3);
+transform: scaleZ(0.3);
+
+/* 旋转 2D 3D */
+transform: rotate(0.5turn);
+transform: rotate3d(1, 2, 3, 10deg);
+transform: rotateX(10deg);
+transform: rotateY(10deg);
+transform: rotateZ(10deg);
+
+/* 倾斜 */
+transform: skew(30deg, 20deg);
+transform: skewX(30deg);
+transform: skewY(1.07rad);
+
+/* 为 3D 转换元素定义透视视图。 */
+transform: perspective(17px);
+
+/* Multiple function values */
+transform: translateX(10px) rotate(10deg) translateY(5px);
+
+/* Global values */
+transform: inherit;
+transform: initial;
+transform: unset;
+```
+
+参考资料：
+
+- [transform - CSS（层叠样式表） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform)
+- [兼容性](https://caniuse.com/?search=transform)
+
+## 4. css 布局
+
+TODO
+
+- 正常布局流(Normal flow)
+- display 属性(The display property)
+- 弹性盒子(Flexbox)
+- Grid 布局(Grid)
+- 浮动布局(Floats)
+- 定位(Positioning)
+- 表格布局(Table layout)
+- 多列布局(Multiple-column layout)
 
 ## 截断文本
 
@@ -202,60 +275,6 @@ background-size: length|percentage|cover|contain;
   background: rgba(0, 0, 0, 0.1);
 }
 ```
-
-## transform
-
-```css
-/* Keyword values */
-transform: none;
-
-/* 2D 转换，使用六个值的矩阵。 */
-transform: matrix(1, 2, 3, 4, 5, 6);
-/* 3D 转换，使用 16 个值的 4x4 矩阵。 */
-transform: matrix3d(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
-
-/* 位移 2D 3D */
-transform: translate(12px, 50%);
-transform: translateX(2em);
-transform: translateY(3in);
-transform: translate3d(12px, 50%, 3em);
-transform: translateZ(2px);
-
-/* 缩放 2D 3D */
-transform: scale(2, 0.5);
-transform: scaleX(2);
-transform: scaleY(0.5);
-transform: scale3d(2.5, 1.2, 0.3);
-transform: scaleZ(0.3);
-
-/* 旋转 2D 3D */
-transform: rotate(0.5turn);
-transform: rotate3d(1, 2, 3, 10deg);
-transform: rotateX(10deg);
-transform: rotateY(10deg);
-transform: rotateZ(10deg);
-
-/* 倾斜 */
-transform: skew(30deg, 20deg);
-transform: skewX(30deg);
-transform: skewY(1.07rad);
-
-/* 为 3D 转换元素定义透视视图。 */
-transform: perspective(17px);
-
-/* Multiple function values */
-transform: translateX(10px) rotate(10deg) translateY(5px);
-
-/* Global values */
-transform: inherit;
-transform: initial;
-transform: unset;
-```
-
-参考资料：
-
-- [transform - CSS（层叠样式表） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform)
-- [兼容性](https://caniuse.com/?search=transform)
 
 ## 毛玻璃效果
 
