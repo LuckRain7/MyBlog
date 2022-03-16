@@ -11,7 +11,6 @@ sidebar: auto
 
 ## 1. APP
 
-- [ Markdown 编辑器 ][typora](https://www.typora.io/)
 - [ 视频播放器 ] IINA
 - [ 鼠标滚轮平滑滚动 ] Mos
 - [ 终端工具 ] iTerm + zsh | Alacritty + Fish + Tmux
@@ -32,6 +31,7 @@ sidebar: auto
 - [TotalFinder - Finder 增强，多标签页管理 Finder](https://totalfinder.binaryage.com/)
 - [Sequel Pro - MySQL 数据库连接软件](https://www.sequelpro.com/)
 - Fig - 命令行提示工具
+- [typora - Markdown 编辑器](https://www.typora.io/) [主题风格](https://github.com/liangjingkanji/DrakeTyporaTheme)
 
 ## 2. Yarn
 

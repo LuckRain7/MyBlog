@@ -742,72 +742,6 @@ sidebar: auto
 
 - docker-compose
 
-## CI/CD 持续集成
-
-- jenkins job
-
-- shell 集成
-
-- 集成 nginx 和 git
-
-- 持续集成和部署
-
-- travis gitlab ci
-
-## MongoDB
-
-- [MongoDB 安装和使用](/DB/MongoDB.html)
-
-- MongoDB 的系统架构
-
-- MongoDB 高级查询
-
-- MongoDB 索引
-
-- MongoDB 安全与权限
-
-- mongoose 模块之 Schema
-
-- mongoose 模块之 Model
-
-## MySQL
-
-- MySQL 安装与使用
-
-- MySQL 系统架构
-
-- 数据处理之增删改查
-
-- 数据类型和约束分页
-
-- 索引和慢查询性能分析
-
-- 数据库安全之防止 SQL 注入
-
-- 数据库设计 ER 图设计
-
-- 数据库事务和锁
-
-- 数据库设计之三大范式
-
-- 分组和聚合函数
-
-- 基于角色的权限访问控制(Role Based Access Control)
-
-## Redis
-
-- 5 种数据结构及使用场景
-
-- API 的理解和使用
-
-- Redis 客户端
-
-- 发布订阅
-
-- 事务
-
-- 备份和恢复
-
 ## 设计模式
 
 - UML 模型图
@@ -1024,7 +958,7 @@ sidebar: auto
 
   - [reset 与 revert 的区别](/tools/Git.html#_7-reset-与-revert-回滚-回退)
 
-  - reflog
+  - [reflog](/tools/Git.html#_8-git-reflog)
 
   - [cherry-pick](/tools/Git.html#_6-git-cherry-pick)
 
@@ -1084,7 +1018,7 @@ sidebar: auto
 
   - 持续集成
 
-    - 巧用 GitHub
+    - [巧用 GitHub Action](/tools/GitHub.html#github-action)
 
     - CI 平台-以 jenkins 为例
 
@@ -1098,7 +1032,7 @@ sidebar: auto
 
   - 虚拟化
 
-    - docker
+    - [docker](/engineering/docker.html)
 
     - kubernetes
 
@@ -1123,3 +1057,57 @@ sidebar: auto
     - 一个平台代替前面所有工具
 
     - Server-X 的进阶用法
+
+## MongoDB
+
+- [MongoDB 安装和使用](/DB/MongoDB.html)
+
+- MongoDB 的系统架构
+
+- MongoDB 高级查询
+
+- MongoDB 索引
+
+- MongoDB 安全与权限
+
+- mongoose 模块之 Schema
+
+- mongoose 模块之 Model
+
+## MySQL
+
+- MySQL 安装与使用
+
+- MySQL 系统架构
+
+- 数据处理之增删改查
+
+- 数据类型和约束分页
+
+- 索引和慢查询性能分析
+
+- 数据库安全之防止 SQL 注入
+
+- 数据库设计 ER 图设计
+
+- 数据库事务和锁
+
+- 数据库设计之三大范式
+
+- 分组和聚合函数
+
+- 基于角色的权限访问控制(Role Based Access Control)
+
+## Redis
+
+- 5 种数据结构及使用场景
+
+- API 的理解和使用
+
+- Redis 客户端
+
+- 发布订阅
+
+- 事务
+
+- 备份和恢复
