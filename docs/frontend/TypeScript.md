@@ -415,7 +415,7 @@ function handleData(x: any): any[] {
 
 就像传递参数一样，我们传递了我们想要用于特定函数调用的类型。
 
-![img](/img/ts/t-1.png)
+![img](/img/ts/t-1.jpeg)
 
 参考上面的图片，当我们调用 `identity<Number>(1)` ，`Number` 类型就像参数 `1` 一样，它将在出现 `T` 的任何位置填充该类型。图中 `<T>` 内部的 `T` 被称为类型变量，它是我们希望传递给 identity 函数的类型占位符，同时它被分配给 `value` 参数用来代替它的类型：此时 `T` 充当的是类型，而不是特定的 Number 类型。
 
@@ -436,7 +436,7 @@ function identity<T, U>(value: T, message: U): T {
 console.log(identity<Number, string>(68, "Semlinker"));
 ```
 
-![img](/img/ts/t-2.png)
+![img](/img/ts/t-2.jpeg)
 
 除了为类型变量显式设定值之外，一种更常见的做法是使编译器自动选择这些类型，从而使代码更简洁。我们可以完全省略尖括号，比如：
 
