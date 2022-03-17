@@ -532,11 +532,11 @@ sidebar: auto
 
 ## TypeScript
 
-- 开发环境
+- [开发环境搭建](/frontend/TypeScript.html#_1-开发环境搭建)
 
 - TypeScript 安装和编译
 
-- 数据类型、函数、类、接口、泛型
+- [数据类型](/frontend/TypeScript.html#_3-数据类型)、[函数](/frontend/TypeScript.html#_5-函数)、类、[接口](/frontend/TypeScript.html#_4-接口)、[泛型](/frontend/TypeScript.html#_6-泛型)
 
 - 结构类型系统、类型变换
 

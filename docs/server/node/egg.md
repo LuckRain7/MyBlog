@@ -8,7 +8,7 @@ sidebar: auto
 >
 > 官网：[ https://eggjs.org/zh-cn/ ](https://eggjs.org/zh-cn/)
 
-## 1.  安装
+## 1. 安装
 
 通过脚手架安装
 
@@ -17,7 +17,7 @@ yarn global add egg-init
 egg-init [dir] --type=simple
 ```
 
-## 2.  目录结构
+## 2. 目录结构
 
 ```
 Egg
@@ -64,3 +64,11 @@ Egg
 [Building RESTful Web APIs with Node.js, Express, MongoDB and TypeScript — Building RESTful Web APIs with Node.js, Express, MongoDB and TypeScript 1.0.1 documentation](https://restful-api-node-typescript.books.dalenguyen.me/en/latest/index.html)
 
 [frontEnd_note/basic/nodejs-basic/framework/express-demo at master · cc7gs/frontEnd_note](https://github.com/cc7gs/frontEnd_note/tree/master/basic/nodejs-basic/framework/express-demo)
+
+## Tips
+
+**让 egg 支持 https**
+
+```bash
+"start": "egg-scripts start --daemon --port=443 --https=true --key='xxxxx.key' --cert='xxxxx.crt'",
+```

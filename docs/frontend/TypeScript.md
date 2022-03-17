@@ -6,7 +6,7 @@ sidebar: auto
 
 > 版本 ^3.8.3
 
-## 1. 搭建开发环境
+## 1. 开发环境搭建
 
 创建自己的项目文件，并执行一下命令
 
@@ -105,7 +105,7 @@ module.exports = {
 }
 ```
 
-## 3. 基础类型
+## 3. 数据类型
 
 ```typescript
 // 布尔值
@@ -362,6 +362,20 @@ console.log(counter.count);
 //1 2 3
 ```
 
+## 4.9 为对象动态分配属性
+
+```typescript
+interface LooseObject {
+  name: string;
+  age?: number;
+  [key: string]: any;
+}
+
+let obj: Developer = { name: "rain" };
+obj.age = 30;
+obj.city = "BeiJing";
+```
+
 ## 5. 函数
 
 为函数定义类型
@@ -399,12 +413,46 @@ function handleData(x: any): any[] {
 
 ## 6. 泛型
 
-基本使用
+就像传递参数一样，我们传递了我们想要用于特定函数调用的类型。
+
+![img](/img/ts/t-1.png)
+
+参考上面的图片，当我们调用 `identity<Number>(1)` ，`Number` 类型就像参数 `1` 一样，它将在出现 `T` 的任何位置填充该类型。图中 `<T>` 内部的 `T` 被称为类型变量，它是我们希望传递给 identity 函数的类型占位符，同时它被分配给 `value` 参数用来代替它的类型：此时 `T` 充当的是类型，而不是特定的 Number 类型。
+
+其中 `T` 代表 **Type**，在定义泛型时通常用作第一个类型变量名称。但实际上 `T` 可以用任何有效名称代替。除了 `T` 之外，以下是常见泛型变量代表的意思：
+
+- K（Key）：表示对象中的键类型；
+- V（Value）：表示对象中的值类型；
+- E（Element）：表示元素类型。
+
+其实并不是只能定义一个类型变量，我们可以引入希望定义的任何数量的类型变量。比如我们引入一个新的类型变量 `U`，用于扩展我们定义的 `identity` 函数：
 
 ```typescript
-const getArray = <T>(value: T, times: number = 5): T[] => {
-  return new Array(times).fill(value);
-};
+function identity<T, U>(value: T, message: U): T {
+  console.log(message);
+  return value;
+}
 
-console.log(getArray<number>(123, 4).map((item) => item.toFixed()));
+console.log(identity<Number, string>(68, "Semlinker"));
 ```
+
+![img](/img/ts/t-2.png)
+
+除了为类型变量显式设定值之外，一种更常见的做法是使编译器自动选择这些类型，从而使代码更简洁。我们可以完全省略尖括号，比如：
+
+```typescript
+function identity<T, U>(value: T, message: U): T {
+  console.log(message);
+  return value;
+}
+
+console.log(identity(68, "Semlinker"));
+```
+
+对于上述代码，编译器足够聪明，能够知道我们的参数类型，并将它们赋值给 T 和 U，而不需要开发人员显式指定它们。
+
+---
+
+参考文章
+
+- [细数这些年被困扰过的 TS 问题 - 阿宝哥](https://segmentfault.com/a/1190000023858355)
