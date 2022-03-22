@@ -456,3 +456,5 @@ console.log(identity(68, "Semlinker"));
 参考文章
 
 - [细数这些年被困扰过的 TS 问题 - 阿宝哥](https://segmentfault.com/a/1190000023858355)
+- [最全的 TypeScript 学习指南 - Big shark@LX](https://juejin.cn/post/7031787942691471396)
+- [Ts 高手篇：22 个示例深入讲解 Ts 最晦涩难懂的高级类型工具 - 愣锤](https://juejin.cn/post/6994102811218673700)

@@ -28,6 +28,12 @@ pre 元素中允许的文本可以包括物理样式和基于内容的样式变�
 
 ## 2. DOM
 
+### History
+
+```JavaScript
+window.history.replaceState(null, null, url);
+```
+
 ## 3.BOM
 
 ### MutationObserver
