@@ -362,7 +362,7 @@ console.log(counter.count);
 //1 2 3
 ```
 
-## 4.9 为对象动态分配属性
+### 4.9 为对象动态分配属性
 
 ```typescript
 interface LooseObject {

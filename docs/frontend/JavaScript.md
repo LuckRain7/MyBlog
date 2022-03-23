@@ -549,7 +549,24 @@ a[6](); //6
 // var -> let
 ```
 
-###
+## Snippet
+
+**isPlainObject 判断 纯对象**
+
+::: details 具体代码
+
+```JavaScript
+function isPlainObject(val) {
+  if (Object.prototype.toString.call(val) !== '[object Object]') {
+    return false;
+  }
+
+  var prototype = Object.getPrototypeOf(val);
+  return prototype === null || prototype === Object.prototype;
+}
+```
+
+:::
 
 ---
 
