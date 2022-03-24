@@ -33,8 +33,9 @@ npm config list # 查看npm配置
 
 npm list -g --depth 0 # 查看全局安装的包
 
-# 查看本地缓存
-npm config get cache
+
+npm config get cache  # 查看本地缓存
+npm config ls -l      # 查看所有默认配置
 ```
 
 **NPM 发布自己的组件包**
