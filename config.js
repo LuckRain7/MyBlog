@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  title: "震雨 luckrain7's 博客",
+  title: "震雨 luckrain7",
   description: "震雨LuckRain7的博客,Webgis,arcgis,openlayer,css,javascript",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   markdown: {

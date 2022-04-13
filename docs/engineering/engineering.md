@@ -78,89 +78,13 @@ sidebar: auto
 
   - WebComponent
 
-- [V8 内存管理](<](/engineering/v8.html)>)
+- [V8 内存管理](/engineering/v8.html)
 
   - JavaScript 中的垃圾收集、内存管理
 
   - V8 垃圾回收机制分类
 
   - 引用计数、标记清除、标记整理和增量标记
-
-## 计算机网络
-
-- 网络协议
-
-  - OSI 七层模型
-
-  - TCP/IP 参考模型
-
-  - TLS
-
-  - 物理层
-
-  - 数据链路层
-
-    - 以太网
-
-    - 总线型拓扑
-
-    - 冲突检测
-
-    - MAC 地址
-
-    - 以太网帧
-
-    - ARP 协议
-
-  - 互联网层(网络层)
-
-    - IP 协议
-
-    - 选址
-
-    - 子网掩码和子网划分
-
-  - 传输层
-
-    - TCP 数据包、TCP 序列号
-
-    - 滑动窗口的拥塞检测
-
-    - 三次握手和四次挥手
-
-    - UDP 协议、DNS 协议
-
-  - 应用层
-
-    - [HTTP](/engineering/network/http.html#_1-http)
-
-    - [HTTPS](/engineering/network/http.html#_2-https)
-
-    - [HTTP2](/engineering/network/http.html#_3-http2)
-
-- 网络请求
-
-  - Request
-
-    - Form 提交
-
-    - Ajax 和 Fetch
-
-    - [文件上传](https://github.com/LuckRain7/growth-record/tree/master/Demo/file-upload)
-
-    - [Axios 源码分析](https://github.com/LuckRain7/Knowledge-Sharing/blob/master/translate/axios.md)
-
-  - [WebSocket](/server/Node.html#_1-2-websocket)
-
-  - [缓存](https://rain7.top/cache/)
-
-- 网络安全
-
-  - Web 漏洞的分析与防御、同源策略
-
-  - XSS（跨站脚本攻击）
-
-  - CSRF（跨站请求伪造攻击）
 
 ## Vue
 
@@ -684,20 +608,6 @@ sidebar: auto
 
 - 通过 Performance 监控性能
 
-## Linux
-
-- Linux 与 Windows 的不同
-
-- Linux 安装和虚拟机的使用
-
-- 桥接、NAT、Host-Only 等 网络连接
-
-- 快照、克隆、挂载点和分区
-
-- Linux 常用命令 VI 编辑器、用户与权限管理、服务管理、软件管理、网络管理、系统命令
-
-- Shell 实战监控服务和主机网络状态
-
 ## Nginx
 
 - [nginx 的安装和使用](/engineering/nginx.html#_1-安装)
@@ -966,6 +876,20 @@ sidebar: auto
 
 - 前端工程化应用 husky link-staged
 
+## Linux
+
+- Linux 与 Windows 的不同
+
+- Linux 安装和虚拟机的使用
+
+- 桥接、NAT、Host-Only 等 网络连接
+
+- 快照、克隆、挂载点和分区
+
+- Linux 常用命令 VI 编辑器、用户与权限管理、服务管理、软件管理、网络管理、系统命令
+
+- Shell 实战监控服务和主机网络状态
+
 ## 工程化
 
 - 脚本世界
@@ -986,11 +910,11 @@ sidebar: auto
 
     - [prettier 代码格式化](/share/config.html#prettier)
 
-  - 版本规范和 Changlog
+  - [语义化版本管理](https://semver.org/lang/zh-CN/)和 Changlog
 
   - 其他规约
 
-- 质量
+* 质量
 
   - code review
 
@@ -1004,7 +928,7 @@ sidebar: auto
 
   - 监控和异常上报
 
-- 工程设计
+* 工程设计
 
   - 工程设计简介
 
@@ -1012,7 +936,7 @@ sidebar: auto
 
   - 多仓库选型
 
-- 持续集成与部署
+* 持续集成与部署
 
   - CI/CD 简介
 
@@ -1036,7 +960,7 @@ sidebar: auto
 
     - kubernetes
 
-- 效率工具
+* 效率工具
 
   - 真机远程代码调试
 
@@ -1057,6 +981,82 @@ sidebar: auto
     - 一个平台代替前面所有工具
 
     - Server-X 的进阶用法
+
+## 计算机网络
+
+- 网络协议
+
+  - OSI 七层模型
+
+  - TCP/IP 参考模型
+
+  - TLS
+
+  - 物理层
+
+  - 数据链路层
+
+    - 以太网
+
+    - 总线型拓扑
+
+    - 冲突检测
+
+    - MAC 地址
+
+    - 以太网帧
+
+    - ARP 协议
+
+  - 互联网层(网络层)
+
+    - IP 协议
+
+    - 选址
+
+    - 子网掩码和子网划分
+
+  - 传输层
+
+    - TCP 数据包、TCP 序列号
+
+    - 滑动窗口的拥塞检测
+
+    - 三次握手和四次挥手
+
+    - UDP 协议、DNS 协议
+
+  - 应用层
+
+    - [HTTP](/engineering/network/http.html#_1-http)
+
+    - [HTTPS](/engineering/network/http.html#_2-https)
+
+    - [HTTP2](/engineering/network/http.html#_3-http2)
+
+- 网络请求
+
+  - Request
+
+    - Form 提交
+
+    - Ajax 和 Fetch
+
+    - [文件上传](https://github.com/LuckRain7/growth-record/tree/master/Demo/file-upload)
+
+    - [Axios 源码分析](https://github.com/LuckRain7/Knowledge-Sharing/blob/master/translate/axios.md)
+
+  - [WebSocket](/server/Node.html#_1-2-websocket)
+
+  - [缓存](https://rain7.top/cache/)
+
+- 网络安全
+
+  - Web 漏洞的分析与防御、同源策略
+
+  - XSS（跨站脚本攻击）
+
+  - CSRF（跨站请求伪造攻击）
 
 ## MongoDB
 
