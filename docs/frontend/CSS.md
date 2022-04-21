@@ -209,11 +209,30 @@ transform: unset;
 
 ## 4. css 布局
 
-TODO
+### 弹性盒子(Flexbox)
+
+| 作用在 flex 容器上 | 参数 |
+| :----------------: | :--: |
+|   flex-direction   |      |
+|     flex-wrap      |      |
+|     flex-flow      |      |
+|  justify-content   |      |
+|    align-items     |      |
+|   align-content    |      |
+
+| 作用在 flex 子项上 | 参数 |
+| :----------------: | :--: |
+|       order        |      |
+|     flex-grow      |      |
+|    flex-shrink     |      |
+|     flex-basi      |      |
+|        flex        |      |
+|     align-self     |      |
+
+### TODO
 
 - 正常布局流(Normal flow)
 - display 属性(The display property)
-- 弹性盒子(Flexbox)
 - Grid 布局(Grid)
 - 浮动布局(Floats)
 - 定位(Positioning)
