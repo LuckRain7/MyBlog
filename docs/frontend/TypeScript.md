@@ -173,6 +173,24 @@ const getLength = (target: string | number): number => {
 };
 ```
 
+### unknown 和 any 的区别
+
+可以将任何东西赋给 unknown 类型，但在进行类型检查或类型断言之前，不能对 unknown 进行操作。
+
+可以把任何东西分配给 any 类型，也可以对 any 类型进行任何操作
+
+```typescript
+function func(callback: unknown) {
+  // 可以将任何东西赋给 `unknown` 类型，
+  // 但在进行类型检查或类型断言之前，不能对 `unknown` 进行操作
+  if (typeof callback === "function") {
+    callback();
+  }
+}
+
+func(1);
+```
+
 ## 4. 接口
 
 ### 4.1 基本用法：
@@ -189,12 +207,7 @@ const getFullName = ({ firstName, lastName }: NameInfo): string => {
   return `${firstName} ${lastName}`;
 };
 
-console.log(
-  getFullName({
-    firstName: "rain",
-    lastName: "luck",
-  })
-);
+console.log(getFullName({ firstName: "rain", lastName: "luck" }));
 ```
 
 ### 4.2 可选属性：
@@ -329,10 +342,7 @@ interface Carot extends Vegetables {
   length: number;
 }
 
-const tomato: Tomato = {
-  color: "red",
-  radius: 12,
-};
+const tomato: Tomato = { color: "red", radius: 12 };
 ```
 
 ### 4.8 混合类型接口
