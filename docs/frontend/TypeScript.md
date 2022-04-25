@@ -338,7 +338,7 @@ interface Tomato extends Vegetables {
   radius: number;
 }
 
-interface Carot extends Vegetables {
+inteface Carot extends Vegetables {
   length: number;
 }
 
