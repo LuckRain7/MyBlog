@@ -2,8 +2,8 @@
 
 用来处理字符串的规则
 
-* 只能处理字符串
-* 他是一个规则：可以验证字符串是否符合某些规则（test），也可以吧字符串中符合规则的内容捕捉到（exec/match）
+- 只能处理字符串
+- 他是一个规则：可以验证字符串是否符合某些规则（test），也可以吧字符串中符合规则的内容捕捉到（exec/match）
 
 ```JavaScript
 let str = "good good study, day day up!"
@@ -22,16 +22,16 @@ reg.exec(str)
 
 ```js
 // 自变量方式常见（两个斜杠之间抱起来，描述规则的元字符）
-let reg1 = /\d+/
+let reg1 = /\d+/;
 
 // 构造函数模式创建 参数（元字符字符串，修饰符字符串）
-let reg2 = new RegExp("\\d+")
+let reg2 = new RegExp("\\d+");
 ```
 
 正则表达式由两部分组成
 
-* 元字符
-* 修饰符
+- 元字符
+- 修饰符
 
 ```
 /* 常用元字符 */
@@ -81,3 +81,17 @@ g       // 全局匹配
 ```bash
 /^\d+$/    # 匹配是否是纯数字
 ```
+
+```bash
+{[\w\W]+?\} # 匹配对象
+```
+
+> 测试用例:
+>
+> ```
+> export default definePageConfig({
+>    navigationBarTitleText: '反馈页',
+>    enableShareAppMessage: true,
+>    fixTitle: true
+> });
+> ```
