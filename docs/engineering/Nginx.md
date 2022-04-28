@@ -4,7 +4,7 @@ sidebar: auto
 
 # Nginx
 
-## 1. 安装
+## 安装
 
 ```bash
 # HomeBrew 快捷安装
@@ -14,7 +14,7 @@ brew install nginx
 ...
 ```
 
-## 2. 常用命令
+## 常用命令
 
 ```bash
 sudo nginx           # 启动（管理员）
@@ -22,9 +22,35 @@ sudo nginx -s stop   # 关闭（管理员）
 sudo nginx -s reload # 重启（管理员）
 ```
 
-## 3. location
+## 内置变量
 
-location 路径映射路径
+```bash
+$args : 这个变量等于请求行中的参数，同$query_string
+$content_length : 请求头中的Content-length字段。
+$content_type : 请求头中的Content-Type字段。
+$document_root : 当前请求在root指令中指定的值。
+$host : 请求主机头字段，否则为服务器名称。
+$http_user_agent : 客户端agent信息
+$http_cookie : 客户端cookie信息
+$limit_rate : 这个变量可以限制连接速率。
+$request_method : 客户端请求的动作，通常为GET或POST。
+$remote_addr : 客户端的IP地址。
+$remote_port : 客户端的端口。
+$remote_user : 已经经过Auth Basic Module验证的用户名。
+$request_filename : 当前请求的文件路径，由root或alias指令与URI请求生成。
+$scheme : HTTP方法（如http，https）。
+$server_protocol : 请求使用的协议，通常是HTTP/1.0或HTTP/1.1。
+$server_addr : 服务器地址，在完成一次系统调用后可以确定这个值。
+$server_name : 服务器名称。
+$server_port : 请求到达服务器的端口号。
+$request_uri : 包含请求参数的原始URI，不包含主机名，如: ”/foo/bar.php?arg=baz”。
+$uri : 不带请求参数的当前URI，$uri不包含主机名，如”/foo/bar.html”。
+$document_uri : 与$uri相同
+```
+
+## location
+
+### 1. location 路径映射路径
 
 ```text
 =      进行普通字符精确匹配。也就是完全匹配。
@@ -83,33 +109,46 @@ location = /test.htm {
 }
 ```
 
-## 4. 内置变量
+### 2. 路径拼接问题
+
+下面四种情况分别用 http://192.168.1.4/proxy/test.html 进行访问。
 
 ```bash
-$args : 这个变量等于请求行中的参数，同$query_string
-$content_length : 请求头中的Content-length字段。
-$content_type : 请求头中的Content-Type字段。
-$document_root : 当前请求在root指令中指定的值。
-$host : 请求主机头字段，否则为服务器名称。
-$http_user_agent : 客户端agent信息
-$http_cookie : 客户端cookie信息
-$limit_rate : 这个变量可以限制连接速率。
-$request_method : 客户端请求的动作，通常为GET或POST。
-$remote_addr : 客户端的IP地址。
-$remote_port : 客户端的端口。
-$remote_user : 已经经过Auth Basic Module验证的用户名。
-$request_filename : 当前请求的文件路径，由root或alias指令与URI请求生成。
-$scheme : HTTP方法（如http，https）。
-$server_protocol : 请求使用的协议，通常是HTTP/1.0或HTTP/1.1。
-$server_addr : 服务器地址，在完成一次系统调用后可以确定这个值。
-$server_name : 服务器名称。
-$server_port : 请求到达服务器的端口号。
-$request_uri : 包含请求参数的原始URI，不包含主机名，如: ”/foo/bar.php?arg=baz”。
-$uri : 不带请求参数的当前URI，$uri不包含主机名，如”/foo/bar.html”。
-$document_uri : 与$uri相同
+# 1 会被代理到http://127.0.0.1:81/test.html 这个url
+location  /proxy/ {
+    proxy_pass http://127.0.0.1:81/;
+}
+
+
+# 2 会被代理到http://127.0.0.1:81/proxy/test.html 这个url
+location  /proxy/ {
+    proxy_pass http://127.0.0.1:81;
+}
+
+
+# 3 会被代理到http://127.0.0.1:81/ftlynx/test.html 这个url。
+location  /proxy/ {
+    proxy_pass http://127.0.0.1:81/ftlynx/;
+}
+
+
+# 4 会被代理到http://127.0.0.1:81/ftlynxtest.html 这个url
+location  /proxy/ {
+    proxy_pass http://127.0.0.1:81/ftlynx;
+}
 ```
 
-## 5. rewrite
+### 3. 本地文件代理 alias
+
+```bash
+location ^~ /asset/ {
+    alias /Users/Rain/code/Project/src/asset/ ;
+    autoindex on;
+    index index.html index.htm;
+}
+```
+
+## rewrite
 
 > 重写链接
 
