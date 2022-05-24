@@ -57,4 +57,7 @@ const Reg = /^[\d,]*$/;
 
 // 匹配16进制的颜色
 const colorReg = /#[0-9a-fA-F]{6}/;
+
+// 匹配是否是纯英文
+const isEnglish = new RegExp('^[a-zA-Z]+$');
 ```
