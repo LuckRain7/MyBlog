@@ -27,18 +27,6 @@ sidebar: auto
 }
 ```
 
-## JavaScript
-
-###
-
-```js
-actionValidateJobReferrerUserId(rule, value, callback) {
-    if (!value) return callback(); // 选填 不填也可以通过
-    if (/^\d+$/.test(value)) return callback();
-    return callback(new Error('请输入正确的用户ID（数字）'));
-}
-```
-
 ## Element-UI
 
 ### 清除 校验提示信息
@@ -49,7 +37,17 @@ this.$nextTick(() => {
 });
 ```
 
-### 校验正则
+### 手动校验
+
+```js
+actionValidateJobReferrerUserId(rule, value, callback) {
+    if (!value) return callback(); // 选填 不填也可以通过
+    if (/^\d+$/.test(value)) return callback();
+    return callback(new Error('请输入正确的用户ID（数字）'));
+}
+```
+
+## 校验正则
 
 ```JS
 // 数字校验，只能输入 数字 & 逗号
@@ -60,4 +58,16 @@ const colorReg = /#[0-9a-fA-F]{6}/;
 
 // 匹配是否是纯英文
 const isEnglish = new RegExp('^[a-zA-Z]+$');
+
+// 匹配数组内容
+const theArray = new RegExp('pages = [[\\w\\W]+?];');
+
+// 匹配对象内容
+const theObject = new RegExp('customRoutes: {[\\w\\W]+?}');
+```
+
+## 占位空字符(超神奇！)
+
+```text
+<title>‎</title>
 ```
