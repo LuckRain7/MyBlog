@@ -165,7 +165,11 @@ git rebase --abort              # 取消 rebase 状态
 ### 4.9 批量删除分支
 
 ```bash
-git branch |grep 'xxx' |xargs git branch -D # xxx 为匹配字符
+# 批量删除本地分支 xxx 为匹配字符
+git branch |grep 'xxx' |xargs git branch -D
+
+# 批量删除远程分支 xxx 为匹配字符
+git branch -r |grep 'xxx' |xargs |awk '{gsub("origin/","");print $0}' |xargs git push origin -d
 ```
 
 ### 4.10 代码回退到某个 commit
