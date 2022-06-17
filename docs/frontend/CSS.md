@@ -37,6 +37,7 @@ div[title*="rain"]
 
 :nth-last-child(n)    // 倒数第n个子元素
 :nth-last-of-type(n)  // 同类型的倒数第n个子元素
+.text:nth-of-type(n + 2):before // 选择第2个到第n个子元素
 ```
 
 the first rule (A) is more specific than the second one (B). [W3C CSS 2.1 Specification](https://www.w3.org/TR/CSS21/selector.html)
