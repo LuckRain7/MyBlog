@@ -493,6 +493,8 @@ img {
 
 - `border-radius` 顺序： 左上 右上 右下 左下
 
+- `-webkit-font-smoothing: antialiased;` 抗锯齿
+
 ---
 
 参考文章：
