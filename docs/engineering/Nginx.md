@@ -174,3 +174,7 @@ rewrite ^/activity/v2/special-activity/index/(\w+)$ $scheme://www.nowcoder.com/j
 TODO
 
 - 转发与重定向之间的区别
+
+参考文献
+
+- [nginx 中 location 的顺序(优先级)及 rewrite 规则写法](https://www.shuzhiduo.com/A/VGzlDElxzb/)
