@@ -212,6 +212,8 @@ transform: unset;
 
 ### 弹性盒子(Flexbox)
 
+**Flex 属性**
+
 | 作用在 flex 容器上 | 参数 |
 | :----------------: | :--: |
 |   flex-direction   |      |
@@ -221,14 +223,28 @@ transform: unset;
 |    align-items     |      |
 |   align-content    |      |
 
-| 作用在 flex 子项上 | 参数 |
-| :----------------: | :--: |
-|       order        |      |
-|     flex-grow      |      |
-|    flex-shrink     |      |
-|     flex-basi      |      |
-|        flex        |      |
-|     align-self     |      |
+| 作用在 flex 子项上 |                                       参数                                        |
+| :----------------: | :-------------------------------------------------------------------------------: |
+|       order        |                                                                                   |
+|     flex-grow      |  容器剩余空间多余时候的分配规则，默认值是`0`，多余空间不分配。(越大分的空间越多)  |
+|    flex-shrink     | 容器剩余空间不足时候的分配规则，默认值是`1`，空间不足要分配。（越大分的空间越少） |
+|     flex-basi      |                       指定了固定的分配数量，默认值是 `auto`                       |
+|        flex        |                                                                                   |
+|     align-self     |                                                                                   |
+
+**Flex 简写**
+
+`flex` 属性是 `flex-grow`，`flex-shrink` 和 `flex-basis` 这 3 个 CSS 属性的缩写。
+
+|   单值语法    |     等同于     |     备注     |
+| :-----------: | :------------: | :----------: |
+| flex: initial | flex: 0 1 auto | 初始值，常用 |
+|    flex: 0    |  flex: 0 1 0%  |  适用场景少  |
+|  flex: none   | flex: 0 0 auto |     推荐     |
+|    flex: 1    |  flex: 1 1 0%  |     推荐     |
+|  flex: auto   | flex: 1 1 auto |  适用场景少  |
+
+[CSS flex 属性综合应用布局效果实例页面-张鑫旭](https://www.zhangxinxu.com/study/201912/flex-grow-shrink-basis-demo.php)
 
 ### TODO
 

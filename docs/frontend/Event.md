@@ -35,9 +35,9 @@ sidebar: auto
 
 #### 1、【DOM0 事件绑定】
 
-元素.onxxx=function(){}
+element.onxxx=function(){}
 
-元素.onxxx=null;
+element.onxxx=null;
 
 原理：给 DOM 元素对象的某一个私有事件属性赋值函数值，当用户触发这个事件行为，JS 引擎会帮助我们把之前绑定的方法执行的
 
@@ -47,9 +47,9 @@ sidebar: auto
 
 #### 2、【DOM2 事件绑定】
 
-元素.addEventListener([事件类型],[方法],[传播模式])
+element.addEventListener([事件类型],[方法],[传播模式])
 
-元素.removeEventListener([事件类型],[方法],[传播模式])
+element.removeEventListener([事件类型],[方法],[传播模式])
 
 ```js
 ​function anonymous(){
@@ -64,8 +64,11 @@ sidebar: auto
 每次一事件触发，浏览器都会这样处理一下
 
 捕获到当前操作的行为（把操作信息获取到），通过创建 MouseEvent 等类的实例，得到事件对象 EV
+
 通知所有绑定的方法（符合执行条件的）开始执行，并且把 EV 当做实参传递给每个方法，所以在每个方法中得到的事件对象其实是一个
+
 后面再重新触发这个事件行为，会重新获取本次操作的信息，用新的信息替换老的信息，然后继续之前的步骤。
+
 可以同一个元素绑定多个方法
 
 ```js

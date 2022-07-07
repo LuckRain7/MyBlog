@@ -62,6 +62,14 @@ const mutationObserver = new MutationObserver(function(mutations) {
 mutationObserver.observe($body, config);
 ```
 
+### IntersectionObserver
+
+> [MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserver) / [参考文章](https://juejin.cn/post/7110137524269350949)
+
+```JavaScript
+
+```
+
 ---
 
 参考：
