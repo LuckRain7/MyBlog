@@ -229,7 +229,12 @@ git reset HEAD^                 # 回退前前一次 commit
 git reset <commitHash>          # 回退到指定的版本
 
 # 参数
-git reset --hard <commitHash>   # --hard 参数可以让工作区里面的文件也回到以前的状态。
+git reset --hard  <commitHash>  # 参数可以让工作区里面的文件也回到以前的状态。
+git reset --soft  <commitHash>  # 回退后a分支修改的代码被保留并标记为add的状态（git status 是绿色的状态）
+git reset --mixed <commitHash>  # 重置索引，但不重置工作树，更改后的文件标记为未提交（add）的状态。默认操作。
+git reset --hard  <commitHash>  # 重置索引和工作树，并且a分支修改的所有文件和中间的提交，没提交的代码都被丢弃了。
+git reset --merge <commitHash>  # 和--hard类似，只不过如果在执行reset命令之前你有改动一些文件并且未提交，merge会保留你的这些修改，hard则不会。【注：如果你的这些修改add过或commit过，merge和hard都将删除你的提交】
+git reset --keep  <commitHash>  #和--hard类似，执行reset之前改动文件如果是a分支修改了的，会提示你修改了相同的文件，不能合并。如果不是a分支修改的文件，会移除缓存区。git status还是可以看到保持了这些修改。
 ```
 
 ## 8. git reflog
