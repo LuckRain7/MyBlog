@@ -107,7 +107,7 @@ brew install autojump
 # 在 .zshrc 中添加插件
 vim ~/.zshrc #
 
-# 找到 plugins 并添加 autojump插件
+# 找到 plugins 并添加 autojump 插件
 plugins = ( git autojump )
 
 # 重启 zsh
@@ -118,9 +118,37 @@ source ~/.zshrc
 
 > 命令行高亮
 
+```shell
+# 进入插件目录
+cd ~/.oh-my-zsh/custom/plugins/
+
+# 下载插件
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+
+# 找到 plugins 并添加 zsh-syntax-highlighting 插件
+plugins = ( git autojump zsh-syntax-highlighting )
+
+# 重启 zsh
+source ~/.zshrc
+```
+
 **zsh-autosuggestions**
 
 > 命令记忆提示
+
+```shell
+# 进入插件目录
+cd ~/.oh-my-zsh/custom/plugins/
+
+# 下载插件
+git clone https://github.com/zsh-users/zsh-autosuggestions
+
+# 找到 plugins 并添加 zsh-autosuggestions 插件
+plugins = ( git autojump zsh-syntax-highlighting zsh-autosuggestions )
+
+# 重启 zsh
+source ~/.zshrc
+```
 
 ---
 
