@@ -168,6 +168,9 @@ git rebase --abort              # 取消 rebase 状态
 # 批量删除本地分支 xxx 为匹配字符
 git branch |grep 'xxx' |xargs git branch -D
 
+# 批量删除本地非 develop master 分支
+git branch |egrep -v "(^\*|master|develop)" |xargs git branch -D
+
 # 批量删除远程分支 xxx 为匹配字符
 git branch -r |grep 'xxx' |xargs |awk '{gsub("origin/","");print $0}' |xargs git push origin -d
 ```

@@ -627,6 +627,8 @@ sidebar: auto
 - 节流与防抖
 
 - 通过 Performance 监控性能
+ 
+- 火焰图（Flame Graph）
 
 ## Nginx
 
