@@ -97,18 +97,17 @@ console.log(d.other);
 
       // 防抖
       function debounce(fn, time) {
-        let _arguments = arguments;
-        let timeout = null;
-        return function() {
-          if (timeout) {
-            clearTimeout(timeout);
-          }
-          timeout = setTimeout(() => {
-            fn.call(this, _arguments);
-          }, time);
-        };
+          let timeout = null;
+          return function () {
+              let _arguments = arguments;
+              if (timeout) {
+                  clearTimeout(timeout);
+              }
+              timeout = setTimeout(() => {
+                  fn.call(this, ..._arguments);
+              }, time);
+          };
       }
-
       function test() {
         console.log(" 防抖：防止重复点击触发事件");
         console.log(" 节流：指定时间间隔内只会执行一次任务");
