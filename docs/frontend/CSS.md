@@ -287,7 +287,7 @@ transform: unset;
 
 ## 滚动条
 
-### 样式调整
+**样式调整**
 
 ```css
 *::-webkit-scrollbar {
@@ -314,7 +314,7 @@ transform: unset;
 }
 ```
 
-### 隐藏
+**隐藏**
 
 - 通过div遮罩进行隐藏
 
