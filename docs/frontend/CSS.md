@@ -285,7 +285,9 @@ transform: unset;
 }
 ```
 
-## 滚动条样式
+## 滚动条
+
+### 样式调整
 
 ```css
 *::-webkit-scrollbar {
@@ -311,6 +313,42 @@ transform: unset;
   background: rgba(0, 0, 0, 0.1);
 }
 ```
+
+### 隐藏
+
+- 通过div遮罩进行隐藏
+
+> ```CSS
+> #parent{
+>     width: 100%;
+>     height: 100%;
+>     overflow: hidden;
+>     position: relative;
+> }
+> 
+> #child{
+>     position: absolute;
+>     top: 0;
+>     bottom: 0;
+>     left: 0;
+>     right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
+>     overflow-y: scroll;
+> }
+> ```
+
+- 属性兼容 [🔗stackoverflow](https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll)
+
+> This works for me with simple CSS properties:
+> ```css
+> .container {
+>      -ms-overflow-style: none;  /* Internet Explorer 10+ */
+>      scrollbar-width: none;  /* Firefox */
+>  }
+>  .container::-webkit-scrollbar { 
+>      display: none;  /* Safari and Chrome */
+>  }
+> ```
+>  For older versions of Firefox, use: overflow: -moz-scrollbars-none;
 
 ## 毛玻璃效果
 
