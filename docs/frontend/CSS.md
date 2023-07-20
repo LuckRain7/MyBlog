@@ -549,6 +549,8 @@ img {
 
 - `-webkit-font-smoothing: antialiased;` 抗锯齿
 
+- CSS 实现不占大小的边框 `box-shadow: 0 0 0 1px #00b88f inset;`
+
 ---
 
 参考文章：
