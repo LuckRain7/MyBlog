@@ -551,6 +551,8 @@ img {
 
 - CSS 实现不占大小的边框 `box-shadow: 0 0 0 1px #00b88f inset;`
 
+- flex 布局子元素宽度超出父元素问题解决：最外层+内层 `min-width: 0` [🔗](https://juejin.cn/post/6974356682574921765)
+
 ---
 
 参考文章：
