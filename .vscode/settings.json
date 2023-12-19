@@ -1,5 +1,4 @@
 {
-    "cSpell.words": [
-        "rgba"
-    ]
+  "prettier.tabWidth": 2,
+  "cSpell.words": ["rgba"]
 }

@@ -119,18 +119,15 @@ location  /proxy/ {
     proxy_pass http://127.0.0.1:81/;
 }
 
-
 # 2 会被代理到http://127.0.0.1:81/proxy/test.html 这个url
 location  /proxy/ {
     proxy_pass http://127.0.0.1:81;
 }
 
-
 # 3 会被代理到http://127.0.0.1:81/ftlynx/test.html 这个url。
 location  /proxy/ {
     proxy_pass http://127.0.0.1:81/ftlynx/;
 }
-
 
 # 4 会被代理到http://127.0.0.1:81/ftlynxtest.html 这个url
 location  /proxy/ {
@@ -152,14 +149,14 @@ location ^~ /asset/ {
 
 > 重写链接
 
-`rewrite regex replacement [flag];`
+ `rewrite regex replacement [flag];`
 
 flag
 
-- last：停止处理当前的 ngx_http_rewrite_module 的指令集，并开始搜索与更改后的 URI 相匹配的 location;
-- break：停止处理当前的 ngx_http_rewrite_module 指令集，就像上面说的 break 指令一样;
-- redirect：返回 302 临时重定向。
-- permanent：返回 301 永久重定向。
+* last：停止处理当前的 ngx_http_rewrite_module 的指令集，并开始搜索与更改后的 URI 相匹配的 location; 
+* break：停止处理当前的 ngx_http_rewrite_module 指令集，就像上面说的 break 指令一样; 
+* redirect：返回 302 临时重定向。
+* permanent：返回 301 永久重定向。
 
 **example:**
 
@@ -173,8 +170,8 @@ rewrite ^/activity/v2/special-activity/index/(\w+)$ $scheme://www.nowcoder.com/j
 
 TODO
 
-- 转发与重定向之间的区别
+* 转发与重定向之间的区别
 
 参考文献
 
-- [nginx 中 location 的顺序(优先级)及 rewrite 规则写法](https://www.shuzhiduo.com/A/VGzlDElxzb/)
+* [nginx 中 location 的顺序(优先级)及 rewrite 规则写法](https://www.shuzhiduo.com/A/VGzlDElxzb/)

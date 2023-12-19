@@ -37,6 +37,7 @@ module.exports = {
       },
       { text: "前端工程化", link: "/engineering/engineering/" },
       { text: "Node.js", link: "/server/Node/" },
+      { text: "MONEY", link: "/ms/" },
       // {
       //   text: "面试",
       //   items: [

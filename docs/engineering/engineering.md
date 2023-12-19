@@ -56,9 +56,9 @@ sidebar: auto
 
   - 高阶函数
 
-  - [防抖和节流](/frontend/JavaScript.html#一、深拷贝和浅拷贝)
+  - [防抖和节流](/frontend/JavaScript.html#_1-2-防抖和节流)
 
-  - [深拷贝和浅拷贝](/frontend/JavaScript.html#一、深拷贝和浅拷贝)
+  - [深拷贝和浅拷贝](/frontend/JavaScript.html##_1-1-深拷贝和浅拷贝)
 
 - 异步编程
 
@@ -428,7 +428,7 @@ sidebar: auto
 
     - 服务器部署和运维
 
-    - 手写自己的 Eggjs 框架， 包括 egg-core、 egg-init、 egg- cluster
+    - 手写自己的 Eggjs 框架， 包括 egg-core、 egg-init、 egg-cluster
 
     - 自定义插件和框架,手写 egg- sock-et.io 插件
 
@@ -632,7 +632,7 @@ sidebar: auto
 
 ## Nginx
 
-- [nginx 的安装和使用](/engineering/nginx.html#_1-安装)
+- [nginx 的安装和使用](/engineering/nginx.html#安装)
 
 - 模块和基本配置
 
