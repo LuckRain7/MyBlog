@@ -15,8 +15,12 @@ sidebar: auto
 - [ 鼠标滚轮平滑滚动 ] Mos
 - [ 终端工具 ] iTerm + zsh | Alacritty + Fish + Tmux
 - [ PDF 编辑器 ] PDF Expert
-- [ Web 浏览器 ] Chrome | Firefox | Edge
-- [ 抓包工具 ] Charles
+- Chrome
+- Firefox
+- Edge
+- Arc Browser - A browser that doesn’t just meet your needs — it anticipates them. [Link](https://arc.net/)
+- Charles 抓包工具
+- Reqable - 新一代API调试 + API测试一站化解决方案. [Link](https://reqable.com)
 - [ 代码编辑器 ] Visual Studio Code | Sublime Text
 - [ 截图工具 ] Xnip
 - [ 风扇控制 ] Macs Fan Control
