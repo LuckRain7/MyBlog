@@ -112,3 +112,47 @@ console.log(result); // 输出：0
 ```
 
 在上述示例中，通过提供初始值0，即使数组为空， `reduce` 方法也能正常执行，并返回初始值作为结果。这是因为在空数组的情况下， `reduce` 方法直接返回初始值，而不会执行回调函数。
+
+## TypeScript
+
+### 1. 在TS中普通枚举和常量枚举有什么区别?
+
+1. 普通枚举 enum A {...} 和常量枚举 const enum A {...} 之间的区别主要在于 TS 的编译结果上有所差别
+2. 普通枚举 enum A {...}, 会将其编译为一个 JS 对象, 对象内就是枚举成员和值的一个相互映射
+3. 常量枚举 const enum A {...}, 编译后不会生成任何代码, 会删除 TS 部分内容, 对于使用到的成员只会进行值的替换
+4. 由此可见, 使用 常量枚举 会有更好的性能, 避免额外的性能开销; 那么大部分情况下我们更推荐使用常量枚举
+
+那么问题来了我们什么时候使用普通枚举呢? 
+
+```js
+// ts 代码
+enum TabType {
+    Job = 3, Company = 4
+}
+const jobType = TabType.Job
+const companyType = TabType.Company
+
+// 编译后的 js 代码
+"use strict";
+var TabType;
+(function(TabType) {
+    TabType[TabType["Job"] = 3] = "Job";
+    TabType[TabType["Company"] = 4] = "Company";
+})(TabType || (TabType = {}));
+const jobType = TabType.Job;
+const companyType = TabType.Company;
+```
+
+```js
+// ts 代码
+const enum TabType {
+    Job = 3, Company = 4
+}
+const jobType = TabType.Job
+const companyType = TabType.Company
+
+// 编译后的 js 代码
+"use strict";
+const jobType = 3 /* TabType.Job */ ;
+const companyType = 4 /* TabType.Company */ ;
+```
