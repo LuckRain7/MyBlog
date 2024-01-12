@@ -106,6 +106,8 @@ sidebar: auto
 
   - 引用计数、标记清除、标记整理和增量标记
 
+- [RegExp 正则表达式](/frontend/RegExp.html)
+
 ## Vue
 
 - Vue 基础
