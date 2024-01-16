@@ -28,7 +28,7 @@ GBKtoUTF8 (编码转换插件)
 
 Git History (git 历史代码对比)
 
-GitLens — Git supercharged (丰富的git日志插件 )
+GitLens — Git supercharged (丰富的 git 日志插件 )
 
 HTML CSS Support (HTML CSS 智能提示)
 
@@ -68,15 +68,17 @@ Project Manager (项目管理切换插件)
 
 console-helper（日志小助手）
 
+indent-rainbow（代码对齐缩进提示）
+
 ## 2.  主题美化插件
 
 1. Bluloco Dark (非常非常不错的主题)
 
 ## 3. 字体推荐
 
-1. 【Monaco】  [https://github.com/todylu/monaco.ttf](https://github.com/todylu/monaco.ttf)
+1. Monaco  [https://github.com/todylu/monaco.ttf](https://github.com/todylu/monaco.ttf)
 
-2. 【Fira Code】  [https://github.com/tonsky/FiraCode](https://github.com/tonsky/FiraCode )
+2. Fira Code  [https://github.com/tonsky/FiraCode](https://github.com/tonsky/FiraCode )
 
 ## 4.  成为开发者
 
@@ -116,6 +118,5 @@ switch (languageCode) {
     case 'vue':
         this.setCommentFormat("//", "/*", "*/");
         break;
-
 }
 ```
