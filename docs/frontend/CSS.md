@@ -14,50 +14,40 @@ ul>li>p // 子选择器
 h1+p // 相邻兄弟选择器
 h1~p // 一般兄弟选择器
 
-div[title]          // 具有title属性的div标签
-div [title]         // 具有 title 属性的 div 的子元素
-div[title="rain"]
-div[title~="rain"]  // 也可以加入一些正则
-div[title$="rain"]
-div[title^="rain"]
-div[title|="rain"]
-div[title*="rain"]
-
-// 伪类选择器
+div[title] // 具有title属性的div标签
+div [title] // 具有 title 属性的 div 的子元素
+div[title="rain"] div[title~="rain"] // 也可以加入一些正则
+div[title$="rain"] div[title^="rain"] div[title|="rain"] div[title*="rain"] // 伪类选择器
 :nth-child(n) // 孩子选择器
-:first-child  // 第一个子元素
-:last-child   // 最后一个子元素
+:first-child // 第一个子元素
+:last-child // 最后一个子元素
 
 :nth-of-type(n) // 同类型的第n个元素
-:first-of-type  // 同类型的第一个子元素
-:last-of-type   // 同类型的最后一个子元素
+:first-of-type // 同类型的第一个子元素
+:last-of-type // 同类型的最后一个子元素
 
-:only-child   // 父元素唯一的子元素
-:empty        // 没有子元素
+:only-child // 父元素唯一的子元素
+:empty // 没有子元素
 
-:nth-last-child(n)    // 倒数第n个子元素
-:nth-last-of-type(n)  // 同类型的倒数第n个子元素
+:nth-last-child(n) // 倒数第n个子元素
+:nth-last-of-type(n) // 同类型的倒数第n个子元素
 .text:nth-of-type(n + 2):before // 选择第2个到第n个子元素
 
 /* flex justify-content: space-evenly; 布局最后一个左对齐 */
 .box-item:last-child:nth-child(odd) {
-  margin-right: calc((100% - 328px) / 3 + 164px);
+    margin-right: calc((100% - 328px) / 3 + 164px);
 }
 ```
 
 the first rule (A) is more specific than the second one (B). [W3C CSS 2.1 Specification](https://www.w3.org/TR/CSS21/selector.html)
 
 ```css
-A:
-a#a-02 {
-  background-image: url(n.gif);
+A: a#a-02 {
+    background-image: url(n.gif);
 }
 
-and
-
-B:
-a[id="a-02"] {
-  background-image: url(n.png);
+and B: a[id="a-02"] {
+    background-image: url(n.png);
 }
 ```
 
@@ -65,18 +55,19 @@ a[id="a-02"] {
 
 ```css
 [title] {
-  position: relative;
-  display: block;
+    position: relative;
+    display: block;
 }
+
 [title]:hover:after {
-  content: attr(title);
-  color: hotpink;
-  background-color: slateblue;
-  display: block;
-  padding: 0.225em 0.35em;
-  position: absolute;
-  right: -5px;
-  bottom: -5px;
+    content: attr(title);
+    color: hotpink;
+    background-color: slateblue;
+    display: block;
+    padding: 0.225em 0.35em;
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
 }
 ```
 
@@ -101,7 +92,7 @@ a[id="a-02"] {
 
 常用：
 
-`box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);`
+ `box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);`
 
 ### background
 
@@ -210,8 +201,8 @@ transform: unset;
 
 参考资料：
 
-- [transform - CSS（层叠样式表） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform)
-- [兼容性](https://caniuse.com/?search=transform)
+* [transform - CSS（层叠样式表） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform)
+* [兼容性](https://caniuse.com/?search=transform)
 
 ## 4. css 布局
 
@@ -239,7 +230,7 @@ transform: unset;
 
 **Flex 简写**
 
-`flex` 属性是 `flex-grow`，`flex-shrink` 和 `flex-basis` 这 3 个 CSS 属性的缩写。
+`flex` 属性是 `flex-grow` ， `flex-shrink` 和 `flex-basis` 这 3 个 CSS 属性的缩写。
 
 |   单值语法    |     等同于     |     备注     |
 | :-----------: | :------------: | :----------: |
@@ -253,13 +244,13 @@ transform: unset;
 
 ### TODO
 
-- 正常布局流(Normal flow)
-- display 属性(The display property)
-- Grid 布局(Grid)
-- 浮动布局(Floats)
-- 定位(Positioning)
-- 表格布局(Table layout)
-- 多列布局(Multiple-column layout)
+* 正常布局流(Normal flow)
+* display 属性(The display property)
+* Grid 布局(Grid)
+* 浮动布局(Floats)
+* 定位(Positioning)
+* 表格布局(Table layout)
+* 多列布局(Multiple-column layout)
 
 ## 截断文本
 
@@ -267,26 +258,26 @@ transform: unset;
 
 ```css
 .text-container h2 {
-  font-family: "Lora", serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: #1f313d;
-  /* The styles here are meant to truncate titles that are too long. The first line ensures long text doesn't overflow its container. The second one ensures we title gets truncated */
-  overflow: hidden;
-  white-space: nowrap;
-  /* Then, we show the three dots if the title is too long to be readable */
-  text-overflow: ellipsis;
+    font-family: "Lora", serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #1f313d;
+    /* The styles here are meant to truncate titles that are too long. The first line ensures long text doesn't overflow its container. The second one ensures we title gets truncated */
+    overflow: hidden;
+    white-space: nowrap;
+    /* Then, we show the three dots if the title is too long to be readable */
+    text-overflow: ellipsis;
 }
 
 .text-container p {
-  line-height: 1.5rem;
-  /* Here's where the line-clamp magic begins. First, we need to hide the content that overflows our desired number of text lines to show */
-  overflow: hidden;
-  /* Then, we use the old implementation of Flexbox on the paragraph and set its direction to be row */
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  /* Finally, we set the desired number of lines we want to show */
-  -webkit-line-clamp: 3;
+    line-height: 1.5rem;
+    /* Here's where the line-clamp magic begins. First, we need to hide the content that overflows our desired number of text lines to show */
+    overflow: hidden;
+    /* Then, we use the old implementation of Flexbox on the paragraph and set its direction to be row */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* Finally, we set the desired number of lines we want to show */
+    -webkit-line-clamp: 3;
 }
 ```
 
@@ -296,83 +287,90 @@ transform: unset;
 
 ```css
 *::-webkit-scrollbar {
-  /* 滚动条整体样式 */
-  width: 8px;
-  /* 高宽分别对应横竖滚动条的尺寸 */
-  height: 4px;
-  scrollbar-arrow-color: red;
+    /* 滚动条整体样式 */
+    width: 8px;
+    /* 高宽分别对应横竖滚动条的尺寸 */
+    height: 4px;
+    scrollbar-arrow-color: red;
 }
 
 *::-webkit-scrollbar-thumb {
-  /* 滚动条里面小方块 */
-  border-radius: 5px;
-  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 0, 0.2);
-  scrollbar-arrow-color: red;
+    /* 滚动条里面小方块 */
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+    scrollbar-arrow-color: red;
 }
 
 *::-webkit-scrollbar-track {
-  /* 滚动条里面轨道 */
-  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: 0;
-  background: rgba(0, 0, 0, 0.1);
+    /* 滚动条里面轨道 */
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.1);
 }
 ```
 
 **隐藏**
 
-- 通过div遮罩进行隐藏
+* 通过div遮罩进行隐藏
 
-> ```CSS
-> #parent{
->     width: 100%;
->     height: 100%;
->     overflow: hidden;
->     position: relative;
-> }
-> 
-> #child{
->     position: absolute;
->     top: 0;
->     bottom: 0;
->     left: 0;
->     right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
->     overflow-y: scroll;
-> }
-> ```
+```CSS
+#parent {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
 
-- 属性兼容 [🔗stackoverflow](https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll)
+#child {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+    /* Increase/Decrease this value for cross-browser compatibility */
+    overflow-y: scroll;
+}
+```
 
-> This works for me with simple CSS properties:
-> ```css
-> .container {
->      -ms-overflow-style: none;  /* Internet Explorer 10+ */
->      scrollbar-width: none;  /* Firefox */
->  }
->  .container::-webkit-scrollbar { 
->      display: none;  /* Safari and Chrome */
->  }
-> ```
->  For older versions of Firefox, use: overflow: -moz-scrollbars-none;
+* 属性兼容 [🔗stackoverflow](https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll)
+
+This works for me with simple CSS properties:
+
+```css
+.container {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+```
+
+ For older versions of Firefox, use: overflow: -moz-scrollbars-none; 
 
 ## 毛玻璃效果
 
 ```css
 &::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 47px;
-  z-index: -2;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 2px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 47px;
+    z-index: -2;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
 
-  /* 实际起作用代码 */
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+    /* 实际起作用代码 */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 ```
 
@@ -388,23 +386,23 @@ transform: unset;
 
 ```css
 input::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: red;
+    /* Chrome/Opera/Safari */
+    color: red;
 }
 
 input::-moz-placeholder {
-  /* Firefox 19+ */
-  color: red;
+    /* Firefox 19+ */
+    color: red;
 }
 
 input:-ms-input-placeholder {
-  /* IE 10+ */
-  color: red;
+    /* IE 10+ */
+    color: red;
 }
 
 input:-moz-placeholder {
-  /* Firefox 18- */
-  color: red;
+    /* Firefox 18- */
+    color: red;
 }
 ```
 
@@ -412,7 +410,7 @@ input:-moz-placeholder {
 
 ```css
 input:focus {
-  background-color: red;
+    background-color: red;
 }
 ```
 
@@ -424,7 +422,7 @@ input:focus {
 
 ```css
 .caret-color {
-  caret-color: #ffd476;
+    caret-color: #ffd476;
 }
 ```
 
@@ -434,63 +432,54 @@ input:focus {
 
 ```html
 <div class="box">
-  <div class="img-container">
-    <img
-      src="https://i0.hippopx.com/photos/179/171/625/sparkler-holding-hands-firework-preview.jpg"
-      alt=""
-    />
-  </div>
+    <div class="img-container">
+        <img src="https://i0.hippopx.com/photos/179/171/625/sparkler-holding-hands-firework-preview.jpg" alt="" />
+    </div>
 </div>
 
 <div class="box">
-  <div class="img-container">
-    <img
-      src="https://i0.hippopx.com/photos/179/171/625/sparkler-holding-hands-firework-preview.jpg"
-      alt=""
-    />
-  </div>
+    <div class="img-container">
+        <img src="https://i0.hippopx.com/photos/179/171/625/sparkler-holding-hands-firework-preview.jpg" alt="" />
+    </div>
 </div>
 
 <div class="box-vw">
-  <div class="img-container">
-    <img
-      src="https://i0.hippopx.com/photos/179/171/625/sparkler-holding-hands-firework-preview.jpg"
-      alt=""
-    />
-  </div>
+    <div class="img-container">
+        <img src="https://i0.hippopx.com/photos/179/171/625/sparkler-holding-hands-firework-preview.jpg" alt="" />
+    </div>
 </div>
 ```
 
 ```css
 .box,
 .box-vw {
-  background-color: #f5f6f9;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 15px;
+    background-color: #f5f6f9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
 }
 
 .box:nth-of-type(2) {
-  width: 260px;
+    width: 260px;
 }
 
 /* vw方案 */
 .box-vw .img-container {
-  width: 100vw;
-  height: 66.620879vw;
-  padding-bottom: inherit;
+    width: 100vw;
+    height: 66.620879vw;
+    padding-bottom: inherit;
 }
 
 /* padding方案 */
 .img-container {
-  width: 100%;
-  height: 0;
-  /* 图片的高宽比 */
-  padding-bottom: 66.620879%;
+    width: 100%;
+    height: 0;
+    /* 图片的高宽比 */
+    padding-bottom: 66.620879%;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 ```
 
@@ -499,24 +488,24 @@ img {
 ```html
 <!-- banner 2560*400  -->
 <div class="banner-wrap">
-  <img :src="activityInfo.pcHeadImg" alt="" />
+    <img :src="activityInfo.pcHeadImg" alt="" />
 </div>
 ```
 
 ```css
 // 头图
 .banner-wrap {
-  position: absolute;
-  min-width: 1200px;
-  height: 400px;
-  margin: 0 auto;
-  overflow: hidden;
+    position: absolute;
+    min-width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 ```
 
@@ -525,45 +514,87 @@ img {
 ```css
 /* 正三角 */
 .up-triangle {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 25px 40px 25px;
-  border-color: transparent transparent rgb(245, 129, 127) transparent;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 40px 25px;
+    border-color: transparent transparent rgb(245, 129, 127) transparent;
 }
 
 /* 倒三角 */
 .down-triangle {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 40px 25px 0 25px;
-  border-color: rgb(245, 129, 127) transparent transparent transparent;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 25px 0 25px;
+    border-color: rgb(245, 129, 127) transparent transparent transparent;
 }
 ```
 
+## 问题汇总
+
+### 1、图片加载时高度突增
+
+如果您只知道图片的比例（宽高比），而不知道具体的尺寸，您仍然可以通过一些技巧来处理图片加载时高度突然增加的问题。
+
+一种常见的方法是使用 CSS 中的 `padding` 和 `::before` 伪元素来创建一个占位元素，使其占据与图片相同比例的空间。这样在图片加载之前，页面布局就已经考虑了图片的尺寸，避免了高度突然增加的问题。
+
+以下是一个示例：
+
+```html
+<div class="image-container">
+    <div class="image-ratio"></div>
+    <img src="your-image.jpg" alt="Your Image">
+</div>
+```
+
+```css
+.image-container {
+    position: relative;
+}
+
+.image-ratio {
+    padding-top: 75%;
+    /* 设置占位元素的上内边距，这里假设图片比例为4:3，即高度为宽度的75% */
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 控制图片如何适应容器 */
+}
+```
+
+在这个示例中， `.image-ratio` 类被用作占位元素，通过设置其上内边距为图片比例对应的值，来占据与图片相同比例的空间。图片则使用绝对定位，填充整个父容器，并通过 `object-fit: cover;` 来控制图片的展示方式。
+
+这种方法可以帮助您在只知道图片比例而不知道具体尺寸的情况下，避免图片加载时高度突然增加的问题。您可以根据实际情况调整比例和样式来满足您的需求。
+
 ## Tips
 
-- [CSS 命令 `font-variant-east-asian: traditional;`，可以让网站字体从简体变成繁体。](https://www.zhangxinxu.com/wordpress/2021/01/css-simplified-traditional-chinese/)
+* [CSS 命令 `font-variant-east-asian: traditional;`，可以让网站字体从简体变成繁体。](https://www.zhangxinxu.com/wordpress/2021/01/css-simplified-traditional-chinese/)
 
-- 表格边框合并 `border-collapse: collapse;`
+* 表格边框合并 `border-collapse: collapse;`
 
-- 平滑滚动 `scroll-behavior: smooth;`
+* 平滑滚动 `scroll-behavior: smooth;`
 
-- `border-radius` 顺序： 左上 右上 右下 左下
+* `border-radius` 顺序： 左上 右上 右下 左下
 
-- `-webkit-font-smoothing: antialiased;` 抗锯齿
+* `-webkit-font-smoothing: antialiased;` 抗锯齿
 
-- CSS 实现不占大小的边框 `box-shadow: 0 0 0 1px #00b88f inset;`
+* CSS 实现不占大小的边框 `box-shadow: 0 0 0 1px #00b88f inset;`
 
-- flex 布局子元素宽度超出父元素问题解决：最外层+内层 `min-width: 0` [🔗](https://juejin.cn/post/6974356682574921765)
+* flex 布局子元素宽度超出父元素问题解决：最外层+内层 `min-width: 0` [🔗](https://juejin.cn/post/6974356682574921765)
 
-- innerHTML 的使用可能会触发回流（reflow）和重绘（repaint）。 / innerText 的使用通常不会触发回流（reflow）和重绘（repaint）。
+* innerHTML 的使用可能会触发回流（reflow）和重绘（repaint）。 / innerText 的使用通常不会触发回流（reflow）和重绘（repaint）。
 
-- 实现 css 梯形 `clip-path: polygon(100% 0, 88% 100%, 0 100%, 0 0);`[🔗](https://juejin.cn/post/7235539402867720229)
+* 实现 css 梯形 `clip-path: polygon(100% 0, 88% 100%, 0 100%, 0 0);`[🔗](https://juejin.cn/post/7235539402867720229)
 
 ---
 
 参考文章：
 
-- [要提升前端布局能力，这些 CSS 属性需要学习下！](https://segmentfault.com/a/1190000038154167?_ea=79107425)
+* [要提升前端布局能力，这些 CSS 属性需要学习下！](https://segmentfault.com/a/1190000038154167?_ea=79107425)
