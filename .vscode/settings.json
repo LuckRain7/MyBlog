@@ -1,4 +1,9 @@
 {
-  "prettier.tabWidth": 2,
-  "cSpell.words": ["rgba"]
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 200,
+    "cSpell.words": [
+      "rgba",
+      "Shen",
+      "shichen"
+    ]
 }
