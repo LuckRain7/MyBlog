@@ -1,15 +1,38 @@
 <template>
     <div class="xlr-page">
         <div style="height: 50px">
-            <label for="toggle2" class="toggle2" @click="go">
+            <label class="toggle2" @click="go">
                 <input type="checkbox" id="toggle2" class="toggle2-input" />
-                <span class="toggle2-button">CLICK TO GO</span>
+                <span class="toggle2-button">根据年月日起卦</span>
+            </label>
+        </div>
+        <div style="height: 50px; display: flex; align-items: center; margin-top: 12px">
+            <div style="width: 300px; margin-right: 40px">
+                <input type="text" class="my-input" v-model="numText" />
+            </div>
+            <label class="toggle2" @click="goByNumText" style="flex-shrink: 0">
+                <input type="checkbox" id="toggle2" class="toggle2-input" />
+                <span class="toggle2-button">根据数值起卦</span>
             </label>
         </div>
 
+        <!-- 根据年月日起卦 -->
         <div v-if="lunarDate">
             <p>今天农历日期是：{{ lunarDate }}</p>
             <pre>{{ lunarTime }}</pre>
+            <p v-if="gua.length">卦象：{{ gua.join(" ") }}</p>
+            <div v-if="aiAskContent">
+                <div style="display: flex">
+                    <div>
+                        <span>ai文案：{{ aiAskContent }}</span> <span class="copy" @click="copyTextToClipboard(aiAskContent)">复制</span>
+                    </div>
+                </div>
+                <p>实例：目前你是一位精通小六壬的大师，我算出的结果分别为“小吉 空亡 小吉”。我问的问题是"关于是否可以找回失物耳机"，请问您怎么解读</p>
+            </div>
+        </div>
+
+        <!-- 根据数 -->
+        <div v-if="numText.length && aiAskContent">
             <p v-if="gua.length">卦象：{{ gua.join(" ") }}</p>
             <div v-if="aiAskContent">
                 <div style="display: flex">
@@ -35,11 +58,23 @@ export default {
             Liu_Shen: ["大安", "留连", "速喜", "赤口", "小吉", "空亡"],
             gua: [],
             aiAskContent: "",
+            numText: "",
         };
     },
 
     methods: {
+        goByNumText() {
+            this.lunarDate = "";
+            const num = this.numText
+                .split(",")
+                .filter((e) => e)
+                .map((item) => parseInt(item) - 1);
+            this.getCycleValues(num);
+
+            this.aiAskContent = `目前你是一位精通小六壬的大师，我算出的结果分别为“${this.gua.join(" ")}”。我问的问题是关于是"xxxxxx"，请问您怎么解读`;
+        },
         go() {
+            this.numText = "";
             // 计算农历日期
             this.calculateLunarDate();
             this.getCurrentShiChen();
@@ -191,5 +226,24 @@ export default {
 
 .toggle2-input:checked + .toggle2-button::before {
     background: white;
+}
+
+.my-input {
+    display: block;
+    width: 100%;
+    height: 28px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 </style>
