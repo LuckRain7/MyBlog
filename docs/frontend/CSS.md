@@ -591,7 +591,11 @@ img {
 
 * innerHTML 的使用可能会触发回流（reflow）和重绘（repaint）。 / innerText 的使用通常不会触发回流（reflow）和重绘（repaint）。
 
-* 实现 css 梯形 `clip-path: polygon(100% 0, 88% 100%, 0 100%, 0 0);`[🔗](https://juejin.cn/post/7235539402867720229)
+* 实现 css 梯形 `clip-path: polygon(100% 0, 88% 100%, 0 100%, 0 0);`
+[🔗](https://juejin.cn/post/7235539402867720229)
+
+* 实现背景渐变透明： `background: linear-gradient(to bottom, transparent, #ffffff);`
+
 
 ---
 
