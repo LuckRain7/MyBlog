@@ -924,13 +924,17 @@ sidebar: auto
 
   - [bash 简介和快速入门](/server/Bash.html)
 
+  - pnpm
+
   - node 开发简单 CLI 工具
 
 - 规范先行
 
   - 代码风格
 
-    - Eslint
+    - [ESLint](/engineering/ESLint.html)
+
+      - [ESLint 插件](/engineering/ESLintPlugin.html)
 
     - [prettier 代码格式化](/share/config.html#prettier)
 
