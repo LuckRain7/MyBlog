@@ -58,7 +58,7 @@ bash
 
 切换到上面新建的目录，执行“yo eslint:plugin”命令会进入交互界面，询问作者、插件名字等，输入如图所示的内容即可。
 
-![image.png](/ESLintPlugin.assets/f3a2a751e1c844b9a76f8a7b63e4dc4c~tplv-73owjymdk6-watermark.png)
+![image.png](/ESLintPlugin.assets/f3a2a751e1c844b9a76f8a7b63e4dc4c~tplv-73owjymdk6-watermark.png.webp)
 
 稍等片刻即可完成自动初始化，初始化成功后的目录结构如下所示。其中，lib/rules 目录存放自定义规则，tests/lib/rules 目录存放规则对应的单元测试代码。
 
@@ -90,7 +90,7 @@ typeof null === "object";
 
 下面写一个新规则，当发现“typeof \* === 'object'”时给出报错提示。首先使用“yo eslint:rule”命令新建一个规则，在询问界面中输入如图所示的内容。
 
-![image.png](/ESLintPlugin.assets/3a8c2a7243a844f2a6334dbf02303ad7~tplv-73owjymdk6-watermark.png)
+![image.png](/ESLintPlugin.assets/3a8c2a7243a844f2a6334dbf02303ad7~tplv-73owjymdk6-watermark.png.webp)
 
 完成上述操作后，会生成两个文件，分别是 lib/rules/type-typeof-limit.js 和 tests/lib/
 rules/type-typeof-limit.js。打开前一个文件，其内容如下：
@@ -259,7 +259,7 @@ ruleTester.run("type-typeof-limit", rule, {
 
 写好单元测试后，执行“npm test”命令即可运行测试，如果看到如图所示的输出，则表示单元测试通过了。
 
-![image.png](/ESLintPlugin.assets/fbacc27f2e47451291659241c4469a7d~tplv-73owjymdk6-watermark.png)
+![image.png](/ESLintPlugin.assets/fbacc27f2e47451291659241c4469a7d~tplv-73owjymdk6-watermark.png.webp)
 
 下面在真实实验环境下新建插件，由于我们的插件还没有发布，因此需要通过 link 的方式使用。
 
@@ -295,7 +295,7 @@ typeof a === "object";
 
 如果能够看到如图所示的红色波浪线，当将鼠标指针悬停到波浪线上时，显示如图所示的错误信息，则表示成功了。
 
-![image.png](/ESLintPlugin.assets/ff57d8189d294f67917d720588d06625~tplv-73owjymdk6-watermark.png)
+![image.png](/ESLintPlugin.assets/ff57d8189d294f67917d720588d06625~tplv-73owjymdk6-watermark.png.webp)
 
 ## type-instanceof-limit
 
