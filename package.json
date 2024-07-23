@@ -11,7 +11,8 @@
         "dev": "npm run docs:dev",
         "git": "git push gitee master&& git push github master",
         "deploy": "bash deploy.sh",
-        "up": "node lib/tinyImage/index.js && bash upload.sh"
+        "tiny": "node lib/tinyImage/index.js",
+        "up": "yarn tiny && bash upload.sh"
     },
     "repository": {
         "type": "git",
