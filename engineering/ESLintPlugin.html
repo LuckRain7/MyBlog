@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ESLint Plugin | 震雨 luckrain7</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="震雨LuckRain7的博客,Webgis,arcgis,openlayer,css,javascript">
+    
+    <link rel="preload" href="/assets/css/0.styles.6a42bced.css" as="style"><link rel="preload" href="/assets/js/app.29b89f90.js" as="script"><link rel="preload" href="/assets/js/2.b7b0a406.js" as="script"><link rel="preload" href="/assets/js/1.ad1875b4.js" as="script"><link rel="preload" href="/assets/js/55.4f491c4a.js" as="script"><link rel="prefetch" href="/assets/js/10.fd4968f1.js"><link rel="prefetch" href="/assets/js/100.9d8d7472.js"><link rel="prefetch" href="/assets/js/101.15fce730.js"><link rel="prefetch" href="/assets/js/102.5105d0cc.js"><link rel="prefetch" href="/assets/js/103.744b00db.js"><link rel="prefetch" href="/assets/js/104.f2dc5856.js"><link rel="prefetch" href="/assets/js/105.9dc383ea.js"><link rel="prefetch" href="/assets/js/106.407d8a60.js"><link rel="prefetch" href="/assets/js/107.1e669cff.js"><link rel="prefetch" href="/assets/js/108.f03d66e6.js"><link rel="prefetch" href="/assets/js/109.a536468f.js"><link rel="prefetch" href="/assets/js/11.885902e8.js"><link rel="prefetch" href="/assets/js/110.fa0e92de.js"><link rel="prefetch" href="/assets/js/111.1adf67c8.js"><link rel="prefetch" href="/assets/js/112.1b15871c.js"><link rel="prefetch" href="/assets/js/113.94e3eb0c.js"><link rel="prefetch" href="/assets/js/114.fb57e1a2.js"><link rel="prefetch" href="/assets/js/115.a7ef1353.js"><link rel="prefetch" href="/assets/js/116.7a045c7c.js"><link rel="prefetch" href="/assets/js/117.75b540e5.js"><link rel="prefetch" href="/assets/js/118.1334dc52.js"><link rel="prefetch" href="/assets/js/119.296b78b3.js"><link rel="prefetch" href="/assets/js/12.b44d9e98.js"><link rel="prefetch" href="/assets/js/120.b25585c1.js"><link rel="prefetch" href="/assets/js/121.c6c5443e.js"><link rel="prefetch" href="/assets/js/122.bafc83e6.js"><link rel="prefetch" href="/assets/js/13.55510b8a.js"><link rel="prefetch" href="/assets/js/14.cad72b72.js"><link rel="prefetch" href="/assets/js/15.e35a32ea.js"><link rel="prefetch" href="/assets/js/16.0ea6d794.js"><link rel="prefetch" href="/assets/js/17.a8a90b0c.js"><link rel="prefetch" href="/assets/js/18.22486299.js"><link rel="prefetch" href="/assets/js/19.b2d55161.js"><link rel="prefetch" href="/assets/js/20.53a2bd3f.js"><link rel="prefetch" href="/assets/js/21.9d8052c3.js"><link rel="prefetch" href="/assets/js/22.69e4f84a.js"><link rel="prefetch" href="/assets/js/23.1704c99a.js"><link rel="prefetch" href="/assets/js/24.457afb93.js"><link rel="prefetch" href="/assets/js/25.2ce665a4.js"><link rel="prefetch" href="/assets/js/26.04220f6f.js"><link rel="prefetch" href="/assets/js/27.6cd12636.js"><link rel="prefetch" href="/assets/js/28.2e3b73ba.js"><link rel="prefetch" href="/assets/js/29.4b4ee311.js"><link rel="prefetch" href="/assets/js/3.f3ea0059.js"><link rel="prefetch" href="/assets/js/30.2d4b5633.js"><link rel="prefetch" href="/assets/js/31.cdb3e3b7.js"><link rel="prefetch" href="/assets/js/32.f9cf283c.js"><link rel="prefetch" href="/assets/js/33.8f5f2a04.js"><link rel="prefetch" href="/assets/js/34.8924ac38.js"><link rel="prefetch" href="/assets/js/35.981d71f6.js"><link rel="prefetch" href="/assets/js/36.4508cb7c.js"><link rel="prefetch" href="/assets/js/37.ef0626f1.js"><link rel="prefetch" href="/assets/js/38.75411ce2.js"><link rel="prefetch" href="/assets/js/39.73b48b3f.js"><link rel="prefetch" href="/assets/js/4.9377b1cf.js"><link rel="prefetch" href="/assets/js/40.e41e5058.js"><link rel="prefetch" href="/assets/js/41.c33465d9.js"><link rel="prefetch" href="/assets/js/42.be00be19.js"><link rel="prefetch" href="/assets/js/43.db5d53ad.js"><link rel="prefetch" href="/assets/js/44.679084aa.js"><link rel="prefetch" href="/assets/js/45.08b7072f.js"><link rel="prefetch" href="/assets/js/46.af5873e7.js"><link rel="prefetch" href="/assets/js/47.69ec0a0f.js"><link rel="prefetch" href="/assets/js/48.7d337860.js"><link rel="prefetch" href="/assets/js/49.8530823a.js"><link rel="prefetch" href="/assets/js/5.4542065f.js"><link rel="prefetch" href="/assets/js/50.be80af59.js"><link rel="prefetch" href="/assets/js/51.af68f9fd.js"><link rel="prefetch" href="/assets/js/52.88e9c8ae.js"><link rel="prefetch" href="/assets/js/53.bd92fdbb.js"><link rel="prefetch" href="/assets/js/54.47fce1f8.js"><link rel="prefetch" href="/assets/js/56.8c24f4c9.js"><link rel="prefetch" href="/assets/js/57.a251cca1.js"><link rel="prefetch" href="/assets/js/58.80842426.js"><link rel="prefetch" href="/assets/js/59.6e0068a1.js"><link rel="prefetch" href="/assets/js/6.dbea6c7a.js"><link rel="prefetch" href="/assets/js/60.87438dec.js"><link rel="prefetch" href="/assets/js/61.fd3ff93a.js"><link rel="prefetch" href="/assets/js/62.cca711a2.js"><link rel="prefetch" href="/assets/js/63.b74df6ac.js"><link rel="prefetch" href="/assets/js/64.580ecc6a.js"><link rel="prefetch" href="/assets/js/65.500bde2e.js"><link rel="prefetch" href="/assets/js/66.87a8b472.js"><link rel="prefetch" href="/assets/js/67.30413976.js"><link rel="prefetch" href="/assets/js/68.9acecb46.js"><link rel="prefetch" href="/assets/js/69.e16987b8.js"><link rel="prefetch" href="/assets/js/7.5531b999.js"><link rel="prefetch" href="/assets/js/70.b9e613d8.js"><link rel="prefetch" href="/assets/js/71.320af26b.js"><link rel="prefetch" href="/assets/js/72.7d7cd3b9.js"><link rel="prefetch" href="/assets/js/73.e3299430.js"><link rel="prefetch" href="/assets/js/74.cc6e249d.js"><link rel="prefetch" href="/assets/js/75.900dab84.js"><link rel="prefetch" href="/assets/js/76.c204b995.js"><link rel="prefetch" href="/assets/js/77.f6f8311d.js"><link rel="prefetch" href="/assets/js/78.72f68600.js"><link rel="prefetch" href="/assets/js/79.68731572.js"><link rel="prefetch" href="/assets/js/80.2319dd86.js"><link rel="prefetch" href="/assets/js/81.a8216463.js"><link rel="prefetch" href="/assets/js/82.302c377b.js"><link rel="prefetch" href="/assets/js/83.db304fc2.js"><link rel="prefetch" href="/assets/js/84.61b995aa.js"><link rel="prefetch" href="/assets/js/85.eb783106.js"><link rel="prefetch" href="/assets/js/86.83d4fce6.js"><link rel="prefetch" href="/assets/js/87.28b0a638.js"><link rel="prefetch" href="/assets/js/88.55dde687.js"><link rel="prefetch" href="/assets/js/89.98986539.js"><link rel="prefetch" href="/assets/js/90.38417fa8.js"><link rel="prefetch" href="/assets/js/91.c3c2d403.js"><link rel="prefetch" href="/assets/js/92.02dffda6.js"><link rel="prefetch" href="/assets/js/93.c564a6ed.js"><link rel="prefetch" href="/assets/js/94.7e904080.js"><link rel="prefetch" href="/assets/js/95.0cc0b105.js"><link rel="prefetch" href="/assets/js/96.16879589.js"><link rel="prefetch" href="/assets/js/97.82472499.js"><link rel="prefetch" href="/assets/js/98.6d835da2.js"><link rel="prefetch" href="/assets/js/99.565b55c2.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.7026204d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6a42bced.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">震雨 luckrain7</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><a href="/server/Node/" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><a href="/ms/" class="nav-link">
+  MONEY
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="必备工具" class="mobile-dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/Git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Mac.html" class="nav-link">
+  Mac
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub.html" class="nav-link">
+  GitHub
+</a></li><li class="dropdown-item"><!----> <a href="/tools/vscode.html" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/tools/package.html" class="nav-link">
+  包管理器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人分享" class="mobile-dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/index.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/share/opensource.html" class="nav-link">
+  开源项目
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website.html" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/frame/index.html" class="nav-link">
+  前端工具框架推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/shortcuts.html" class="nav-link">
+  快捷键
+</a></li></ul></div></div> <a href="https://github.com/LuckRain7" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/home/" class="nav-link">
+  个人介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/HTML.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/React/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/engineering/engineering/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><a href="/server/Node/" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><a href="/ms/" class="nav-link">
+  MONEY
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="必备工具" class="dropdown-title"><span class="title">必备工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="必备工具" class="mobile-dropdown-title"><span class="title">必备工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/Git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Mac.html" class="nav-link">
+  Mac
+</a></li><li class="dropdown-item"><!----> <a href="/tools/GitHub.html" class="nav-link">
+  GitHub
+</a></li><li class="dropdown-item"><!----> <a href="/tools/vscode.html" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/tools/package.html" class="nav-link">
+  包管理器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人分享" class="dropdown-title"><span class="title">个人分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人分享" class="mobile-dropdown-title"><span class="title">个人分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/index.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/share/opensource.html" class="nav-link">
+  开源项目
+</a></li><li class="dropdown-item"><!----> <a href="/share/software/" class="nav-link">
+  软件推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/website.html" class="nav-link">
+  网站推荐
+</a></li><li class="dropdown-item"><!----> <a href="/frame/index.html" class="nav-link">
+  前端工具框架推荐
+</a></li><li class="dropdown-item"><!----> <a href="/share/config/" class="nav-link">
+  配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/share/shortcuts.html" class="nav-link">
+  快捷键
+</a></li></ul></div></div> <a href="https://github.com/LuckRain7" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>ESLint Plugin</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/engineering/ESLintPlugin.html#背景知识" class="sidebar-link">背景知识</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/engineering/ESLintPlugin.html#插件" class="sidebar-link">插件</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/engineering/ESLintPlugin.html#type-typeof-limit" class="sidebar-link">type-typeof-limit</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/engineering/ESLintPlugin.html#type-instanceof-limit" class="sidebar-link">type-instanceof-limit</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/engineering/ESLintPlugin.html#recommended" class="sidebar-link">recommended</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/engineering/ESLintPlugin.html#总结" class="sidebar-link">总结</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="eslint-plugin"><a href="#eslint-plugin" class="header-anchor">#</a> ESLint Plugin</h1> <blockquote><p>原文：我写了一个 ESLint 插件，解决了团队棘手问题 https://juejin.cn/post/7393503669474705418@稀土掘金技术社区 App</p></blockquote> <p>在工作中，我们会沉淀了一些最佳实践，一般工作中的一个项目可能由多个开发者负责，在这样的背景下，很难做到每个开发者对最佳实践都了然于胸，在遇到人员更迭的时候，就更难受了。</p> <p>虽然可以通过代码审查发现问题，但是代码审查存在两个问题：一个是滞后问题，代码审查时已经开发完了；另一个是靠人来审查，难以 100%保证质量。</p> <p>如何保障团队代码风格，最佳实践的一致性，让代码看起来就是一个人写的，本身就是一个难题。</p> <p>如果能有一个智能助手，实时提示代码中的哪些部分可以使用工具库中的函数代替就好了。对于前端来说，这个助理就是 ESLint。</p> <p>那么如何让 ESLint 支持我们的最佳实践呢，这可以通过 ESLint 的自定义插件来实现。要开发 ESLint 插件需要一些知识储备和经验，本文我将通过一个实例来教大家如何写一个 ESLint 插件。</p> <p>本文通过一个真实案例来讲解，这个案例来源于我的实际工作，通过编写 ESLint 插件，并集成到项目，帮我解决了最佳实践的推广落地问题。</p> <h2 id="背景知识"><a href="#背景知识" class="header-anchor">#</a> 背景知识</h2> <p>下面先来介绍下背景知识，在我之前的文章《<a href="https://juejin.cn/post/7117420187564900366" target="_blank" rel="noopener noreferrer">破解面试题，在 JavaScript 中如何判断变量类型？<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>》中，提到过使用 typeof 和 instanceof 来判断变量类型是存在很多坑的，不信你看下面的例子，如果你对这个问题感兴趣，欢迎阅读我上面的文章：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">typeof</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 'object'</span>
+<span class="token keyword">typeof</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// 'object' typeof c; // 'object'</span>
+
+<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token keyword">instanceof</span> <span class="token class-name">Array</span> <span class="token comment">// true</span>
+    <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token keyword">instanceof</span> <span class="token class-name">Object</span> <span class="token comment">// true 注意这里</span>
+</code></pre></div><p>下面将写两个 ESLint 插件来解决对上面两个问题的校验。</p> <h2 id="插件"><a href="#插件" class="header-anchor">#</a> 插件</h2> <p>创建 ESLint 插件，ESLint 推荐使用 Yeoman generator。首先需要安装 Yeoman，安装命令如下：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">npm</span> i <span class="token parameter variable">-g</span> yo
+</code></pre></div><p>Yeoman 是一款通用的初始化工具，想要初始化 ESLint 插件，需要安装 ESLint 模板，安装命令如下：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">bash</span>
+
+复制代码$ <span class="token function">npm</span> i <span class="token parameter variable">-g</span> generator-eslint
+</code></pre></div><p>接下来，新建一个目录，目录名字按照自己喜好就行，命令如下：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">bash</span>
+
+复制代码$ <span class="token function">mkdir</span> eslint-plugin-utils
+</code></pre></div><p>切换到上面新建的目录，执行“yo eslint:plugin”命令会进入交互界面，询问作者、插件名字等，输入如图所示的内容即可。</p> <p><img src="/ESLintPlugin.assets/f3a2a751e1c844b9a76f8a7b63e4dc4c~tplv-73owjymdk6-watermark.png.webp" alt="image.png"></p> <p>稍等片刻即可完成自动初始化，初始化成功后的目录结构如下所示。其中，lib/rules 目录存放自定义规则，tests/lib/rules 目录存放规则对应的单元测试代码。</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token punctuation">.</span>
+├── <span class="token punctuation">.</span>eslintrc<span class="token punctuation">.</span>js
+├── README<span class="token punctuation">.</span>md
+├── lib
+│   ├── index<span class="token punctuation">.</span>js
+│   └── rules
+├── <span class="token keyword">package</span><span class="token operator">-</span>lock<span class="token punctuation">.</span>json
+├── <span class="token keyword">package</span><span class="token punctuation">.</span>json
+└── tests
+    └── lib
+        └── rules
+</code></pre></div><p>ESLint 推荐使用测试驱动开发，要求每个规则都有完整的单元测试。</p> <h2 id="type-typeof-limit"><a href="#type-typeof-limit" class="header-anchor">#</a> type-typeof-limit</h2> <p>使用 typeof 操作符判断一个变量为对象时可能存在问题，如下面的 3 行代码都返回 true：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">typeof</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token operator">===</span> <span class="token string">&quot;object&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">typeof</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">===</span> <span class="token string">&quot;object&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">typeof</span> <span class="token keyword">null</span> <span class="token operator">===</span> <span class="token string">&quot;object&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>下面写一个新规则，当发现“typeof * === 'object'”时给出报错提示。首先使用“yo eslint:rule”命令新建一个规则，在询问界面中输入如图所示的内容。</p> <p><img src="/ESLintPlugin.assets/3a8c2a7243a844f2a6334dbf02303ad7~tplv-73owjymdk6-watermark.png.webp" alt="image.png"></p> <p>完成上述操作后，会生成两个文件，分别是 lib/rules/type-typeof-limit.js 和 tests/lib/
+rules/type-typeof-limit.js。打开前一个文件，其内容如下：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">meta</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token comment">// `problem`, `suggestion`, or `layout`</span>
+        <span class="token literal-property property">docs</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">description</span><span class="token operator">:</span> <span class="token string">&quot;typeof不能用于对象和数组，请使用@jsmini/type&quot;</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">category</span><span class="token operator">:</span> <span class="token string">&quot;Fill me in&quot;</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">recommended</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token comment">// URL to the documentation page for this rule</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">fixable</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token comment">// Or `code` or `whitespace`</span>
+        <span class="token literal-property property">schema</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// Add a schema if the rule has options</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token function">create</span><span class="token punctuation">(</span><span class="token parameter">context</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+            <span class="token comment">// visitor functions for different types of nodes</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>其中，meta 是规则的元数据，这里需要关注的字段的含义如下，更多字段可以查看 ESLint 官网。</p> <ul><li>type：规则的类型，problem 代表报错，这里需要将 type 的值修改为 problem。</li> <li>docs：存放规则文档信息。
+<ul><li>description：指定规则的简短描述，需要填写。</li> <li>category：指定规则的分类信息，包括 Possible Errors、Best Practices、Variables 等，这里可以填入 Best Practices。</li></ul></li> <li>fixable：��� 示这个规则是否提供自动修复功能，当其值被设置为 true 时，还需要提供自动修复的代码。</li></ul> <p>create 函数里面是具体的逻辑，其返回一个对象，该对象的属性名表示节点类型，在向下遍历树时，当遍历到和属性名匹配的节点时，ESLint 会调用属性名对应的函数。例如，我们要写的这个规则的 create 函数如下，其含义是每次遇到 BinaryExpression 节点，都会调用传递给 BinaryExpression 属性的函数。</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function">create</span><span class="token punctuation">(</span><span class="token parameter">context</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+            <span class="token function-variable function">BinaryExpression</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">node</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>现在读者可能还不理解 BinaryExpression 的含义，这里需要介绍 ESLint 的原理。ESLint 会将每个 JavaScript 文件解析为抽象语法树（Abstract Syntax Tree，AST），简称语法树。ESLint 官网提供了一款工具，可以查看指定代码解析后的 AST。例如，下面的代码：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">typeof</span> a <span class="token operator">===</span> <span class="token string">&quot;object&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>ESLint 解析上述代码后会返回一个嵌套的 AST，每个节点中的 type 属性表示当前节点的类型，观察下面的 AST，上面的判断表达式可以用下面的逻辑来判断：</p> <ul><li>BinaryExpression 节点。</li> <li>left.operator 为 typeof。</li> <li>operator 为===或==。</li> <li>right 为 Literal，并且 value 为 object。</li></ul> <p>ESLint 会把 JavaScript 代码解析为 AST，该 AST 使用 JSON 格式表示的代码如下：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Program&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">21</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ExpressionStatement&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">21</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;expression&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BinaryExpression&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">21</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;left&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;UnaryExpression&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;operator&quot;</span><span class="token operator">:</span> <span class="token string">&quot;typeof&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;prefix&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;argument&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Identifier&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;a&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;operator&quot;</span><span class="token operator">:</span> <span class="token string">&quot;===&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;right&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Literal&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">13</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">21</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;object&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;raw&quot;</span><span class="token operator">:</span> <span class="token string">&quot;'object'&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sourceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;module&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>ESLint 遍历到 BinaryExpression 节点后会执行传递给 BinaryExpression 属性的函数，并将 BinaryExpression 节点传递给这个函数，然后进行上面的逻辑判断，如果为 true，则使用 context.report 报告错误。示例代码如下：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function">create</span><span class="token punctuation">(</span><span class="token parameter">context</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+            <span class="token function-variable function">BinaryExpression</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">node</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token keyword">const</span> operator <span class="token operator">=</span> node<span class="token punctuation">.</span>operator<span class="token punctuation">;</span>
+                <span class="token keyword">const</span> left <span class="token operator">=</span> node<span class="token punctuation">.</span>left<span class="token punctuation">;</span>
+                <span class="token keyword">const</span> right <span class="token operator">=</span> node<span class="token punctuation">.</span>right<span class="token punctuation">;</span>
+
+                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>operator <span class="token operator">===</span> <span class="token string">&quot;==&quot;</span> <span class="token operator">||</span> operator <span class="token operator">===</span> <span class="token string">&quot;===&quot;</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> left<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">&quot;UnaryExpression&quot;</span> <span class="token operator">&amp;&amp;</span> left<span class="token punctuation">.</span>operator <span class="token operator">===</span> <span class="token string">&quot;typeof&quot;</span> <span class="token operator">&amp;&amp;</span> right<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">&quot;Literal&quot;</span> <span class="token operator">&amp;&amp;</span> right<span class="token punctuation">.</span>value <span class="token operator">===</span> <span class="token string">&quot;object&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    context<span class="token punctuation">.</span><span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                        node<span class="token punctuation">,</span>
+                        <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">&quot;typeof不能用于对象和数组，请使用 @jsmini/type&quot;</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>前面提到了 ESLint 推荐使用测试驱动开发，上面的代码可以通过写单元测试来快速验证结果，修改 tests/lib/rules/type-typeof-limit.js 文件中的内容如下，其中包括三个单元测试：一个合法的单元测试和两个非法的单元测试。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> rule <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;../../../lib/rules/type-typeof-limit&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    RuleTester <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;eslint&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>RuleTester<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> msg <span class="token operator">=</span> <span class="token string">&quot;typeof不能用于对象和数组，请使用@jsmini/type&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> ruleTester <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RuleTester</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ruleTester<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token string">&quot;type-typeof-limit&quot;</span><span class="token punctuation">,</span> rule<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">valid</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token string">'typeof a == &quot;number&quot;'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token string">'a == &quot;object&quot;'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+    <span class="token literal-property property">invalid</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token string">'typeof a == &quot;object&quot;'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">errors</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token literal-property property">message</span><span class="token operator">:</span> msg<span class="token punctuation">,</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token string">'typeof a === &quot;object&quot;'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">errors</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token literal-property property">message</span><span class="token operator">:</span> msg<span class="token punctuation">,</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>写好单元测试后，执行“npm test”命令即可运行测试，如果看到如图所示的输出，则表示单元测试通过了。</p> <p><img src="/ESLintPlugin.assets/fbacc27f2e47451291659241c4469a7d~tplv-73owjymdk6-watermark.png.webp" alt="image.png"></p> <p>下面在真实实验环境下新建插件，由于我们的插件还没有发布，因此需要通过 link 的方式使用。</p> <p>首先在插件目录下执行如下命令，这会将本地的插件链接到本地的 npm 全局目录。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">npm</span> <span class="token function">link</span>
+</code></pre></div><p>新建一个空项目 eslint-plugin-utils-demo，并初始化 ESLint 配置，接下来，在 eslint-
+plugin-utils-demo 根目录下执行下面的命令，这会在 node_modules 目录下创建一个软链接。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">npm</span> <span class="token function">link</span> @jsmini/eslint-plugin-utils
+</code></pre></div><p>接下来，修改 eslint-plugin-utils-demo 根目录下的.eslintrc.js 文件，添加如下代码：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;@jsmini/utils&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;@jsmini/utils/type-typeof-limit&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>在本地新建一个 xxx.js 文件，并在该文件中输入如下代码：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">typeof</span> a <span class="token operator">===</span> <span class="token string">&quot;object&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>如果能够看到如图所示的红色波浪线，当将鼠标指针悬停到波浪线上时，显示如图所示的错误信息，则表示成功了。</p> <p><img src="/ESLintPlugin.assets/ff57d8189d294f67917d720588d06625~tplv-73owjymdk6-watermark.png.webp" alt="image.png"></p> <h2 id="type-instanceof-limit"><a href="#type-instanceof-limit" class="header-anchor">#</a> type-instanceof-limit</h2> <p>参考上面 type-typeof-limit 插件的内容，可以实现校验如下的代码：</p> <div class="language-js extra-class"><pre class="language-js"><code>a <span class="token keyword">instanceof</span> <span class="token class-name">Object</span><span class="token punctuation">;</span>
+</code></pre></div><p>新建一个名字为 type-instanceof-limit 的插件，这部分就不再展开介绍了，该插件的核心代码如下：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function">create</span><span class="token punctuation">(</span><span class="token parameter">context</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">function</span> <span class="token function">check</span><span class="token punctuation">(</span><span class="token parameter">node</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">const</span> operator <span class="token operator">=</span> node<span class="token punctuation">.</span>operator<span class="token punctuation">;</span>
+
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>operator <span class="token operator">===</span> <span class="token string">&quot;instanceof&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                context<span class="token punctuation">.</span><span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                    node<span class="token punctuation">,</span>
+                    <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">&quot;instanceof操作符可能存在问题,请使用@jsmini/type&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">BinaryExpression</span><span class="token operator">:</span> check<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="recommended"><a href="#recommended" class="header-anchor">#</a> recommended</h2> <p>现在已经有 2 个规则了，随着规则的增多，需要用户手动修改 rules。ESLint 配置示例如下：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;@jsmini/utils&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;@jsmini/utils/type-typeof-limit&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        <span class="token string-property property">&quot;@jsmini/utils/type-instanceof-limit&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>其实插件可以提供推荐的配置，类似 eslint:recommended，用户直接使用推荐的配置即可。修改 lib/index.js 文件中的 exports，添加 configs 配置，示例代码如下：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token function">requireIndex</span><span class="token punctuation">(</span>__dirname <span class="token operator">+</span> <span class="token string">&quot;/rules&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">configs</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;@jsmini/utils&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string-property property">&quot;@jsmini/utils/type-typeof-limit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span>
+            <span class="token string-property property">&quot;@jsmini/utils/type-instanceof-limit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>接下来，用户就可以直接像下面这样使用，而不需要单独配置 plugins 和 rules 了。</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;@jsmini/utils:recommended&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>在本文中，我们探讨了如何通过编写自定义 ESLint 插件来保障团队代码风格和最佳实践的一致性。我们首先介绍了 ESLint 插件开发的背景知识，然后详细讲解了如何使用 Yeoman generator 创建 ESLint 插件。通过具体案例，我们编写了两个 ESLint 插件： <code>type-typeof-limit</code> 和 <code>type-instanceof-limit</code> ，并展示了如何在项目中集成和测试这些插件。此外，我们还讨论了如何为插件提供推荐配置，以简化用户的配置过程。</p> <p>通过这些步骤，我们可以确保团队代码风格统一，减少代码审查中的问题，提高代码质量。</p> <p>欢迎大家阅读和分享这篇文章，如果有任何疑问或建议，欢迎在评论区留言。感谢大家的支持和阅读！</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.29b89f90.js" defer></script><script src="/assets/js/2.b7b0a406.js" defer></script><script src="/assets/js/1.ad1875b4.js" defer></script><script src="/assets/js/55.4f491c4a.js" defer></script>
+  </body>
+</html>
