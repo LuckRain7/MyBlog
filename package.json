@@ -31,8 +31,5 @@
     },
     "dependencies": {
         "chinese-lunar-calendar": "^1.0.1"
-    },
-    "engines": {
-        "node": "16"
     }
 }
