@@ -8,15 +8,15 @@ sidebar: auto
 
 - HTML
 
-* [元素 Elements](/frontend/HTML.html#_1-elements)
+- [元素 Elements](/frontend/HTML.html#_1-elements)
 
-* [DOM - Document Object Model](/frontend/HTML.html#_2-dom)
+- [DOM - Document Object Model](/frontend/HTML.html#_2-dom)
 
   - 事件和事件绑定的底层机制
 
-* [BOM - Browser Object Model](/frontend/HTML.html#_3-bom)
+- [BOM - Browser Object Model](/frontend/HTML.html#_3-bom)
 
-* CSS
+- CSS
 
   - [选择器](/frontend/CSS.html#_1-选择器)
 
@@ -130,7 +130,7 @@ sidebar: auto
 
   - [axios 数据获取/应用拦截器](/engineering/axios.html)
 
-* Vue-Router（权限控制）
+- Vue-Router（权限控制）
 
   - [vue router 的基础应用](/Vue/Vue-router.html)
 
@@ -144,13 +144,13 @@ sidebar: auto
 
   - 路由动画配置
 
-* Vuex （状态管理）
+- Vuex （状态管理）
 
   - [Vuex 基础](https://vuex.vuejs.org/zh/)
 
   - [数据持久化](/Vue/Vuex.html#_1-数据持久化)
 
-* Vue CLI （脚手架工具）
+- Vue CLI （脚手架工具）
 
   - Vue CLI 4.0 项目搭建
 
@@ -158,7 +158,7 @@ sidebar: auto
 
   - 项目布署和上线
 
-* Vue SSR 服务端渲染
+- Vue SSR 服务端渲染
 
   - SSR 原理和设计理念
 
@@ -180,7 +180,7 @@ sidebar: auto
 
   - Vue 动画原理
 
-* Vue 实践
+- Vue 实践
 
   - 动画切换效果
 
@@ -198,7 +198,7 @@ sidebar: auto
 
   - 自定义皮肤设置
 
-* 深入 Vue 源码
+- 深入 Vue 源码
 
   - MVVM 响应式原理及源码分析
 
@@ -629,12 +629,12 @@ sidebar: auto
 - 节流与防抖
 
 - 通过 Performance 监控性能
- 
+
 - 火焰图（Flame Graph）
 
 ## Nginx
 
-- [nginx 的安装和使用](/engineering/nginx.html#安装)
+- [nginx 的安装和使用](/engineering/nginx.html#_1-安装)
 
 - 模块和基本配置
 
@@ -942,7 +942,7 @@ sidebar: auto
 
   - 其他规约
 
-* 质量
+- 质量
 
   - code review
 
@@ -956,7 +956,7 @@ sidebar: auto
 
   - 监控和异常上报
 
-* 工程设计
+- 工程设计
 
   - 工程设计简介
 
@@ -964,7 +964,7 @@ sidebar: auto
 
   - 多仓库选型
 
-* 持续集成与部署
+- 持续集成与部署
 
   - CI/CD 简介
 
@@ -988,7 +988,7 @@ sidebar: auto
 
     - kubernetes
 
-* 效率工具
+- 效率工具
 
   - 真机远程代码调试
 

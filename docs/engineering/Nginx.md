@@ -4,7 +4,7 @@ sidebar: auto
 
 # Nginx
 
-## 安装
+## 1. 安装
 
 ```bash
 # HomeBrew 快捷安装
@@ -14,7 +14,7 @@ brew install nginx
 ...
 ```
 
-## 常用命令
+## 2. 常用命令
 
 ```bash
 sudo nginx           # 启动（管理员）
@@ -22,7 +22,7 @@ sudo nginx -s stop   # 关闭（管理员）
 sudo nginx -s reload # 重启（管理员）
 ```
 
-## 内置变量
+## 3. 内置变量
 
 ```bash
 $args : 这个变量等于请求行中的参数，同$query_string
@@ -48,7 +48,7 @@ $uri : 不带请求参数的当前URI，$uri不包含主机名，如”/foo/bar.
 $document_uri : 与$uri相同
 ```
 
-## location
+## 4. location
 
 ### 1. location 路径映射路径
 
@@ -111,7 +111,7 @@ location = /test.htm {
 
 ### 2. 路径拼接问题
 
-下面四种情况分别用 http://192.168.1.4/proxy/test.html 进行访问。
+下面四种情况分别用 <http://192.168.1.4/proxy/test.html> 进行访问。
 
 ```bash
 # 1 会被代理到http://127.0.0.1:81/test.html 这个url
@@ -145,18 +145,21 @@ location ^~ /asset/ {
 }
 ```
 
-## rewrite
+## 5. rewrite
 
 > 重写链接
 
- `rewrite regex replacement [flag];`
+`rewrite regex replacement [flag];`
 
 flag
 
-* last：停止处理当前的 ngx_http_rewrite_module 的指令集，并开始搜索与更改后的 URI 相匹配的 location; 
-* break：停止处理当前的 ngx_http_rewrite_module 指令集，就像上面说的 break 指令一样; 
-* redirect：返回 302 临时重定向。
-* permanent：返回 301 永久重定向。
+- last：停止处理当前的 ngx_http_rewrite_module 的指令集，并开始搜索与更改后的 URI 相匹配的 location;
+
+- break：停止处理当前的 ngx_http_rewrite_module 指令集，就像上面说的 break 指令一样;
+
+- redirect：返回 302 临时重定向。
+
+- permanent：返回 301 永久重定向。
 
 **example:**
 
@@ -170,8 +173,8 @@ rewrite ^/activity/v2/special-activity/index/(\w+)$ $scheme://www.nowcoder.com/j
 
 TODO
 
-* 转发与重定向之间的区别
+- 转发与重定向之间的区别
 
 参考文献
 
-* [nginx 中 location 的顺序(优先级)及 rewrite 规则写法](https://www.shuzhiduo.com/A/VGzlDElxzb/)
+- [nginx 中 location 的顺序(优先级)及 rewrite 规则写法](https://www.shuzhiduo.com/A/VGzlDElxzb/)
