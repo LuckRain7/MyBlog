@@ -35,13 +35,23 @@ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | 
 
 ## 2. 解决 NVM 源问题
 
-默认 nvm 是国外的源，下载基本上是下载不下来的！！！请安一下步骤操作
+默认 nvm 是国外的源，下载基本上是下载不下来的！！！在 `./bash_profile` 中添加一下配置信息
 
-1、新建系统环境变量 `NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node`
+```BASH
+# BASH
+########### nvm #############
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-2、命令行执行 `nvm node_mirror https://npm.taobao.org/mirrors/node/` 切换 Node 源
+# 淘宝源
+export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/
+export NVM_IOJS_ORG_MIRROR=https://npmmirror.com/mirrors/iojs/
+########### nvm #############
+```
 
-3、命令行执行 `nvm npm_mirror https://npm.taobao.org/mirrors/npm/` 切换 npm 源
+执行 `source ./bash_profile` ，重新加载配置
+
 
 ## 3. 常用命令
 
