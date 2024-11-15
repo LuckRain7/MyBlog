@@ -22,7 +22,7 @@ export default {
     },
     created() {
         // 从 localStorage 中加载历史记录
-        const storedHistory = localStorage.getItem("history");
+        const storedHistory = window.localStorage.getItem("history");
         if (storedHistory) {
             this.history = JSON.parse(storedHistory);
         }
@@ -33,7 +33,7 @@ export default {
                 // 将当前输入的文本添加到历史记录中
                 this.history.push(this.text);
                 // 将历史记录保存到 localStorage
-                localStorage.setItem("history", JSON.stringify(this.history));
+                window.localStorage.setItem("history", JSON.stringify(this.history));
                 // 清空输入框
                 this.text = "";
             }
