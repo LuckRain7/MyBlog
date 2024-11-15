@@ -22,6 +22,7 @@ export default {
     },
     created() {
         // 从 localStorage 中加载历史记录
+        if (typeof window === "undefined") return;
         const storedHistory = window.localStorage.getItem("history");
         if (storedHistory) {
             this.history = JSON.parse(storedHistory);
